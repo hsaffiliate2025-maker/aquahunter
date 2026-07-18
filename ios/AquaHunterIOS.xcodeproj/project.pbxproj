@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01D0B73D0872E6C854620C44 /* aquahunter-offline-style.json in Resources */ = {isa = PBXBuildFile; fileRef = 7269986B4600D66641DE21D5 /* aquahunter-offline-style.json */; };
+		0352435A386A59C4E7467CBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24033CA4B43EB1E756EDC3C1 /* Assets.xcassets */; };
+		16C8183AB63F1BC4F42BFF76 /* AquaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B344FB9BEDECD741CEC4ED51 /* AquaTheme.swift */; };
+		26E344944982881555B07811 /* ProductionMarketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B39554F6120D862677EA8D /* ProductionMarketData.swift */; };
+		2EDF445BD284A716E85467BC /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C00559B8E869FAC17BDA0D /* Models.swift */; };
+		365B7C781209E3A52448CD9D /* AquaHunterIOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0F3B2793EE1EDAC67648C7 /* AquaHunterIOSApp.swift */; };
+		3C07ED75E9ABE786F4292A53 /* LicensedWorldMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A39EE1FED1982DCB9531D3 /* LicensedWorldMap.swift */; };
+		436D72C8CFA139099B046BBF /* ProductionMarketSeriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700D9CFEA00A6607C25B8CC4 /* ProductionMarketSeriesTests.swift */; };
+		701B4D9EA084F0BE54558FC4 /* AquaSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D688E2366A9228754DD0C93 /* AquaSettingsView.swift */; };
+		AA9D62CE6568D5001D4846BA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CF0A18F993BF9E568FCF3326 /* README.md */; };
+		E5E8495C4CDB244C50DC393B /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5CB0C72A10567E8AF3B1E3 /* Screens.swift */; };
+		EA0015E85D3E8EEE0FF3B1EB /* ne_110m_land.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 5BBACCF7B3ABFBAC7298C766 /* ne_110m_land.geojson */; };
+		F285C497332D61FC72BB5BCE /* MapLibre in Frameworks */ = {isa = PBXBuildFile; productRef = 92A0BCB29F17CBDCA0A91A24 /* MapLibre */; };
+		FF13EC169918687738CCAE29 /* AquaShellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1175CF896DA8EDCE5B227C2B /* AquaShellView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1A11C800C0F1115B03714E0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 167FBDDCDAE88C6C624B3C73 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7D09ADE222D0C4F4B184170B;
+			remoteInfo = AquaHunterIOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0556B103E99F6BD0B671660A /* AquaHunterIOSTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AquaHunterIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1175CF896DA8EDCE5B227C2B /* AquaShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaShellView.swift; sourceTree = "<group>"; };
+		24033CA4B43EB1E756EDC3C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		45B39554F6120D862677EA8D /* ProductionMarketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionMarketData.swift; sourceTree = "<group>"; };
+		5BBACCF7B3ABFBAC7298C766 /* ne_110m_land.geojson */ = {isa = PBXFileReference; path = ne_110m_land.geojson; sourceTree = "<group>"; };
+		6D688E2366A9228754DD0C93 /* AquaSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaSettingsView.swift; sourceTree = "<group>"; };
+		700D9CFEA00A6607C25B8CC4 /* ProductionMarketSeriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionMarketSeriesTests.swift; sourceTree = "<group>"; };
+		7269986B4600D66641DE21D5 /* aquahunter-offline-style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "aquahunter-offline-style.json"; sourceTree = "<group>"; };
+		7B5CB0C72A10567E8AF3B1E3 /* Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
+		8F93923922243CF654C52092 /* AquaHunterIOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AquaHunterIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0F3B2793EE1EDAC67648C7 /* AquaHunterIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaHunterIOSApp.swift; sourceTree = "<group>"; };
+		B344FB9BEDECD741CEC4ED51 /* AquaTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaTheme.swift; sourceTree = "<group>"; };
+		B6C00559B8E869FAC17BDA0D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		CF0A18F993BF9E568FCF3326 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D1A39EE1FED1982DCB9531D3 /* LicensedWorldMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensedWorldMap.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		404BD30A282A569C54A958C5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F285C497332D61FC72BB5BCE /* MapLibre in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		395D2E9FB0C3951EEA59A065 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AC0F3B2793EE1EDAC67648C7 /* AquaHunterIOSApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		53F9846F6BC9E517591DA561 = {
+			isa = PBXGroup;
+			children = (
+				A68916821DEE35CC8593D22E /* map-assets */,
+				5921D83DD2A5AF7B152C34A9 /* Resources */,
+				B290D804A0397A601CCB953F /* Shared */,
+				395D2E9FB0C3951EEA59A065 /* Sources */,
+				B7AB3401F03AEED468D8395A /* Tests */,
+				A138C2160DF892AB70B4743B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5921D83DD2A5AF7B152C34A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				24033CA4B43EB1E756EDC3C1 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9D09F6E46F5A14A4BAA6EC3B /* natural-earth */ = {
+			isa = PBXGroup;
+			children = (
+				5BBACCF7B3ABFBAC7298C766 /* ne_110m_land.geojson */,
+			);
+			path = "natural-earth";
+			sourceTree = "<group>";
+		};
+		A138C2160DF892AB70B4743B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F93923922243CF654C52092 /* AquaHunterIOS.app */,
+				0556B103E99F6BD0B671660A /* AquaHunterIOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A68916821DEE35CC8593D22E /* map-assets */ = {
+			isa = PBXGroup;
+			children = (
+				7269986B4600D66641DE21D5 /* aquahunter-offline-style.json */,
+				CF0A18F993BF9E568FCF3326 /* README.md */,
+				9D09F6E46F5A14A4BAA6EC3B /* natural-earth */,
+			);
+			name = "map-assets";
+			path = "../map-assets";
+			sourceTree = "<group>";
+		};
+		B290D804A0397A601CCB953F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				6D688E2366A9228754DD0C93 /* AquaSettingsView.swift */,
+				1175CF896DA8EDCE5B227C2B /* AquaShellView.swift */,
+				B344FB9BEDECD741CEC4ED51 /* AquaTheme.swift */,
+				D1A39EE1FED1982DCB9531D3 /* LicensedWorldMap.swift */,
+				B6C00559B8E869FAC17BDA0D /* Models.swift */,
+				45B39554F6120D862677EA8D /* ProductionMarketData.swift */,
+				7B5CB0C72A10567E8AF3B1E3 /* Screens.swift */,
+			);
+			name = Shared;
+			path = ../apple/Shared;
+			sourceTree = "<group>";
+		};
+		B7AB3401F03AEED468D8395A /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				700D9CFEA00A6607C25B8CC4 /* ProductionMarketSeriesTests.swift */,
+			);
+			name = Tests;
+			path = ../apple/Tests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7D09ADE222D0C4F4B184170B /* AquaHunterIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B26F67DAF0B10D73C6598809 /* Build configuration list for PBXNativeTarget "AquaHunterIOS" */;
+			buildPhases = (
+				CD8B25450E793A9D9C3E087D /* Validate production data licenses */,
+				6B4316E53DAA041662E12E8C /* Sources */,
+				93AC13309F5DE3C41622E85E /* Resources */,
+				404BD30A282A569C54A958C5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AquaHunterIOS;
+			packageProductDependencies = (
+				92A0BCB29F17CBDCA0A91A24 /* MapLibre */,
+			);
+			productName = AquaHunterIOS;
+			productReference = 8F93923922243CF654C52092 /* AquaHunterIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8140344BE736128F3F24A39 /* AquaHunterIOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 68CC48DDDC79D4B9061B3993 /* Build configuration list for PBXNativeTarget "AquaHunterIOSTests" */;
+			buildPhases = (
+				168260E70274D5492E7CD381 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				93669B188F60E9ADB47D25A5 /* PBXTargetDependency */,
+			);
+			name = AquaHunterIOSTests;
+			packageProductDependencies = (
+			);
+			productName = AquaHunterIOSTests;
+			productReference = 0556B103E99F6BD0B671660A /* AquaHunterIOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		167FBDDCDAE88C6C624B3C73 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					7D09ADE222D0C4F4B184170B = {
+						DevelopmentTeam = C8Y5J74PQW;
+						ProvisioningStyle = Automatic;
+					};
+					E8140344BE736128F3F24A39 = {
+						DevelopmentTeam = C8Y5J74PQW;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E0366546EAC2041D07970FE9 /* Build configuration list for PBXProject "AquaHunterIOS" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 53F9846F6BC9E517591DA561;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				DE610230EAA16BFF2C713BA9 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = A138C2160DF892AB70B4743B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7D09ADE222D0C4F4B184170B /* AquaHunterIOS */,
+				E8140344BE736128F3F24A39 /* AquaHunterIOSTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		93AC13309F5DE3C41622E85E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0352435A386A59C4E7467CBF /* Assets.xcassets in Resources */,
+				AA9D62CE6568D5001D4846BA /* README.md in Resources */,
+				01D0B73D0872E6C854620C44 /* aquahunter-offline-style.json in Resources */,
+				EA0015E85D3E8EEE0FF3B1EB /* ne_110m_land.geojson in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CD8B25450E793A9D9C3E087D /* Validate production data licenses */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Validate production data licenses";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$CONFIGURATION\" = \"Release\" ]; then\n  python3 \"$SRCROOT/../tools/validate_data_sources.py\" --release\n  python3 \"$SRCROOT/../tools/validate_release_content.py\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		168260E70274D5492E7CD381 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				436D72C8CFA139099B046BBF /* ProductionMarketSeriesTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6B4316E53DAA041662E12E8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				365B7C781209E3A52448CD9D /* AquaHunterIOSApp.swift in Sources */,
+				701B4D9EA084F0BE54558FC4 /* AquaSettingsView.swift in Sources */,
+				FF13EC169918687738CCAE29 /* AquaShellView.swift in Sources */,
+				16C8183AB63F1BC4F42BFF76 /* AquaTheme.swift in Sources */,
+				3C07ED75E9ABE786F4292A53 /* LicensedWorldMap.swift in Sources */,
+				2EDF445BD284A716E85467BC /* Models.swift in Sources */,
+				26E344944982881555B07811 /* ProductionMarketData.swift in Sources */,
+				E5E8495C4CDB244C50DC393B /* Screens.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		93669B188F60E9ADB47D25A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7D09ADE222D0C4F4B184170B /* AquaHunterIOS */;
+			targetProxy = 1A11C800C0F1115B03714E0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1933E4BD818CAB91C47D4FF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaffiliate.aquahunter.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AquaHunterIOS.app/AquaHunterIOS";
+			};
+			name = Debug;
+		};
+		3807640440D21C64C4E59E83 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Generated/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaffiliate.aquahunter;
+				PRODUCT_NAME = AquaHunterIOS;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4951B9F2C84A7F9ABB655E6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaffiliate.aquahunter.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AquaHunterIOS.app/AquaHunterIOS";
+			};
+			name = Release;
+		};
+		527D3FB7BD2EE4B9A435EC86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = C8Y5J74PQW;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		68FE6F3712A63E36CF26F7F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = C8Y5J74PQW;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EEA2B8687D501CED0E633585 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Generated/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hsaffiliate.aquahunter;
+				PRODUCT_NAME = AquaHunterIOS;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		68CC48DDDC79D4B9061B3993 /* Build configuration list for PBXNativeTarget "AquaHunterIOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1933E4BD818CAB91C47D4FF5 /* Debug */,
+				4951B9F2C84A7F9ABB655E6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B26F67DAF0B10D73C6598809 /* Build configuration list for PBXNativeTarget "AquaHunterIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEA2B8687D501CED0E633585 /* Debug */,
+				3807640440D21C64C4E59E83 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E0366546EAC2041D07970FE9 /* Build configuration list for PBXProject "AquaHunterIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68FE6F3712A63E36CF26F7F3 /* Debug */,
+				527D3FB7BD2EE4B9A435EC86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DE610230EAA16BFF2C713BA9 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maplibre/maplibre-gl-native-distribution";
+			requirement = {
+				kind = exactVersion;
+				version = 6.26.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		92A0BCB29F17CBDCA0A91A24 /* MapLibre */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DE610230EAA16BFF2C713BA9 /* XCRemoteSwiftPackageReference "maplibre-gl-native-distribution" */;
+			productName = MapLibre;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 167FBDDCDAE88C6C624B3C73 /* Project object */;
+}

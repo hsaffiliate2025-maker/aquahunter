@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>destination</key>
+	<string>export</string>
+	<key>installerSigningCertificate</key>
+	<string>5374B8B2922B785B3EEBE080CEC2152B5EF53F79</string>
+	<key>manageAppVersionAndBuildNumber</key>
+	<false/>
+	<key>method</key>
+	<string>app-store-connect</string>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>com.hsaffiliate.aquahunter</key>
+		<string>AquaHunter Mac App Store 2026 Local Key</string>
+	</dict>
+	<key>signingCertificate</key>
+	<string>5C80C5B328E723E90618CC62CD39EB0C52C38DED</string>
+	<key>signingStyle</key>
+	<string>manual</string>
+	<key>stripSwiftSymbols</key>
+	<true/>
+	<key>teamID</key>
+	<string>C8Y5J74PQW</string>
+	<key>uploadSymbols</key>
+	<true/>
+</dict>
+</plist>

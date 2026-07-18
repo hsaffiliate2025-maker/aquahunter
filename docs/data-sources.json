@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "lastReviewed": "2026-07-19",
+  "releaseSourceIds": [
+    "ssb-statbank-03024",
+    "natural-earth-5.1.2-land-110m"
+  ],
+  "sources": [
+    {
+      "id": "ssb-statbank-03024",
+      "provider": "Statistics Norway",
+      "category": "market-benchmark",
+      "datasetIds": [
+        "Statbank table 03024"
+      ],
+      "officialUrl": "https://www.ssb.no/en/statbank1/table/03024",
+      "licenseEvidence": "https://www.ssb.no/en/api",
+      "licenseId": "CC-BY-4.0",
+      "decision": "approved",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "allowed-with-attribution",
+      "attribution": "Source: Statistics Norway, table 03024",
+      "requiredDisclaimers": [
+        "Weekly export statistic; not a city spot price, auction quote or executable offer."
+      ],
+      "latency": "weekly",
+      "productionEnabled": true,
+      "reviewNotes": "Connected through a pinned PxWebApi v2 GET query. Use only as Norway farmed-salmon export volume and unit-value benchmark; never label it as an Oslo spot price."
+    },
+    {
+      "id": "natural-earth-5.1.2-land-110m",
+      "provider": "Natural Earth",
+      "category": "offline-base-map-data",
+      "datasetIds": [
+        "Natural Earth 5.1.2 ne_110m_land GeoJSON; SHA-256 9e0729ee253ca7d7a5c4ae9395fb1902264c5377c52e224d13dd85010e2835d9"
+      ],
+      "officialUrl": "https://github.com/nvkelso/natural-earth-vector/blob/v5.1.2/geojson/ne_110m_land.geojson",
+      "licenseEvidence": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "licenseId": "Public-Domain",
+      "decision": "approved",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "unrestricted-public-domain",
+      "attribution": "Made with Natural Earth",
+      "requiredDisclaimers": [
+        "Small-scale orientation map only; not a nautical chart or source of legal maritime boundaries.",
+        "Not for navigation, route planning, protected-area decisions or safety-of-life use."
+      ],
+      "latency": "static-versioned-5.1.2",
+      "productionEnabled": true,
+      "reviewNotes": "Bundled offline GeoJSON is rendered without Google, Apple or public OpenStreetMap tile services. The exact file checksum is pinned and verified before release."
+    },
+    {
+      "id": "gebco-grid-2026",
+      "provider": "GEBCO",
+      "category": "bathymetry",
+      "datasetIds": [
+        "GEBCO_2026 Grid"
+      ],
+      "officialUrl": "https://www.gebco.net/data-products/gridded-bathymetry-data",
+      "licenseEvidence": "https://www.gebco.net/data-products/gridded-bathymetry/terms-of-use",
+      "decision": "approved",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "allowed-with-attribution",
+      "attribution": "GEBCO Compilation Group (2026), GEBCO_2026 Grid",
+      "requiredDisclaimers": [
+        "Not for navigation or any purpose involving safety at sea.",
+        "Bathymetry coverage and resolution vary and include interpolated values."
+      ],
+      "latency": "static-versioned",
+      "productionEnabled": false,
+      "reviewNotes": "Pin the official DOI and exact grid artifact checksum during ingestion implementation."
+    },
+    {
+      "id": "openstreetmap-database",
+      "provider": "OpenStreetMap contributors",
+      "category": "base-map-data",
+      "datasetIds": [
+        "Versioned regional or planet extract; exact snapshot required before enablement"
+      ],
+      "officialUrl": "https://www.openstreetmap.org/copyright",
+      "licenseEvidence": "https://opendatacommons.org/licenses/odbl/1-0/",
+      "decision": "approved",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "odbl-share-alike-obligations",
+      "attribution": "© OpenStreetMap contributors",
+      "requiredDisclaimers": [
+        "OpenStreetMap data is licensed under ODbL.",
+        "Community tile.openstreetmap.org hosting is not included in this approval."
+      ],
+      "latency": "snapshot-dependent",
+      "productionEnabled": false,
+      "reviewNotes": "Production requires self-hosted or separately licensed tiles, visible attribution and documented derivative-database obligations."
+    },
+    {
+      "id": "nasa-earthdata-product",
+      "provider": "NASA Earthdata",
+      "category": "ocean-environment",
+      "datasetIds": [],
+      "officialUrl": "https://www.earthdata.nasa.gov/",
+      "licenseEvidence": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
+      "decision": "conditional",
+      "commercialUse": null,
+      "derivativeUse": null,
+      "redistribution": "dataset-specific",
+      "attribution": "Dataset-specific NASA citation required",
+      "requiredDisclaimers": [
+        "No NASA endorsement.",
+        "Non-NASA data distributed through Earthdata retains the sponsoring organization's license."
+      ],
+      "latency": "product-specific",
+      "productionEnabled": false,
+      "reviewNotes": "Approve only a NASA-led product with no marked restriction or with an explicit compatible license; record product ID, version and DOI."
+    },
+    {
+      "id": "noaa-product",
+      "provider": "NOAA",
+      "category": "ocean-or-fisheries",
+      "datasetIds": [],
+      "officialUrl": "https://www.noaa.gov/",
+      "licenseEvidence": "https://www.nauticalcharts.noaa.gov/data/data-licensing.html",
+      "decision": "conditional",
+      "commercialUse": null,
+      "derivativeUse": null,
+      "redistribution": "dataset-specific",
+      "attribution": "Dataset-specific NOAA citation required",
+      "requiredDisclaimers": [
+        "External contributor data may have separate restrictions.",
+        "Landing location must not be represented as harvest location."
+      ],
+      "latency": "product-specific",
+      "productionEnabled": false,
+      "reviewNotes": "Approve only exact products whose metadata is CC0, CC BY 4.0 or clearly U.S. government public domain."
+    },
+    {
+      "id": "copernicus-marine-product",
+      "provider": "Copernicus Marine Service",
+      "category": "ocean-environment",
+      "datasetIds": [],
+      "officialUrl": "https://marine.copernicus.eu/",
+      "licenseEvidence": "https://marine.copernicus.eu/user-corner/service-commitments-and-licence",
+      "decision": "conditional",
+      "commercialUse": null,
+      "derivativeUse": null,
+      "redistribution": "product-and-upstream-specific",
+      "attribution": "Generated using Copernicus Marine Service information; product-specific citation required",
+      "requiredDisclaimers": [
+        "Product manuals and upstream in-situ restrictions must be reviewed individually."
+      ],
+      "latency": "product-specific",
+      "productionEnabled": false,
+      "reviewNotes": "Do not enable a provider-wide placeholder. Add one registry entry per exact Product ID and version."
+    },
+    {
+      "id": "fao-product",
+      "provider": "Food and Agriculture Organization of the United Nations",
+      "category": "fisheries-statistics",
+      "datasetIds": [],
+      "officialUrl": "https://www.fao.org/",
+      "licenseEvidence": "",
+      "decision": "conditional",
+      "commercialUse": null,
+      "derivativeUse": null,
+      "redistribution": "dataset-specific",
+      "attribution": "Dataset-specific FAO citation required",
+      "requiredDisclaimers": [],
+      "latency": "product-specific",
+      "productionEnabled": false,
+      "reviewNotes": "Record the exact database and its official license. FAO branding alone is not license evidence."
+    },
+    {
+      "id": "toyosu-market-feed",
+      "provider": "Relevant official Toyosu data publisher",
+      "category": "market-price",
+      "datasetIds": [],
+      "officialUrl": "",
+      "licenseEvidence": "",
+      "decision": "blocked",
+      "commercialUse": null,
+      "derivativeUse": null,
+      "redistribution": "unknown",
+      "attribution": "",
+      "requiredDisclaimers": [],
+      "latency": "unknown",
+      "productionEnabled": false,
+      "reviewNotes": "No scraping or production display until an official open-data license or contract covers commercial reuse and redistribution."
+    },
+    {
+      "id": "importyeti",
+      "provider": "ImportYeti",
+      "category": "trade-and-buyers",
+      "datasetIds": [],
+      "officialUrl": "https://www.importyeti.com/",
+      "licenseEvidence": "",
+      "decision": "blocked",
+      "commercialUse": null,
+      "derivativeUse": null,
+      "redistribution": "unknown",
+      "attribution": "",
+      "requiredDisclaimers": [],
+      "latency": "unknown",
+      "productionEnabled": false,
+      "reviewNotes": "Requires written commercial/API terms matching AquaHunter caching, analysis, contact display and redistribution."
+    },
+    {
+      "id": "volza",
+      "provider": "Volza",
+      "category": "trade-and-buyers",
+      "datasetIds": [],
+      "officialUrl": "https://www.volza.com/",
+      "licenseEvidence": "",
+      "decision": "blocked",
+      "commercialUse": null,
+      "derivativeUse": null,
+      "redistribution": "unknown",
+      "attribution": "",
+      "requiredDisclaimers": [],
+      "latency": "unknown",
+      "productionEnabled": false,
+      "reviewNotes": "Requires written commercial/API terms matching AquaHunter caching, analysis, contact display and redistribution."
+    },
+    {
+      "id": "global-fishing-watch",
+      "provider": "Global Fishing Watch",
+      "category": "vessel-and-fishing-activity",
+      "datasetIds": [],
+      "officialUrl": "https://globalfishingwatch.org/",
+      "licenseEvidence": "",
+      "decision": "blocked",
+      "commercialUse": null,
+      "derivativeUse": null,
+      "redistribution": "unknown",
+      "attribution": "",
+      "requiredDisclaimers": [],
+      "latency": "unknown",
+      "productionEnabled": false,
+      "reviewNotes": "Do not use until the exact API/dataset license and commercial derived-product terms are reviewed."
+    },
+    {
+      "id": "commercial-ais-provider",
+      "provider": "Unselected commercial AIS provider",
+      "category": "vessel-position",
+      "datasetIds": [],
+      "officialUrl": "",
+      "licenseEvidence": "",
+      "decision": "blocked",
+      "commercialUse": null,
+      "derivativeUse": null,
+      "redistribution": "contract-required",
+      "attribution": "",
+      "requiredDisclaimers": [
+        "AIS is delayed or incomplete and is not a collision-avoidance or emergency service."
+      ],
+      "latency": "contract-specific",
+      "productionEnabled": false,
+      "reviewNotes": "Select and contract a provider before implementation. Consumer/public AIS pages are not an approved source."
+    },
+    {
+      "id": "osm-community-tiles",
+      "provider": "OpenStreetMap Foundation community tile servers",
+      "category": "hosted-map-tiles",
+      "datasetIds": [
+        "tile.openstreetmap.org"
+      ],
+      "officialUrl": "https://operations.osmfoundation.org/policies/tiles/",
+      "licenseEvidence": "https://operations.osmfoundation.org/policies/tiles/",
+      "decision": "blocked",
+      "commercialUse": null,
+      "derivativeUse": null,
+      "redistribution": "service-policy-restricted",
+      "attribution": "© OpenStreetMap contributors",
+      "requiredDisclaimers": [],
+      "latency": "live-service",
+      "productionEnabled": false,
+      "reviewNotes": "OSM data is open, but community tile hosting is not a production SLA or free commercial tile entitlement. Self-host or contract a provider."
+    },
+    {
+      "id": "google-maps",
+      "provider": "Google Maps Platform",
+      "category": "map-platform",
+      "datasetIds": [],
+      "officialUrl": "https://mapsplatform.google.com/",
+      "licenseEvidence": "",
+      "decision": "blocked",
+      "commercialUse": null,
+      "derivativeUse": null,
+      "redistribution": "service-terms",
+      "attribution": "",
+      "requiredDisclaimers": [],
+      "latency": "live-service",
+      "productionEnabled": false,
+      "reviewNotes": "Not selected for AquaHunter's free/offline map architecture. No Google Maps SDK, API key or service request is present in the current production implementation."
+    }
+  ]
+}

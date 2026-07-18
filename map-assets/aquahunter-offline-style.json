@@ -1,0 +1,14 @@
+{
+  "version": 8,
+  "name": "AquaHunter Offline Ocean",
+  "sources": {},
+  "layers": [
+    {
+      "id": "ocean-background",
+      "type": "background",
+      "paint": {
+        "background-color": "#061A38"
+      }
+    }
+  ]
+}
