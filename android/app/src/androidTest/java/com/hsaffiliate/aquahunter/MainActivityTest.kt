@@ -1,9 +1,9 @@
 package com.hsaffiliate.aquahunter
 
-import androidx.compose.ui.test.onAllNodesWithText
 import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.assertIsDisplayed
 import androidx.compose.ui.test.junit4.v2.createAndroidComposeRule
+import androidx.compose.ui.test.onNodeWithContentDescription
 import androidx.compose.ui.test.onNodeWithTag
 import androidx.compose.ui.test.onNodeWithText
 import androidx.compose.ui.test.performClick
@@ -36,7 +36,8 @@ class MainActivityTest {
         composeRule.onNodeWithText("Vessels").performClick()
         composeRule.onNodeWithText("Vessel signals unavailable").assertIsDisplayed()
 
-        composeRule.onNodeWithText("Ask").performClick()
-        composeRule.onNodeWithText("Ask with evidence.").assertIsDisplayed()
+        composeRule.onNodeWithText("Pulse").performClick()
+        composeRule.onNodeWithContentDescription("Settings").performClick()
+        composeRule.onNodeWithText("Settings").assertIsDisplayed()
     }
 }

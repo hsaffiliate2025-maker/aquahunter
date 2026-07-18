@@ -81,7 +81,9 @@ xcodebuild -exportArchive \
 - profile 资源 ID：`A3PRHWPWA8`
 - 到期时间：2027-07-18
 
-为避免修改整个登录钥匙串，macOS 导出使用独立临时钥匙串。先在“钥匙串访问”的 `login → My Certificates` 中分别导出以下两项，证书下面必须带有私钥：
+为避免修改整个登录钥匙串，macOS 导出使用独立临时钥匙串。发布工作站必须使用公司拥有、与下列证书匹配且可导出的私钥。可从“钥匙串访问”的 `login → My Certificates` 导出，也可由受控的内部签名材料临时生成 P12；不得把私钥、P12 或密码提交仓库、写入 README 或发送到聊天。
+
+需要的两个身份为：
 
 - `3rd Party Mac Developer Application: Hot Season Enterprise, Inc. (C8Y5J74PQW)`
 - `3rd Party Mac Developer Installer: Hot Season Enterprise, Inc. (C8Y5J74PQW)`
@@ -97,7 +99,7 @@ xcodebuild -exportArchive \
 zsh tools/setup_macos_signing_keychain.sh
 ```
 
-脚本只操作 AquaHunter 临时钥匙串，密码隐藏输入，并在继续导出前验证 `codesign` 与 `productbuild` 均可无弹窗调用。不要对整个 `login.keychain` 执行 `set-key-partition-list`。
+脚本只操作 AquaHunter 临时钥匙串，密码默认隐藏输入，也可由受控发布环境通过 `APPLICATION_P12_PASSWORD` 和 `INSTALLER_P12_PASSWORD` 临时传入。脚本在继续导出前验证 `codesign` 与 `productbuild` 均可无弹窗调用。不要对整个 `login.keychain` 执行 `set-key-partition-list`。
 
 Mac App Store 导出 `.pkg` 后上传：
 
@@ -109,6 +111,25 @@ asc builds upload \
   --build-number 1 \
   --wait
 ```
+
+当前已验证的本地产物：
+
+- 路径：`.asc/artifacts/AquaHunterMacExportSigned/AquaHunterMac.pkg`
+- 版本：`1.0.0 (1)`
+- 架构：`arm64 + x86_64`
+- SHA-256：`5ebfaa7ac0260cb29a05c9b96470841b6a5d8ba7c7fb1841c0b0a9ae07799e60`
+- App 签名：`3rd Party Mac Developer Application: Hot Season Enterprise, Inc. (C8Y5J74PQW)`
+- Installer 签名：`3rd Party Mac Developer Installer: Hot Season Enterprise, Inc. (C8Y5J74PQW)`
+
+该 PKG 已确认包含离线地图资产，发布二进制中没有 Aqua AI/Ask 或开发期问答内容。签名完成后应删除临时钥匙串和临时 P12，只保留签名产物。
+
+## Mac App Store 截图与元数据
+
+- 3 张 2560×1600 截图：[`../store/app-store/macos/`](../store/app-store/macos/)
+- Canonical English metadata：[`../metadata/`](../metadata/)
+- 截图依次展示真实 SSB Pulse、Markets 列表和 30 周官方历史曲线。
+
+截图由已签名的归档应用运行后截取。商店上传前只使用 `store/` 中经过筛选的图片，不使用被忽略的开发期截图。
 
 ## 桌面版差异化计划
 
@@ -122,7 +143,7 @@ asc builds upload \
 
 ## 发布阻断项
 
-- Mac Distribution 签名、归档、导出和 TestFlight/App Store 上传尚需验证。
+- Mac Distribution 签名、归档和 PKG 导出已验证；TestFlight/App Store 上传仍需应用记录。
 - App Store Connect Universal Purchase 结构尚需确认。
-- App Privacy、公开隐私政策、商店元数据和截图尚需完成。
+- 英文元数据和 2560×1600 截图已准备；App Privacy 表单和公开隐私政策内容仍需在应用记录创建后复核。
 - 文件导入、通知或新网络服务加入时必须同步复审 entitlements 与隐私声明。

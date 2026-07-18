@@ -17,8 +17,8 @@
 - Markets：真实 NOK/kg 周度价格、出口重量、6W/30W/1Y 历史和来源许可
 - Radar：鱼种切换与所需输入说明；数据源未完成产品级许可审计前不输出概率
 - Network：买家、贸易、港口和船舶模块的许可状态；无合规数据时不展示记录
-- Ask：只根据当前授权来源回答，证据不足时拒绝推断
-- 地图：Google Maps 依赖已移除；MapLibre 仅在自托管或合规商业瓦片源就绪后启用
+- Ask/Aqua AI：当前发行版不提供；服务端 AI、引用、成本、隐私和收费门禁完成后再进入导航
+- 地图：iOS/Android 使用 MapLibre Native 渲染随包分发的 Natural Earth 公共领域 GeoJSON；macOS 使用 SwiftUI Canvas 渲染同一资产。三端离线工作，不调用 Google/Apple 地图或公共 OSM 社区瓦片
 - 首次风险声明、设置、语言、主题与支持邮件
 - 无账号、无广告、无分析 SDK、无敏感权限
 
@@ -43,7 +43,7 @@
 - Android Studio（含 JDK 21）
 - Android SDK 36
 
-当前不需要地图密钥。地图区域在合规 MapLibre 瓦片源接入前显示不可用；不得直接使用 OSM 社区标准瓦片作为生产后端。
+当前不需要地图密钥。基础世界地图使用版本固定、随包分发的 Natural Earth 公共领域数据；它不是海图。未来精细地图只能使用自托管数据或另有明确商业移动端授权的供应商，不得直接使用 OSM 社区标准瓦片作为生产后端。
 
 ```bash
 JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home" ./gradlew testDebugUnitTest assembleDebug
@@ -638,6 +638,8 @@ P1 功能。以 `Vietnam + Shrimp` 为例，支持查询：
 
 ## 6.10 AI 问答
 
+当前发行状态：不提供 Ask/Aqua AI 页面或工作入口。以下需求属于后续服务器端模块，只有真实授权数据、引用链、成本控制、隐私披露和 Research Credits 账本全部通过上线门禁后才可启用。
+
 ### 页面 `/ask`
 
 示例：
@@ -684,6 +686,35 @@ P1 功能。以 `Vietnam + Shrimp` 为例，支持查询：
 - 答案中的买家数量与搜索结果一致。
 - 价格比较使用同一货币、重量单位、日期窗口和可比规格。
 - 用户可跳转到引用的数据详情页。
+
+### Research Credits / AI Analysis Credits
+
+AI 收费单位采用 `Research Credit`，面向用户表达为一次明确的 AI Analysis 业务结果，不暴露模型 token 或原始字数。后端按任务类型决定权威 credits，客户端不能指定实际扣费：
+
+| Feature key | 结果 | 计划 credits | 成功门槛 |
+| --- | --- | ---: | --- |
+| `price_trend_explanation` | 单市场价格趋势解释 | 1 | 引用可比价格、单位、时间窗、新鲜度与置信度 |
+| `fish_radar_explanation` | 已发布 Fish Probability 因子解释 | 2 | 引用输入层、模型版本、时间窗与置信度 |
+| `organization_research` | 买家或供应商研究摘要 | 3 | 只使用许可记录，提供引用、更新时间与缺失项 |
+| `procurement_brief` | 多市场采购研究简报 | 5 | 完成可比性、货币/单位、来源和风险检查 |
+
+状态机：
+
+1. 认证账号或批准的 installation。
+2. 校验任务、输入大小、数据许可证、新鲜度、最小置信度和模型白名单。
+3. 应用账号/IP/任务/服务器预算与速率限制。
+4. 以 `(account_id, idempotency_key)` 查询历史请求；重放不重复扣费。
+5. 原子预留 credits，服务端调用 AI provider，再校验输出结构、安全、引用与业务有效性。
+6. 成功结果提交 debit；无数据、过期、低置信度、安全拒绝、超时、provider 错误、无效输出或免费本地回退释放预留且不扣费。
+7. 对长时间未完成的 reservation 运行对账任务并安全释放。
+
+AI provider key 只在 AquaHunter 后端 Secret Manager/服务器环境，客户端只调用产品后端。不得把 key 写入 IPA、PKG、AAB、网页包、仓库、README、截图、崩溃日志、客服日志或分析事件。
+
+Apple 数字购买使用 StoreKit 2，Android 使用 Google Play Billing，Web 购买使用合规 Web 支付；后端必须验真 Apple transaction、Google purchase token 或 Web payment 后才能写入持久化认证账本。最低数据模型为 `accounts`、`wallets`、`ledger_entries`、`store_transactions`、`ai_requests`、`allowance_periods`，并保证商店交易 ID 与请求幂等键唯一。
+
+不提供无限 AI。每个 offer 必须披露额度、重置或不过期规则、任务 credits、输入/输出上限、速率限制和退款恢复规则。购买的 consumable credits 不过期；订阅/赠送额度可按披露周期重置，但不能删除单独购买余额。
+
+每个结果必须显示来源、观测/发布时间、检索时间、新鲜度、置信度、模型或规则版本、credits 扣费和不确定性。付费不能绕过数据许可、保护区、禁捕期、跨境法规、航行安全或隐私门禁。不得保证鱼群存在、捕捞成功、合法进入海域、航程安全、未来价格、成交结果或投资收益。
 
 ---
 
@@ -1237,17 +1268,47 @@ MVP 可采用模块化单体，避免过早拆分微服务：
 
 ## 13. 套餐与计费
 
+### 13.1 Research Credits / AI Analysis Credits
+
+Research Credits 使用服务端权威余额与不可变账本。客户端余额仅为缓存；同一交易只能入账一次，同一幂等请求只能提交一次扣费。失败、无数据、安全拒绝和重放不扣费。
+
+候选 consumable 产品：
+
+- `aquahunter.research.20`
+- `aquahunter.research.80`
+- `aquahunter.research.240`
+
+数量、免费额度与价格在完成真实成本测算前均为 `TBD`，不得直接复制其他产品价格：
+
+```text
+cost_per_success =
+  provider_input_cost
+  + provider_output_cost
+  + moderation_cost
+  + retry_allowance
+  + data_query_and_licensing_cost
+  + hosting_and_storage
+
+contribution_margin =
+  store_or_web_net_revenue
+  - tax_and_refund_reserve
+  - credits_in_offer * cost_per_success
+```
+
+测算必须覆盖生产候选模型、输入/输出上限、不同任务消耗、失败重试、数据查询/许可、托管、商店费、税、退款、欺诈、汇率、客服、重度用户以及 provider 涨价。服务器必须有产品/环境独立 key、任务预算、账户日/月额度、全局每日金额硬上限、告警和紧急 kill switch。
+
 ### Free
 
 - 最新价格
 - 基础地图
 - 新闻
 - 有限搜索
-- 有限 AI 查询
+- AI 模块上线后可提供明确数量和周期的赠送 Research Credits
 
 ### Pro
 
 - AI 预测
+- 明确数量的周期 Research Credits；不提供无限 AI
 - 按许可开放完整公开商业联系方式
 - 历史价格
 - API
@@ -1264,6 +1325,8 @@ MVP 可采用模块化单体，避免过早拆分微服务：
 - ERP、SAP、Oracle 对接（后续）
 
 套餐限制必须在服务端执行，前端隐藏按钮不能作为权限控制。
+
+StoreKit/Google Play/Web 客户端成功回调都不是付款授权。后端验真、去重并写入账本后才增加余额。退款、撤销、pending、恢复购买、重装和跨设备恢复均由服务端处理；订阅额度与单独购买的 consumable credits 分账并披露消耗顺序。
 
 ---
 
@@ -1328,7 +1391,7 @@ AI_PROVIDER=openai
 DATA_MODE=unavailable
 ```
 
-`.env.example` 只放变量名和安全示例，不提交真实密钥。
+`OPENAI_API_KEY` 只允许由后端部署环境的 Secret Manager 注入；移动端、桌面端和任何客户端构建不得读取该变量。`.env.example` 只放变量名和安全示例，不提交真实密钥。
 
 ---
 
@@ -1450,6 +1513,10 @@ MVP 只有在以下条件全部满足时才算完成：
 - [ ] Fish Radar 输出概率、置信度、时间窗口和解释因子
 - [ ] AI 问答提供可点击引用且无数据时不编造
 - [ ] Free/Pro/Enterprise 权限在服务端生效
+- [ ] Research Credits 只在成功有效结果后扣费；失败、无数据、安全拒绝和幂等重放不扣费
+- [ ] AI provider key 仅在服务器端，发行产物和日志扫描无 secret
+- [ ] StoreKit/Google/Web 交易验真、去重、退款、撤销、恢复和跨设备余额测试通过
+- [ ] AI 任务级预算、服务器每日硬上限、成本监控和紧急熔断通过测试
 - [ ] 发行包不包含虚构业务数据；无合规数据时显示不可用
 - [ ] `python3 tools/validate_data_sources.py --release` 通过
 - [ ] API 有版本、鉴权、限流、分页和错误码
@@ -1507,11 +1574,17 @@ MVP 只有在以下条件全部满足时才算完成：
 - [ ] 模型注册与版本管理
 - [ ] RAG 检索
 - [ ] AI 问答引用
+- [ ] Research Credit 任务定价、幂等预留/提交/释放状态机
+- [ ] 结果新鲜度、置信度、引用、安全与业务有效性校验
+- [ ] 模型白名单、任务预算、全局预算、限流、告警与 kill switch
 - [ ] Ocean Intelligence Score 实验
 
 ### Epic F：商业化与运营
 
 - [ ] 套餐与配额
+- [ ] StoreKit 2、Google Play Billing 与 Web 支付后端验真
+- [ ] Wallet、不可变 ledger、store transaction 去重、退款/撤销/恢复
+- [ ] 重装与跨设备认证余额恢复；订阅额度和 consumable credits 分账
 - [ ] API Key 管理
 - [ ] Admin 数据审核
 - [ ] 数据纠错与删除请求

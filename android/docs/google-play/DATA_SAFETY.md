@@ -6,11 +6,12 @@ This document describes the current repository code. The final form must be comp
 
 - The manifest declares `INTERNET` and `ACCESS_NETWORK_STATE`.
 - There are no location, contacts, camera, microphone, storage or advertising-ID permissions.
-- The app contains no analytics, advertising, account, payment, crash-reporting or map SDK.
+- The app contains no analytics, advertising, account, payment or crash-reporting SDK.
+- MapLibre Native OpenGL 13.0.2 renders only bundled Natural Earth GeoJSON. The app makes no online map-style or tile request and explicitly removes MapLibre's optional location and Wi-Fi permissions from the merged manifest.
 - A fixed HTTPS request retrieves Statistics Norway table 03024. Standard network data such as the device IP address and an AquaHunter user-agent reaches Statistics Norway.
-- Questions entered in Aqua AI stay in Compose memory and are not sent to AquaHunter, Statistics Norway or an AI provider.
 - Background style, language and the accepted legal-notice version are stored locally.
 - No user account or AquaHunter cloud profile exists in this release.
+- Aqua AI is not included in this release and the app does not transmit user questions to an AI provider.
 
 ## Questions requiring final Console review
 
@@ -29,13 +30,13 @@ This document describes the current repository code. The final form must be comp
 Re-run dependency, manifest and network inspection after adding any of the following:
 
 - Accounts or authentication
-- Server-backed AI or user-question transmission
+- Aqua AI, server-backed AI or user-question transmission
 - Analytics or crash reporting
 - Subscriptions or payments
 - Push notifications
 - Precise buyer contacts
 - Device location
-- MapLibre tile or style providers
+- Online MapLibre tile, style, telemetry or geocoding providers
 - AIS or vessel providers
 - Advertising or attribution SDKs
 - Persistent searches, favorites, exports or watchlists

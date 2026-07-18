@@ -1,7 +1,7 @@
 # AquaHunter Privacy Policy
 
 **Effective date:** 19 July 2026  
-**Applies to:** AquaHunter Android, package `com.hsaffiliate.aquahunter`
+**Applies to:** AquaHunter for Android, iOS, iPadOS and macOS; package/bundle ID `com.hsaffiliate.aquahunter`
 
 ## Summary
 
@@ -11,10 +11,11 @@ The app connects over HTTPS to the Statistics Norway public API to retrieve publ
 
 ## Information processed by the app
 
-- Market requests: the app requests Statistics Norway table 03024 using a fixed dataset query. The request does not include an AquaHunter account identifier, advertising identifier, location permission or question text.
-- Questions: text entered in Aqua AI remains in app memory and is evaluated locally against the currently loaded authorized source. It is not sent to AquaHunter or an AI provider in this release and is not retained after the app process is cleared.
+- Market requests: the app requests Statistics Norway table 03024 using a fixed dataset query. The request does not include an AquaHunter account identifier, advertising identifier or device location.
 - Preferences: the selected background, language and accepted risk-notice version are stored locally on the device.
 - Email: choosing the support option opens the user’s email application. Any message the user chooses to send is handled by the email providers involved.
+
+This release does not include Aqua AI or transmit user questions to an AI provider.
 
 ## Permissions
 
@@ -28,7 +29,9 @@ The app declares internet and network-state access for the official market-data 
 
 ## Maps
 
-This release does not include Google Maps SDK or a production map-tile provider. Map screens remain unavailable until a separately approved MapLibre-compatible source is connected and this policy is updated for its actual network and privacy behavior.
+The app includes an offline world reference map built from Natural Earth 5.1.2 public-domain GeoJSON. Android and Apple mobile builds render the bundled map with MapLibre Native; macOS renders the same bundled data with native SwiftUI drawing. The map does not request online map tiles, device location or Wi-Fi information and does not send map interactions to Google Maps, Apple Maps, OpenStreetMap community tile servers or AquaHunter.
+
+The offline map is not a nautical chart and must not be used for navigation, legal-boundary decisions, fishing-zone determinations or safety-of-life decisions.
 
 ## Data sources
 
@@ -44,14 +47,20 @@ AquaHunter is a professional seafood-industry intelligence product and is not di
 
 ## Future changes
 
-Before adding accounts, analytics, crash reporting, subscriptions, notifications, buyer contacts, maps, AIS, server-backed AI or other network services, this policy and the Google Play Data safety declaration must be updated to describe the actual collection, processing, sharing, retention and deletion behavior.
+Before adding accounts, analytics, crash reporting, subscriptions, notifications, buyer contacts, online map services, AIS, server-backed AI or other network services, this policy and the Google Play Data safety declaration must be updated to describe the actual collection, processing, sharing, retention and deletion behavior.
 
 ## Contact
 
 Privacy and support email: `contact@hotseason.app`
 
-Before store publication, add the legal operator’s full name and postal address and publish this policy at a stable public HTTPS URL.
+Hotseason Enterprise, Inc.
+
+Attn: Legal Department
+
+440 N Wolfe Rd MS 92
+
+Sunnyvale, CA 94085, USA
 
 ---
 
-This repository file is the policy source, not yet the required public policy URL.
+Repository source. Public policy URL: `https://hotseason.app/en/policy#aquahunter`

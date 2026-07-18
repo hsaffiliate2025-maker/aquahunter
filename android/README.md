@@ -55,7 +55,16 @@ python3 tools/validate_release_content.py
 产物：
 
 - Debug APK：`android/app/build/outputs/apk/debug/app-debug.apk`
+- Signed Release APK：`android/app/build/outputs/apk/release/app-release.apk`
 - Release AAB：`android/app/build/outputs/bundle/release/app-release.aab`
+
+当前已验证的本地产物：
+
+- AAB SHA-256：`9169fec91b01321df2eb8ca57e8b3ede98633aa508eab493492ec42a466c172f`
+- APK SHA-256：`850e8ab655612e794b686c2ebae712893f685ab7bc198fa45cebeeb2e3218a13`
+- Upload certificate SHA-256：`7bc5fe76f96a300a7c4281e957d5659bf089ac68902f2abd951255f3c5cc960e`
+
+签名包已确认包含离线地图样式和 Natural Earth GeoJSON；release DEX 中没有 Aqua AI/Ask 或开发期问答内容。每次改动 release 代码、依赖或版本号后必须重新构建并复核哈希。
 
 ## Google Play 签名
 
@@ -104,10 +113,13 @@ gpd publish play app/build/outputs/bundle/release/app-release.aab \
 - [`docs/google-play/STORE_LISTING.md`](docs/google-play/STORE_LISTING.md)
 - [`docs/google-play/DATA_SAFETY.md`](docs/google-play/DATA_SAFETY.md)
 - [`docs/google-play/PRIVACY_POLICY.md`](docs/google-play/PRIVACY_POLICY.md)
+- [`../store/google-play/`](../store/google-play/)：3 张 Pixel 6 正式截图、512×512 图标和 1024×500 feature graphic
+
+Google Play 只上传 `store/google-play/` 中经过筛选的素材。被忽略的 `artifacts/screenshots/` 包含历史开发截图，其中部分带旧 demo UI，不得上传。
 
 ## 发布阻断项
 
 - Google Play 应用记录与服务账号权限尚需核实。
-- Upload keystore 与 Play App Signing 尚需核实。
-- 隐私政策必须发布到公开 HTTPS URL，并补充法定运营主体与邮寄地址。
+- 本地 upload keystore 与签名发布构建已验证；Play App Signing 需在首次上传时启用并核实。
+- 隐私政策文案、法定运营主体和邮寄地址已写入仓库并部署到 `https://hotseason.app/en/policy#aquahunter`；提交 Data safety 时仍需与最终 AAB 再次逐项核对。
 - 上线前必须重新核对实际 AAB 的依赖、网络行为、Data safety 和目标地区法律。

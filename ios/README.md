@@ -99,6 +99,36 @@ asc publish testflight \
   --wait
 ```
 
+当前已验证的本地产物：
+
+- 路径：`.asc/artifacts/AquaHunterIOS.ipa`
+- 版本：`1.0.0 (1)`
+- SHA-256：`6ccc5b90fe64638ff6a455370ba05f6bcfe302f8249e4cfba2d30ea77e1f6325`
+- 签名：`iPhone Distribution: Hot Season Enterprise, Inc. (C8Y5J74PQW)`
+- Embedded profile：`AquaHunter iOS App Store 2026`
+
+该 IPA 已确认包含离线地图样式和 Natural Earth GeoJSON，发布二进制中没有 Aqua AI/Ask 或开发期问答内容。
+
+## App Store 截图与元数据
+
+- iPhone 6.5-inch：[`../store/app-store/iphone-65/`](../store/app-store/iphone-65/)；3 张 1284×2778
+- iPad Pro 12.9-inch：[`../store/app-store/ipad-pro-129/`](../store/app-store/ipad-pro-129/)；3 张 2048×2732
+- Canonical English metadata：[`../metadata/`](../metadata/)
+
+两组截图均来自当前生产代码路径，展示真实 SSB 周度观测、离线地图和 30 周历史曲线，并分别通过：
+
+```bash
+asc screenshots validate \
+  --path store/app-store/iphone-65 \
+  --device-type IPHONE_65
+
+asc screenshots validate \
+  --path store/app-store/ipad-pro-129 \
+  --device-type IPAD_PRO_3GEN_129
+
+asc metadata validate --dir metadata
+```
+
 ## App Store Connect 建议值
 
 - 平台：iOS；如采用 Universal Purchase，同时选择 macOS
@@ -111,7 +141,7 @@ asc publish testflight \
 ## 发布阻断项
 
 - App Store Connect 应用记录与 App ID 绑定尚需完成或核实。
-- Distribution 签名、归档、导出选项和 TestFlight 内测组尚需验证。
-- App Privacy、隐私政策公开 HTTPS URL、商店元数据和截图尚需完成。
+- TestFlight 内测组尚需在 App Store Connect 应用记录创建后核实。
+- 英文商店元数据和 iPhone/iPad 截图已准备；App Privacy 表单与隐私政策公开页面仍需在商店记录创建后复核。
 - 风险声明必须由目标司法辖区的合格律师审查。
 - 城市价格、Radar 概率、Network 业务记录在相应合规数据源到位前保持不可用；离线基础地图保持可用。

@@ -28,10 +28,14 @@ fi
 mkdir -p "$SIGNING_DIR"
 chmod 700 "$SIGNING_DIR"
 
-read -s "APPLICATION_P12_PASSWORD?Application P12 password (hidden): "
-print
-read -s "INSTALLER_P12_PASSWORD?Installer P12 password (hidden): "
-print
+if [[ -z "${APPLICATION_P12_PASSWORD:-}" ]]; then
+  read -s "APPLICATION_P12_PASSWORD?Application P12 password (hidden): "
+  print
+fi
+if [[ -z "${INSTALLER_P12_PASSWORD:-}" ]]; then
+  read -s "INSTALLER_P12_PASSWORD?Installer P12 password (hidden): "
+  print
+fi
 
 KEYCHAIN_PASSWORD="$(openssl rand -base64 48 | tr -d '\n')"
 OLD_KEYCHAINS=("${(@f)$(security list-keychains -d user | tr -d '"' | sed 's/^[[:space:]]*//')}")
