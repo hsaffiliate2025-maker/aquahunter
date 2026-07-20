@@ -1,4 +1,4 @@
-package com.hsaffiliate.aquahunter.data
+package com.hotseason.aquahunter.data
 
 data class MarketPrice(
     val id: String,

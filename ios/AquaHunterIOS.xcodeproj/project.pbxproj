@@ -308,7 +308,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsaffiliate.aquahunter.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hotseason.aquahunter.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AquaHunterIOS.app/AquaHunterIOS";
@@ -325,7 +325,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsaffiliate.aquahunter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hotseason.aquahunter;
 				PRODUCT_NAME = AquaHunterIOS;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -342,7 +342,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsaffiliate.aquahunter.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hotseason.aquahunter.tests;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AquaHunterIOS.app/AquaHunterIOS";
@@ -486,7 +486,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsaffiliate.aquahunter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hotseason.aquahunter;
 				PRODUCT_NAME = AquaHunterIOS;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

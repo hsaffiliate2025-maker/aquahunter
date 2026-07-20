@@ -70,11 +70,11 @@ tasks.configureEach {
 }
 
 android {
-    namespace = "com.hsaffiliate.aquahunter"
+    namespace = "com.hotseason.aquahunter"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.hsaffiliate.aquahunter"
+        applicationId = "com.hotseason.aquahunter"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

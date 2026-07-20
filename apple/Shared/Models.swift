@@ -129,7 +129,7 @@ enum DemoData {
         .init(id: "copernicus", provider: "Copernicus Marine", signal: "SST · ocean current", cadence: "Daily target"),
         .init(id: "nasa", provider: "NASA OceanColor", signal: "Chlorophyll-a", cadence: "Daily target"),
         .init(id: "gebco", provider: "GEBCO", signal: "Bathymetry · depth", cadence: "Static grid"),
-        .init(id: "catch", provider: "NOAA / FAO / licensed feeds", signal: "Historical catch · seasonality", cadence: "Source dependent"),
+        .init(id: "catch", provider: "NOAA Fisheries / licensed feeds", signal: "Historical catch · seasonality", cadence: "Source dependent"),
     ]
 
     static let prices: [MarketPrice] = [

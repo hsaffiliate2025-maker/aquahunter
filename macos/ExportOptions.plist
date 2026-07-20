@@ -12,7 +12,7 @@
 	<string>app-store-connect</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>com.hsaffiliate.aquahunter</key>
+		<key>com.hotseason.aquahunter</key>
 		<string>AquaHunter Mac App Store 2026 Local Key</string>
 	</dict>
 	<key>signingCertificate</key>

@@ -54,7 +54,7 @@ targets:
           - UIInterfaceOrientationLandscapeRight
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.hsaffiliate.aquahunter
+        PRODUCT_BUNDLE_IDENTIFIER: com.hotseason.aquahunter
         PRODUCT_NAME: AquaHunterIOS
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         TARGETED_DEVICE_FAMILY: "1,2"
@@ -70,5 +70,5 @@ targets:
       - target: AquaHunterIOS
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.hsaffiliate.aquahunter.tests
+        PRODUCT_BUNDLE_IDENTIFIER: com.hotseason.aquahunter.tests
         GENERATE_INFOPLIST_FILE: YES

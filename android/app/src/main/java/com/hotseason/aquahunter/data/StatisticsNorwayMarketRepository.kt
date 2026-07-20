@@ -1,4 +1,4 @@
-package com.hsaffiliate.aquahunter.data
+package com.hotseason.aquahunter.data
 
 import java.net.HttpURLConnection
 import java.net.URL

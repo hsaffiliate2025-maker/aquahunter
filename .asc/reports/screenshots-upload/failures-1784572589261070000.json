@@ -1,0 +1,42 @@
+{
+  "versionLocalizationId": "fcef13fb-f979-4078-9b14-96475e9c74e8",
+  "path": ".asc/reports/screenshots-upload/failures-1784572589261070000.json",
+  "deviceType": "IPAD_PRO_3GEN_129",
+  "displayType": "APP_IPAD_PRO_3GEN_129",
+  "setId": "be7d9110-b224-4f0e-937c-409f2e8f2625",
+  "files": [
+    "/Users/peter/Desktop/softwares/aquahunter/store/app-store/ipad-pro-129/ipad-01-pulse.png",
+    "/Users/peter/Desktop/softwares/aquahunter/store/app-store/ipad-pro-129/ipad-02-markets.png",
+    "/Users/peter/Desktop/softwares/aquahunter/store/app-store/ipad-pro-129/ipad-03-market-detail.png"
+  ],
+  "orderedIds": [
+    "1cd18db2-e321-488f-b536-806f8284e3ce",
+    "dc240128-0aa4-485f-9783-fd1d2c38723e"
+  ],
+  "pendingFiles": [
+    "/Users/peter/Desktop/softwares/aquahunter/store/app-store/ipad-pro-129/ipad-03-market-detail.png"
+  ],
+  "results": [
+    {
+      "fileName": "ipad-01-pulse.png",
+      "filePath": "/Users/peter/Desktop/softwares/aquahunter/store/app-store/ipad-pro-129/ipad-01-pulse.png",
+      "assetId": "1cd18db2-e321-488f-b536-806f8284e3ce",
+      "state": "COMPLETE"
+    },
+    {
+      "fileName": "ipad-02-markets.png",
+      "filePath": "/Users/peter/Desktop/softwares/aquahunter/store/app-store/ipad-pro-129/ipad-02-markets.png",
+      "assetId": "dc240128-0aa4-485f-9783-fd1d2c38723e",
+      "state": "COMPLETE"
+    }
+  ],
+  "failures": [
+    {
+      "fileName": "ipad-03-market-detail.png",
+      "filePath": "/Users/peter/Desktop/softwares/aquahunter/store/app-store/ipad-pro-129/ipad-03-market-detail.png",
+      "error": "timed out waiting for asset 1175321d-5bbf-417c-aafe-da4f05436086 delivery: request failed: Get \"https://api.appstoreconnect.apple.com/v1/appScreenshots/1175321d-5bbf-417c-aafe-da4f05436086\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)"
+    }
+  ],
+  "error": "timed out waiting for asset 1175321d-5bbf-417c-aafe-da4f05436086 delivery: request failed: Get \"https://api.appstoreconnect.apple.com/v1/appScreenshots/1175321d-5bbf-417c-aafe-da4f05436086\": context deadline exceeded (Client.Timeout exceeded while awaiting headers)",
+  "generatedAt": "2026-07-20T18:36:29Z"
+}

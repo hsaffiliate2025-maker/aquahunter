@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastReviewed": "2026-07-19",
+  "lastReviewed": "2026-07-21",
   "releaseSourceIds": [
     "ssb-statbank-03024",
     "natural-earth-5.1.2-land-110m"
@@ -97,43 +97,51 @@
     },
     {
       "id": "nasa-earthdata-product",
-      "provider": "NASA Earthdata",
+      "provider": "NASA Earthdata (Ocean Biology Processing Group)",
       "category": "ocean-environment",
-      "datasetIds": [],
-      "officialUrl": "https://www.earthdata.nasa.gov/",
+      "datasetIds": [
+        "NASA OB.DAAC MODIS-Aqua and VIIRS Level-3 sea surface temperature and chlorophyll-a products (OceanColor Web); exact product IDs, versions and DOIs pinned at ingestion"
+      ],
+      "officialUrl": "https://oceancolor.gsfc.nasa.gov/",
       "licenseEvidence": "https://www.earthdata.nasa.gov/engage/open-data-services-software-policies/data-use-guidance",
-      "decision": "conditional",
-      "commercialUse": null,
-      "derivativeUse": null,
-      "redistribution": "dataset-specific",
-      "attribution": "Dataset-specific NASA citation required",
+      "licenseId": "CC0-1.0",
+      "decision": "approved",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "unrestricted-cc0",
+      "attribution": "NASA Goddard Space Flight Center, Ocean Biology Processing Group (OceanColor Web)",
       "requiredDisclaimers": [
-        "No NASA endorsement.",
+        "No NASA endorsement of AquaHunter is implied.",
         "Non-NASA data distributed through Earthdata retains the sponsoring organization's license."
       ],
-      "latency": "product-specific",
+      "latency": "daily",
       "productionEnabled": false,
-      "reviewNotes": "Approve only a NASA-led product with no marked restriction or with an explicit compatible license; record product ID, version and DOI."
+      "reviewNotes": "Verified 2026-07-21: NASA-led mission data is released under CC0 with no usage restrictions; approval covers NASA OB.PG SST and ocean-color products only. Hosted third-party/CSDA commercial datasets (Planet, Maxar) are excluded — their EULAs prohibit commercial products. Record product ID, version and DOI when the adapter is built."
     },
     {
       "id": "noaa-product",
       "provider": "NOAA",
       "category": "ocean-or-fisheries",
-      "datasetIds": [],
-      "officialUrl": "https://www.noaa.gov/",
-      "licenseEvidence": "https://www.nauticalcharts.noaa.gov/data/data-licensing.html",
-      "decision": "conditional",
-      "commercialUse": null,
-      "derivativeUse": null,
-      "redistribution": "dataset-specific",
-      "attribution": "Dataset-specific NOAA citation required",
-      "requiredDisclaimers": [
-        "External contributor data may have separate restrictions.",
-        "Landing location must not be represented as harvest location."
+      "datasetIds": [
+        "NOAA NCEI 1/4-degree Daily Optimum Interpolation SST (OISST) v2.1",
+        "NOAA Fisheries FOSS public (non-confidential) commercial landings summaries"
       ],
-      "latency": "product-specific",
+      "officialUrl": "https://www.ncei.noaa.gov/products/optimum-interpolation-sst",
+      "licenseEvidence": "https://www.noaa.gov/information-technology/open-data-dissemination",
+      "licenseId": "CC0-1.0",
+      "decision": "approved",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "unrestricted-public-domain",
+      "attribution": "NOAA NCEI OISST v2.1; NOAA Fisheries commercial landings (public summaries)",
+      "requiredDisclaimers": [
+        "External contributor data may have separate restrictions; check per-dataset metadata.",
+        "Landing location must not be represented as harvest location.",
+        "Confidential per-dealer/per-vessel landings are excluded by federal statute; only public aggregates are used."
+      ],
+      "latency": "daily-and-periodic",
       "productionEnabled": false,
-      "reviewNotes": "Approve only exact products whose metadata is CC0, CC BY 4.0 or clearly U.S. government public domain."
+      "reviewNotes": "Verified 2026-07-21: NOAA NODD disseminates data under CC0-1.0 and U.S. government works are public domain. Approval covers OISST v2.1 and public FOSS landings aggregates only. Third-party archived datasets at NCEI may carry CC BY or other terms — check metadata per dataset before extending scope."
     },
     {
       "id": "copernicus-marine-product",
@@ -143,16 +151,16 @@
       "officialUrl": "https://marine.copernicus.eu/",
       "licenseEvidence": "https://marine.copernicus.eu/user-corner/service-commitments-and-licence",
       "decision": "conditional",
-      "commercialUse": null,
-      "derivativeUse": null,
-      "redistribution": "product-and-upstream-specific",
-      "attribution": "Generated using Copernicus Marine Service information; product-specific citation required",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "allowed-with-attribution-and-doi",
+      "attribution": "Generated using E.U. Copernicus Marine Service Information; product DOIs required",
       "requiredDisclaimers": [
         "Product manuals and upstream in-situ restrictions must be reviewed individually."
       ],
       "latency": "product-specific",
       "productionEnabled": false,
-      "reviewNotes": "Do not enable a provider-wide placeholder. Add one registry entry per exact Product ID and version."
+      "reviewNotes": "Verified 2026-07-21: the Copernicus Marine licence grants a worldwide, royalty-free, perpetual right to create and distribute Value Added Products and Derivative Works 'for any purpose', including commercial use; attribution plus product DOI is mandatory. Still conditional at provider level — add one registry entry per exact Product ID and version before enabling."
     },
     {
       "id": "fao-product",
@@ -160,33 +168,41 @@
       "category": "fisheries-statistics",
       "datasetIds": [],
       "officialUrl": "https://www.fao.org/",
-      "licenseEvidence": "",
+      "licenseEvidence": "https://www.fao.org/contact-us/terms/db-terms-of-use/en/",
       "decision": "conditional",
       "commercialUse": null,
-      "derivativeUse": null,
-      "redistribution": "dataset-specific",
-      "attribution": "Dataset-specific FAO citation required",
-      "requiredDisclaimers": [],
+      "derivativeUse": true,
+      "redistribution": "cc-by-4.0-with-fao-additional-terms",
+      "attribution": "FAO. [Year]. [Database: dataset]. [Accessed date]. Licence: CC-BY-4.0.",
+      "requiredDisclaimers": [
+        "No FAO participation, sponsorship or endorsement may be stated or implied."
+      ],
       "latency": "product-specific",
       "productionEnabled": false,
-      "reviewNotes": "Record the exact database and its official license. FAO branding alone is not license evidence."
+      "reviewNotes": "Verified 2026-07-21: FAO corporate statistical databases are CC BY 4.0, but FAO additional terms prohibit use 'for or in conjunction with the promotion of a commercial enterprise' — ambiguous for a paid app. Product decision 2026-07-21: do not display FAO data for now; revisit with legal review if needed."
     },
     {
-      "id": "toyosu-market-feed",
-      "provider": "Relevant official Toyosu data publisher",
+      "id": "tokyo-metro-wholesale-market-daily",
+      "provider": "Tokyo Metropolitan Central Wholesale Market (東京都中央卸売市場)",
       "category": "market-price",
-      "datasetIds": [],
-      "officialUrl": "",
-      "licenseEvidence": "",
-      "decision": "blocked",
-      "commercialUse": null,
-      "derivativeUse": null,
-      "redistribution": "unknown",
-      "attribution": "",
-      "requiredDisclaimers": [],
-      "latency": "unknown",
+      "datasetIds": [
+        "Tokyo Open Data Catalog 東京都卸売市場日報 t000013d2000000032 (FY2024) — result_price_fish.csv, estimate_quantity_fish.csv; earlier fiscal years t000013d0000000003/004"
+      ],
+      "officialUrl": "https://catalog.data.metro.tokyo.lg.jp/dataset/t000013d2000000032",
+      "licenseEvidence": "https://portal.data.metro.tokyo.lg.jp/terms/",
+      "licenseId": "CC-BY-4.0",
+      "decision": "approved",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "allowed-with-attribution",
+      "attribution": "Source: Tokyo Metropolitan Central Wholesale Market daily report, Tokyo Metropolitan Government, CC BY 4.0",
+      "requiredDisclaimers": [
+        "Daily wholesale market report with preliminary (速報) figures; not a real-time quote, auction feed or executable offer.",
+        "Derived analyses must state that the source data has been transformed."
+      ],
+      "latency": "daily",
       "productionEnabled": false,
-      "reviewNotes": "No scraping or production display until an official open-data license or contract covers commercial reuse and redistribution."
+      "reviewNotes": "Tokyo open-data terms license catalog datasets under CC BY 4.0 and state commercial use is allowed (商用利用も可能). Verified 2026-07-21 via CKAN metadata (license_id CC-BY-4.0, publisher 東京都中央卸売市場). Pin exact fiscal-year dataset IDs and CSV URLs in the adapter; the legacy shijou-tokei statistics site closed in Oct 2025, so use the open-data catalog endpoints only."
     },
     {
       "id": "importyeti",
@@ -194,7 +210,7 @@
       "category": "trade-and-buyers",
       "datasetIds": [],
       "officialUrl": "https://www.importyeti.com/",
-      "licenseEvidence": "",
+      "licenseEvidence": "https://www.importyeti.com/policies/terms",
       "decision": "blocked",
       "commercialUse": null,
       "derivativeUse": null,
@@ -203,7 +219,7 @@
       "requiredDisclaimers": [],
       "latency": "unknown",
       "productionEnabled": false,
-      "reviewNotes": "Requires written commercial/API terms matching AquaHunter caching, analysis, contact display and redistribution."
+      "reviewNotes": "Verified 2026-07-21: ToS grants personal, internal, non-commercial access only and expressly forbids compiling information for a commercial product or service ('no resale or distribution'). Only a signed corporate/API contract could change this. Product decision 2026-07-21: do not display."
     },
     {
       "id": "volza",
@@ -211,7 +227,7 @@
       "category": "trade-and-buyers",
       "datasetIds": [],
       "officialUrl": "https://www.volza.com/",
-      "licenseEvidence": "",
+      "licenseEvidence": "https://www.volza.com/term-of-use/",
       "decision": "blocked",
       "commercialUse": null,
       "derivativeUse": null,
@@ -220,7 +236,7 @@
       "requiredDisclaimers": [],
       "latency": "unknown",
       "productionEnabled": false,
-      "reviewNotes": "Requires written commercial/API terms matching AquaHunter caching, analysis, contact display and redistribution."
+      "reviewNotes": "Verified 2026-07-21 (terms via Wayback snapshot 2026-04-05): subscription is self-use only; §10.2 forbids redistribution and §10.4 forbids derivative products. A bespoke data-licensing contract would be required. Product decision 2026-07-21: do not display."
     },
     {
       "id": "global-fishing-watch",
@@ -228,7 +244,7 @@
       "category": "vessel-and-fishing-activity",
       "datasetIds": [],
       "officialUrl": "https://globalfishingwatch.org/",
-      "licenseEvidence": "",
+      "licenseEvidence": "https://globalfishingwatch.org/faqs/can-i-use-global-fishing-watch-apis-for-commercial-purposes/",
       "decision": "blocked",
       "commercialUse": null,
       "derivativeUse": null,
@@ -237,7 +253,7 @@
       "requiredDisclaimers": [],
       "latency": "unknown",
       "productionEnabled": false,
-      "reviewNotes": "Do not use until the exact API/dataset license and commercial derived-product terms are reviewed."
+      "reviewNotes": "Verified 2026-07-21: GFW APIs are non-commercial only (default content CC BY-NC 4.0); commercial integration requires a custom license from GFW. Some legacy download datasets are CC BY-SA 4.0, but share-alike would force derivative data layers open. Product decision 2026-07-21: do not display GFW data."
     },
     {
       "id": "commercial-ais-provider",
@@ -257,6 +273,214 @@
       "latency": "contract-specific",
       "productionEnabled": false,
       "reviewNotes": "Select and contract a provider before implementation. Consumer/public AIS pages are not an approved source."
+    },
+    {
+      "id": "eumofa-weekly-first-sale",
+      "provider": "EUMOFA (European Commission)",
+      "category": "market-price",
+      "datasetIds": [
+        "EUMOFA weekly first-sale prices by member state, species and preservation; monthly trade volumes/values (bulk CSV + ad-hoc queries)"
+      ],
+      "officialUrl": "https://fishery-aquaculture-market-observatory.ec.europa.eu/en",
+      "licenseEvidence": "https://fishery-aquaculture-market-observatory.ec.europa.eu/en/about/legal-notice",
+      "licenseId": "CC-BY-4.0",
+      "decision": "approved",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "allowed-with-attribution",
+      "attribution": "Source: EUMOFA, European Commission",
+      "requiredDisclaimers": [
+        "First-sale statistics; not an executable quote or offer.",
+        "Modifications to the source data must be stated."
+      ],
+      "latency": "weekly",
+      "productionEnabled": false,
+      "reviewNotes": "Verified 2026-07-21: EU-owned content is licensed CC BY 4.0 under Commission Decision 2011/833/EU; commercial use explicitly allowed with attribution. Best single entry point for EU-wide first-sale prices. Pin exact query/bulk endpoints at ingestion."
+    },
+    {
+      "id": "estat-jp-fisheries-distribution",
+      "provider": "e-Stat / MAFF Japan (水産物流通調査)",
+      "category": "market-price",
+      "datasetIds": [
+        "e-Stat 統計コード 00500228 水産物流通調査 (monthly wholesale volumes and prices at 10 major consumption-area markets)",
+        "e-Stat 統計コード 00500216 海面漁業生産統計調査 (annual capture/aquaculture production)"
+      ],
+      "officialUrl": "https://www.e-stat.go.jp/stat-search/files?toukei=00500228",
+      "licenseEvidence": "https://www.e-stat.go.jp/terms-of-use",
+      "licenseId": "Japan-Government-Standard-Terms-2.0-CCBY40-compatible",
+      "decision": "approved",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "allowed-with-attribution",
+      "attribution": "出典：政府統計の総合窓口（e-Stat）／『水産物流通調査』（農林水産省）を加工して作成",
+      "requiredDisclaimers": [
+        "Monthly/annual statistics; not real-time market quotes.",
+        "Processed figures must state that the source data was edited (編集・加工)."
+      ],
+      "latency": "monthly",
+      "productionEnabled": false,
+      "reviewNotes": "Verified 2026-07-21: Government Standard Terms of Use v2.0 state commercial use is permitted (商用利用も可能) and are declared CC BY 4.0 compatible. REST API requires a free registered appId. Pin table IDs at ingestion."
+    },
+    {
+      "id": "osaka-city-market-daily",
+      "provider": "Osaka City Central Wholesale Market (大阪市中央卸売市場)",
+      "category": "market-price",
+      "datasetIds": [
+        "市況情報 daily/monthly reports — about 30 marine product items per market day with volume, high/low price and origin"
+      ],
+      "officialUrl": "https://www.shijou.city.osaka.jp/sikyomap/sikyo/",
+      "licenseEvidence": "https://www.city.osaka.lg.jp/ictsenryakushitsu/page/0000304714.html",
+      "licenseId": "CC-BY",
+      "decision": "approved",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "allowed-with-attribution",
+      "attribution": "出典：大阪市中央卸売市場 市況情報 (CC BY)",
+      "requiredDisclaimers": [
+        "Daily wholesale report; not a real-time quote or executable offer."
+      ],
+      "latency": "daily",
+      "productionEnabled": false,
+      "reviewNotes": "Verified 2026-07-21: Osaka City open-data policy publishes city open data under CC BY. Complements the Tokyo daily report for two-city Japan coverage. Pin exact report endpoints/CSV formats at ingestion."
+    },
+    {
+      "id": "fiskeridirektoratet-open-data",
+      "provider": "Norwegian Directorate of Fisheries (Fiskeridirektoratet)",
+      "category": "landings-and-fisheries",
+      "datasetIds": [
+        "Landings- og sluttseddelregisteret (landings and first-sale notes)",
+        "Fartøyregisteret (vessel register incl. quotas)",
+        "Akvakulturregisteret (aquaculture licences)"
+      ],
+      "officialUrl": "https://www.fiskeridir.no/Tall-og-analyse/AApne-data",
+      "licenseEvidence": "https://data.norge.no/nlod/en/2.0",
+      "licenseId": "NLOD-2.0",
+      "decision": "approved",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "allowed-with-attribution",
+      "attribution": "Contains data under the Norwegian licence for Open Government data (NLOD) distributed by the Norwegian Directorate of Fisheries",
+      "requiredDisclaimers": [
+        "First-sale note values are administrative records, not exchange quotes.",
+        "Landing location must not be represented as harvest location.",
+        "No endorsement by the Directorate may be implied; modifications must be stated."
+      ],
+      "latency": "daily-to-weekly",
+      "productionEnabled": false,
+      "reviewNotes": "Verified 2026-07-21: the Directorate states all use of its data is subject to NLOD, which grants copy/use/distribute/adapt rights including commercial use. Complements SSB 03024 with micro-level landings and first-sale data. Pin dataset endpoints at ingestion; VMS/personal-data layers need a separate privacy review."
+    },
+    {
+      "id": "taiwan-fish-trade-daily",
+      "provider": "Taiwan Fisheries Agency via data.gov.tw",
+      "category": "market-price",
+      "datasetIds": [
+        "data.gov.tw dataset 7299 漁產品交易行情 (daily per-market species price high/mid/low and volume; source efish.fa.gov.tw)"
+      ],
+      "officialUrl": "https://data.gov.tw/dataset/7299",
+      "licenseEvidence": "https://data.gov.tw/license",
+      "licenseId": "Taiwan-OGDL-1.0-CCBY40-compatible",
+      "decision": "approved",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "allowed-with-attribution",
+      "attribution": "資料來源：農業部漁業署 漁產品交易行情（政府資料開放授權條款第1版）",
+      "requiredDisclaimers": [
+        "Daily auction statistics; not a real-time quote or executable offer."
+      ],
+      "latency": "daily",
+      "productionEnabled": false,
+      "reviewNotes": "Verified 2026-07-21: Taiwan Open Government Data License v1 explicitly permits reproduction, distribution, adaptation and development of commercial products/services with sublicensing, and declares CC BY 4.0 interoperability."
+    },
+    {
+      "id": "korea-wholesale-auction-price",
+      "provider": "Korea MOF via data.go.kr (공공데이터포털)",
+      "category": "market-price",
+      "datasetIds": [
+        "data.go.kr 15109049 수산물 도매시장별 도매 경락가격 조회 (per-wholesale-market seafood auction settlement price API)"
+      ],
+      "officialUrl": "https://www.data.go.kr/data/15109049/openapi.do",
+      "licenseEvidence": "https://www.kogl.or.kr/info/licenseTypeEn.do",
+      "licenseId": "KOGL-Type-1",
+      "decision": "approved",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "allowed-with-attribution",
+      "attribution": "본 저작물은 해양수산부에서 작성하여 공공누리 제1유형으로 개방한 자료를 이용하였습니다 (data.go.kr)",
+      "requiredDisclaimers": [
+        "Auction settlement statistics; no government sponsorship or endorsement implied."
+      ],
+      "latency": "near-real-time",
+      "productionEnabled": false,
+      "reviewNotes": "Verified 2026-07-21: this dataset page is marked KOGL Type 1 (attribution only), which permits commercial use and derivative works. Caution: other KOGL types (2-4) prohibit commercial use or modification — verify the marked type per dataset before extending scope."
+    },
+    {
+      "id": "iceland-hagstofa-fisheries",
+      "provider": "Statistics Iceland (Hagstofa Íslands)",
+      "category": "fisheries-statistics",
+      "datasetIds": [
+        "PX-Web fisheries tables: monthly catch by species/port, catch value and export statistics (px.hagstofa.is)"
+      ],
+      "officialUrl": "https://px.hagstofa.is/pxen/",
+      "licenseEvidence": "https://statice.is/publications/open-data-access/",
+      "licenseId": "CC-BY-4.0",
+      "decision": "approved",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "allowed-with-attribution",
+      "attribution": "Source: Statistics Iceland, CC BY 4.0",
+      "requiredDisclaimers": [
+        "Monthly statistics; not real-time market data.",
+        "Modified figures must not be attributed to Statistics Iceland as published data."
+      ],
+      "latency": "monthly",
+      "productionEnabled": false,
+      "reviewNotes": "Verified 2026-07-21: Statistics Iceland states all published content may be reused for any purpose under CC BY 4.0 (stock images excluded). Open PX-Web API requires no registration."
+    },
+    {
+      "id": "emodnet-bathymetry-dtm",
+      "provider": "EMODnet Bathymetry (European Commission)",
+      "category": "bathymetry",
+      "datasetIds": [
+        "EMODnet Bathymetry Digital Terrain Model (DTM); exact release version and checksum pinned at ingestion"
+      ],
+      "officialUrl": "https://emodnet.ec.europa.eu/en/bathymetry",
+      "licenseEvidence": "https://emodnet.ec.europa.eu/en/terms-use-emodnet-online-services-data-and-data-products",
+      "licenseId": "CC-BY-4.0",
+      "decision": "approved",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "allowed-with-attribution",
+      "attribution": "EMODnet Bathymetry Consortium, EMODnet Digital Terrain Model, CC BY 4.0",
+      "requiredDisclaimers": [
+        "Not for navigation or any purpose involving safety at sea.",
+        "Consult use restrictions of individual data originators before extracting source-level datasets from the DTM."
+      ],
+      "latency": "static-versioned",
+      "productionEnabled": false,
+      "reviewNotes": "Verified 2026-07-21: EMODnet data products are EU-owned and licensed CC BY 4.0; commercial reuse explicitly allowed with attribution. Approval covers the composite DTM product only — source-level contributed surveys inside it may carry their own terms."
+    },
+    {
+      "id": "protomaps-osm-builds",
+      "provider": "Protomaps (OpenStreetMap-derived basemap builds)",
+      "category": "offline-base-map-data",
+      "datasetIds": [
+        "Protomaps OSM basemap build (.pmtiles); exact build date and regional extract checksum pinned at bundling"
+      ],
+      "officialUrl": "https://docs.protomaps.com/basemaps/downloads",
+      "licenseEvidence": "https://docs.protomaps.com/basemaps/downloads",
+      "licenseId": "ODbL-Produced-Work",
+      "decision": "approved",
+      "commercialUse": true,
+      "derivativeUse": true,
+      "redistribution": "odbl-produced-work-with-osm-attribution",
+      "attribution": "© OpenStreetMap contributors",
+      "requiredDisclaimers": [
+        "Small-scale orientation map only; not a nautical chart or source of legal maritime boundaries.",
+        "Not for navigation, route planning, protected-area decisions or safety-of-life use."
+      ],
+      "latency": "static-versioned-build",
+      "productionEnabled": false,
+      "reviewNotes": "Verified 2026-07-21: Protomaps OSM builds are distributed as an ODbL Produced Work requiring OpenStreetMap attribution; the planet build is free to download and extract, and bundling regional .pmtiles offline in a commercial app is permitted without share-alike on the rendered app. Covers self-hosted/bundled tiles only — the hosted api.protomaps.com service requires a paid commercial plan and a separate registry entry."
     },
     {
       "id": "osm-community-tiles",

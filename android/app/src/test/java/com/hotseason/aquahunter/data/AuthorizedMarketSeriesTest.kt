@@ -1,4 +1,4 @@
-package com.hsaffiliate.aquahunter.data
+package com.hotseason.aquahunter.data
 
 import org.junit.Assert.assertEquals
 import org.junit.Assert.assertNull

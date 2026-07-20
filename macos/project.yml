@@ -45,7 +45,7 @@ targets:
         com.apple.security.network.client: true
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.hsaffiliate.aquahunter
+        PRODUCT_BUNDLE_IDENTIFIER: com.hotseason.aquahunter
         PRODUCT_NAME: AquaHunterMac
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
     scheme:
@@ -60,5 +60,5 @@ targets:
       - target: AquaHunterMac
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.hsaffiliate.aquahunter.macos.tests
+        PRODUCT_BUNDLE_IDENTIFIER: com.hotseason.aquahunter.macos.tests
         GENERATE_INFOPLIST_FILE: YES

@@ -1,7 +1,7 @@
 # AquaHunter Privacy Policy
 
 **Effective date:** 19 July 2026  
-**Applies to:** AquaHunter for Android, iOS, iPadOS and macOS; package/bundle ID `com.hsaffiliate.aquahunter`
+**Applies to:** AquaHunter for Android, iOS, iPadOS and macOS; package/bundle ID `com.hotseason.aquahunter`
 
 ## Summary
 

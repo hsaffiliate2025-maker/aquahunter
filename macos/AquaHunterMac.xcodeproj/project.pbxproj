@@ -352,7 +352,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsaffiliate.aquahunter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hotseason.aquahunter;
 				PRODUCT_NAME = AquaHunterMac;
 				SDKROOT = macosx;
 			};
@@ -369,7 +369,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsaffiliate.aquahunter.macos.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hotseason.aquahunter.macos.tests;
 				SDKROOT = macosx;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AquaHunterMac.app/Contents/MacOS/AquaHunterMac";
 			};
@@ -386,7 +386,7 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsaffiliate.aquahunter.macos.tests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hotseason.aquahunter.macos.tests;
 				SDKROOT = macosx;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AquaHunterMac.app/Contents/MacOS/AquaHunterMac";
 			};
@@ -470,7 +470,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.hsaffiliate.aquahunter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hotseason.aquahunter;
 				PRODUCT_NAME = AquaHunterMac;
 				SDKROOT = macosx;
 			};

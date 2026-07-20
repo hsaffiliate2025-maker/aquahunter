@@ -1,4 +1,4 @@
-package com.hsaffiliate.aquahunter.ui.theme
+package com.hotseason.aquahunter.ui.theme
 
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Typography

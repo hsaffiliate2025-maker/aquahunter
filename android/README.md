@@ -4,7 +4,7 @@
 
 ## 应用身份
 
-- applicationId：`com.hsaffiliate.aquahunter`
+- applicationId：`com.hotseason.aquahunter`
 - versionName：`0.1.0`
 - minSdk：API 26
 - compile/targetSdk：API 36
@@ -60,15 +60,15 @@ python3 tools/validate_release_content.py
 
 当前已验证的本地产物：
 
-- AAB SHA-256：`9169fec91b01321df2eb8ca57e8b3ede98633aa508eab493492ec42a466c172f`
-- APK SHA-256：`850e8ab655612e794b686c2ebae712893f685ab7bc198fa45cebeeb2e3218a13`
+- AAB SHA-256：`77ba47e8721878435f1e0639ab8ef0e007776f67039fe4913828e0736954e2c3`
+- APK SHA-256：`c8700d17be0ba3a7d25d2ca4c415722082736928668d505dc0ce082909bdc938`
 - Upload certificate SHA-256：`7bc5fe76f96a300a7c4281e957d5659bf089ac68902f2abd951255f3c5cc960e`
 
 签名包已确认包含离线地图样式和 Natural Earth GeoJSON；release DEX 中没有 Aqua AI/Ask 或开发期问答内容。每次改动 release 代码、依赖或版本号后必须重新构建并复核哈希。
 
 ## Google Play 签名
 
-1. 在 Android developer verification 注册 `com.hsaffiliate.aquahunter`。
+1. 在 Android developer verification 注册 `com.hotseason.aquahunter`。
 2. 创建 AquaHunter 独立 upload key；密码自动存入 macOS 钥匙串，keystore 保存在用户资料目录而不是仓库：
 
 ```bash
@@ -91,15 +91,15 @@ Google Play Console 必须先创建应用记录，并把服务账号授权到该
 
 ```bash
 gpd auth doctor --refresh-check --output table
-gpd auth check --package com.hsaffiliate.aquahunter --output table
+gpd auth check --package com.hotseason.aquahunter --output table
 gpd validate \
-  --package com.hsaffiliate.aquahunter \
+  --package com.hotseason.aquahunter \
   --track internal \
   --file app/build/outputs/bundle/release/app-release.aab \
   --network \
   --strict
 gpd publish play app/build/outputs/bundle/release/app-release.aab \
-  --package com.hsaffiliate.aquahunter \
+  --package com.hotseason.aquahunter \
   --track internal \
   --status completed \
   --dry-run
@@ -119,7 +119,8 @@ Google Play 只上传 `store/google-play/` 中经过筛选的素材。被忽略�
 
 ## 发布阻断项
 
-- Google Play 应用记录与服务账号权限尚需核实。
-- 本地 upload keystore 与签名发布构建已验证；Play App Signing 需在首次上传时启用并核实。
+- 2026-07-21：应用记录已创建（AquaHunter: Seafood Intel），AAB versionCode 1 已通过 Publisher API 发布至 internal 轨道，en-US listing 文案与图形已上传。注意 `gpd` 存在 ADC quota-project 缺陷，实际上传使用了 REST 直连（见 sdk skill）。
+- 生产轨道提审前必须在 Play Console 完成 App content 声明（隐私政策 URL、App access、广告、内容分级、目标受众、Data safety）——这些仅能在网页填写。
+- 本地 upload keystore 与签名发布构建已验证；Play App Signing 已随首次上传启用，需在 Console 核实。
 - 隐私政策文案、法定运营主体和邮寄地址已写入仓库并部署到 `https://hotseason.app/en/policy#aquahunter`；提交 Data safety 时仍需与最终 AAB 再次逐项核对。
 - 上线前必须重新核对实际 AAB 的依赖、网络行为、Data safety 和目标地区法律。

@@ -5,51 +5,36 @@
 
 AquaHunter 是面向全球海鲜产业的跨平台数据产品，聚合价格、买家、港口、贸易、船舶和海洋环境信号，并以可解释的 Fish Probability 与 AI 分析辅助采购和作业判断。
 
-当前仓库是 Android、iOS、macOS 三端 monorepo。三端生产界面已接入 Statistics Norway（SSB）Statbank 表 03024 的真实周度三文鱼出口数据，以及 Natural Earth 5.1.2 公共领域离线世界底图；其他业务图层在没有合规数据时显示不可用，不使用虚构回退。任何新增来源都必须真实、可追溯，并且许可证或合同明确允许 AquaHunter 所需的商业使用、转换与展示。
+本 README 描述**产品需求**与**付费点计划**。构建、签名、上架流程、产物哈希与商店素材等平台细节以各端 README 为准：[`android/README.md`](android/README.md) · [`ios/README.md`](ios/README.md) · [`macos/README.md`](macos/README.md)。完整需求文档为 [`docs/PRD.md`](docs/PRD.md)。
 
-## 平台入口
+## 产品需求（摘要）
 
-| 平台 | 工程 | 平台文档 | 当前状态 |
-|---|---|---|---|
-| Android | [`android/`](android/) | [`android/README.md`](android/README.md) | 已生成签名 AAB/APK；等待 Play 应用记录与服务账号授权 |
-| iOS / iPadOS | [`ios/`](ios/) | [`ios/README.md`](ios/README.md) | 已生成 App Store 签名 IPA；等待 App Store Connect 应用记录 |
-| macOS | [`macos/`](macos/) | [`macos/README.md`](macos/README.md) | 已生成 Mac App Store 签名 PKG；等待 App Store Connect 应用记录 |
+**目标用户**：远洋/近海捕捞经营者、水产采购与贸易商、加工厂与进出口商、行业研究者。
 
-共享 Apple 数据模型、视觉系统和主要页面位于 [`apple/Shared/`](apple/Shared/)。完整产品需求保存在 [`docs/PRD.md`](docs/PRD.md)。数据许可政策与机器可检查的白名单分别位于 [`docs/DATA_SOURCE_POLICY.md`](docs/DATA_SOURCE_POLICY.md) 和 [`docs/data-sources.json`](docs/data-sources.json)。最终商业图标母版位于 [`artifacts/icon/aquahunter-app-icon-final.png`](artifacts/icon/aquahunter-app-icon-final.png)，经过筛选的正式商店截图和 Google Play 图形素材位于 [`store/`](store/)。
+**核心模块**：
+
+- **Pulse**：已授权数据源的最新观测与趋势摘要。
+- **Markets**：真实市场/出口价格基准、6W/30W/1Y 历史曲线、原始币种与统计口径、来源与许可展示。
+- **Radar**：鱼群概率（环境适宜度）。只有当海温、叶绿素、洋流、水深、季节与历史渔获全部来自已批准商用的数据集时才输出概率；否则显示"暂无估计"，不生成合成数值。
+- **Network**：买家、贸易流、港口与船舶。无合规数据的子模块隐藏或显示不可用。
+- **Ask / Aqua AI**（后续）：带引用链的 AI 分析，按 Research Credit 计费；服务端 AI、成本与隐私门禁完成前不进入导航。
+
+**硬性产品原则**：
+
+1. 首次启动必须确认《海上作业与法律风险声明》（版本 `2026-07-21`），声明明确：所有展示数据来自公开/已授权来源；禁止在未开放或无批文的水域捕捞作业；市场价格波动概不负责。
+2. 任何指标必须显示来源、观测/发布时间与许可；不虚构回退、不把统计值标成实时报价。
+3. 数据源以 [`docs/DATA_SOURCE_POLICY.md`](docs/DATA_SOURCE_POLICY.md) 与 [`docs/data-sources.json`](docs/data-sources.json) 为发布硬门槛，上传前 `python3 tools/validate_data_sources.py --release` 必须通过。
+4. 无账号、无广告、无分析 SDK、无敏感权限（当前发行版）。
+
+**数据源现状（2026-07-21 复审）**：
+
+- 生产启用：Statistics Norway Statbank 03024（CC BY 4.0）、Natural Earth 5.1.2 离线底图（公共领域）。
+- 已核准待接入：東京都中央卸売市場日報（CC BY 4.0，真实水产日度批发价格）、NASA OB.PG 海温/海色（CC0）、NOAA OISST 与公开渔获汇总（CC0）、GEBCO 与 EMODnet 水深（CC BY/署名）、Protomaps OSM 离线矢量底图（ODbL Produced Work）。
+- 明确不展示：FAO（附加条款限制商业促销用途）、Global Fishing Watch（API 禁商用）、ImportYeti / Volza（条款禁止二次商用）；AIS 船位需商业合同后再评估。
 
 ## 身份与发布渠道
 
-| 项目 | 值 |
-|---|---|
-| 产品名 | `AquaHunter` |
-| Android applicationId | `com.hsaffiliate.aquahunter` |
-| Apple Universal Bundle ID | `com.hsaffiliate.aquahunter` |
-| Apple Team | Hot Season Enterprise, Inc. (`C8Y5J74PQW`) |
-| Apple 上传工具 | `asc`（Hot Season App Store Connect API） |
-| Google 上传工具 | `gpd`（Google Play Developer API） |
-
-Apple Universal App ID 已注册。三端签名发布产物已经生成并完成签名、内容与地图资产核验；App Store Connect 尚无 AquaHunter 应用记录，Google Play Developer API 服务账号当前也无权访问该 package。创建商店记录、授权并上传时必须继续使用完全相同的标识。
-
-## 当前发布产物
-
-| 平台 | 版本 | 产物 | SHA-256 |
-|---|---|---|---|
-| iOS / iPadOS | `1.0.0 (1)` | `.asc/artifacts/AquaHunterIOS.ipa` | `6ccc5b90fe64638ff6a455370ba05f6bcfe302f8249e4cfba2d30ea77e1f6325` |
-| macOS | `1.0.0 (1)` | `.asc/artifacts/AquaHunterMacExportSigned/AquaHunterMac.pkg` | `5ebfaa7ac0260cb29a05c9b96470841b6a5d8ba7c7fb1841c0b0a9ae07799e60` |
-| Android | `0.1.0 (1)` | `android/app/build/outputs/bundle/release/app-release.aab` | `9169fec91b01321df2eb8ca57e8b3ede98633aa508eab493492ec42a466c172f` |
-
-上述二进制产物由本地发布流程生成并被 `.gitignore` 排除，不提交 GitHub。每次修改发布代码或版本号后都必须重新生成并更新哈希，不得把旧产物上传为新版本。
-
-## 当前商店素材
-
-| 渠道 | 目录 | 当前结果 |
-|---|---|---|
-| iPhone 6.5-inch | [`store/app-store/iphone-65/`](store/app-store/iphone-65/) | 3 张 1284×2778；ASC 本地校验通过 |
-| iPad Pro 12.9-inch | [`store/app-store/ipad-pro-129/`](store/app-store/ipad-pro-129/) | 3 张 2048×2732；ASC 本地校验通过 |
-| macOS | [`store/app-store/macos/`](store/app-store/macos/) | 3 张 2560×1600 |
-| Google Play | [`store/google-play/`](store/google-play/) | 3 张 Pixel 6 截图、512×512 图标和 1024×500 feature graphic |
-
-商店截图只展示真实 SSB 周度观测、历史曲线、来源许可和离线地图。`artifacts/screenshots/` 保留开发过程截图并被 Git 忽略，其中可能存在旧版 demo 界面，禁止直接上传。完整说明见 [`store/README.md`](store/README.md)。
+三端统一标识 `com.hotseason.aquahunter`；商店显示名为 **AquaHunter: Seafood Intel**（App Store 上 `AquaHunter` 一名已被占用）。Apple 侧为 Hot Season Enterprise, Inc.（`C8Y5J74PQW`），经 `asc`（App Store Connect API）上架 App Store / Mac App Store；Android 经 Google Play Developer API 上架 Google Play。2026-07-21：三端均已提交商店审核。签名产物、哈希、商店素材与发布阻断项见各端 README；每次修改发布代码或版本号后必须重新构建并复核哈希，不得把旧产物上传为新版本。
 
 ## 总开发计划
 
@@ -73,7 +58,8 @@ Apple Universal App ID 已注册。三端签名发布产物已经生成并完成
 - [ ] 统一后端 API Contract 与完整 Species、Market、PriceObservation、Organization 模型
 - [ ] 增加经过许可审计的城市市场价格，支持同口径市场比较
 - [ ] 买家、供应商、港口与贸易流向检索
-- [ ] 按具体 Dataset/Product ID 完成 NOAA、FAO、Copernicus、NASA 与市场数据许可审计
+- [x] 2026-07-21 完成 NOAA、NASA、Copernicus、FAO、GFW、ImportYeti/Volza、东京都及多国官方源许可核查并写入登记表
+- [ ] 按具体 Dataset/Product ID 完成已核准源（东京都、NASA、NOAA、EUMOFA、e-Stat 等）的适配器接入
 - [x] 首个真实源：SSB 03024 周度三文鱼出口基准
 - [ ] 接入 GEBCO 2026 水深并实现强制“不用于导航”标识
 
@@ -98,17 +84,26 @@ Apple Universal App ID 已注册。三端签名发布产物已经生成并完成
 
 ### Phase 4 — 发布
 
-- [ ] Android developer verification 注册最终包名
+- [x] Android developer verification 注册最终包名 `com.hotseason.aquahunter`（2026-07-21）
 - [x] 三端本地签名发布产物、签名与内容核验
-- [ ] Google Play Internal → Closed → Production 测试链路
-- [ ] iOS TestFlight 与 macOS TestFlight/App Store 上传
+- [x] 2026-07-21 Google Play internal 轨道发布 versionCode 1，并提交 production 审核
+- [x] 2026-07-21 iOS 与 macOS 1.0.0 (1) 上传 App Store Connect 并提交 App Review
 - [x] 首版英文 iPhone、iPad、macOS 和 Google Play 正式截图与图形素材
 - [ ] 12 语言商店元数据、完整界面本地化、隐私和 Data Safety/App Privacy
 - [ ] ASC/GPD 上传前验证、分阶段发布和回滚手册
 
-## 未来付费点需求
+## 付费点计划
 
-商业化必须建立在真实、获授权且标明时效的数据上。开发 fixture 不进入发行包、不设置付费墙，也不销售联系方式。
+模式：**Freemium 订阅 + Research Credits 消耗**。商业化必须建立在真实、获授权且标明时效的数据上。开发 fixture 不进入发行包、不设置付费墙，也不销售联系方式。所有权限与扣费在服务端执行；付费不能解锁任何绕过数据许可、保护区、禁捕期或航行安全的能力。
+
+| 层级 | 定价形态 | 首批内容 |
+|---|---|---|
+| Visitor / Free | 免费 | 最新价格基准、离线底图、有限搜索；AI 上线后含少量周期赠送 credits |
+| **Pro**（首个付费点） | 月/年订阅（`aquahunter.pro.monthly` / `aquahunter.pro.annual`） | 完整历史价格、AI 预测与高分辨率 Fish Radar、授权联系方式、导出、提醒、周期 Research Credits |
+| **Enterprise** | 年度销售合同 | 团队席位、高配额 API、Webhook、SLA、审计、ERP 集成 |
+| Research Credits | 消耗型内购（`aquahunter.research.20/80/240` 预留） | AI 分析按任务扣费，后端定权威价；单独购买余额不过期 |
+
+**上线节奏**：v1.0 免费上架无 IAP（以真实数据建立信任与下载量）→ v1.x 接入东京都日报与 NASA/NOAA 环境层后引入 Pro 订阅（历史与导出为首批付费墙）→ v2 Radar 概率与 Aqua AI 上线后引入 Research Credits，随后开放 Enterprise。
 
 ### Future paid AI module — Research Credits
 

@@ -1353,57 +1353,62 @@ private struct MaritimeDisclaimerSection: Identifiable {
     let body: String
 }
 
-let maritimeRiskNoticeVersion = "2026-07-19"
+let maritimeRiskNoticeVersion = "2026-07-21"
 
 private let maritimeDisclaimerSections: [MaritimeDisclaimerSection] = [
     .init(
+        id: "data-sources",
+        title: "1. Public and licensed data sources",
+        body: "Every statistic, price, environmental layer and base map displayed in AquaHunter comes from publicly released official sources or licensed suppliers whose published terms permit commercial use — for example Statistics Norway Statbank table 03024 (CC BY 4.0) and the public-domain Natural Earth base map. Each value is shown with its source and original publication cadence, and attributions required by data providers are displayed in the app. AquaHunter does not display data from sources whose commercial-reuse license has not been verified; the corresponding features remain hidden or marked unavailable instead of being filled with fictional values. Public statistics are aggregates released by their originators; they are not insider information, private feeds or real-time quotations."
+    ),
+    .init(
         id: "information",
-        title: "1. Intelligence service—not navigation, detection or professional advice",
+        title: "2. Intelligence service—not navigation, detection or professional advice",
         body: "AquaHunter provides market, environmental, probability, port, trade, buyer and vessel intelligence. It is not a nautical chart, collision-avoidance system, fish finder, weather-routing service, distress service, coast-guard instruction, legal opinion, insurance advice or substitute for the professional judgment of a licensed master, skipper, operator, fleet manager or competent authority. Fish Probability and Ocean Intelligence scores are statistical estimates only. They do not mean fish are present, catchable, lawful to harvest or commercially viable. Never use AquaHunter as the sole basis for navigation, departure, route, fishing, safety or emergency decisions."
     ),
     .init(
         id: "environment",
-        title: "2. Weather, ocean and fish movement risk",
+        title: "3. Weather, ocean and fish movement risk",
         body: "Marine conditions can change rapidly and without notice. Wind, waves, swell, fog, ice, storms, typhoons, hurricanes, lightning, visibility, tides, temperature fronts, chlorophyll, salinity, oxygen, depth, seabed conditions and ocean currents may differ from observations or forecasts. Satellite coverage, cloud cover, sensor failure, model error and transmission delay can create gaps or inaccuracies. Fish schools may move, disperse, dive, migrate or disappear before a vessel arrives because of currents, weather, predators, food availability, vessel activity, seasonality or other biological factors. AquaHunter does not guarantee a sighting, catch, catch volume, species, quality, price, revenue, fuel efficiency or return on a voyage."
     ),
     .init(
         id: "vessel",
-        title: "3. Vessel charter, fleet service and hiring",
+        title: "4. Vessel charter, fleet service and hiring",
         body: "Unless a record is expressly marked “Charter available” or “Fleet service available” and separately verified, a vessel card is tracking-only information and is not an offer to sell, rent, charter, crew or hire a vessel. AquaHunter is not the owner, operator, employer, crewing agency, broker, carrier or insurer of third-party vessels and is not a party to agreements made between users and vessel or fleet providers. Users must independently verify identity, authority, beneficial ownership, flag, registration, class, seaworthiness, maintenance, equipment, crew competence, labor conditions, safety management, insurance, pollution cover, liens, sanctions exposure, permits and contract terms. Any deposit, charter party, employment, service agreement or voyage instruction is entered into at the parties’ own risk unless separate written AquaHunter marketplace terms state otherwise."
     ),
     .init(
         id: "operations",
-        title: "4. Master, operator and user responsibility",
+        title: "5. Master, operator and user responsibility",
         body: "The master and operator retain sole authority and responsibility for the vessel, crew, passengers, cargo, route and operational decisions. They must obtain current official charts, Notices to Mariners, meteorological and ocean warnings, port instructions, security advisories, navigational warnings and emergency communications; maintain a proper lookout; carry required safety and communications equipment; assess crew fatigue and competence; and comply with flag-state, coastal-state, port-state and international requirements. No AquaHunter prediction, alert, map, route, message or commercial request overrides the master’s professional judgment or duty to protect life, the vessel and the marine environment."
     ),
     .init(
         id: "security",
-        title: "5. Piracy, armed robbery, conflict and security",
+        title: "6. Piracy, armed robbery, conflict and security",
         body: "Sea voyages may expose vessels and people to piracy, armed robbery, kidnapping, theft, smuggling, sabotage, terrorism, civil unrest, war, mines, detention, embargoes, sanctions, communications disruption and port closure. Threat reports may be incomplete, delayed or unavailable. AquaHunter does not provide armed security, convoy protection, evacuation, rescue or real-time threat assurance. Owners, operators and masters must conduct their own voyage-specific security assessment, use current official and industry guidance, report through applicable maritime security channels, maintain required security plans and decide whether a voyage should proceed. The absence of an alert in AquaHunter does not mean an area is safe."
     ),
     .init(
         id: "ais",
-        title: "6. AIS and vessel-position limitations",
+        title: "7. AIS and vessel-position limitations",
         body: "AIS and other vessel data may be delayed, incomplete, inaccurate, intentionally disabled, incorrectly entered, duplicated, spoofed, obstructed by coverage limits or restricted by a provider or law. A displayed point may be historical rather than current and may not represent ownership, activity, destination, fishing behavior or commercial availability. Do not use AquaHunter AIS displays for collision avoidance, search and rescue, law-enforcement action, border decisions or proof that a vessel committed or did not commit an act. Verify material facts with licensed providers, vessel operators and competent authorities."
     ),
     .init(
         id: "lawful-fishing",
-        title: "7. Fishing law, borders, closed areas and IUU fishing",
-        body: "Users are solely responsible for determining whether any voyage and fishing activity is lawful. Before operating, users must verify the current location and boundaries of territorial seas, exclusive economic zones, disputed waters, marine protected areas, no-take zones, seasonal closures, spawning closures, port restrictions and other controlled areas. Users must obtain and comply with all licenses, vessel authorizations, quotas, catch limits, species rules, size limits, gear restrictions, bycatch rules, protected-species requirements, observer or monitoring duties, transshipment rules, landing requirements, catch documentation, customs, labor, environmental and reporting obligations. AquaHunter does not authorize fishing in another country’s waters or any prohibited area. Illegal, unreported or unregulated fishing is forbidden. A map, probability cell, vessel track or missing boundary does not create a right to enter, fish, land or trade."
+        title: "8. Fishing law, borders, closed areas and IUU fishing",
+        body: "Users are solely responsible for determining whether any voyage and fishing activity is lawful. Before operating, users must verify the current location and boundaries of territorial seas, exclusive economic zones, disputed waters, marine protected areas, no-take zones, seasonal closures, spawning closures, port restrictions and other controlled areas. Users must obtain and comply with all licenses, vessel authorizations, quotas, catch limits, species rules, size limits, gear restrictions, bycatch rules, protected-species requirements, observer or monitoring duties, transshipment rules, landing requirements, catch documentation, customs, labor, environmental and reporting obligations. AquaHunter does not authorize fishing in another country’s waters or any prohibited area. Do not fish, harvest or operate in waters that have not been opened or developed for fishing, or for which you do not hold every required permit, license or official approval. Illegal, unreported or unregulated fishing is forbidden. A map, probability cell, vessel track or missing boundary does not create a right to enter, fish, land or trade."
     ),
     .init(
         id: "commercial",
-        title: "8. Market, buyer and transaction risk",
-        body: "Prices, volumes, buyer profiles, import history, certificates, licenses and contact details may be normalized, estimated, delayed, incomplete or supplied by third parties. They are not binding quotations, credit decisions or guarantees of identity, solvency, capacity, legality, product quality, payment or delivery. Users must perform sanctions, anti-money-laundering, counterparty, food-safety, traceability, certificate, export-control, tax, customs and contract due diligence. AquaHunter is not responsible for losses caused by price movement, failed negotiations, non-payment, fraud, spoiled cargo, cold-chain failure, detention, rejection, recall, demurrage or other transaction events, except where liability cannot lawfully be excluded."
+        title: "9. Market, buyer and transaction risk",
+        body: "Market prices fluctuate continuously and can move sharply without warning; AquaHunter is not responsible for market price movements or for the outcome of any decision made in reliance on displayed prices. Prices, volumes, buyer profiles, import history, certificates, licenses and contact details may be normalized, estimated, delayed, incomplete or supplied by third parties. They are not binding quotations, credit decisions or guarantees of identity, solvency, capacity, legality, product quality, payment or delivery. Users must perform sanctions, anti-money-laundering, counterparty, food-safety, traceability, certificate, export-control, tax, customs and contract due diligence. AquaHunter is not responsible for losses caused by price movement, failed negotiations, non-payment, fraud, spoiled cargo, cold-chain failure, detention, rejection, recall, demurrage or other transaction events, except where liability cannot lawfully be excluded."
     ),
     .init(
         id: "emergency",
-        title: "9. Emergencies and loss reporting",
+        title: "10. Emergencies and loss reporting",
         body: "AquaHunter is not monitored as an emergency channel. Do not send distress calls, medical emergencies, piracy alerts, pollution reports or rescue requests only through the app. Use the vessel’s approved distress and safety systems and immediately contact the relevant coast guard, maritime rescue coordination center, port, flag-state or local emergency service. Connectivity and app availability are not guaranteed offshore. Users should maintain independent communications, offline charts, contingency plans, emergency contacts and backups."
     ),
     .init(
         id: "liability",
-        title: "10. Assumption of risk and limitation of liability",
+        title: "11. Assumption of risk and limitation of liability",
         body: "To the maximum extent permitted by applicable law, users assume the risks of relying on marine, fisheries, vessel and commercial information and remain responsible for their decisions, acts, omissions, compliance, contracts and operations. AquaHunter and its providers do not warrant uninterrupted access, completeness, accuracy, timeliness, fitness for a particular purpose, safety, legality, catch success or commercial outcome, and are not liable for indirect, incidental, special, exemplary, punitive or consequential loss, including loss of life or injury where exclusion is lawful, vessel or equipment damage, lost catch, lost profit, fuel cost, delay or reputational loss arising from use of or reliance on the service. Nothing in this notice excludes or limits liability that applicable law does not permit to be excluded or limited, including liability arising from fraud, willful misconduct, gross negligence or mandatory consumer and safety rights where applicable. Separate signed marketplace, charter or enterprise terms may impose additional obligations and will control if they expressly conflict with this general notice."
     ),
 ]
@@ -1481,7 +1486,7 @@ struct MaritimeRiskGateView: View {
                 }
 
                 Toggle(isOn: $confirmsReading) {
-                    Text("I have read and understand the Maritime Operations & Legal Risk Notice, including safety, fish-probability, vessel, piracy and lawful-fishing limitations.")
+                    Text("I have read and understand the Maritime Operations & Legal Risk Notice, including public data sourcing, safety, fish-probability, vessel, piracy, lawful-fishing and market-price limitations.")
                         .font(.caption.weight(.semibold))
                         .foregroundStyle(AquaTheme.textPrimary)
                 }

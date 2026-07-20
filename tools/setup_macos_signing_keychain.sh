@@ -98,7 +98,7 @@ PROBE_SIGNED="$SIGNING_DIR/probe-signed.pkg"
 mkdir -p "$PROBE_ROOT"
 pkgbuild \
   --root "$PROBE_ROOT" \
-  --identifier com.hsaffiliate.aquahunter.signing-probe \
+  --identifier com.hotseason.aquahunter.signing-probe \
   --version 1.0 \
   "$PROBE_UNSIGNED"
 productbuild \

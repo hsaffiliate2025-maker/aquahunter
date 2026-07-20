@@ -5,13 +5,13 @@
 ## 应用身份
 
 - Product：`AquaHunterIOS`
-- Bundle ID：`com.hsaffiliate.aquahunter`
+- Bundle ID：`com.hotseason.aquahunter`
 - Apple Team：Hot Season Enterprise, Inc. (`C8Y5J74PQW`)
 - 最低系统：iOS/iPadOS 17
 - 版本：`1.0.0 (1)`
 - 发布顺序：TestFlight → App Store
 
-Apple Universal App ID 已注册，资源 ID 为 `9L83D5GT2F`。App Store Connect 应用记录尚需创建或核实。
+Apple Universal App ID 已注册，资源 ID 为 `SQV9L48FRA`。App Store Connect 应用记录已创建：`AquaHunter: Seafood Intel`（App ID `6792849577`，SKU `AQUAHUNTER-IOS-001`）。2026-07-21 iOS `1.0.0 (1)` 已上传并提交 App Review。
 
 ## 当前生产功能
 
@@ -84,7 +84,7 @@ asc xcode export \
 签名资源：
 
 - iOS App Store profile：`AquaHunter iOS App Store 2026`
-- profile 资源 ID：`JXA4CFW2VH`
+- profile 资源 ID：`MA59Y3TC69`
 - 到期时间：2027-07-17
 
 导出 IPA 后上传 TestFlight：
@@ -103,7 +103,7 @@ asc publish testflight \
 
 - 路径：`.asc/artifacts/AquaHunterIOS.ipa`
 - 版本：`1.0.0 (1)`
-- SHA-256：`6ccc5b90fe64638ff6a455370ba05f6bcfe302f8249e4cfba2d30ea77e1f6325`
+- SHA-256：`4804d99989aac55f7a0ca9e99a8e095d1f0a9dc3591c221a14c232d4cbb8a210`
 - 签名：`iPhone Distribution: Hot Season Enterprise, Inc. (C8Y5J74PQW)`
 - Embedded profile：`AquaHunter iOS App Store 2026`
 
@@ -132,16 +132,15 @@ asc metadata validate --dir metadata
 ## App Store Connect 建议值
 
 - 平台：iOS；如采用 Universal Purchase，同时选择 macOS
-- 名称：`AquaHunter`
+- 名称：`AquaHunter: Seafood Intel`（App Store 名称 `AquaHunter` 已被占用；商店显示名与产品名分离）
 - 主要语言：English (U.S.)
-- Bundle ID：`AquaHunter - com.hsaffiliate.aquahunter`
+- Bundle ID：`AquaHunter - com.hotseason.aquahunter`
 - SKU：`AQUAHUNTER-IOS-001`
 - 用户访问：Full Access
 
 ## 发布阻断项
 
-- App Store Connect 应用记录与 App ID 绑定尚需完成或核实。
-- TestFlight 内测组尚需在 App Store Connect 应用记录创建后核实。
-- 英文商店元数据和 iPhone/iPad 截图已准备；App Privacy 表单与隐私政策公开页面仍需在商店记录创建后复核。
+- 2026-07-21：应用记录已创建，1.0.0 (1) 构建、en-US 元数据、iPhone/iPad 截图、年龄分级、类目（Business）、免费定价、出口合规与审核联系信息均已配置并提交 App Review，等待审核结果。
+- TestFlight 内测组可在审核期间按需创建。
 - 风险声明必须由目标司法辖区的合格律师审查。
 - 城市价格、Radar 概率、Network 业务记录在相应合规数据源到位前保持不可用；离线基础地图保持可用。

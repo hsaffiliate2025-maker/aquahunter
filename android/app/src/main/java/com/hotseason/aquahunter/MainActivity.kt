@@ -1,12 +1,12 @@
-package com.hsaffiliate.aquahunter
+package com.hotseason.aquahunter
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import com.hsaffiliate.aquahunter.ui.AquaHunterApp
-import com.hsaffiliate.aquahunter.ui.theme.AquaHunterTheme
+import com.hotseason.aquahunter.ui.AquaHunterApp
+import com.hotseason.aquahunter.ui.theme.AquaHunterTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

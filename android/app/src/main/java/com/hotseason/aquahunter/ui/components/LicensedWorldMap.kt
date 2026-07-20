@@ -1,4 +1,4 @@
-package com.hsaffiliate.aquahunter.ui.components
+package com.hotseason.aquahunter.ui.components
 
 import android.graphics.Color as AndroidColor
 import androidx.compose.foundation.background

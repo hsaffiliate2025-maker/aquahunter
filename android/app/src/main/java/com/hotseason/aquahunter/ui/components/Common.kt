@@ -1,4 +1,4 @@
-package com.hsaffiliate.aquahunter.ui.components
+package com.hotseason.aquahunter.ui.components
 
 import androidx.compose.animation.animateContentSize
 import androidx.compose.foundation.Canvas
@@ -44,18 +44,18 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.hsaffiliate.aquahunter.ui.AppScreen
-import com.hsaffiliate.aquahunter.ui.theme.AquaMint
-import com.hsaffiliate.aquahunter.ui.theme.DeepOcean
-import com.hsaffiliate.aquahunter.ui.theme.Divider
-import com.hsaffiliate.aquahunter.ui.theme.OceanSurface
-import com.hsaffiliate.aquahunter.ui.theme.OceanSurfaceHigh
-import com.hsaffiliate.aquahunter.ui.theme.RadarCyan
-import com.hsaffiliate.aquahunter.ui.theme.SignalBlue
-import com.hsaffiliate.aquahunter.ui.theme.SunGold
-import com.hsaffiliate.aquahunter.ui.theme.TextPrimary
-import com.hsaffiliate.aquahunter.ui.theme.TextSecondary
-import com.hsaffiliate.aquahunter.ui.theme.WarmCoral
+import com.hotseason.aquahunter.ui.AppScreen
+import com.hotseason.aquahunter.ui.theme.AquaMint
+import com.hotseason.aquahunter.ui.theme.DeepOcean
+import com.hotseason.aquahunter.ui.theme.Divider
+import com.hotseason.aquahunter.ui.theme.OceanSurface
+import com.hotseason.aquahunter.ui.theme.OceanSurfaceHigh
+import com.hotseason.aquahunter.ui.theme.RadarCyan
+import com.hotseason.aquahunter.ui.theme.SignalBlue
+import com.hotseason.aquahunter.ui.theme.SunGold
+import com.hotseason.aquahunter.ui.theme.TextPrimary
+import com.hotseason.aquahunter.ui.theme.TextSecondary
+import com.hotseason.aquahunter.ui.theme.WarmCoral
 import kotlin.math.max
 
 @Composable

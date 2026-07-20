@@ -63,7 +63,7 @@ adb install -r app/build/outputs/apk/debug/app-debug.apk
 
 ### Google Play AAB
 
-生产上传前先确认永久包名 `com.hsaffiliate.aquahunter`，并在 Android developer verification 的 **Package names** 页面完成该包名注册；这是发布阻塞项。之后再创建并安全保存 upload key。复制 `keystore.properties.example` 为忽略提交的 `keystore.properties`，填写真实签名配置后执行：
+生产上传前先确认永久包名 `com.hotseason.aquahunter`，并在 Android developer verification 的 **Package names** 页面完成该包名注册；这是发布阻塞项。之后再创建并安全保存 upload key。复制 `keystore.properties.example` 为忽略提交的 `keystore.properties`，填写真实签名配置后执行：
 
 ```bash
 JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home" ./gradlew testDebugUnitTest lintDebug bundleRelease
@@ -1494,7 +1494,7 @@ DATA_MODE=unavailable
 - 性能、安全与可用性测试
 - 监控、告警和 Runbook
 - 隐私政策、服务条款与数据纠错流程
-- 在 Android developer verification 注册最终包名 `com.hsaffiliate.aquahunter`
+- 在 Android developer verification 注册最终包名 `com.hotseason.aquahunter`
 - 生产数据审核
 - 灰度发布
 
@@ -1522,7 +1522,7 @@ MVP 只有在以下条件全部满足时才算完成：
 - [ ] API 有版本、鉴权、限流、分页和错误码
 - [ ] 核心流程有自动化测试
 - [ ] 数据许可、隐私和免责声明通过上线审查
-- [ ] Android developer verification 已注册最终包名 `com.hsaffiliate.aquahunter`，开发者身份状态有效
+- [ ] Android developer verification 已注册最终包名 `com.hotseason.aquahunter`，开发者身份状态有效
 - [ ] 12 种界面语言完成全量文案、布局、格式化和回退测试，阿拉伯语完成 RTL 验收
 - [ ] 监控、告警、备份和故障手册可用
 

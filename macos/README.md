@@ -5,7 +5,7 @@
 ## 应用身份
 
 - Product：`AquaHunterMac`
-- Bundle ID：`com.hsaffiliate.aquahunter`
+- Bundle ID：`com.hotseason.aquahunter`
 - Apple Team：Hot Season Enterprise, Inc. (`C8Y5J74PQW`)
 - 最低系统：macOS 14
 - 版本：`1.0.0 (1)`
@@ -78,7 +78,7 @@ xcodebuild -exportArchive \
 签名资源：
 
 - Mac App Store profile：`AquaHunter Mac App Store 2026 Local Key`
-- profile 资源 ID：`A3PRHWPWA8`
+- profile 资源 ID：`58XU92HDY7`
 - 到期时间：2027-07-18
 
 为避免修改整个登录钥匙串，macOS 导出使用独立临时钥匙串。发布工作站必须使用公司拥有、与下列证书匹配且可导出的私钥。可从“钥匙串访问”的 `login → My Certificates` 导出，也可由受控的内部签名材料临时生成 P12；不得把私钥、P12 或密码提交仓库、写入 README 或发送到聊天。
@@ -114,10 +114,10 @@ asc builds upload \
 
 当前已验证的本地产物：
 
-- 路径：`.asc/artifacts/AquaHunterMacExportSigned/AquaHunterMac.pkg`
+- 路径：`.asc/artifacts/AquaHunterMacExport/AquaHunterMac.pkg`
 - 版本：`1.0.0 (1)`
 - 架构：`arm64 + x86_64`
-- SHA-256：`5ebfaa7ac0260cb29a05c9b96470841b6a5d8ba7c7fb1841c0b0a9ae07799e60`
+- SHA-256：`b69eda1c67dc9636b5d25b8cdbe71ad5a42564b3917f8aa999ba7c746667fe34`
 - App 签名：`3rd Party Mac Developer Application: Hot Season Enterprise, Inc. (C8Y5J74PQW)`
 - Installer 签名：`3rd Party Mac Developer Installer: Hot Season Enterprise, Inc. (C8Y5J74PQW)`
 
@@ -143,7 +143,5 @@ asc builds upload \
 
 ## 发布阻断项
 
-- Mac Distribution 签名、归档和 PKG 导出已验证；TestFlight/App Store 上传仍需应用记录。
-- App Store Connect Universal Purchase 结构尚需确认。
-- 英文元数据和 2560×1600 截图已准备；App Privacy 表单和公开隐私政策内容仍需在应用记录创建后复核。
+- 2026-07-21：Universal 应用记录（iOS + macOS 同一条，App ID `6792849577`）已创建，macOS 1.0.0 (1) PKG、元数据与截图已上传并提交 App Review，等待审核结果。
 - 文件导入、通知或新网络服务加入时必须同步复审 entitlements 与隐私声明。

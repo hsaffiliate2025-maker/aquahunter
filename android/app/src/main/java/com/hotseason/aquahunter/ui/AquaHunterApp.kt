@@ -1,4 +1,4 @@
-package com.hsaffiliate.aquahunter.ui
+package com.hotseason.aquahunter.ui
 
 import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.background
@@ -38,24 +38,24 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
-import com.hsaffiliate.aquahunter.ui.components.BrandMark
-import com.hsaffiliate.aquahunter.ui.components.NavGlyph
-import com.hsaffiliate.aquahunter.ui.legal.MARITIME_RISK_NOTICE_VERSION
-import com.hsaffiliate.aquahunter.ui.legal.MaritimeRiskGate
-import com.hsaffiliate.aquahunter.ui.screens.MarketsScreen
-import com.hsaffiliate.aquahunter.ui.screens.NetworkScreen
-import com.hsaffiliate.aquahunter.ui.screens.OverviewScreen
-import com.hsaffiliate.aquahunter.ui.screens.RadarScreen
-import com.hsaffiliate.aquahunter.ui.screens.AppBackgroundStyle
-import com.hsaffiliate.aquahunter.ui.screens.AquaAppLanguage
-import com.hsaffiliate.aquahunter.ui.screens.SettingsScreen
-import com.hsaffiliate.aquahunter.ui.theme.AquaMint
-import com.hsaffiliate.aquahunter.ui.theme.DeepOcean
-import com.hsaffiliate.aquahunter.ui.theme.Divider
-import com.hsaffiliate.aquahunter.ui.theme.OceanSurface
-import com.hsaffiliate.aquahunter.ui.theme.SignalBlue
-import com.hsaffiliate.aquahunter.ui.theme.TextPrimary
-import com.hsaffiliate.aquahunter.ui.theme.TextSecondary
+import com.hotseason.aquahunter.ui.components.BrandMark
+import com.hotseason.aquahunter.ui.components.NavGlyph
+import com.hotseason.aquahunter.ui.legal.MARITIME_RISK_NOTICE_VERSION
+import com.hotseason.aquahunter.ui.legal.MaritimeRiskGate
+import com.hotseason.aquahunter.ui.screens.MarketsScreen
+import com.hotseason.aquahunter.ui.screens.NetworkScreen
+import com.hotseason.aquahunter.ui.screens.OverviewScreen
+import com.hotseason.aquahunter.ui.screens.RadarScreen
+import com.hotseason.aquahunter.ui.screens.AppBackgroundStyle
+import com.hotseason.aquahunter.ui.screens.AquaAppLanguage
+import com.hotseason.aquahunter.ui.screens.SettingsScreen
+import com.hotseason.aquahunter.ui.theme.AquaMint
+import com.hotseason.aquahunter.ui.theme.DeepOcean
+import com.hotseason.aquahunter.ui.theme.Divider
+import com.hotseason.aquahunter.ui.theme.OceanSurface
+import com.hotseason.aquahunter.ui.theme.SignalBlue
+import com.hotseason.aquahunter.ui.theme.TextPrimary
+import com.hotseason.aquahunter.ui.theme.TextSecondary
 
 enum class AppScreen(val label: String) {
     Pulse("Pulse"),

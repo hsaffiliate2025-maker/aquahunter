@@ -3,19 +3,19 @@
 ## Build identity
 
 - App name: `AquaHunter`
-- Package name: `com.hsaffiliate.aquahunter`
+- Package name: `com.hotseason.aquahunter`
 - Version name: `0.1.0`
 - Version code: `1`
 - Minimum Android: API 26 / Android 8.0
 - Compile and target SDK: API 36 / Android 16
 - Distribution artifact: Android App Bundle (`.aab`)
 
-The package name is permanent after the first Play upload. Confirm the organization owns and accepts `com.hsaffiliate.aquahunter` before creating the Play Console app.
+The package name is permanent after the first Play upload. Confirm the organization owns and accepts `com.hotseason.aquahunter` before creating the Play Console app.
 
 ## Android developer verification
 
 - [ ] Developer identity is verified in Android developer verification
-- [ ] Final package name `com.hsaffiliate.aquahunter` is registered on the **Package names** tab
+- [ ] Final package name `com.hotseason.aquahunter` is registered on the **Package names** tab
 - [ ] Registered package name, uploaded AAB application ID, signing identity, and Play Console app all match
 
 Package-name registration is a release blocker. Do not register a temporary application ID and do not change `applicationId` after registration without re-checking the verification record.

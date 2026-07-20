@@ -1,4 +1,4 @@
-package com.hsaffiliate.aquahunter.ui.screens
+package com.hotseason.aquahunter.ui.screens
 
 import android.content.Intent
 import android.net.Uri
@@ -47,16 +47,16 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.hsaffiliate.aquahunter.ui.AppScreen
-import com.hsaffiliate.aquahunter.ui.components.DataCard
-import com.hsaffiliate.aquahunter.ui.components.SectionHeader
-import com.hsaffiliate.aquahunter.ui.legal.MaritimeRiskNoticeContent
-import com.hsaffiliate.aquahunter.ui.theme.AquaMint
-import com.hsaffiliate.aquahunter.ui.theme.DeepOcean
-import com.hsaffiliate.aquahunter.ui.theme.SignalBlue
-import com.hsaffiliate.aquahunter.ui.theme.SunGold
-import com.hsaffiliate.aquahunter.ui.theme.TextPrimary
-import com.hsaffiliate.aquahunter.ui.theme.TextSecondary
+import com.hotseason.aquahunter.ui.AppScreen
+import com.hotseason.aquahunter.ui.components.DataCard
+import com.hotseason.aquahunter.ui.components.SectionHeader
+import com.hotseason.aquahunter.ui.legal.MaritimeRiskNoticeContent
+import com.hotseason.aquahunter.ui.theme.AquaMint
+import com.hotseason.aquahunter.ui.theme.DeepOcean
+import com.hotseason.aquahunter.ui.theme.SignalBlue
+import com.hotseason.aquahunter.ui.theme.SunGold
+import com.hotseason.aquahunter.ui.theme.TextPrimary
+import com.hotseason.aquahunter.ui.theme.TextSecondary
 
 enum class AppBackgroundStyle(val title: String, val color: Color) {
     Ocean("Ocean Blue", DeepOcean),

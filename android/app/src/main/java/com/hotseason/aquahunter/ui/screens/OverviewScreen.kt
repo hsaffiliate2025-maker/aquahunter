@@ -1,4 +1,4 @@
-package com.hsaffiliate.aquahunter.ui.screens
+package com.hotseason.aquahunter.ui.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -26,21 +26,21 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.hsaffiliate.aquahunter.data.AuthorizedMarketLoadState
-import com.hsaffiliate.aquahunter.data.AuthorizedMarketSeries
-import com.hsaffiliate.aquahunter.data.StatisticsNorwayMarketRepository
-import com.hsaffiliate.aquahunter.ui.components.ChangePill
-import com.hsaffiliate.aquahunter.ui.components.DataCard
-import com.hsaffiliate.aquahunter.ui.components.LicensedMapMarker
-import com.hsaffiliate.aquahunter.ui.components.LicensedWorldMap
-import com.hsaffiliate.aquahunter.ui.components.SectionHeader
-import com.hsaffiliate.aquahunter.ui.components.Sparkline
-import com.hsaffiliate.aquahunter.ui.components.Tag
-import com.hsaffiliate.aquahunter.ui.theme.AquaMint
-import com.hsaffiliate.aquahunter.ui.theme.SignalBlue
-import com.hsaffiliate.aquahunter.ui.theme.SunGold
-import com.hsaffiliate.aquahunter.ui.theme.TextPrimary
-import com.hsaffiliate.aquahunter.ui.theme.TextSecondary
+import com.hotseason.aquahunter.data.AuthorizedMarketLoadState
+import com.hotseason.aquahunter.data.AuthorizedMarketSeries
+import com.hotseason.aquahunter.data.StatisticsNorwayMarketRepository
+import com.hotseason.aquahunter.ui.components.ChangePill
+import com.hotseason.aquahunter.ui.components.DataCard
+import com.hotseason.aquahunter.ui.components.LicensedMapMarker
+import com.hotseason.aquahunter.ui.components.LicensedWorldMap
+import com.hotseason.aquahunter.ui.components.SectionHeader
+import com.hotseason.aquahunter.ui.components.Sparkline
+import com.hotseason.aquahunter.ui.components.Tag
+import com.hotseason.aquahunter.ui.theme.AquaMint
+import com.hotseason.aquahunter.ui.theme.SignalBlue
+import com.hotseason.aquahunter.ui.theme.SunGold
+import com.hotseason.aquahunter.ui.theme.TextPrimary
+import com.hotseason.aquahunter.ui.theme.TextSecondary
 
 @Composable
 fun OverviewScreen(

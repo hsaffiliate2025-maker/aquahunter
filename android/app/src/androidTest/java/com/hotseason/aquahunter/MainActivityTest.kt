@@ -1,4 +1,4 @@
-package com.hsaffiliate.aquahunter
+package com.hotseason.aquahunter
 
 import androidx.compose.ui.test.onAllNodesWithTag
 import androidx.compose.ui.test.assertIsDisplayed
