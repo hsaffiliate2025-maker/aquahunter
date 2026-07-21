@@ -1297,6 +1297,74 @@ contribution_margin =
 
 测算必须覆盖生产候选模型、输入/输出上限、不同任务消耗、失败重试、数据查询/许可、托管、商店费、税、退款、欺诈、汇率、客服、重度用户以及 provider 涨价。服务器必须有产品/环境独立 key、任务预算、账户日/月额度、全局每日金额硬上限、告警和紧急 kill switch。
 
+### 13.2 竞品参考与 40 个付费权益 / IAP 候选
+
+2026-07-22 竞品官方资料复核结果：
+
+- [Undercurrent/UCN Prices](https://www.undercurrentnews.com/prices-landing/) 将海鲜价格历史、多产品比较、市场解读、CSV 与 API 作为 Premium 能力。
+- [Tridge Procurement](https://www.tridge.com/solutions/procurement) 将价格基准、供应商核验、贸易信号、RFQ 和采购研究作为企业采购工作流。
+- [Volza Pricing](https://www.volza.com/pricing/) 与 [Volza API](https://www.volza.com/trade-intelligence-apis/) 将进出口记录、活跃买家/供应商、联系人筛选和 API 作为付费数据能力。
+- [MarineTraffic plans](https://support.marinetraffic.com/en/articles/9552658-marinetraffic-online-plans) 与 [VesselFinder plans](https://www.vesselfinder.com/get-premium) 将舰队、历史航迹、港口事件、ETA、提醒、卫星 AIS 与数据导出作为付费层；MarineTraffic 已[把过去的零散 add-on/credits 并入订阅](https://support.marinetraffic.com/en/articles/10442248-22-january-2025-we-re-removing-add-ons-and-credits-from-marinetraffic)，说明商店商品应保持清晰而不是无限拆分。
+- [PredictWind subscriptions](https://help.predictwind.com/en/articles/8563285-predictwind-subscriptions-differences-between-standard-and-professional) 将高分辨率天气、SST、洋流、潮汐和 AIS 放入高阶订阅；[Fishbrain Pro](https://fishbrain.com/pro/upgrade) 将深度图、法规和私有点位作为 Pro 能力。
+
+仅借鉴商业模式与用户任务，不复制竞品品牌、文案、数据或许可。以下正好 **40 个**内部付费权益候选用于需求排期；它们不是要求一次创建 40 个商店 Product ID。商店侧推荐组合为 8–12 个容易理解、恢复、升级和退款的订阅/消耗型商品，服务端再映射到 entitlement。Enterprise 合同、实际货物交易或线下服务不作为普通移动 IAP。
+
+| # | Entitlement | 业务结果 | 计费建议 | 关键上线门禁 |
+|---:|---|---|---|---|
+| 1 | `MKT-01` | 5 年完整价格历史与 K 线 | Markets Pro | 获授权历史记录、缺失区间不补 0 |
+| 2 | `MKT-02` | 同品种同规格多城市/市场比较 | Markets Pro | 可比性规则、规格/时间/币种一致 |
+| 3 | `MKT-03` | 规格、等级、形态和产地价格矩阵 | Markets Pro | 标准化映射可审计 |
+| 4 | `MKT-04` | 原币种、汇率、重量单位与标准价并列 | Markets Pro | 汇率来源、时间戳和换算方法 |
+| 5 | `MKT-05` | 市场间可比价差与采购机会观察 | Markets Pro | 不承诺套利或成交收益 |
+| 6 | `MKT-06` | 自定义价格阈值提醒 | Alerts/Pro | 去重、时区、延迟披露 |
+| 7 | `MKT-07` | 波动、跳价和数据异常提醒 | Alerts/Pro | 区分市场变化与采集异常 |
+| 8 | `MKT-08` | 供应量、需求与同比/环比面板 | Markets Pro | 指标定义、覆盖率和新鲜度 |
+| 9 | `MKT-09` | 到岸成本、关税、冷链和目标毛利计算 | Pro/单份报告 | 输入假设可编辑；非税务/报关意见 |
+| 10 | `MKT-10` | 每周 Market Pulse 与涨跌驱动 Wrap-Up | Pro/Credits | 有引用、时间窗和不确定性 |
+| 11 | `TRD-01` | 买家高级搜索与保存筛选 | Trade Pro | 数据许可、隐私、可纠错 |
+| 12 | `TRD-02` | 供应商高级搜索与保存筛选 | Trade Pro | 数据许可、隐私、可纠错 |
+| 13 | `TRD-03` | 买家进口历史、频次、数量与来源国 | Trade Pro | 获授权贸易记录、实体匹配置信度 |
+| 14 | `TRD-04` | 供应商出口历史、频次、数量与目的国 | Trade Pro | 获授权贸易记录、实体匹配置信度 |
+| 15 | `TRD-05` | 按 HS Code、品种、国家和港口的贸易流 | Trade Pro | HS 映射版本与聚合隐私阈值 |
+| 16 | `TRD-06` | 最近活跃买家与采购意图信号 | Trade Pro/Alerts | 标记“推断”，不得声称确定采购意向 |
+| 17 | `TRD-07` | 买家/供应商主体核验报告 | 单份报告/Credits | 引用官方登记，不等于信用担保 |
+| 18 | `TRD-08` | 出口许可、证书与有效期核验报告 | 单份报告/Credits | 官方验证链接、辖区和检索时间 |
+| 19 | `TRD-09` | 指定产品与目的国的采购/销售对象 shortlist | Credits | 覆盖范围、排序因子与缺失项 |
+| 20 | `TRD-10` | RFQ 报价横评、风险项与谈判准备包 | Credits | 用户输入保护、非合同/法律意见 |
+| 21 | `OCN-01` | SST、叶绿素、洋流、浪高等 Ocean Layers Pro | Ocean Pro | Product ID 级许可、时效和分辨率 |
+| 22 | `OCN-02` | 更高空间/时间分辨率 Fish Radar | Ocean Pro | 回测、校准、置信度；非鱼探仪 |
+| 23 | `OCN-03` | 多鱼种 Radar 与鱼种切换 | Ocean Pro | 每鱼种独立模型与最低样本量 |
+| 24 | `OCN-04` | 私有海域、作业区域和点位保存/同步 | Ocean Pro | 端到端访问控制、删除和导出 |
+| 25 | `OCN-05` | 官方禁捕期、保护区和法规变更提醒 | Alerts/Ocean Pro | 官方来源；不替代法律核查且安全信息不全量付费 |
+| 26 | `VES-01` | 扩展舰队监控列表与分组 | Fleet Pro | 商业 AIS 合同、每船数据时效 |
+| 27 | `VES-02` | 单船卫星 AIS 跟踪通行证 | 按船/月或订阅 | 卫星覆盖/延迟披露、许可允许终端展示 |
+| 28 | `VES-03` | 90 天历史航迹与事件回放 | Fleet Pro/通行证 | 不用于导航、碰撞规避或执法判断 |
+| 29 | `PRT-01` | 港口停靠、预计到港、ETA 与泊位事件 | Ports Pro | 来源、更新时间、预测误差披露 |
+| 30 | `PRT-02` | 船舶地理围栏、港口拥堵与事件提醒 | Alerts/Ports Pro | 延迟/漏报披露；不得作为安全系统 |
+| 31 | `AI-01` | 单市场价格趋势解释 | 1 Research Credit | 有效价格记录、引用、新鲜度和置信度 |
+| 32 | `AI-02` | Fish Radar 环境因子解释 | 2 Research Credits | 只解释已发布概率、模型版本和输入层 |
+| 33 | `AI-03` | 买家研究简报 | 3 Research Credits | 许可记录、引用、覆盖范围与缺失项 |
+| 34 | `AI-04` | 供应商研究简报 | 3 Research Credits | 许可记录、引用、覆盖范围与缺失项 |
+| 35 | `AI-05` | 多市场采购研究简报 | 5 Research Credits | 可比性检查、来源、风险和不确定性 |
+| 36 | `AI-06` | 报价/谈判准备简报 | 5 Research Credits | 非报价保证；用户确认输入和假设 |
+| 37 | `DAT-01` | CSV、Excel、PDF 导出配额包 | 消耗型配额/Pro | 导出许可、水印/署名、失败不扣配额 |
+| 38 | `DAT-02` | REST API 调用配额包 | 月订阅/配额包 | API 权利、速率限制和用量日志 |
+| 39 | `DAT-03` | Webhook 与自动监控事件配额包 | 月订阅/配额包 | 签名、重试、去重和投递日志 |
+| 40 | `WRK-01` | 团队共享 watchlist、注释、审批与审计 | Team 订阅 | 组织 RBAC、数据隔离和审计留存 |
+
+### 13.3 IAP 商品组合与上线规则
+
+- **不卖主题**：背景色/外观、12 种语言、无障碍、免责声明与法规安全提示、隐私设置、账号删除、购买恢复、来源与更新时间永久免费。
+- 40 项是产品 entitlement 目录，不是首发时同时展示 40 个购买按钮。建议首批仅建立 `Markets Pro monthly/annual`、`Research 20/80/240`、`Export 10/50`、`Alerts Plus monthly` 等 8–12 个商品；其余按授权和数据覆盖逐步开放。
+- 相互重叠的月/年订阅必须支持清晰升级/降级；同一能力不得通过叠加 SKU 重复收费。Enterprise 继续使用销售合同和服务端授权。
+- 数字数据、分析、配额和 AI credits 在 Apple/Android 客户端内购买时分别使用 StoreKit 2 / Google Play Billing；后端验真后才授予 entitlement 或余额。
+- 所有按次报告、导出和 AI 任务采用 `reserve → validate → commit/release`：成功且有效才扣，失败、无数据、过期、授权失效、安全拒绝、超时或幂等重放不扣。
+- 买家联系方式、贸易记录、AIS、港口、法规和海洋图层上线前必须取得明确的商业移动产品展示/缓存/导出权利。公开可访问不等于可商业再分发。
+- [Global Fishing Watch API 文档](https://globalfishingwatch.org/our-apis/documentation) 明确公共 API 仅限非商业用途；除非获得单独商业协议，否则不得支撑 `OCN-*`、`VES-*` 或任何收费能力。
+- 每个商品页展示覆盖国家/市场/鱼种、典型新鲜度、配额、自动续费/过期规则、退款与恢复方式，不使用“实时”“全球”或“保证结果”等无法证实的承诺。
+
+推荐排期：先做 `MKT-01`–`MKT-10` 与 `DAT-01`；获得合规贸易源后做 `TRD-*`；签署商业 AIS/港口合同并完成海洋 Product ID 级许可后做 `OCN-*`、`VES-*`、`PRT-*`；生产 AI 后端、支付验真、认证账本和成本门禁通过后做 `AI-*`。
+
 ### Free
 
 - 最新价格
@@ -1582,6 +1650,8 @@ MVP 只有在以下条件全部满足时才算完成：
 ### Epic F：商业化与运营
 
 - [ ] 套餐与配额
+- [ ] 建立 40 项 entitlement 注册表、覆盖范围、许可、成本、配额和商店商品映射；首发只启用通过门禁的 8–12 项
+- [ ] 确保语言、外观、无障碍、风险/法规提示、隐私、账号删除、购买恢复和来源说明不进入付费墙
 - [ ] StoreKit 2、Google Play Billing 与 Web 支付后端验真
 - [ ] Wallet、不可变 ledger、store transaction 去重、退款/撤销/恢复
 - [ ] 重装与跨设备认证余额恢复；订阅额度和 consumable credits 分账

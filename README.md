@@ -105,6 +105,63 @@ AquaHunter 是面向全球海鲜产业的跨平台数据产品，聚合价格、
 
 **上线节奏**：v1.0 免费上架无 IAP（以真实数据建立信任与下载量）→ v1.x 接入东京都日报与 NASA/NOAA 环境层后引入 Pro 订阅（历史与导出为首批付费墙）→ v2 Radar 概率与 Aqua AI 上线后引入 Research Credits，随后开放 Enterprise。
 
+### 竞品参考与 40 个付费权益 / IAP 候选
+
+竞品官方付费能力显示，用户愿意为“更深的历史、可比价格、预警、获授权的贸易/船舶数据、工作流和可交付研究结果”付费，而不是为装饰付费：Undercurrent/UCN 提供海鲜价格历史、最多 12 个产品比较、市场简报、CSV 与 API；Tridge 提供价格基准、供应商核验、贸易信号、RFQ 与采购研究；Volza 提供进出口、买家/供应商与联系人筛选；MarineTraffic/VesselFinder 提供舰队、历史航迹、港口事件、ETA、提醒与卫星 AIS；PredictWind 提供高分辨率海洋/天气层；Fishbrain 提供深度图、法规信息与私有点位。参考仅用于产品模式研究，不代表可复制或转售这些竞品的数据。
+
+官方参考：[UCN Prices](https://www.undercurrentnews.com/prices-landing/) · [Tridge Procurement](https://www.tridge.com/solutions/procurement) · [Volza Pricing](https://www.volza.com/pricing/) · [MarineTraffic plans](https://support.marinetraffic.com/en/articles/9552658-marinetraffic-online-plans) / [add-on 合并说明](https://support.marinetraffic.com/en/articles/10442248-22-january-2025-we-re-removing-add-ons-and-credits-from-marinetraffic) · [VesselFinder plans](https://www.vesselfinder.com/get-premium) · [PredictWind subscriptions](https://help.predictwind.com/en/articles/8563285-predictwind-subscriptions-differences-between-standard-and-professional) · [Fishbrain Pro](https://fishbrain.com/pro/upgrade)
+
+下面正好列出 **40 个可收费业务权益候选**。它们是服务端 entitlement，不要求一次性在商店创建 40 个独立 Product ID；推荐按订阅、配额包和 Research Credits 组合成 8–12 个清晰商品分批上线，减少重复 SKU、订阅升级和退款复杂度。任何候选只有在数据商业授权、覆盖率、成本和商店审核门禁通过后才能启用。
+
+| # | 权益代码 | 可收费业务结果 | 建议计费形态 |
+|---:|---|---|---|
+| 1 | `MKT-01` | 5 年完整价格历史与 K 线 | Markets Pro 订阅 |
+| 2 | `MKT-02` | 同品种、同规格的多城市/市场比较 | Markets Pro 订阅 |
+| 3 | `MKT-03` | 规格、等级、形态和产地价格矩阵 | Markets Pro 订阅 |
+| 4 | `MKT-04` | 原币种、汇率、重量单位和标准化价并列 | Markets Pro 订阅 |
+| 5 | `MKT-05` | 市场间可比价差与采购机会观察 | Markets Pro 订阅 |
+| 6 | `MKT-06` | 自定义价格阈值提醒 | Alerts 配额/Pro |
+| 7 | `MKT-07` | 波动、跳价和数据异常提醒 | Alerts 配额/Pro |
+| 8 | `MKT-08` | 供应量、需求与同比/环比面板 | Markets Pro 订阅 |
+| 9 | `MKT-09` | 到岸成本、关税、冷链和目标毛利计算 | 计算器 Pro/报告 |
+| 10 | `MKT-10` | 每周 Market Pulse 与涨跌驱动 Wrap-Up | Markets Pro/Research Credits |
+| 11 | `TRD-01` | 买家高级搜索与保存筛选 | Trade Pro 订阅 |
+| 12 | `TRD-02` | 供应商高级搜索与保存筛选 | Trade Pro 订阅 |
+| 13 | `TRD-03` | 买家进口历史、频次、数量与来源国 | Trade Pro 订阅 |
+| 14 | `TRD-04` | 供应商出口历史、频次、数量与目的国 | Trade Pro 订阅 |
+| 15 | `TRD-05` | 按 HS Code、品种、国家和港口的贸易流 | Trade Pro 订阅 |
+| 16 | `TRD-06` | 最近活跃买家与采购意图信号 | Trade Pro/Alerts |
+| 17 | `TRD-07` | 买家/供应商主体核验报告 | 单份报告/Research Credits |
+| 18 | `TRD-08` | 出口许可、证书与有效期核验报告 | 单份报告/Research Credits |
+| 19 | `TRD-09` | 指定产品与目的国的采购/销售对象 shortlist | Research Credits |
+| 20 | `TRD-10` | RFQ 报价横评、风险项和谈判准备包 | Research Credits |
+| 21 | `OCN-01` | SST、叶绿素、洋流、浪高等 Ocean Layers Pro | Ocean Pro 订阅 |
+| 22 | `OCN-02` | 更高空间/时间分辨率 Fish Radar | Ocean Pro 订阅 |
+| 23 | `OCN-03` | 多鱼种 Radar 与鱼种切换 | Ocean Pro 订阅 |
+| 24 | `OCN-04` | 私有海域、作业区域和点位保存/同步 | Ocean Pro 订阅 |
+| 25 | `OCN-05` | 官方禁捕期、保护区和法规变更提醒 | Alerts/Ocean Pro |
+| 26 | `VES-01` | 扩展舰队监控列表与分组 | Fleet Pro 订阅 |
+| 27 | `VES-02` | 单船卫星 AIS 跟踪通行证 | 按船/月消耗或订阅 |
+| 28 | `VES-03` | 90 天历史航迹与事件回放 | Fleet Pro/单船通行证 |
+| 29 | `PRT-01` | 港口停靠、预计到港、ETA 与泊位事件 | Ports Pro 订阅 |
+| 30 | `PRT-02` | 船舶地理围栏、港口拥堵与事件提醒 | Alerts/Ports Pro |
+| 31 | `AI-01` | 单市场价格趋势解释 | 1 Research Credit |
+| 32 | `AI-02` | Fish Radar 环境因子解释 | 2 Research Credits |
+| 33 | `AI-03` | 买家研究简报 | 3 Research Credits |
+| 34 | `AI-04` | 供应商研究简报 | 3 Research Credits |
+| 35 | `AI-05` | 多市场采购研究简报 | 5 Research Credits |
+| 36 | `AI-06` | 报价/谈判准备简报 | 5 Research Credits |
+| 37 | `DAT-01` | CSV、Excel、PDF 导出配额包 | 消耗型配额/Pro |
+| 38 | `DAT-02` | REST API 调用配额包 | 月度订阅/配额包 |
+| 39 | `DAT-03` | Webhook 与自动监控事件配额包 | 月度订阅/配额包 |
+| 40 | `WRK-01` | 团队共享 watchlist、注释、审批与审计 | Team 订阅 |
+
+**明确不收费**：背景色/主题、语言、无障碍、免责声明与法规安全提示、隐私设置、账号删除、购买恢复、数据来源与更新时间。核心安全或合规能力不能被付费墙挡住。
+
+**授权与可靠性门禁**：买家联系方式、贸易记录、AIS、港口、法规或海洋层必须拥有适用于商业移动产品的合同或开放许可；公开可见不等于可转售。Global Fishing Watch 公共 API 明确仅限非商业用途，不能作为上述收费权益的数据后端，除非另签商业许可。按次报告、导出或 AI 任务在无数据、数据过期、授权失效、失败、安全拒绝或幂等重放时不扣次数/credits；订阅页必须披露覆盖范围和典型新鲜度。
+
+**推荐首发顺序**：先上线 `MKT-01`–`MKT-10` 与 `DAT-01`，因为它们最贴近当前真实价格数据能力；完成获授权贸易数据后上线 `TRD-*`；完成商业 AIS/港口合同与海洋产品级许可后上线 `OCN-*`、`VES-*`、`PRT-*`；生产 AI 后端与 Research Credit 账本全部通过门禁后才上线 `AI-*`。
+
 ### Future paid AI module — Research Credits
 
 后续 AI 收费单位定名为 **Research Credit（AI Analysis Credit）**。用户购买的是一个明确、可验证的业务分析结果，而不是模型 token、字数或“无限 AI”。当前发行版没有可用 AI 服务和购买入口；生产后端、支付验真与以下门禁全部完成前，不把 Aqua AI 放回导航，也不显示可工作的购买按钮。
