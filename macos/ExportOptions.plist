@@ -5,7 +5,7 @@
 	<key>destination</key>
 	<string>export</string>
 	<key>installerSigningCertificate</key>
-	<string>5374B8B2922B785B3EEBE080CEC2152B5EF53F79</string>
+	<string>21629D55588048FD1035438CD7BDD6AADD3825B9</string>
 	<key>manageAppVersionAndBuildNumber</key>
 	<false/>
 	<key>method</key>
@@ -13,10 +13,10 @@
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>com.hotseason.aquahunter</key>
-		<string>AquaHunter Mac App Store 2026 Local Key</string>
+		<string>AquaHunter Mac App Store 2026 v1.1 Local Key</string>
 	</dict>
 	<key>signingCertificate</key>
-	<string>5C80C5B328E723E90618CC62CD39EB0C52C38DED</string>
+	<string>5C00D335613EF32D81A7BF453BEFE4D007C91A05</string>
 	<key>signingStyle</key>
 	<string>manual</string>
 	<key>stripSwiftSymbols</key>

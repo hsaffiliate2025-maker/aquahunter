@@ -1,0 +1,1602 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "2026-07-30",
+  "locales": {
+    "en": {
+      "subscriptionGroupName": "Seafood Market Research",
+      "store": {
+        "title": "Store",
+        "plansTitle": "Plans & credit packs",
+        "optionsEyebrow": "24 purchase options",
+        "allowanceDisclosure": "Finite allowances only. A credit is used after a valid result or file is delivered.",
+        "subscriptionsTitle": "Subscriptions",
+        "oneTimeTitle": "One-time credit packs",
+        "unavailable": "Unavailable",
+        "done": "Done",
+        "later": "Later",
+        "storeButton": "Store",
+        "legalDisclosure": "Subscriptions auto-renew unless cancelled in your store account. Consumable credits stay on this device and are lost if app data is cleared or the app is uninstalled."
+      },
+      "thankYouTitle": "Thank you for your purchase!",
+      "thankYouMessage": "{product} is ready to use.",
+      "openDestination": "Open {destination}",
+      "purchase": "Purchase",
+      "restore": "Restore purchases",
+      "restored": "Purchases restored.",
+      "balance": "{count} remaining",
+      "pending": "Purchase pending",
+      "failed": "Purchase could not be completed.",
+      "noCharge": "No result was delivered, so no credit was used.",
+      "toolkit": {
+        "title": "Research toolkit",
+        "eyebrow": "Licensed market intelligence",
+        "subtitle": "Every delivered result cites its official source. Failed or empty results never use a credit.",
+        "loading": "Loading licensed observations…",
+        "noData": "No authorized market data is available right now.",
+        "noResult": "No result",
+        "noCredit": "No credit available",
+        "creditPrompt": "Choose a finite credit pack or subscription allowance.",
+        "viewPlans": "View plans and credit packs",
+        "viewSubscriptions": "View subscriptions",
+        "addCredits": "Add credits",
+        "back": "Back",
+        "historyLockedTitle": "Extended history requires Markets Plus, Pro or Max",
+        "historyLockedBody": "The free market screen keeps 52 official weekly observations. A subscription unlocks a finite 3-, 5- or 10-year licensed history window.",
+        "observationSummary": "{count} official weekly observations · {currency}/{unit}",
+        "exchangeRate": "Target currency per NOK",
+        "freight": "Freight per kg",
+        "tariff": "Tariff %",
+        "loss": "Loss %",
+        "direction": "Direction",
+        "above": "At or above",
+        "below": "At or below",
+        "threshold": "Threshold in NOK/kg",
+        "assumptionNotice": "Exchange rate and costs are your assumptions; AquaHunter does not supply or guarantee them.",
+        "alertNotice": "A credit is used only when the latest official period matches and the alert is delivered in this app.",
+        "reuseTitle": "Commercial reuse verified",
+        "reuseBody": "Paid results in this release use Statistics Norway Statbank table 03024 under CC BY 4.0. Commercial use, derivative analysis and attributed redistribution are enabled by the release license registry.",
+        "benchmarkLimit": "National weekly export unit values; not city prices, auction quotes or executable offers.",
+        "unavailable": "Unavailable",
+        "commodity.01": "Fresh or chilled, farmed",
+        "commodity.02": "Frozen, farmed",
+        "action.history": "Open history",
+        "action.export": "Prepare CSV",
+        "action.compare": "Create comparison",
+        "action.snapshot": "Create snapshot",
+        "action.seasonality": "Create seasonality report",
+        "action.landedCost": "Calculate landed cost",
+        "action.alerts": "Save and evaluate alert",
+        "result.exportDelivered": "CSV delivered",
+        "result.exportFailed": "Export not delivered",
+        "result.compare": "Official market comparison",
+        "result.snapshot": "Sourced market snapshot",
+        "result.seasonality": "Seasonality report",
+        "result.landedCost": "Landed-cost calculation",
+        "result.alertNoMatch": "Alert saved; no matching event",
+        "result.alertDelivered": "Price alert delivered",
+        "body.export": "{file}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.compare": "Period {period}\n{first}: {firstPrice}\n{second}: {secondPrice}\nSpread: {spread} {currency}/{unit} ({spreadPercent})\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.snapshot": "{period}: {price} NOK/kg\nChange: {change}\n12-week average: {average}\nRange: {low}–{high}\nStatistics Norway · 03024 · {commodity} · CC BY 4.0",
+        "body.seasonality": "Week {week} · {years} historical years\nHistorical average: {average} NOK/kg\nLatest: {latest} NOK/kg\nDifference: {difference}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.landedCost": "Source {period}: {sourcePrice} NOK/kg\nConverted source: {converted} USD/kg\nBefore loss: {subtotal} USD/kg\nLanded cost: {landed} USD/saleable kg\nUser assumptions: FX {fx} · freight {freight} · tariff {tariff}% · loss {loss}%",
+        "body.alert": "{commodity}: {price} {currency}/{unit} · official period {period}\nStatistics Norway · 03024 · CC BY 4.0"
+      },
+      "destinations": {
+        "history": "Price History",
+        "export": "Export Center",
+        "compare": "Market Comparison",
+        "snapshot": "Market Snapshot",
+        "seasonality": "Seasonality",
+        "landedCost": "Landed Cost",
+        "alerts": "Price Alerts"
+      },
+      "periods": {
+        "P1M": "Monthly",
+        "P1Y": "Annual"
+      },
+      "subscriptions": {
+        "plus": {
+          "name": "Markets Plus",
+          "description": "3 years of licensed history plus 5 snapshots, 5 landed-cost results and 20 delivered alerts per month."
+        },
+        "pro": {
+          "name": "Markets Pro",
+          "description": "5 years of history plus 20 monthly exports, comparisons, snapshots, seasonality and landed-cost results, and 100 alerts."
+        },
+        "max": {
+          "name": "Markets Max",
+          "description": "10 years of history plus 100 monthly exports, comparisons, snapshots, seasonality and landed-cost results, and 500 alerts."
+        }
+      },
+      "families": {
+        "export": {
+          "name": "{quantity} Exports",
+          "description": "Create {quantity} UTF-8 CSV files from licensed market observations."
+        },
+        "compare": {
+          "name": "{quantity} Comparisons",
+          "description": "Create {quantity} comparable fresh/chilled versus frozen salmon market results."
+        },
+        "snapshot": {
+          "name": "{quantity} Market Snapshots",
+          "description": "Create {quantity} sourced market snapshots with price, period, change and range."
+        },
+        "seasonality": {
+          "name": "{quantity} Seasonality Reports",
+          "description": "Create {quantity} reports from at least three years of licensed weekly observations."
+        },
+        "landedCost": {
+          "name": "{quantity} Landed-Cost Calculations",
+          "description": "Calculate landed cost {quantity} times using source price and your freight, tariff and loss assumptions."
+        },
+        "alerts": {
+          "name": "{quantity} Price Alerts",
+          "description": "Receive {quantity} successfully delivered threshold or price-change alerts."
+        }
+      }
+    },
+    "zh-Hans": {
+      "subscriptionGroupName": "海鲜市场研究",
+      "store": {
+        "title": "商店",
+        "plansTitle": "订阅与次数包",
+        "optionsEyebrow": "24 个购买选项",
+        "allowanceDisclosure": "所有权益均有明确额度；有效结果或文件成功交付后才扣减一次。",
+        "subscriptionsTitle": "订阅",
+        "oneTimeTitle": "一次性次数包",
+        "unavailable": "暂不可用",
+        "done": "完成",
+        "later": "稍后",
+        "storeButton": "商店",
+        "legalDisclosure": "订阅会自动续期，除非您在商店账户中取消。消耗型次数仅保存在本设备；清除 App 数据或卸载后将丢失。"
+      },
+      "thankYouTitle": "感谢您的购买！",
+      "thankYouMessage": "{product} 已可使用。",
+      "openDestination": "前往{destination}",
+      "purchase": "购买",
+      "restore": "恢复购买",
+      "restored": "购买项目已恢复。",
+      "balance": "剩余 {count} 次",
+      "pending": "购买正在等待处理",
+      "failed": "购买未能完成。",
+      "noCharge": "未交付有效结果，因此未扣除次数。",
+      "toolkit": {
+        "title": "研究工具箱",
+        "eyebrow": "授权市场情报",
+        "subtitle": "每项交付结果均标注官方来源；失败或空结果不会扣除次数。",
+        "loading": "正在加载授权观测数据…",
+        "noData": "当前没有可用的授权市场数据。",
+        "noResult": "无结果",
+        "noCredit": "没有可用次数",
+        "creditPrompt": "请选择有明确额度的次数包或订阅权益。",
+        "viewPlans": "查看订阅与次数包",
+        "viewSubscriptions": "查看订阅",
+        "addCredits": "增加次数",
+        "back": "返回",
+        "historyLockedTitle": "扩展历史需要行情 Plus、Pro 或 Max",
+        "historyLockedBody": "免费行情保留 52 条官方周度观测。订阅可解锁有明确上限的 3 年、5 年或 10 年授权历史。",
+        "observationSummary": "{count} 条官方周度观测 · {currency}/{unit}",
+        "exchangeRate": "每 NOK 对应目标货币",
+        "freight": "每公斤运费",
+        "tariff": "关税 %",
+        "loss": "损耗 %",
+        "direction": "方向",
+        "above": "大于或等于",
+        "below": "小于或等于",
+        "threshold": "阈值（NOK/kg）",
+        "assumptionNotice": "汇率和费用由您输入；AquaHunter 不提供或保证这些数值。",
+        "alertNotice": "只有最新官方周期符合条件且提醒已在本 App 交付后，才扣除一次。",
+        "reuseTitle": "已验证可商业再利用",
+        "reuseBody": "本版本的付费结果使用 Statistics Norway Statbank 03024 表，许可为 CC BY 4.0。发布许可登记允许商业使用、衍生分析和署名再分发。",
+        "benchmarkLimit": "这是全国周度出口单位价值，不是城市价格、拍卖报价或可执行报价。",
+        "unavailable": "不可用",
+        "commodity.01": "养殖，鲜或冷藏",
+        "commodity.02": "养殖，冷冻",
+        "action.history": "打开价格历史",
+        "action.export": "准备 CSV",
+        "action.compare": "生成市场比较",
+        "action.snapshot": "生成市场快照",
+        "action.seasonality": "生成季节性报告",
+        "action.landedCost": "计算到岸成本",
+        "action.alerts": "保存并评估提醒",
+        "result.exportDelivered": "CSV 已交付",
+        "result.exportFailed": "导出未交付",
+        "result.compare": "官方市场比较",
+        "result.snapshot": "有来源的市场快照",
+        "result.seasonality": "季节性报告",
+        "result.landedCost": "到岸成本计算",
+        "result.alertNoMatch": "提醒已保存；当前没有匹配事件",
+        "result.alertDelivered": "价格提醒已交付",
+        "body.export": "{file}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.compare": "周期 {period}\n{first}：{firstPrice}\n{second}：{secondPrice}\n价差：{spread} {currency}/{unit}（{spreadPercent}）\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.snapshot": "{period}：{price} NOK/kg\n涨跌：{change}\n12 周均价：{average}\n区间：{low}–{high}\nStatistics Norway · 03024 · {commodity} · CC BY 4.0",
+        "body.seasonality": "第 {week} 周 · {years} 个历史年份\n历史均价：{average} NOK/kg\n最新价：{latest} NOK/kg\n差异：{difference}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.landedCost": "来源周期 {period}：{sourcePrice} NOK/kg\n换算后来源价：{converted} USD/kg\n损耗前：{subtotal} USD/kg\n到岸成本：{landed} USD/可售公斤\n用户假设：汇率 {fx} · 运费 {freight} · 关税 {tariff}% · 损耗 {loss}%",
+        "body.alert": "{commodity}：{price} {currency}/{unit} · 官方周期 {period}\nStatistics Norway · 03024 · CC BY 4.0"
+      },
+      "destinations": {
+        "history": "价格历史",
+        "export": "导出中心",
+        "compare": "市场比较",
+        "snapshot": "市场快照",
+        "seasonality": "季节性分析",
+        "landedCost": "到岸成本",
+        "alerts": "价格提醒"
+      },
+      "periods": {
+        "P1M": "按月",
+        "P1Y": "按年"
+      },
+      "subscriptions": {
+        "plus": {
+          "name": "行情 Plus",
+          "description": "3 年授权历史，以及每月 5 次快照、5 次到岸成本结果和 20 次成功送达提醒。"
+        },
+        "pro": {
+          "name": "行情 Pro",
+          "description": "5 年历史，以及每月各 20 次导出、比较、快照、季节性和到岸成本结果，另含 100 次提醒。"
+        },
+        "max": {
+          "name": "行情 Max",
+          "description": "10 年历史，以及每月各 100 次导出、比较、快照、季节性和到岸成本结果，另含 500 次提醒。"
+        }
+      },
+      "families": {
+        "export": {
+          "name": "{quantity} 次导出",
+          "description": "从获授权市场观测生成 {quantity} 个 UTF-8 CSV 文件。"
+        },
+        "compare": {
+          "name": "{quantity} 次市场比较",
+          "description": "生成 {quantity} 份鲜/冷藏与冷冻三文鱼的可比市场结果。"
+        },
+        "snapshot": {
+          "name": "{quantity} 份市场快照",
+          "description": "生成 {quantity} 份带来源、价格、周期、涨跌和区间的市场快照。"
+        },
+        "seasonality": {
+          "name": "{quantity} 份季节性报告",
+          "description": "依据至少 3 年获授权周度观测生成 {quantity} 份报告。"
+        },
+        "landedCost": {
+          "name": "{quantity} 次到岸成本计算",
+          "description": "根据来源价格及您输入的运费、关税和损耗完成 {quantity} 次计算。"
+        },
+        "alerts": {
+          "name": "{quantity} 次价格提醒",
+          "description": "接收 {quantity} 次成功送达的阈值或价格变动提醒。"
+        }
+      }
+    },
+    "zh-Hant": {
+      "subscriptionGroupName": "海鮮市場研究",
+      "store": {
+        "title": "商店",
+        "plansTitle": "訂閱與次數包",
+        "optionsEyebrow": "24 個購買選項",
+        "allowanceDisclosure": "所有權益均有明確額度；有效結果或檔案成功交付後才扣減一次。",
+        "subscriptionsTitle": "訂閱",
+        "oneTimeTitle": "一次性次數包",
+        "unavailable": "暫不可用",
+        "done": "完成",
+        "later": "稍後",
+        "storeButton": "商店",
+        "legalDisclosure": "訂閱會自動續期，除非您在商店帳戶中取消。消耗型次數只儲存在本裝置；清除 App 資料或解除安裝後將遺失。"
+      },
+      "thankYouTitle": "感謝您的購買！",
+      "thankYouMessage": "{product} 已可使用。",
+      "openDestination": "前往{destination}",
+      "purchase": "購買",
+      "restore": "恢復購買",
+      "restored": "購買項目已恢復。",
+      "balance": "剩餘 {count} 次",
+      "pending": "購買正在等候處理",
+      "failed": "購買未能完成。",
+      "noCharge": "未交付有效結果，因此未扣除次數。",
+      "toolkit": {
+        "title": "研究工具箱",
+        "eyebrow": "授權市場情報",
+        "subtitle": "每項交付結果均標示官方來源；失敗或空結果不會扣除次數。",
+        "loading": "正在載入授權觀測資料…",
+        "noData": "目前沒有可用的授權市場資料。",
+        "noResult": "無結果",
+        "noCredit": "沒有可用次數",
+        "creditPrompt": "請選擇有明確額度的次數包或訂閱權益。",
+        "viewPlans": "查看訂閱與次數包",
+        "viewSubscriptions": "查看訂閱",
+        "addCredits": "增加次數",
+        "back": "返回",
+        "historyLockedTitle": "擴展歷史需要行情 Plus、Pro 或 Max",
+        "historyLockedBody": "免費行情保留 52 筆官方週度觀測。訂閱可解鎖有明確上限的 3 年、5 年或 10 年授權歷史。",
+        "observationSummary": "{count} 筆官方週度觀測 · {currency}/{unit}",
+        "exchangeRate": "每 NOK 對應目標貨幣",
+        "freight": "每公斤運費",
+        "tariff": "關稅 %",
+        "loss": "損耗 %",
+        "direction": "方向",
+        "above": "大於或等於",
+        "below": "小於或等於",
+        "threshold": "門檻（NOK/kg）",
+        "assumptionNotice": "匯率和費用由您輸入；AquaHunter 不提供或保證這些數值。",
+        "alertNotice": "只有最新官方週期符合條件且提醒已在本 App 交付後，才扣除一次。",
+        "reuseTitle": "已驗證可商業再利用",
+        "reuseBody": "本版本的付費結果使用 Statistics Norway Statbank 03024 表，授權為 CC BY 4.0。發布授權登記允許商業使用、衍生分析和署名再散布。",
+        "benchmarkLimit": "這是全國週度出口單位價值，不是城市價格、拍賣報價或可執行報價。",
+        "unavailable": "不可用",
+        "commodity.01": "養殖，鮮或冷藏",
+        "commodity.02": "養殖，冷凍",
+        "action.history": "開啟價格歷史",
+        "action.export": "準備 CSV",
+        "action.compare": "產生市場比較",
+        "action.snapshot": "產生市場快照",
+        "action.seasonality": "產生季節性報告",
+        "action.landedCost": "計算到岸成本",
+        "action.alerts": "儲存並評估提醒",
+        "result.exportDelivered": "CSV 已交付",
+        "result.exportFailed": "匯出未交付",
+        "result.compare": "官方市場比較",
+        "result.snapshot": "附來源的市場快照",
+        "result.seasonality": "季節性報告",
+        "result.landedCost": "到岸成本計算",
+        "result.alertNoMatch": "提醒已儲存；目前沒有符合事件",
+        "result.alertDelivered": "價格提醒已交付",
+        "body.export": "{file}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.compare": "週期 {period}\n{first}：{firstPrice}\n{second}：{secondPrice}\n價差：{spread} {currency}/{unit}（{spreadPercent}）\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.snapshot": "{period}：{price} NOK/kg\n漲跌：{change}\n12 週均價：{average}\n區間：{low}–{high}\nStatistics Norway · 03024 · {commodity} · CC BY 4.0",
+        "body.seasonality": "第 {week} 週 · {years} 個歷史年份\n歷史均價：{average} NOK/kg\n最新價：{latest} NOK/kg\n差異：{difference}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.landedCost": "來源週期 {period}：{sourcePrice} NOK/kg\n換算後來源價：{converted} USD/kg\n損耗前：{subtotal} USD/kg\n到岸成本：{landed} USD/可售公斤\n使用者假設：匯率 {fx} · 運費 {freight} · 關稅 {tariff}% · 損耗 {loss}%",
+        "body.alert": "{commodity}：{price} {currency}/{unit} · 官方週期 {period}\nStatistics Norway · 03024 · CC BY 4.0"
+      },
+      "destinations": {
+        "history": "價格歷史",
+        "export": "匯出中心",
+        "compare": "市場比較",
+        "snapshot": "市場快照",
+        "seasonality": "季節性分析",
+        "landedCost": "到岸成本",
+        "alerts": "價格提醒"
+      },
+      "periods": {
+        "P1M": "按月",
+        "P1Y": "按年"
+      },
+      "subscriptions": {
+        "plus": {
+          "name": "行情 Plus",
+          "description": "3 年授權歷史，以及每月 5 次快照、5 次到岸成本結果及 20 次成功送達提醒。"
+        },
+        "pro": {
+          "name": "行情 Pro",
+          "description": "5 年歷史，以及每月各 20 次匯出、比較、快照、季節性及到岸成本結果，另含 100 次提醒。"
+        },
+        "max": {
+          "name": "行情 Max",
+          "description": "10 年歷史，以及每月各 100 次匯出、比較、快照、季節性及到岸成本結果，另含 500 次提醒。"
+        }
+      },
+      "families": {
+        "export": {
+          "name": "{quantity} 次匯出",
+          "description": "從授權市場觀測產生 {quantity} 個 UTF-8 CSV 檔案。"
+        },
+        "compare": {
+          "name": "{quantity} 次市場比較",
+          "description": "產生 {quantity} 份鮮／冷藏與冷凍鮭魚的可比較市場結果。"
+        },
+        "snapshot": {
+          "name": "{quantity} 份市場快照",
+          "description": "產生 {quantity} 份含來源、價格、週期、漲跌及區間的市場快照。"
+        },
+        "seasonality": {
+          "name": "{quantity} 份季節性報告",
+          "description": "根據至少 3 年授權週度觀測產生 {quantity} 份報告。"
+        },
+        "landedCost": {
+          "name": "{quantity} 次到岸成本計算",
+          "description": "依來源價格及您輸入的運費、關稅和損耗完成 {quantity} 次計算。"
+        },
+        "alerts": {
+          "name": "{quantity} 次價格提醒",
+          "description": "接收 {quantity} 次成功送達的門檻或價格變動提醒。"
+        }
+      }
+    },
+    "es": {
+      "subscriptionGroupName": "Investigación de mercado",
+      "store": {
+        "title": "Tienda",
+        "plansTitle": "Planes y paquetes",
+        "optionsEyebrow": "24 opciones de compra",
+        "allowanceDisclosure": "Todos los cupos son limitados. Solo se descuenta al entregar un resultado o archivo válido.",
+        "subscriptionsTitle": "Suscripciones",
+        "oneTimeTitle": "Paquetes de un pago",
+        "unavailable": "No disponible",
+        "done": "Listo",
+        "later": "Más tarde",
+        "storeButton": "Tienda",
+        "legalDisclosure": "Las suscripciones se renuevan salvo cancelación en la cuenta de la tienda. Los créditos consumibles permanecen en este dispositivo y se pierden al borrar los datos o desinstalar."
+      },
+      "thankYouTitle": "¡Gracias por tu compra!",
+      "thankYouMessage": "{product} ya está listo.",
+      "openDestination": "Abrir {destination}",
+      "purchase": "Comprar",
+      "restore": "Restaurar compras",
+      "restored": "Compras restauradas.",
+      "balance": "Quedan {count}",
+      "pending": "Compra pendiente",
+      "failed": "No se pudo completar la compra.",
+      "noCharge": "No se entregó ningún resultado, por lo que no se usó ningún crédito.",
+      "toolkit": {
+        "title": "Herramientas de investigación",
+        "eyebrow": "Inteligencia de mercado autorizada",
+        "subtitle": "Cada resultado entregado cita su fuente oficial. Los resultados fallidos o vacíos no consumen crédito.",
+        "loading": "Cargando observaciones autorizadas…",
+        "noData": "No hay datos de mercado autorizados disponibles en este momento.",
+        "noResult": "Sin resultado",
+        "noCredit": "No hay créditos disponibles",
+        "creditPrompt": "Elige un paquete de créditos limitado o el cupo de una suscripción.",
+        "viewPlans": "Ver planes y paquetes",
+        "viewSubscriptions": "Ver suscripciones",
+        "addCredits": "Añadir créditos",
+        "back": "Atrás",
+        "historyLockedTitle": "El historial ampliado requiere Markets Plus, Pro o Max",
+        "historyLockedBody": "La pantalla gratuita conserva 52 observaciones semanales oficiales. Una suscripción desbloquea una ventana autorizada limitada de 3, 5 o 10 años.",
+        "observationSummary": "{count} observaciones semanales oficiales · {currency}/{unit}",
+        "exchangeRate": "Moneda de destino por NOK",
+        "freight": "Flete por kg",
+        "tariff": "Arancel %",
+        "loss": "Merma %",
+        "direction": "Dirección",
+        "above": "Igual o superior",
+        "below": "Igual o inferior",
+        "threshold": "Umbral en NOK/kg",
+        "assumptionNotice": "El tipo de cambio y los costes son tus supuestos; AquaHunter no los proporciona ni garantiza.",
+        "alertNotice": "Solo se usa un crédito si coincide el último período oficial y la alerta se entrega en esta app.",
+        "reuseTitle": "Reutilización comercial verificada",
+        "reuseBody": "Los resultados de pago de esta versión usan la tabla 03024 de Statistics Norway Statbank bajo CC BY 4.0. El registro de licencias permite uso comercial, análisis derivados y redistribución con atribución.",
+        "benchmarkLimit": "Valores unitarios nacionales de exportación semanal; no son precios urbanos, cotizaciones de subasta ni ofertas ejecutables.",
+        "unavailable": "No disponible",
+        "commodity.01": "De cultivo, fresco o refrigerado",
+        "commodity.02": "De cultivo, congelado",
+        "action.history": "Abrir historial",
+        "action.export": "Preparar CSV",
+        "action.compare": "Crear comparación",
+        "action.snapshot": "Crear resumen",
+        "action.seasonality": "Crear informe estacional",
+        "action.landedCost": "Calcular coste puesto",
+        "action.alerts": "Guardar y evaluar alerta",
+        "result.exportDelivered": "CSV entregado",
+        "result.exportFailed": "Exportación no entregada",
+        "result.compare": "Comparación oficial de mercado",
+        "result.snapshot": "Resumen de mercado con fuente",
+        "result.seasonality": "Informe estacional",
+        "result.landedCost": "Cálculo de coste puesto",
+        "result.alertNoMatch": "Alerta guardada; no hay evento coincidente",
+        "result.alertDelivered": "Alerta de precio entregada",
+        "body.export": "{file}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.compare": "Período {period}\n{first}: {firstPrice}\n{second}: {secondPrice}\nDiferencia: {spread} {currency}/{unit} ({spreadPercent})\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.snapshot": "{period}: {price} NOK/kg\nVariación: {change}\nMedia de 12 semanas: {average}\nRango: {low}–{high}\nStatistics Norway · 03024 · {commodity} · CC BY 4.0",
+        "body.seasonality": "Semana {week} · {years} años históricos\nMedia histórica: {average} NOK/kg\nÚltimo: {latest} NOK/kg\nDiferencia: {difference}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.landedCost": "Fuente {period}: {sourcePrice} NOK/kg\nFuente convertida: {converted} USD/kg\nAntes de merma: {subtotal} USD/kg\nCoste puesto: {landed} USD/kg vendible\nSupuestos del usuario: cambio {fx} · flete {freight} · arancel {tariff}% · merma {loss}%",
+        "body.alert": "{commodity}: {price} {currency}/{unit} · período oficial {period}\nStatistics Norway · 03024 · CC BY 4.0"
+      },
+      "destinations": {
+        "history": "Historial de precios",
+        "export": "Centro de exportación",
+        "compare": "Comparación de mercados",
+        "snapshot": "Resumen del mercado",
+        "seasonality": "Estacionalidad",
+        "landedCost": "Coste puesto en destino",
+        "alerts": "Alertas de precios"
+      },
+      "periods": {
+        "P1M": "Mensual",
+        "P1Y": "Anual"
+      },
+      "subscriptions": {
+        "plus": {
+          "name": "Markets Plus",
+          "description": "3 años de historial, 5 resúmenes, 5 cálculos de coste puesto y 20 alertas entregadas al mes."
+        },
+        "pro": {
+          "name": "Markets Pro",
+          "description": "5 años de historial, 20 usos mensuales de cada análisis y exportación, y 100 alertas entregadas."
+        },
+        "max": {
+          "name": "Markets Max",
+          "description": "10 años de historial, 100 usos mensuales de cada análisis y exportación, y 500 alertas entregadas."
+        }
+      },
+      "families": {
+        "export": {
+          "name": "{quantity} exportaciones",
+          "description": "Crea {quantity} archivos CSV UTF-8 con observaciones de mercado autorizadas."
+        },
+        "compare": {
+          "name": "{quantity} comparaciones",
+          "description": "Crea {quantity} resultados comparables de salmón fresco/refrigerado frente a congelado."
+        },
+        "snapshot": {
+          "name": "{quantity} resúmenes de mercado",
+          "description": "Crea {quantity} resúmenes con fuente, precio, período, variación y rango."
+        },
+        "seasonality": {
+          "name": "{quantity} informes estacionales",
+          "description": "Crea {quantity} informes con al menos 3 años de observaciones semanales autorizadas."
+        },
+        "landedCost": {
+          "name": "{quantity} cálculos de coste",
+          "description": "Calcula {quantity} veces el coste puesto en destino con precio, flete, arancel y merma."
+        },
+        "alerts": {
+          "name": "{quantity} alertas de precio",
+          "description": "Recibe {quantity} alertas de umbral o variación entregadas correctamente."
+        }
+      }
+    },
+    "fr": {
+      "subscriptionGroupName": "Études de marché",
+      "store": {
+        "title": "Boutique",
+        "plansTitle": "Formules et crédits",
+        "optionsEyebrow": "24 options d’achat",
+        "allowanceDisclosure": "Tous les quotas sont limités. Un crédit n’est débité qu’après livraison d’un résultat ou fichier valide.",
+        "subscriptionsTitle": "Abonnements",
+        "oneTimeTitle": "Packs à l’unité",
+        "unavailable": "Indisponible",
+        "done": "Terminé",
+        "later": "Plus tard",
+        "storeButton": "Boutique",
+        "legalDisclosure": "Les abonnements se renouvellent sauf annulation dans le compte de la boutique. Les crédits consommables restent sur cet appareil et sont perdus si les données sont effacées ou l’app désinstallée."
+      },
+      "thankYouTitle": "Merci pour votre achat !",
+      "thankYouMessage": "{product} est prêt à être utilisé.",
+      "openDestination": "Ouvrir {destination}",
+      "purchase": "Acheter",
+      "restore": "Restaurer les achats",
+      "restored": "Achats restaurés.",
+      "balance": "{count} restant(s)",
+      "pending": "Achat en attente",
+      "failed": "L’achat n’a pas pu être effectué.",
+      "noCharge": "Aucun résultat n’a été livré, aucun crédit n’a donc été utilisé.",
+      "toolkit": {
+        "title": "Outils de recherche",
+        "eyebrow": "Données de marché sous licence",
+        "subtitle": "Chaque résultat livré cite sa source officielle. Un résultat vide ou en échec ne consomme aucun crédit.",
+        "loading": "Chargement des observations sous licence…",
+        "noData": "Aucune donnée de marché autorisée n’est disponible actuellement.",
+        "noResult": "Aucun résultat",
+        "noCredit": "Aucun crédit disponible",
+        "creditPrompt": "Choisissez un pack de crédits limité ou le quota d’un abonnement.",
+        "viewPlans": "Voir les formules et crédits",
+        "viewSubscriptions": "Voir les abonnements",
+        "addCredits": "Ajouter des crédits",
+        "back": "Retour",
+        "historyLockedTitle": "L’historique étendu nécessite Markets Plus, Pro ou Max",
+        "historyLockedBody": "L’écran gratuit conserve 52 observations hebdomadaires officielles. Un abonnement débloque une fenêtre sous licence limitée à 3, 5 ou 10 ans.",
+        "observationSummary": "{count} observations hebdomadaires officielles · {currency}/{unit}",
+        "exchangeRate": "Devise cible par NOK",
+        "freight": "Fret par kg",
+        "tariff": "Droits %",
+        "loss": "Pertes %",
+        "direction": "Direction",
+        "above": "Supérieur ou égal",
+        "below": "Inférieur ou égal",
+        "threshold": "Seuil en NOK/kg",
+        "assumptionNotice": "Le taux de change et les coûts sont vos hypothèses ; AquaHunter ne les fournit ni ne les garantit.",
+        "alertNotice": "Un crédit n’est utilisé que si la dernière période officielle correspond et si l’alerte est livrée dans l’app.",
+        "reuseTitle": "Réutilisation commerciale vérifiée",
+        "reuseBody": "Les résultats payants de cette version utilisent la table 03024 de Statistics Norway Statbank sous licence CC BY 4.0. Le registre des licences autorise l’usage commercial, les analyses dérivées et la redistribution avec attribution.",
+        "benchmarkLimit": "Valeurs unitaires nationales d’exportation hebdomadaire ; ce ne sont ni des prix urbains, ni des cotations d’enchères, ni des offres exécutables.",
+        "unavailable": "Indisponible",
+        "commodity.01": "D’élevage, frais ou réfrigéré",
+        "commodity.02": "D’élevage, congelé",
+        "action.history": "Ouvrir l’historique",
+        "action.export": "Préparer le CSV",
+        "action.compare": "Créer la comparaison",
+        "action.snapshot": "Créer l’instantané",
+        "action.seasonality": "Créer le rapport saisonnier",
+        "action.landedCost": "Calculer le coût rendu",
+        "action.alerts": "Enregistrer et évaluer l’alerte",
+        "result.exportDelivered": "CSV livré",
+        "result.exportFailed": "Export non livré",
+        "result.compare": "Comparaison officielle du marché",
+        "result.snapshot": "Instantané de marché sourcé",
+        "result.seasonality": "Rapport saisonnier",
+        "result.landedCost": "Calcul du coût rendu",
+        "result.alertNoMatch": "Alerte enregistrée ; aucun événement correspondant",
+        "result.alertDelivered": "Alerte de prix livrée",
+        "body.export": "{file}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.compare": "Période {period}\n{first} : {firstPrice}\n{second} : {secondPrice}\nÉcart : {spread} {currency}/{unit} ({spreadPercent})\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.snapshot": "{period} : {price} NOK/kg\nVariation : {change}\nMoyenne sur 12 semaines : {average}\nPlage : {low}–{high}\nStatistics Norway · 03024 · {commodity} · CC BY 4.0",
+        "body.seasonality": "Semaine {week} · {years} années historiques\nMoyenne historique : {average} NOK/kg\nDernier prix : {latest} NOK/kg\nÉcart : {difference}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.landedCost": "Source {period} : {sourcePrice} NOK/kg\nSource convertie : {converted} USD/kg\nAvant pertes : {subtotal} USD/kg\nCoût rendu : {landed} USD/kg vendable\nHypothèses utilisateur : change {fx} · fret {freight} · droits {tariff}% · pertes {loss}%",
+        "body.alert": "{commodity} : {price} {currency}/{unit} · période officielle {period}\nStatistics Norway · 03024 · CC BY 4.0"
+      },
+      "destinations": {
+        "history": "Historique des prix",
+        "export": "Centre d’exportation",
+        "compare": "Comparaison des marchés",
+        "snapshot": "Instantané du marché",
+        "seasonality": "Saisonnalité",
+        "landedCost": "Coût rendu",
+        "alerts": "Alertes de prix"
+      },
+      "periods": {
+        "P1M": "Mensuel",
+        "P1Y": "Annuel"
+      },
+      "subscriptions": {
+        "plus": {
+          "name": "Markets Plus",
+          "description": "3 ans d’historique, 5 instantanés, 5 coûts rendus et 20 alertes livrées par mois."
+        },
+        "pro": {
+          "name": "Markets Pro",
+          "description": "5 ans d’historique, 20 usages mensuels de chaque analyse et export, et 100 alertes livrées."
+        },
+        "max": {
+          "name": "Markets Max",
+          "description": "10 ans d’historique, 100 usages mensuels de chaque analyse et export, et 500 alertes livrées."
+        }
+      },
+      "families": {
+        "export": {
+          "name": "{quantity} exportations",
+          "description": "Créez {quantity} fichiers CSV UTF-8 à partir d’observations de marché sous licence."
+        },
+        "compare": {
+          "name": "{quantity} comparaisons",
+          "description": "Créez {quantity} comparaisons entre saumon frais/réfrigéré et congelé."
+        },
+        "snapshot": {
+          "name": "{quantity} instantanés",
+          "description": "Créez {quantity} instantanés avec source, prix, période, variation et plage."
+        },
+        "seasonality": {
+          "name": "{quantity} rapports saisonniers",
+          "description": "Créez {quantity} rapports issus d’au moins 3 ans d’observations hebdomadaires sous licence."
+        },
+        "landedCost": {
+          "name": "{quantity} calculs de coût rendu",
+          "description": "Calculez {quantity} fois le coût rendu avec prix source, fret, droits et pertes."
+        },
+        "alerts": {
+          "name": "{quantity} alertes de prix",
+          "description": "Recevez {quantity} alertes de seuil ou de variation livrées avec succès."
+        }
+      }
+    },
+    "de": {
+      "subscriptionGroupName": "Meeresmarkt-Analysen",
+      "store": {
+        "title": "Shop",
+        "plansTitle": "Pläne und Guthaben",
+        "optionsEyebrow": "24 Kaufoptionen",
+        "allowanceDisclosure": "Alle Kontingente sind begrenzt. Erst nach einem gültigen Ergebnis oder einer Datei wird abgezogen.",
+        "subscriptionsTitle": "Abonnements",
+        "oneTimeTitle": "Einmalige Guthaben",
+        "unavailable": "Nicht verfügbar",
+        "done": "Fertig",
+        "later": "Später",
+        "storeButton": "Shop",
+        "legalDisclosure": "Abos verlängern sich, sofern sie nicht im Store-Konto gekündigt werden. Verbrauchsguthaben bleibt auf diesem Gerät und geht beim Löschen der App-Daten oder Deinstallieren verloren."
+      },
+      "thankYouTitle": "Vielen Dank für deinen Kauf!",
+      "thankYouMessage": "{product} ist jetzt einsatzbereit.",
+      "openDestination": "{destination} öffnen",
+      "purchase": "Kaufen",
+      "restore": "Käufe wiederherstellen",
+      "restored": "Käufe wurden wiederhergestellt.",
+      "balance": "{count} verbleibend",
+      "pending": "Kauf ausstehend",
+      "failed": "Der Kauf konnte nicht abgeschlossen werden.",
+      "noCharge": "Es wurde kein Ergebnis geliefert, daher wurde kein Guthaben verbraucht.",
+      "toolkit": {
+        "title": "Recherche-Werkzeuge",
+        "eyebrow": "Lizenzierte Marktinformationen",
+        "subtitle": "Jedes gelieferte Ergebnis nennt seine offizielle Quelle. Fehlgeschlagene oder leere Ergebnisse verbrauchen kein Guthaben.",
+        "loading": "Lizenzierte Beobachtungen werden geladen…",
+        "noData": "Derzeit sind keine autorisierten Marktdaten verfügbar.",
+        "noResult": "Kein Ergebnis",
+        "noCredit": "Kein Guthaben verfügbar",
+        "creditPrompt": "Wähle ein begrenztes Guthabenpaket oder ein Abo-Kontingent.",
+        "viewPlans": "Pläne und Guthaben anzeigen",
+        "viewSubscriptions": "Abonnements anzeigen",
+        "addCredits": "Guthaben hinzufügen",
+        "back": "Zurück",
+        "historyLockedTitle": "Der erweiterte Verlauf erfordert Markets Plus, Pro oder Max",
+        "historyLockedBody": "Die kostenlose Marktansicht enthält 52 offizielle Wochenbeobachtungen. Ein Abo schaltet ein begrenztes lizenziertes Zeitfenster von 3, 5 oder 10 Jahren frei.",
+        "observationSummary": "{count} offizielle Wochenbeobachtungen · {currency}/{unit}",
+        "exchangeRate": "Zielwährung je NOK",
+        "freight": "Fracht je kg",
+        "tariff": "Zoll %",
+        "loss": "Verlust %",
+        "direction": "Richtung",
+        "above": "Größer oder gleich",
+        "below": "Kleiner oder gleich",
+        "threshold": "Schwellenwert in NOK/kg",
+        "assumptionNotice": "Wechselkurs und Kosten sind deine Annahmen; AquaHunter stellt sie nicht bereit und garantiert sie nicht.",
+        "alertNotice": "Guthaben wird nur verbraucht, wenn die jüngste offizielle Periode passt und der Alarm in dieser App zugestellt wird.",
+        "reuseTitle": "Kommerzielle Weiterverwendung geprüft",
+        "reuseBody": "Bezahlte Ergebnisse dieser Version nutzen Statistics Norway Statbank Tabelle 03024 unter CC BY 4.0. Das Lizenzregister erlaubt kommerzielle Nutzung, abgeleitete Analysen und Weitergabe mit Namensnennung.",
+        "benchmarkLimit": "Nationale wöchentliche Exportstückwerte; keine Stadtpreise, Auktionsnotierungen oder ausführbaren Angebote.",
+        "unavailable": "Nicht verfügbar",
+        "commodity.01": "Aus Zucht, frisch oder gekühlt",
+        "commodity.02": "Aus Zucht, gefroren",
+        "action.history": "Verlauf öffnen",
+        "action.export": "CSV vorbereiten",
+        "action.compare": "Vergleich erstellen",
+        "action.snapshot": "Marktübersicht erstellen",
+        "action.seasonality": "Saisonbericht erstellen",
+        "action.landedCost": "Einstandskosten berechnen",
+        "action.alerts": "Alarm speichern und prüfen",
+        "result.exportDelivered": "CSV zugestellt",
+        "result.exportFailed": "Export nicht zugestellt",
+        "result.compare": "Offizieller Marktvergleich",
+        "result.snapshot": "Marktübersicht mit Quellenangabe",
+        "result.seasonality": "Saisonbericht",
+        "result.landedCost": "Einstandskostenberechnung",
+        "result.alertNoMatch": "Alarm gespeichert; kein passendes Ereignis",
+        "result.alertDelivered": "Preisalarm zugestellt",
+        "body.export": "{file}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.compare": "Periode {period}\n{first}: {firstPrice}\n{second}: {secondPrice}\nDifferenz: {spread} {currency}/{unit} ({spreadPercent})\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.snapshot": "{period}: {price} NOK/kg\nÄnderung: {change}\n12-Wochen-Durchschnitt: {average}\nSpanne: {low}–{high}\nStatistics Norway · 03024 · {commodity} · CC BY 4.0",
+        "body.seasonality": "Woche {week} · {years} historische Jahre\nHistorischer Durchschnitt: {average} NOK/kg\nAktuell: {latest} NOK/kg\nAbweichung: {difference}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.landedCost": "Quelle {period}: {sourcePrice} NOK/kg\nUmgerechneter Quellpreis: {converted} USD/kg\nVor Verlust: {subtotal} USD/kg\nEinstandskosten: {landed} USD/verkaufsfähiges kg\nBenutzerannahmen: Kurs {fx} · Fracht {freight} · Zoll {tariff}% · Verlust {loss}%",
+        "body.alert": "{commodity}: {price} {currency}/{unit} · offizielle Periode {period}\nStatistics Norway · 03024 · CC BY 4.0"
+      },
+      "destinations": {
+        "history": "Preisverlauf",
+        "export": "Export-Center",
+        "compare": "Marktvergleich",
+        "snapshot": "Marktübersicht",
+        "seasonality": "Saisonalität",
+        "landedCost": "Einstandskosten",
+        "alerts": "Preisalarme"
+      },
+      "periods": {
+        "P1M": "Monatlich",
+        "P1Y": "Jährlich"
+      },
+      "subscriptions": {
+        "plus": {
+          "name": "Markets Plus",
+          "description": "3 Jahre Verlauf, monatlich 5 Snapshots, 5 Einstandskosten-Ergebnisse und 20 zugestellte Alarme."
+        },
+        "pro": {
+          "name": "Markets Pro",
+          "description": "5 Jahre Verlauf, monatlich je 20 Exporte und Analysen sowie 100 zugestellte Alarme."
+        },
+        "max": {
+          "name": "Markets Max",
+          "description": "10 Jahre Verlauf, monatlich je 100 Exporte und Analysen sowie 500 zugestellte Alarme."
+        }
+      },
+      "families": {
+        "export": {
+          "name": "{quantity} Exporte",
+          "description": "Erstelle {quantity} UTF-8-CSV-Dateien aus lizenzierten Marktbeobachtungen."
+        },
+        "compare": {
+          "name": "{quantity} Vergleiche",
+          "description": "Erstelle {quantity} vergleichbare Ergebnisse für frischen/gekühlten und gefrorenen Lachs."
+        },
+        "snapshot": {
+          "name": "{quantity} Marktübersichten",
+          "description": "Erstelle {quantity} Übersichten mit Quelle, Preis, Zeitraum, Änderung und Spanne."
+        },
+        "seasonality": {
+          "name": "{quantity} Saisonberichte",
+          "description": "Erstelle {quantity} Berichte aus mindestens 3 Jahren lizenzierter Wochendaten."
+        },
+        "landedCost": {
+          "name": "{quantity} Kostenberechnungen",
+          "description": "Berechne {quantity} Mal Einstandskosten mit Quellpreis, Fracht, Zoll und Verlust."
+        },
+        "alerts": {
+          "name": "{quantity} Preisalarme",
+          "description": "Erhalte {quantity} erfolgreich zugestellte Schwellen- oder Änderungsalarme."
+        }
+      }
+    },
+    "ja": {
+      "subscriptionGroupName": "水産市場リサーチ",
+      "store": {
+        "title": "ストア",
+        "plansTitle": "プランと回数パック",
+        "optionsEyebrow": "24 個の購入項目",
+        "allowanceDisclosure": "すべて有限です。有効な結果またはファイルの配信後にのみ 1 回消費します。",
+        "subscriptionsTitle": "サブスクリプション",
+        "oneTimeTitle": "買い切り回数パック",
+        "unavailable": "利用不可",
+        "done": "完了",
+        "later": "後で",
+        "storeButton": "ストア",
+        "legalDisclosure": "ストアアカウントで解約しない限り自動更新されます。消費型回数はこの端末だけに保存され、App データの消去または削除で失われます。"
+      },
+      "thankYouTitle": "ご購入ありがとうございます！",
+      "thankYouMessage": "{product} をご利用いただけます。",
+      "openDestination": "{destination}を開く",
+      "purchase": "購入",
+      "restore": "購入を復元",
+      "restored": "購入を復元しました。",
+      "balance": "残り {count} 回",
+      "pending": "購入手続き中",
+      "failed": "購入を完了できませんでした。",
+      "noCharge": "結果が提供されなかったため、回数は消費されていません。",
+      "toolkit": {
+        "title": "リサーチツール",
+        "eyebrow": "ライセンス済み市場インテリジェンス",
+        "subtitle": "提供された結果には公式出典が表示されます。失敗または空の結果では回数を消費しません。",
+        "loading": "ライセンス済み観測データを読み込み中…",
+        "noData": "現在、利用可能な認可済み市場データはありません。",
+        "noResult": "結果なし",
+        "noCredit": "利用可能な回数がありません",
+        "creditPrompt": "上限のある回数パックまたはサブスクリプション枠を選択してください。",
+        "viewPlans": "プランと回数パックを見る",
+        "viewSubscriptions": "サブスクリプションを見る",
+        "addCredits": "回数を追加",
+        "back": "戻る",
+        "historyLockedTitle": "拡張履歴には Markets Plus、Pro、Max が必要です",
+        "historyLockedBody": "無料の市場画面では公式の週次観測 52 件を利用できます。サブスクリプションでは上限付きの 3 年、5 年、10 年のライセンス済み履歴を開放します。",
+        "observationSummary": "公式週次観測 {count} 件 · {currency}/{unit}",
+        "exchangeRate": "1 NOK あたりの対象通貨",
+        "freight": "1 kg あたりの運賃",
+        "tariff": "関税 %",
+        "loss": "ロス %",
+        "direction": "方向",
+        "above": "以上",
+        "below": "以下",
+        "threshold": "しきい値（NOK/kg）",
+        "assumptionNotice": "為替レートと費用はユーザーの仮定です。AquaHunter は提供も保証もしません。",
+        "alertNotice": "最新の公式期間が条件に一致し、このアプリ内でアラートが提供された場合のみ回数を消費します。",
+        "reuseTitle": "商用再利用を確認済み",
+        "reuseBody": "このバージョンの有料結果は CC BY 4.0 の Statistics Norway Statbank 表 03024 を使用します。リリースのライセンス台帳により、商用利用、派生分析、出典明記付き再配布が可能です。",
+        "benchmarkLimit": "全国の週次輸出単価であり、都市価格、オークション相場、執行可能な提示価格ではありません。",
+        "unavailable": "利用不可",
+        "commodity.01": "養殖、鮮魚または冷蔵",
+        "commodity.02": "養殖、冷凍",
+        "action.history": "価格履歴を開く",
+        "action.export": "CSV を準備",
+        "action.compare": "市場比較を作成",
+        "action.snapshot": "市場スナップショットを作成",
+        "action.seasonality": "季節性レポートを作成",
+        "action.landedCost": "着地原価を計算",
+        "action.alerts": "アラートを保存して評価",
+        "result.exportDelivered": "CSV を提供しました",
+        "result.exportFailed": "エクスポートは提供されませんでした",
+        "result.compare": "公式市場比較",
+        "result.snapshot": "出典付き市場スナップショット",
+        "result.seasonality": "季節性レポート",
+        "result.landedCost": "着地原価計算",
+        "result.alertNoMatch": "アラートを保存しました。一致するイベントはありません",
+        "result.alertDelivered": "価格アラートを提供しました",
+        "body.export": "{file}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.compare": "期間 {period}\n{first}: {firstPrice}\n{second}: {secondPrice}\n差額: {spread} {currency}/{unit}（{spreadPercent}）\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.snapshot": "{period}: {price} NOK/kg\n変化: {change}\n12 週平均: {average}\n範囲: {low}–{high}\nStatistics Norway · 03024 · {commodity} · CC BY 4.0",
+        "body.seasonality": "第 {week} 週 · 過去 {years} 年\n過去平均: {average} NOK/kg\n最新: {latest} NOK/kg\n差: {difference}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.landedCost": "出典期間 {period}: {sourcePrice} NOK/kg\n換算後の出典価格: {converted} USD/kg\nロス前: {subtotal} USD/kg\n着地原価: {landed} USD/販売可能 kg\nユーザー仮定: 為替 {fx} · 運賃 {freight} · 関税 {tariff}% · ロス {loss}%",
+        "body.alert": "{commodity}: {price} {currency}/{unit} · 公式期間 {period}\nStatistics Norway · 03024 · CC BY 4.0"
+      },
+      "destinations": {
+        "history": "価格履歴",
+        "export": "エクスポート",
+        "compare": "市場比較",
+        "snapshot": "市場スナップショット",
+        "seasonality": "季節性",
+        "landedCost": "着地原価",
+        "alerts": "価格アラート"
+      },
+      "periods": {
+        "P1M": "月額",
+        "P1Y": "年額"
+      },
+      "subscriptions": {
+        "plus": {
+          "name": "Markets Plus",
+          "description": "許諾済み履歴 3 年分、月 5 回のスナップショット、5 回の着地原価、20 回の配信済みアラート。"
+        },
+        "pro": {
+          "name": "Markets Pro",
+          "description": "履歴 5 年分、各分析と出力を月 20 回、配信済みアラートを月 100 回利用できます。"
+        },
+        "max": {
+          "name": "Markets Max",
+          "description": "履歴 10 年分、各分析と出力を月 100 回、配信済みアラートを月 500 回利用できます。"
+        }
+      },
+      "families": {
+        "export": {
+          "name": "エクスポート {quantity} 回",
+          "description": "ライセンス済み市場データから UTF-8 CSV を {quantity} 回作成します。"
+        },
+        "compare": {
+          "name": "市場比較 {quantity} 回",
+          "description": "生鮮・冷蔵と冷凍サーモンの比較結果を {quantity} 回作成します。"
+        },
+        "snapshot": {
+          "name": "市場スナップショット {quantity} 回",
+          "description": "出典、価格、期間、変動、範囲を含むスナップショットを {quantity} 回作成します。"
+        },
+        "seasonality": {
+          "name": "季節性レポート {quantity} 回",
+          "description": "3 年以上のライセンス済み週次データから {quantity} 回作成します。"
+        },
+        "landedCost": {
+          "name": "着地原価計算 {quantity} 回",
+          "description": "原価、運賃、関税、ロスを使って着地原価を {quantity} 回計算します。"
+        },
+        "alerts": {
+          "name": "価格アラート {quantity} 回",
+          "description": "しきい値または価格変動アラートを {quantity} 回受け取れます。"
+        }
+      }
+    },
+    "ko": {
+      "subscriptionGroupName": "수산 시장 리서치",
+      "store": {
+        "title": "스토어",
+        "plansTitle": "요금제 및 크레딧",
+        "optionsEyebrow": "구매 옵션 24개",
+        "allowanceDisclosure": "모든 한도는 유한합니다. 유효한 결과나 파일이 전달된 뒤에만 1회 차감됩니다.",
+        "subscriptionsTitle": "구독",
+        "oneTimeTitle": "일회성 크레딧 팩",
+        "unavailable": "사용할 수 없음",
+        "done": "완료",
+        "later": "나중에",
+        "storeButton": "스토어",
+        "legalDisclosure": "스토어 계정에서 취소하지 않으면 구독이 자동 갱신됩니다. 소모성 크레딧은 이 기기에만 저장되며 App 데이터를 지우거나 삭제하면 사라집니다."
+      },
+      "thankYouTitle": "구매해 주셔서 감사합니다!",
+      "thankYouMessage": "{product}을(를) 지금 사용할 수 있습니다.",
+      "openDestination": "{destination} 열기",
+      "purchase": "구매",
+      "restore": "구매 복원",
+      "restored": "구매가 복원되었습니다.",
+      "balance": "{count}회 남음",
+      "pending": "구매 처리 중",
+      "failed": "구매를 완료할 수 없습니다.",
+      "noCharge": "결과가 제공되지 않아 횟수가 차감되지 않았습니다.",
+      "toolkit": {
+        "title": "리서치 도구",
+        "eyebrow": "라이선스 시장 인텔리전스",
+        "subtitle": "제공된 모든 결과에 공식 출처가 표시됩니다. 실패하거나 비어 있는 결과에는 횟수가 차감되지 않습니다.",
+        "loading": "라이선스 관측 데이터를 불러오는 중…",
+        "noData": "현재 사용할 수 있는 승인된 시장 데이터가 없습니다.",
+        "noResult": "결과 없음",
+        "noCredit": "사용 가능한 횟수 없음",
+        "creditPrompt": "한도가 정해진 횟수 팩 또는 구독 제공량을 선택하세요.",
+        "viewPlans": "요금제와 횟수 팩 보기",
+        "viewSubscriptions": "구독 보기",
+        "addCredits": "횟수 추가",
+        "back": "뒤로",
+        "historyLockedTitle": "확장 이력에는 Markets Plus, Pro 또는 Max가 필요합니다",
+        "historyLockedBody": "무료 시장 화면은 공식 주간 관측 52개를 제공합니다. 구독 시 한도가 정해진 3년, 5년 또는 10년 라이선스 이력을 이용할 수 있습니다.",
+        "observationSummary": "공식 주간 관측 {count}개 · {currency}/{unit}",
+        "exchangeRate": "NOK당 대상 통화",
+        "freight": "kg당 운임",
+        "tariff": "관세 %",
+        "loss": "손실 %",
+        "direction": "방향",
+        "above": "이상",
+        "below": "이하",
+        "threshold": "기준값(NOK/kg)",
+        "assumptionNotice": "환율과 비용은 사용자가 입력한 가정이며 AquaHunter가 제공하거나 보장하지 않습니다.",
+        "alertNotice": "최신 공식 기간이 조건과 일치하고 이 앱에 알림이 제공된 경우에만 횟수가 차감됩니다.",
+        "reuseTitle": "상업적 재사용 확인 완료",
+        "reuseBody": "이 버전의 유료 결과는 CC BY 4.0의 Statistics Norway Statbank 표 03024를 사용합니다. 릴리스 라이선스 등록부에 따라 상업적 이용, 파생 분석 및 출처 표시 재배포가 가능합니다.",
+        "benchmarkLimit": "전국 주간 수출 단위 가치이며 도시 가격, 경매 호가 또는 실행 가능한 제안 가격이 아닙니다.",
+        "unavailable": "사용할 수 없음",
+        "commodity.01": "양식, 신선 또는 냉장",
+        "commodity.02": "양식, 냉동",
+        "action.history": "가격 이력 열기",
+        "action.export": "CSV 준비",
+        "action.compare": "시장 비교 만들기",
+        "action.snapshot": "시장 스냅샷 만들기",
+        "action.seasonality": "계절성 보고서 만들기",
+        "action.landedCost": "도착 원가 계산",
+        "action.alerts": "알림 저장 및 평가",
+        "result.exportDelivered": "CSV 제공 완료",
+        "result.exportFailed": "내보내기가 제공되지 않음",
+        "result.compare": "공식 시장 비교",
+        "result.snapshot": "출처 포함 시장 스냅샷",
+        "result.seasonality": "계절성 보고서",
+        "result.landedCost": "도착 원가 계산",
+        "result.alertNoMatch": "알림 저장됨; 일치하는 이벤트 없음",
+        "result.alertDelivered": "가격 알림 제공 완료",
+        "body.export": "{file}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.compare": "기간 {period}\n{first}: {firstPrice}\n{second}: {secondPrice}\n차이: {spread} {currency}/{unit} ({spreadPercent})\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.snapshot": "{period}: {price} NOK/kg\n변동: {change}\n12주 평균: {average}\n범위: {low}–{high}\nStatistics Norway · 03024 · {commodity} · CC BY 4.0",
+        "body.seasonality": "{week}주차 · 과거 {years}년\n과거 평균: {average} NOK/kg\n최신: {latest} NOK/kg\n차이: {difference}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.landedCost": "출처 기간 {period}: {sourcePrice} NOK/kg\n환산 출처 가격: {converted} USD/kg\n손실 전: {subtotal} USD/kg\n도착 원가: {landed} USD/판매 가능 kg\n사용자 가정: 환율 {fx} · 운임 {freight} · 관세 {tariff}% · 손실 {loss}%",
+        "body.alert": "{commodity}: {price} {currency}/{unit} · 공식 기간 {period}\nStatistics Norway · 03024 · CC BY 4.0"
+      },
+      "destinations": {
+        "history": "가격 기록",
+        "export": "내보내기 센터",
+        "compare": "시장 비교",
+        "snapshot": "시장 스냅샷",
+        "seasonality": "계절성",
+        "landedCost": "도착 원가",
+        "alerts": "가격 알림"
+      },
+      "periods": {
+        "P1M": "월간",
+        "P1Y": "연간"
+      },
+      "subscriptions": {
+        "plus": {
+          "name": "Markets Plus",
+          "description": "허가 기록 3년, 월 스냅샷 5회, 도착 원가 5회, 전달된 알림 20회."
+        },
+        "pro": {
+          "name": "Markets Pro",
+          "description": "기록 5년, 각 분석과 내보내기 월 20회, 전달된 알림 월 100회."
+        },
+        "max": {
+          "name": "Markets Max",
+          "description": "기록 10년, 각 분석과 내보내기 월 100회, 전달된 알림 월 500회."
+        }
+      },
+      "families": {
+        "export": {
+          "name": "내보내기 {quantity}회",
+          "description": "라이선스 시장 관측에서 UTF-8 CSV 파일을 {quantity}회 생성합니다."
+        },
+        "compare": {
+          "name": "시장 비교 {quantity}회",
+          "description": "신선/냉장 연어와 냉동 연어의 비교 결과를 {quantity}회 생성합니다."
+        },
+        "snapshot": {
+          "name": "시장 스냅샷 {quantity}회",
+          "description": "출처, 가격, 기간, 변동 및 범위를 포함한 스냅샷을 {quantity}회 생성합니다."
+        },
+        "seasonality": {
+          "name": "계절성 보고서 {quantity}회",
+          "description": "3년 이상의 라이선스 주간 관측으로 보고서를 {quantity}회 생성합니다."
+        },
+        "landedCost": {
+          "name": "도착 원가 계산 {quantity}회",
+          "description": "원천 가격, 운임, 관세 및 손실을 사용해 {quantity}회 계산합니다."
+        },
+        "alerts": {
+          "name": "가격 알림 {quantity}회",
+          "description": "임계값 또는 가격 변동 알림을 {quantity}회 성공적으로 받습니다."
+        }
+      }
+    },
+    "pt-BR": {
+      "subscriptionGroupName": "Pesquisa de mercado",
+      "store": {
+        "title": "Loja",
+        "plansTitle": "Planos e créditos",
+        "optionsEyebrow": "24 opções de compra",
+        "allowanceDisclosure": "Todos os limites são finitos. O crédito só é usado após a entrega de resultado ou arquivo válido.",
+        "subscriptionsTitle": "Assinaturas",
+        "oneTimeTitle": "Pacotes avulsos",
+        "unavailable": "Indisponível",
+        "done": "Concluído",
+        "later": "Mais tarde",
+        "storeButton": "Loja",
+        "legalDisclosure": "As assinaturas renovam salvo cancelamento na conta da loja. Créditos consumíveis ficam neste dispositivo e são perdidos ao limpar os dados ou desinstalar o app."
+      },
+      "thankYouTitle": "Agradecemos sua compra!",
+      "thankYouMessage": "{product} já está disponível.",
+      "openDestination": "Abrir {destination}",
+      "purchase": "Comprar",
+      "restore": "Restaurar compras",
+      "restored": "Compras restauradas.",
+      "balance": "{count} restantes",
+      "pending": "Compra pendente",
+      "failed": "Não foi possível concluir a compra.",
+      "noCharge": "Nenhum resultado foi entregue, portanto nenhum crédito foi usado.",
+      "toolkit": {
+        "title": "Ferramentas de pesquisa",
+        "eyebrow": "Inteligência de mercado licenciada",
+        "subtitle": "Cada resultado entregue cita a fonte oficial. Resultados vazios ou com falha não consomem créditos.",
+        "loading": "Carregando observações licenciadas…",
+        "noData": "Nenhum dado de mercado autorizado está disponível agora.",
+        "noResult": "Sem resultado",
+        "noCredit": "Nenhum crédito disponível",
+        "creditPrompt": "Escolha um pacote de créditos limitado ou a cota de uma assinatura.",
+        "viewPlans": "Ver planos e pacotes",
+        "viewSubscriptions": "Ver assinaturas",
+        "addCredits": "Adicionar créditos",
+        "back": "Voltar",
+        "historyLockedTitle": "O histórico ampliado requer Markets Plus, Pro ou Max",
+        "historyLockedBody": "A tela gratuita mantém 52 observações semanais oficiais. Uma assinatura libera uma janela licenciada limitada de 3, 5 ou 10 anos.",
+        "observationSummary": "{count} observações semanais oficiais · {currency}/{unit}",
+        "exchangeRate": "Moeda de destino por NOK",
+        "freight": "Frete por kg",
+        "tariff": "Tarifa %",
+        "loss": "Perda %",
+        "direction": "Direção",
+        "above": "Maior ou igual",
+        "below": "Menor ou igual",
+        "threshold": "Limite em NOK/kg",
+        "assumptionNotice": "A taxa de câmbio e os custos são suas premissas; a AquaHunter não os fornece nem garante.",
+        "alertNotice": "Um crédito só é usado quando o período oficial mais recente atende à condição e o alerta é entregue neste app.",
+        "reuseTitle": "Reutilização comercial verificada",
+        "reuseBody": "Os resultados pagos desta versão usam a tabela 03024 do Statistics Norway Statbank sob CC BY 4.0. O registro de licenças permite uso comercial, análises derivadas e redistribuição com atribuição.",
+        "benchmarkLimit": "Valores unitários nacionais de exportação semanal; não são preços urbanos, cotações de leilão nem ofertas executáveis.",
+        "unavailable": "Indisponível",
+        "commodity.01": "De cultivo, fresco ou refrigerado",
+        "commodity.02": "De cultivo, congelado",
+        "action.history": "Abrir histórico",
+        "action.export": "Preparar CSV",
+        "action.compare": "Criar comparação",
+        "action.snapshot": "Criar panorama",
+        "action.seasonality": "Criar relatório sazonal",
+        "action.landedCost": "Calcular custo posto",
+        "action.alerts": "Salvar e avaliar alerta",
+        "result.exportDelivered": "CSV entregue",
+        "result.exportFailed": "Exportação não entregue",
+        "result.compare": "Comparação oficial de mercado",
+        "result.snapshot": "Panorama de mercado com fonte",
+        "result.seasonality": "Relatório sazonal",
+        "result.landedCost": "Cálculo de custo posto",
+        "result.alertNoMatch": "Alerta salvo; nenhum evento correspondente",
+        "result.alertDelivered": "Alerta de preço entregue",
+        "body.export": "{file}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.compare": "Período {period}\n{first}: {firstPrice}\n{second}: {secondPrice}\nDiferença: {spread} {currency}/{unit} ({spreadPercent})\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.snapshot": "{period}: {price} NOK/kg\nVariação: {change}\nMédia de 12 semanas: {average}\nFaixa: {low}–{high}\nStatistics Norway · 03024 · {commodity} · CC BY 4.0",
+        "body.seasonality": "Semana {week} · {years} anos históricos\nMédia histórica: {average} NOK/kg\nMais recente: {latest} NOK/kg\nDiferença: {difference}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.landedCost": "Fonte {period}: {sourcePrice} NOK/kg\nFonte convertida: {converted} USD/kg\nAntes da perda: {subtotal} USD/kg\nCusto posto: {landed} USD/kg vendável\nPremissas do usuário: câmbio {fx} · frete {freight} · tarifa {tariff}% · perda {loss}%",
+        "body.alert": "{commodity}: {price} {currency}/{unit} · período oficial {period}\nStatistics Norway · 03024 · CC BY 4.0"
+      },
+      "destinations": {
+        "history": "Histórico de preços",
+        "export": "Central de exportação",
+        "compare": "Comparação de mercados",
+        "snapshot": "Resumo do mercado",
+        "seasonality": "Sazonalidade",
+        "landedCost": "Custo posto",
+        "alerts": "Alertas de preço"
+      },
+      "periods": {
+        "P1M": "Mensal",
+        "P1Y": "Anual"
+      },
+      "subscriptions": {
+        "plus": {
+          "name": "Markets Plus",
+          "description": "3 anos de histórico, 5 resumos, 5 custos postos e 20 alertas entregues por mês."
+        },
+        "pro": {
+          "name": "Markets Pro",
+          "description": "5 anos de histórico, 20 usos mensais de cada análise e exportação, e 100 alertas entregues."
+        },
+        "max": {
+          "name": "Markets Max",
+          "description": "10 anos de histórico, 100 usos mensais de cada análise e exportação, e 500 alertas entregues."
+        }
+      },
+      "families": {
+        "export": {
+          "name": "{quantity} exportações",
+          "description": "Crie {quantity} arquivos CSV UTF-8 com observações de mercado licenciadas."
+        },
+        "compare": {
+          "name": "{quantity} comparações",
+          "description": "Crie {quantity} resultados comparáveis de salmão fresco/resfriado e congelado."
+        },
+        "snapshot": {
+          "name": "{quantity} resumos de mercado",
+          "description": "Crie {quantity} resumos com fonte, preço, período, variação e faixa."
+        },
+        "seasonality": {
+          "name": "{quantity} relatórios sazonais",
+          "description": "Crie {quantity} relatórios com pelo menos 3 anos de observações semanais licenciadas."
+        },
+        "landedCost": {
+          "name": "{quantity} cálculos de custo posto",
+          "description": "Calcule {quantity} vezes o custo posto com preço, frete, tarifa e perda."
+        },
+        "alerts": {
+          "name": "{quantity} alertas de preço",
+          "description": "Receba {quantity} alertas de limite ou variação entregues com sucesso."
+        }
+      }
+    },
+    "id": {
+      "subscriptionGroupName": "Riset Pasar Hasil Laut",
+      "store": {
+        "title": "Toko",
+        "plansTitle": "Paket dan kredit",
+        "optionsEyebrow": "24 opsi pembelian",
+        "allowanceDisclosure": "Semua kuota terbatas. Kredit dipakai hanya setelah hasil atau file valid terkirim.",
+        "subscriptionsTitle": "Langganan",
+        "oneTimeTitle": "Paket sekali beli",
+        "unavailable": "Tidak tersedia",
+        "done": "Selesai",
+        "later": "Nanti",
+        "storeButton": "Toko",
+        "legalDisclosure": "Langganan diperpanjang kecuali dibatalkan di akun toko. Kredit habis pakai tersimpan di perangkat ini dan hilang jika data app dihapus atau app dicopot."
+      },
+      "thankYouTitle": "Terima kasih atas pembelian Anda!",
+      "thankYouMessage": "{product} siap digunakan.",
+      "openDestination": "Buka {destination}",
+      "purchase": "Beli",
+      "restore": "Pulihkan pembelian",
+      "restored": "Pembelian dipulihkan.",
+      "balance": "Tersisa {count}",
+      "pending": "Pembelian tertunda",
+      "failed": "Pembelian tidak dapat diselesaikan.",
+      "noCharge": "Tidak ada hasil yang diberikan, jadi tidak ada kredit yang digunakan.",
+      "toolkit": {
+        "title": "Perangkat riset",
+        "eyebrow": "Intelijen pasar berlisensi",
+        "subtitle": "Setiap hasil yang diberikan mencantumkan sumber resmi. Hasil gagal atau kosong tidak menggunakan kredit.",
+        "loading": "Memuat pengamatan berlisensi…",
+        "noData": "Saat ini tidak ada data pasar resmi yang tersedia.",
+        "noResult": "Tidak ada hasil",
+        "noCredit": "Tidak ada kredit tersedia",
+        "creditPrompt": "Pilih paket kredit terbatas atau jatah langganan.",
+        "viewPlans": "Lihat paket dan kredit",
+        "viewSubscriptions": "Lihat langganan",
+        "addCredits": "Tambah kredit",
+        "back": "Kembali",
+        "historyLockedTitle": "Riwayat panjang memerlukan Markets Plus, Pro, atau Max",
+        "historyLockedBody": "Layar pasar gratis menyimpan 52 pengamatan mingguan resmi. Langganan membuka jendela riwayat berlisensi terbatas selama 3, 5, atau 10 tahun.",
+        "observationSummary": "{count} pengamatan mingguan resmi · {currency}/{unit}",
+        "exchangeRate": "Mata uang tujuan per NOK",
+        "freight": "Angkutan per kg",
+        "tariff": "Tarif %",
+        "loss": "Susut %",
+        "direction": "Arah",
+        "above": "Sama dengan atau di atas",
+        "below": "Sama dengan atau di bawah",
+        "threshold": "Ambang dalam NOK/kg",
+        "assumptionNotice": "Kurs dan biaya adalah asumsi Anda; AquaHunter tidak menyediakan atau menjaminnya.",
+        "alertNotice": "Kredit hanya digunakan ketika periode resmi terbaru cocok dan peringatan diberikan di app ini.",
+        "reuseTitle": "Penggunaan ulang komersial terverifikasi",
+        "reuseBody": "Hasil berbayar dalam versi ini memakai tabel 03024 Statistics Norway Statbank dengan lisensi CC BY 4.0. Registri lisensi rilis mengizinkan penggunaan komersial, analisis turunan, dan distribusi ulang dengan atribusi.",
+        "benchmarkLimit": "Nilai satuan ekspor mingguan nasional; bukan harga kota, kutipan lelang, atau penawaran yang dapat dieksekusi.",
+        "unavailable": "Tidak tersedia",
+        "commodity.01": "Budidaya, segar atau dingin",
+        "commodity.02": "Budidaya, beku",
+        "action.history": "Buka riwayat",
+        "action.export": "Siapkan CSV",
+        "action.compare": "Buat perbandingan",
+        "action.snapshot": "Buat ringkasan",
+        "action.seasonality": "Buat laporan musiman",
+        "action.landedCost": "Hitung biaya tiba",
+        "action.alerts": "Simpan dan evaluasi peringatan",
+        "result.exportDelivered": "CSV diberikan",
+        "result.exportFailed": "Ekspor tidak diberikan",
+        "result.compare": "Perbandingan pasar resmi",
+        "result.snapshot": "Ringkasan pasar bersumber",
+        "result.seasonality": "Laporan musiman",
+        "result.landedCost": "Perhitungan biaya tiba",
+        "result.alertNoMatch": "Peringatan disimpan; tidak ada kejadian yang cocok",
+        "result.alertDelivered": "Peringatan harga diberikan",
+        "body.export": "{file}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.compare": "Periode {period}\n{first}: {firstPrice}\n{second}: {secondPrice}\nSelisih: {spread} {currency}/{unit} ({spreadPercent})\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.snapshot": "{period}: {price} NOK/kg\nPerubahan: {change}\nRata-rata 12 minggu: {average}\nRentang: {low}–{high}\nStatistics Norway · 03024 · {commodity} · CC BY 4.0",
+        "body.seasonality": "Minggu {week} · {years} tahun historis\nRata-rata historis: {average} NOK/kg\nTerbaru: {latest} NOK/kg\nPerbedaan: {difference}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.landedCost": "Sumber {period}: {sourcePrice} NOK/kg\nSumber setelah konversi: {converted} USD/kg\nSebelum susut: {subtotal} USD/kg\nBiaya tiba: {landed} USD/kg layak jual\nAsumsi pengguna: kurs {fx} · angkutan {freight} · tarif {tariff}% · susut {loss}%",
+        "body.alert": "{commodity}: {price} {currency}/{unit} · periode resmi {period}\nStatistics Norway · 03024 · CC BY 4.0"
+      },
+      "destinations": {
+        "history": "Riwayat Harga",
+        "export": "Pusat Ekspor",
+        "compare": "Perbandingan Pasar",
+        "snapshot": "Ringkasan Pasar",
+        "seasonality": "Musiman",
+        "landedCost": "Biaya Tiba",
+        "alerts": "Peringatan Harga"
+      },
+      "periods": {
+        "P1M": "Bulanan",
+        "P1Y": "Tahunan"
+      },
+      "subscriptions": {
+        "plus": {
+          "name": "Markets Plus",
+          "description": "Riwayat berlisensi 3 tahun, 5 snapshot, 5 hasil biaya sampai, dan 20 peringatan terkirim per bulan."
+        },
+        "pro": {
+          "name": "Markets Pro",
+          "description": "Riwayat 5 tahun, 20 penggunaan bulanan tiap analisis dan ekspor, serta 100 peringatan terkirim."
+        },
+        "max": {
+          "name": "Markets Max",
+          "description": "Riwayat 10 tahun, 100 penggunaan bulanan tiap analisis dan ekspor, serta 500 peringatan terkirim."
+        }
+      },
+      "families": {
+        "export": {
+          "name": "{quantity} Ekspor",
+          "description": "Buat {quantity} file CSV UTF-8 dari pengamatan pasar berlisensi."
+        },
+        "compare": {
+          "name": "{quantity} Perbandingan",
+          "description": "Buat {quantity} hasil perbandingan salmon segar/dingin dan beku."
+        },
+        "snapshot": {
+          "name": "{quantity} Ringkasan Pasar",
+          "description": "Buat {quantity} ringkasan dengan sumber, harga, periode, perubahan, dan rentang."
+        },
+        "seasonality": {
+          "name": "{quantity} Laporan Musiman",
+          "description": "Buat {quantity} laporan dari sedikitnya 3 tahun pengamatan mingguan berlisensi."
+        },
+        "landedCost": {
+          "name": "{quantity} Perhitungan Biaya Tiba",
+          "description": "Hitung biaya tiba {quantity} kali dengan harga sumber, angkutan, tarif, dan susut."
+        },
+        "alerts": {
+          "name": "{quantity} Peringatan Harga",
+          "description": "Terima {quantity} peringatan ambang atau perubahan harga yang berhasil dikirim."
+        }
+      }
+    },
+    "hi": {
+      "subscriptionGroupName": "समुद्री खाद्य बाज़ार शोध",
+      "store": {
+        "title": "स्टोर",
+        "plansTitle": "प्लान और क्रेडिट पैक",
+        "optionsEyebrow": "24 खरीद विकल्प",
+        "allowanceDisclosure": "सभी सीमाएँ निश्चित हैं। वैध परिणाम या फ़ाइल मिलने के बाद ही एक क्रेडिट कटता है।",
+        "subscriptionsTitle": "सदस्यताएँ",
+        "oneTimeTitle": "एकमुश्त क्रेडिट पैक",
+        "unavailable": "उपलब्ध नहीं",
+        "done": "पूर्ण",
+        "later": "बाद में",
+        "storeButton": "स्टोर",
+        "legalDisclosure": "स्टोर खाते में रद्द न करने पर सदस्यता अपने-आप नवीनीकृत होती है। उपभोज्य क्रेडिट इसी डिवाइस पर रहते हैं और App डेटा मिटाने या App हटाने पर खो जाते हैं।"
+      },
+      "thankYouTitle": "आपकी खरीदारी के लिए धन्यवाद!",
+      "thankYouMessage": "{product} अब उपयोग के लिए तैयार है।",
+      "openDestination": "{destination} खोलें",
+      "purchase": "खरीदें",
+      "restore": "खरीदारी पुनर्स्थापित करें",
+      "restored": "खरीदारी पुनर्स्थापित हो गई।",
+      "balance": "{count} शेष",
+      "pending": "खरीदारी लंबित है",
+      "failed": "खरीदारी पूरी नहीं हो सकी।",
+      "noCharge": "कोई परिणाम नहीं मिला, इसलिए कोई क्रेडिट उपयोग नहीं हुआ।",
+      "toolkit": {
+        "title": "रिसर्च टूलकिट",
+        "eyebrow": "लाइसेंस प्राप्त बाज़ार जानकारी",
+        "subtitle": "हर दिए गए परिणाम में आधिकारिक स्रोत बताया जाता है। विफल या खाली परिणाम पर कोई क्रेडिट नहीं कटता।",
+        "loading": "लाइसेंस प्राप्त अवलोकन लोड हो रहे हैं…",
+        "noData": "अभी कोई अधिकृत बाज़ार डेटा उपलब्ध नहीं है।",
+        "noResult": "कोई परिणाम नहीं",
+        "noCredit": "कोई क्रेडिट उपलब्ध नहीं",
+        "creditPrompt": "सीमित क्रेडिट पैक या सदस्यता सीमा चुनें।",
+        "viewPlans": "प्लान और क्रेडिट पैक देखें",
+        "viewSubscriptions": "सदस्यताएँ देखें",
+        "addCredits": "क्रेडिट जोड़ें",
+        "back": "वापस",
+        "historyLockedTitle": "विस्तृत इतिहास के लिए Markets Plus, Pro या Max चाहिए",
+        "historyLockedBody": "मुफ़्त बाज़ार स्क्रीन 52 आधिकारिक साप्ताहिक अवलोकन रखती है। सदस्यता सीमित 3, 5 या 10 वर्ष का लाइसेंस प्राप्त इतिहास खोलती है।",
+        "observationSummary": "{count} आधिकारिक साप्ताहिक अवलोकन · {currency}/{unit}",
+        "exchangeRate": "प्रति NOK लक्ष्य मुद्रा",
+        "freight": "प्रति किग्रा मालभाड़ा",
+        "tariff": "शुल्क %",
+        "loss": "हानि %",
+        "direction": "दिशा",
+        "above": "बराबर या अधिक",
+        "below": "बराबर या कम",
+        "threshold": "सीमा NOK/kg में",
+        "assumptionNotice": "विनिमय दर और लागत आपके अनुमान हैं; AquaHunter इन्हें न देता है, न इनकी गारंटी करता है।",
+        "alertNotice": "क्रेडिट तभी कटता है जब नवीनतम आधिकारिक अवधि मेल खाए और अलर्ट इस App में दिया जाए।",
+        "reuseTitle": "व्यावसायिक पुनः उपयोग सत्यापित",
+        "reuseBody": "इस संस्करण के भुगतान परिणाम CC BY 4.0 के अंतर्गत Statistics Norway Statbank तालिका 03024 का उपयोग करते हैं। रिलीज़ लाइसेंस रजिस्ट्री व्यावसायिक उपयोग, व्युत्पन्न विश्लेषण और श्रेय सहित पुनर्वितरण की अनुमति देती है।",
+        "benchmarkLimit": "राष्ट्रीय साप्ताहिक निर्यात इकाई मूल्य; यह शहर का मूल्य, नीलामी भाव या निष्पादन योग्य प्रस्ताव नहीं है।",
+        "unavailable": "उपलब्ध नहीं",
+        "commodity.01": "पालित, ताज़ा या ठंडा",
+        "commodity.02": "पालित, जमा हुआ",
+        "action.history": "मूल्य इतिहास खोलें",
+        "action.export": "CSV तैयार करें",
+        "action.compare": "तुलना बनाएँ",
+        "action.snapshot": "स्नैपशॉट बनाएँ",
+        "action.seasonality": "मौसमी रिपोर्ट बनाएँ",
+        "action.landedCost": "लैंडेड लागत निकालें",
+        "action.alerts": "अलर्ट सहेजें और जाँचें",
+        "result.exportDelivered": "CSV दिया गया",
+        "result.exportFailed": "निर्यात नहीं दिया गया",
+        "result.compare": "आधिकारिक बाज़ार तुलना",
+        "result.snapshot": "स्रोत सहित बाज़ार स्नैपशॉट",
+        "result.seasonality": "मौसमी रिपोर्ट",
+        "result.landedCost": "लैंडेड लागत गणना",
+        "result.alertNoMatch": "अलर्ट सहेजा गया; कोई मेल खाता इवेंट नहीं",
+        "result.alertDelivered": "मूल्य अलर्ट दिया गया",
+        "body.export": "{file}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.compare": "अवधि {period}\n{first}: {firstPrice}\n{second}: {secondPrice}\nअंतर: {spread} {currency}/{unit} ({spreadPercent})\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.snapshot": "{period}: {price} NOK/kg\nबदलाव: {change}\n12-सप्ताह औसत: {average}\nदायरा: {low}–{high}\nStatistics Norway · 03024 · {commodity} · CC BY 4.0",
+        "body.seasonality": "सप्ताह {week} · {years} ऐतिहासिक वर्ष\nऐतिहासिक औसत: {average} NOK/kg\nनवीनतम: {latest} NOK/kg\nअंतर: {difference}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.landedCost": "स्रोत {period}: {sourcePrice} NOK/kg\nपरिवर्तित स्रोत: {converted} USD/kg\nहानि से पहले: {subtotal} USD/kg\nलैंडेड लागत: {landed} USD/बिक्री योग्य kg\nउपयोगकर्ता अनुमान: विनिमय {fx} · मालभाड़ा {freight} · शुल्क {tariff}% · हानि {loss}%",
+        "body.alert": "{commodity}: {price} {currency}/{unit} · आधिकारिक अवधि {period}\nStatistics Norway · 03024 · CC BY 4.0"
+      },
+      "destinations": {
+        "history": "मूल्य इतिहास",
+        "export": "निर्यात केंद्र",
+        "compare": "बाज़ार तुलना",
+        "snapshot": "बाज़ार स्नैपशॉट",
+        "seasonality": "मौसमी विश्लेषण",
+        "landedCost": "लैंडेड लागत",
+        "alerts": "मूल्य अलर्ट"
+      },
+      "periods": {
+        "P1M": "मासिक",
+        "P1Y": "वार्षिक"
+      },
+      "subscriptions": {
+        "plus": {
+          "name": "Markets Plus",
+          "description": "3 वर्ष का लाइसेंसशुदा इतिहास, हर माह 5 स्नैपशॉट, 5 लैंडेड-कॉस्ट परिणाम और 20 पहुँचे अलर्ट।"
+        },
+        "pro": {
+          "name": "Markets Pro",
+          "description": "5 वर्ष का इतिहास, हर विश्लेषण व निर्यात के 20 मासिक उपयोग और 100 पहुँचे अलर्ट।"
+        },
+        "max": {
+          "name": "Markets Max",
+          "description": "10 वर्ष का इतिहास, हर विश्लेषण व निर्यात के 100 मासिक उपयोग और 500 पहुँचे अलर्ट।"
+        }
+      },
+      "families": {
+        "export": {
+          "name": "{quantity} निर्यात",
+          "description": "लाइसेंसशुदा बाज़ार अवलोकनों से {quantity} UTF-8 CSV फ़ाइलें बनाएँ।"
+        },
+        "compare": {
+          "name": "{quantity} तुलनाएँ",
+          "description": "ताज़े/ठंडे और जमे हुए सैल्मन के {quantity} तुलनीय परिणाम बनाएँ।"
+        },
+        "snapshot": {
+          "name": "{quantity} बाज़ार स्नैपशॉट",
+          "description": "स्रोत, मूल्य, अवधि, बदलाव और दायरे वाले {quantity} स्नैपशॉट बनाएँ।"
+        },
+        "seasonality": {
+          "name": "{quantity} मौसमी रिपोर्ट",
+          "description": "कम से कम 3 वर्षों के लाइसेंसशुदा साप्ताहिक डेटा से {quantity} रिपोर्ट बनाएँ।"
+        },
+        "landedCost": {
+          "name": "{quantity} लैंडेड लागत गणनाएँ",
+          "description": "स्रोत मूल्य, मालभाड़ा, शुल्क और हानि से {quantity} बार लैंडेड लागत निकालें।"
+        },
+        "alerts": {
+          "name": "{quantity} मूल्य अलर्ट",
+          "description": "{quantity} सफलतापूर्वक भेजे गए सीमा या मूल्य-बदलाव अलर्ट पाएँ।"
+        }
+      }
+    },
+    "ar": {
+      "subscriptionGroupName": "أبحاث سوق المأكولات البحرية",
+      "store": {
+        "title": "المتجر",
+        "plansTitle": "الخطط وحزم الأرصدة",
+        "optionsEyebrow": "24 خيار شراء",
+        "allowanceDisclosure": "جميع الحصص محدودة. لا يُخصم الرصيد إلا بعد تسليم نتيجة أو ملف صالح.",
+        "subscriptionsTitle": "الاشتراكات",
+        "oneTimeTitle": "حزم شراء لمرة واحدة",
+        "unavailable": "غير متاح",
+        "done": "تم",
+        "later": "لاحقًا",
+        "storeButton": "المتجر",
+        "legalDisclosure": "تتجدد الاشتراكات ما لم تُلغَ من حساب المتجر. تبقى الأرصدة الاستهلاكية على هذا الجهاز وتُفقد عند مسح بيانات التطبيق أو إلغاء تثبيته."
+      },
+      "thankYouTitle": "شكرًا لشرائك!",
+      "thankYouMessage": "أصبح {product} جاهزًا للاستخدام.",
+      "openDestination": "فتح {destination}",
+      "purchase": "شراء",
+      "restore": "استعادة المشتريات",
+      "restored": "تمت استعادة المشتريات.",
+      "balance": "متبقٍ {count}",
+      "pending": "عملية الشراء قيد الانتظار",
+      "failed": "تعذر إكمال عملية الشراء.",
+      "noCharge": "لم يتم تسليم نتيجة، لذلك لم يُستخدم أي رصيد.",
+      "toolkit": {
+        "title": "أدوات البحث",
+        "eyebrow": "معلومات سوق مرخّصة",
+        "subtitle": "تتضمن كل نتيجة مسلّمة مصدرها الرسمي. لا تستهلك النتائج الفاشلة أو الفارغة أي رصيد.",
+        "loading": "جارٍ تحميل المشاهدات المرخّصة…",
+        "noData": "لا تتوفر بيانات سوق معتمدة حاليًا.",
+        "noResult": "لا توجد نتيجة",
+        "noCredit": "لا يتوفر رصيد",
+        "creditPrompt": "اختر حزمة أرصدة محدودة أو حصة اشتراك.",
+        "viewPlans": "عرض الخطط وحزم الأرصدة",
+        "viewSubscriptions": "عرض الاشتراكات",
+        "addCredits": "إضافة أرصدة",
+        "back": "رجوع",
+        "historyLockedTitle": "يتطلب السجل الموسّع Markets Plus أو Pro أو Max",
+        "historyLockedBody": "تحتفظ شاشة السوق المجانية بـ 52 مشاهدة أسبوعية رسمية. يفتح الاشتراك نافذة سجل مرخّصة ومحدودة لمدة 3 أو 5 أو 10 سنوات.",
+        "observationSummary": "{count} مشاهدة أسبوعية رسمية · {currency}/{unit}",
+        "exchangeRate": "العملة المستهدفة لكل NOK",
+        "freight": "الشحن لكل كجم",
+        "tariff": "التعرفة %",
+        "loss": "الفاقد %",
+        "direction": "الاتجاه",
+        "above": "يساوي أو أعلى",
+        "below": "يساوي أو أدنى",
+        "threshold": "الحد بوحدة NOK/kg",
+        "assumptionNotice": "سعر الصرف والتكاليف افتراضات منك؛ لا توفرها AquaHunter ولا تضمنها.",
+        "alertNotice": "لا يُستخدم الرصيد إلا عندما تطابق أحدث فترة رسمية الشرط ويُسلّم التنبيه داخل هذا التطبيق.",
+        "reuseTitle": "تم التحقق من إعادة الاستخدام التجاري",
+        "reuseBody": "تستخدم النتائج المدفوعة في هذا الإصدار جدول Statistics Norway Statbank رقم 03024 بموجب CC BY 4.0. يتيح سجل تراخيص الإصدار الاستخدام التجاري والتحليل المشتق وإعادة التوزيع مع النسب.",
+        "benchmarkLimit": "قيم وحدات تصدير أسبوعية وطنية؛ وليست أسعار مدن أو عروض مزادات أو عروضًا قابلة للتنفيذ.",
+        "unavailable": "غير متاح",
+        "commodity.01": "مستزرع، طازج أو مبرد",
+        "commodity.02": "مستزرع، مجمد",
+        "action.history": "فتح سجل الأسعار",
+        "action.export": "إعداد CSV",
+        "action.compare": "إنشاء مقارنة",
+        "action.snapshot": "إنشاء لقطة سوق",
+        "action.seasonality": "إنشاء تقرير موسمي",
+        "action.landedCost": "حساب التكلفة الواصلة",
+        "action.alerts": "حفظ التنبيه وتقييمه",
+        "result.exportDelivered": "تم تسليم CSV",
+        "result.exportFailed": "لم يتم تسليم التصدير",
+        "result.compare": "مقارنة سوق رسمية",
+        "result.snapshot": "لقطة سوق موثقة المصدر",
+        "result.seasonality": "تقرير موسمي",
+        "result.landedCost": "حساب التكلفة الواصلة",
+        "result.alertNoMatch": "تم حفظ التنبيه؛ لا يوجد حدث مطابق",
+        "result.alertDelivered": "تم تسليم تنبيه السعر",
+        "body.export": "{file}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.compare": "الفترة {period}\n{first}: {firstPrice}\n{second}: {secondPrice}\nالفارق: {spread} {currency}/{unit} ({spreadPercent})\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.snapshot": "{period}: {price} NOK/kg\nالتغير: {change}\nمتوسط 12 أسبوعًا: {average}\nالنطاق: {low}–{high}\nStatistics Norway · 03024 · {commodity} · CC BY 4.0",
+        "body.seasonality": "الأسبوع {week} · {years} سنوات تاريخية\nالمتوسط التاريخي: {average} NOK/kg\nالأحدث: {latest} NOK/kg\nالفارق: {difference}\nStatistics Norway · 03024 · CC BY 4.0",
+        "body.landedCost": "المصدر {period}: {sourcePrice} NOK/kg\nالمصدر بعد التحويل: {converted} USD/kg\nقبل الفاقد: {subtotal} USD/kg\nالتكلفة الواصلة: {landed} USD/كجم قابل للبيع\nافتراضات المستخدم: الصرف {fx} · الشحن {freight} · التعرفة {tariff}% · الفاقد {loss}%",
+        "body.alert": "{commodity}: {price} {currency}/{unit} · الفترة الرسمية {period}\nStatistics Norway · 03024 · CC BY 4.0"
+      },
+      "destinations": {
+        "history": "سجل الأسعار",
+        "export": "مركز التصدير",
+        "compare": "مقارنة الأسواق",
+        "snapshot": "ملخص السوق",
+        "seasonality": "الموسمية",
+        "landedCost": "التكلفة عند الوصول",
+        "alerts": "تنبيهات الأسعار"
+      },
+      "periods": {
+        "P1M": "شهري",
+        "P1Y": "سنوي"
+      },
+      "subscriptions": {
+        "plus": {
+          "name": "Markets Plus",
+          "description": "سجل مرخص 3 سنوات و5 لقطات و5 نتائج لتكلفة الوصول و20 تنبيهًا مسلّمًا شهريًا."
+        },
+        "pro": {
+          "name": "Markets Pro",
+          "description": "سجل 5 سنوات و20 استخدامًا شهريًا لكل تحليل وتصدير و100 تنبيه مسلّم."
+        },
+        "max": {
+          "name": "Markets Max",
+          "description": "سجل 10 سنوات و100 استخدام شهري لكل تحليل وتصدير و500 تنبيه مسلّم."
+        }
+      },
+      "families": {
+        "export": {
+          "name": "{quantity} عمليات تصدير",
+          "description": "أنشئ {quantity} ملفات CSV بترميز UTF-8 من مشاهدات سوق مرخصة."
+        },
+        "compare": {
+          "name": "{quantity} مقارنات",
+          "description": "أنشئ {quantity} نتائج قابلة للمقارنة للسلمون الطازج/المبرد والمجمد."
+        },
+        "snapshot": {
+          "name": "{quantity} ملخصات للسوق",
+          "description": "أنشئ {quantity} ملخصات تتضمن المصدر والسعر والفترة والتغير والنطاق."
+        },
+        "seasonality": {
+          "name": "{quantity} تقارير موسمية",
+          "description": "أنشئ {quantity} تقارير من 3 سنوات على الأقل من المشاهدات الأسبوعية المرخصة."
+        },
+        "landedCost": {
+          "name": "{quantity} حسابات للتكلفة",
+          "description": "احسب تكلفة الوصول {quantity} مرة باستخدام سعر المصدر والشحن والرسوم والفقد."
+        },
+        "alerts": {
+          "name": "{quantity} تنبيهات أسعار",
+          "description": "استلم {quantity} تنبيهات حدية أو تغيرات أسعار تم تسليمها بنجاح."
+        }
+      }
+    }
+  }
+}

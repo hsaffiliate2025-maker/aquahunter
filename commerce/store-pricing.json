@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "2026-07-30",
+  "baseCurrency": "USD",
+  "baseTerritory": "USA",
+  "pricingBasis": "Deterministic research features using the commercially reusable Statistics Norway 03024 source. Prices cover product maintenance, payment fees, support and delivery value; no AI inference cost is included in this release.",
+  "products": {
+    "aquahunter.markets.plus.monthly": {"usdPrice": "4.99"},
+    "aquahunter.markets.plus.annual": {"usdPrice": "39.99"},
+    "aquahunter.markets.pro.monthly": {"usdPrice": "9.99"},
+    "aquahunter.markets.pro.annual": {"usdPrice": "79.99"},
+    "aquahunter.markets.max.monthly": {"usdPrice": "19.99"},
+    "aquahunter.markets.max.annual": {"usdPrice": "159.99"},
+    "aquahunter.export.10": {"usdPrice": "0.99"},
+    "aquahunter.export.50": {"usdPrice": "2.99"},
+    "aquahunter.export.200": {"usdPrice": "7.99"},
+    "aquahunter.compare.5": {"usdPrice": "0.99"},
+    "aquahunter.compare.20": {"usdPrice": "2.99"},
+    "aquahunter.compare.100": {"usdPrice": "9.99"},
+    "aquahunter.snapshot.5": {"usdPrice": "0.99"},
+    "aquahunter.snapshot.20": {"usdPrice": "2.99"},
+    "aquahunter.snapshot.100": {"usdPrice": "9.99"},
+    "aquahunter.seasonality.5": {"usdPrice": "1.99"},
+    "aquahunter.seasonality.20": {"usdPrice": "4.99"},
+    "aquahunter.seasonality.100": {"usdPrice": "14.99"},
+    "aquahunter.landedcost.10": {"usdPrice": "0.99"},
+    "aquahunter.landedcost.50": {"usdPrice": "2.99"},
+    "aquahunter.landedcost.200": {"usdPrice": "7.99"},
+    "aquahunter.alerts.25": {"usdPrice": "0.99"},
+    "aquahunter.alerts.100": {"usdPrice": "2.99"},
+    "aquahunter.alerts.500": {"usdPrice": "9.99"}
+  }
+}

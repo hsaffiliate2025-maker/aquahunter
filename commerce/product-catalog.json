@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "2026-07-30",
+  "subscriptionGroupId": "aquahunter.markets",
+  "supportedLocales": [
+    "en",
+    "zh-Hans",
+    "zh-Hant",
+    "es",
+    "fr",
+    "de",
+    "ja",
+    "ko",
+    "pt-BR",
+    "id",
+    "hi",
+    "ar"
+  ],
+  "storeLocaleMap": {
+    "en": {"apple": "en-US", "google": "en-US"},
+    "zh-Hans": {"apple": "zh-Hans", "google": "zh-CN"},
+    "zh-Hant": {"apple": "zh-Hant", "google": "zh-TW"},
+    "es": {"apple": "es-ES", "google": "es-ES"},
+    "fr": {"apple": "fr-FR", "google": "fr-FR"},
+    "de": {"apple": "de-DE", "google": "de-DE"},
+    "ja": {"apple": "ja", "google": "ja-JP"},
+    "ko": {"apple": "ko", "google": "ko-KR"},
+    "pt-BR": {"apple": "pt-BR", "google": "pt-BR"},
+    "id": {"apple": "id", "google": "id"},
+    "hi": {"apple": "hi", "google": "hi-IN"},
+    "ar": {"apple": "ar-SA", "google": "ar"}
+  },
+  "paidSourceIds": [
+    "ssb-statbank-03024"
+  ],
+  "dataRequirements": {
+    "history": ["ssb-statbank-03024"],
+    "export": ["ssb-statbank-03024"],
+    "compare": ["ssb-statbank-03024"],
+    "snapshot": ["ssb-statbank-03024"],
+    "seasonality": ["ssb-statbank-03024"],
+    "landedCost": ["ssb-statbank-03024"],
+    "alerts": ["ssb-statbank-03024"]
+  },
+  "featureContracts": {
+    "history": {
+      "route": "markets/history",
+      "successEvidence": "The chart contains authorized weekly observations and displays source, license, retrieval time, period and units."
+    },
+    "export": {
+      "route": "toolkit/export",
+      "successEvidence": "A non-empty UTF-8 CSV file is created from the selected authorized observations and shared or saved successfully."
+    },
+    "compare": {
+      "route": "toolkit/compare",
+      "successEvidence": "Fresh/chilled and frozen salmon series have comparable official periods and the result cites both Statistics Norway commodity codes."
+    },
+    "snapshot": {
+      "route": "toolkit/snapshot",
+      "successEvidence": "The result contains latest price, published period, change, 12-week range, source, license and retrieval time."
+    },
+    "seasonality": {
+      "route": "toolkit/seasonality",
+      "successEvidence": "At least three years of authorized weekly observations contribute to the selected week-of-year statistics."
+    },
+    "landedCost": {
+      "route": "toolkit/landed-cost",
+      "successEvidence": "All user-entered assumptions and the authorized source price are present and a finite landed-cost result is produced."
+    },
+    "alerts": {
+      "route": "toolkit/alerts",
+      "successEvidence": "A rule is saved and one credit is consumed only after a matching event is successfully delivered in app or as a notification."
+    }
+  },
+  "products": [
+    {
+      "id": "aquahunter.markets.plus.monthly",
+      "storeType": "autoRenewableSubscription",
+      "family": "markets",
+      "tier": "plus",
+      "billingPeriod": "P1M",
+      "destination": "history",
+      "grant": {
+        "historyWeeks": 156,
+        "watchlistSlots": 0,
+        "monthlyAllowances": {
+          "export": 0,
+          "compare": 0,
+          "snapshot": 5,
+          "seasonality": 0,
+          "landedCost": 5,
+          "alerts": 20
+        }
+      }
+    },
+    {
+      "id": "aquahunter.markets.plus.annual",
+      "storeType": "autoRenewableSubscription",
+      "family": "markets",
+      "tier": "plus",
+      "billingPeriod": "P1Y",
+      "destination": "history",
+      "grant": {
+        "historyWeeks": 156,
+        "watchlistSlots": 0,
+        "monthlyAllowances": {
+          "export": 0,
+          "compare": 0,
+          "snapshot": 5,
+          "seasonality": 0,
+          "landedCost": 5,
+          "alerts": 20
+        }
+      }
+    },
+    {
+      "id": "aquahunter.markets.pro.monthly",
+      "storeType": "autoRenewableSubscription",
+      "family": "markets",
+      "tier": "pro",
+      "billingPeriod": "P1M",
+      "destination": "compare",
+      "grant": {
+        "historyWeeks": 260,
+        "watchlistSlots": 0,
+        "monthlyAllowances": {
+          "export": 20,
+          "compare": 20,
+          "snapshot": 20,
+          "seasonality": 20,
+          "landedCost": 20,
+          "alerts": 100
+        }
+      }
+    },
+    {
+      "id": "aquahunter.markets.pro.annual",
+      "storeType": "autoRenewableSubscription",
+      "family": "markets",
+      "tier": "pro",
+      "billingPeriod": "P1Y",
+      "destination": "compare",
+      "grant": {
+        "historyWeeks": 260,
+        "watchlistSlots": 0,
+        "monthlyAllowances": {
+          "export": 20,
+          "compare": 20,
+          "snapshot": 20,
+          "seasonality": 20,
+          "landedCost": 20,
+          "alerts": 100
+        }
+      }
+    },
+    {
+      "id": "aquahunter.markets.max.monthly",
+      "storeType": "autoRenewableSubscription",
+      "family": "markets",
+      "tier": "max",
+      "billingPeriod": "P1M",
+      "destination": "seasonality",
+      "grant": {
+        "historyWeeks": 520,
+        "watchlistSlots": 0,
+        "monthlyAllowances": {
+          "export": 100,
+          "compare": 100,
+          "snapshot": 100,
+          "seasonality": 100,
+          "landedCost": 100,
+          "alerts": 500
+        }
+      }
+    },
+    {
+      "id": "aquahunter.markets.max.annual",
+      "storeType": "autoRenewableSubscription",
+      "family": "markets",
+      "tier": "max",
+      "billingPeriod": "P1Y",
+      "destination": "seasonality",
+      "grant": {
+        "historyWeeks": 520,
+        "watchlistSlots": 0,
+        "monthlyAllowances": {
+          "export": 100,
+          "compare": 100,
+          "snapshot": 100,
+          "seasonality": 100,
+          "landedCost": 100,
+          "alerts": 500
+        }
+      }
+    },
+    {
+      "id": "aquahunter.export.10",
+      "storeType": "consumable",
+      "family": "export",
+      "quantity": 10,
+      "destination": "export"
+    },
+    {
+      "id": "aquahunter.export.50",
+      "storeType": "consumable",
+      "family": "export",
+      "quantity": 50,
+      "destination": "export"
+    },
+    {
+      "id": "aquahunter.export.200",
+      "storeType": "consumable",
+      "family": "export",
+      "quantity": 200,
+      "destination": "export"
+    },
+    {
+      "id": "aquahunter.compare.5",
+      "storeType": "consumable",
+      "family": "compare",
+      "quantity": 5,
+      "destination": "compare"
+    },
+    {
+      "id": "aquahunter.compare.20",
+      "storeType": "consumable",
+      "family": "compare",
+      "quantity": 20,
+      "destination": "compare"
+    },
+    {
+      "id": "aquahunter.compare.100",
+      "storeType": "consumable",
+      "family": "compare",
+      "quantity": 100,
+      "destination": "compare"
+    },
+    {
+      "id": "aquahunter.snapshot.5",
+      "storeType": "consumable",
+      "family": "snapshot",
+      "quantity": 5,
+      "destination": "snapshot"
+    },
+    {
+      "id": "aquahunter.snapshot.20",
+      "storeType": "consumable",
+      "family": "snapshot",
+      "quantity": 20,
+      "destination": "snapshot"
+    },
+    {
+      "id": "aquahunter.snapshot.100",
+      "storeType": "consumable",
+      "family": "snapshot",
+      "quantity": 100,
+      "destination": "snapshot"
+    },
+    {
+      "id": "aquahunter.seasonality.5",
+      "storeType": "consumable",
+      "family": "seasonality",
+      "quantity": 5,
+      "destination": "seasonality"
+    },
+    {
+      "id": "aquahunter.seasonality.20",
+      "storeType": "consumable",
+      "family": "seasonality",
+      "quantity": 20,
+      "destination": "seasonality"
+    },
+    {
+      "id": "aquahunter.seasonality.100",
+      "storeType": "consumable",
+      "family": "seasonality",
+      "quantity": 100,
+      "destination": "seasonality"
+    },
+    {
+      "id": "aquahunter.landedcost.10",
+      "storeType": "consumable",
+      "family": "landedCost",
+      "quantity": 10,
+      "destination": "landedCost"
+    },
+    {
+      "id": "aquahunter.landedcost.50",
+      "storeType": "consumable",
+      "family": "landedCost",
+      "quantity": 50,
+      "destination": "landedCost"
+    },
+    {
+      "id": "aquahunter.landedcost.200",
+      "storeType": "consumable",
+      "family": "landedCost",
+      "quantity": 200,
+      "destination": "landedCost"
+    },
+    {
+      "id": "aquahunter.alerts.25",
+      "storeType": "consumable",
+      "family": "alerts",
+      "quantity": 25,
+      "destination": "alerts"
+    },
+    {
+      "id": "aquahunter.alerts.100",
+      "storeType": "consumable",
+      "family": "alerts",
+      "quantity": 100,
+      "destination": "alerts"
+    },
+    {
+      "id": "aquahunter.alerts.500",
+      "storeType": "consumable",
+      "family": "alerts",
+      "quantity": 500,
+      "destination": "alerts"
+    }
+  ]
+}

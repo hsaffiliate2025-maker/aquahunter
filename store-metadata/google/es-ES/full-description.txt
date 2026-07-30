@@ -1,0 +1,18 @@
+AquaHunter es un conjunto de herramientas de investigación del mercado de productos del mar con fuentes transparentes.
+
+DATOS OFICIALES REUTILIZABLES COMERCIALMENTE
+Consulta referencias semanales de exportación de salmón de cultivo noruego de la tabla 03024 de Statistics Norway. Las series fresco/refrigerado y congelado conservan período oficial, NOK/kg, peso exportado, enlace, atribución, actualización y licencia CC BY 4.0.
+
+NUEVO KIT DE INVESTIGACIÓN
+Elige Markets Plus, Pro o Max con límites definidos para 3, 5 o 10 años de historial oficial y cupos mensuales. Los paquetes de un solo pago permiten exportar CSV, comparar salmón fresco y congelado, crear resúmenes con fuente, analizar estacionalidad, calcular coste puesto con tus supuestos y recibir alertas de precio entregadas.
+
+CONSUMO JUSTO
+Solo se descuenta un crédito al entregar correctamente un resultado, archivo o alerta coincidente. Los fallos, cancelaciones, datos ausentes o insuficientes y alertas sin coincidencia no consumen créditos. Apple o Google muestran el precio y período locales.
+
+12 IDIOMAS
+Incluye inglés, chino simplificado y tradicional, español, francés, alemán, japonés, coreano, portugués de Brasil, indonesio, hindi y árabe con diseño de derecha a izquierda.
+
+LÍMITES IMPORTANTES
+Los valores son unidades nacionales semanales de exportación, no precios al contado urbanos, subastas, ofertas ejecutables ni asesoramiento. Los cálculos dependen de tus supuestos y no garantizan precio, beneficio, captura, presencia de peces, seguridad ni acceso legal. El mapa Natural Earth no es una carta náutica.
+
+Fuente: Statistics Norway, tabla 03024. Licencia CC BY 4.0.

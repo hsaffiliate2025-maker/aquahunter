@@ -48,6 +48,14 @@ val validateReleaseContent by tasks.registering(Exec::class) {
     commandLine("python3", "tools/validate_release_content.py")
 }
 
+val validateCommerceCatalog by tasks.registering(Exec::class) {
+    group = "verification"
+    description =
+        "Blocks release builds when paid features use data without commercial derivative rights."
+    workingDir(rootProject.projectDir.parentFile)
+    commandLine("python3", "tools/validate_commerce_catalog.py")
+}
+
 val validateReleaseSigning by tasks.registering {
     group = "verification"
     description = "Blocks release builds that do not have AquaHunter upload signing."
@@ -63,6 +71,7 @@ tasks.configureEach {
     if (name == "preReleaseBuild") {
         dependsOn(
             validateReleaseDataSources,
+            validateCommerceCatalog,
             validateReleaseContent,
             validateReleaseSigning,
         )
@@ -77,8 +86,8 @@ android {
         applicationId = "com.hotseason.aquahunter"
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
-        versionName = "0.1.0"
+        versionCode = 3
+        versionName = "1.1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -131,6 +140,7 @@ android {
 
     sourceSets {
         getByName("main").assets.srcDir("../../map-assets")
+        getByName("main").assets.srcDir("../../commerce")
     }
 
     packaging {
@@ -159,8 +169,10 @@ dependencies {
     implementation("androidx.compose.material:material-icons-extended")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.10.2")
     implementation("org.maplibre.gl:android-sdk-opengl:13.0.2")
+    implementation("com.android.billingclient:billing-ktx:9.1.0")
 
     testImplementation("junit:junit:4.13.2")
+    testImplementation("org.json:json:20250517")
 
     androidTestImplementation("androidx.test.ext:junit:1.3.0")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.7.0")

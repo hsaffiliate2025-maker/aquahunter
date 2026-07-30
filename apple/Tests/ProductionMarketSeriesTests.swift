@@ -51,6 +51,7 @@ final class ProductionMarketSeriesTests: XCTestCase {
             geography: "Norway",
             countryCode: "NO",
             benchmark: "Norway farmed salmon export benchmark",
+            commodityCode: "01",
             commodityForm: "Fresh or chilled, farmed",
             currencyCode: "NOK",
             unit: "kg",

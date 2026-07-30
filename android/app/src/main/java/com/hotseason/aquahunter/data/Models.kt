@@ -41,6 +41,7 @@ data class AuthorizedMarketSeries(
     val geography: String,
     val countryCode: String,
     val benchmark: String,
+    val commodityCode: String,
     val commodityForm: String,
     val currencyCode: String,
     val unit: String,

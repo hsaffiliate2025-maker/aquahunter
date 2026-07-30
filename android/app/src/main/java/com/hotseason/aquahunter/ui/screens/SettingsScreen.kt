@@ -88,18 +88,18 @@ enum class AquaAppLanguage(val code: String, val nativeName: String) {
     fun navigationLabel(screen: AppScreen): String {
         val index = screen.ordinal
         return when (this) {
-            English -> listOf("Pulse", "Markets", "Radar", "Network")[index]
-            SimplifiedChinese -> listOf("脉动", "行情", "雷达", "网络")[index]
-            TraditionalChinese -> listOf("脈動", "行情", "雷達", "網路")[index]
-            Spanish -> listOf("Pulso", "Mercados", "Radar", "Red")[index]
-            French -> listOf("Pouls", "Marchés", "Radar", "Réseau")[index]
-            German -> listOf("Puls", "Märkte", "Radar", "Netzwerk")[index]
-            Japanese -> listOf("動向", "市場", "レーダー", "ネットワーク")[index]
-            Korean -> listOf("동향", "시장", "레이더", "네트워크")[index]
-            Portuguese -> listOf("Pulso", "Mercados", "Radar", "Rede")[index]
-            Indonesian -> listOf("Denyut", "Pasar", "Radar", "Jaringan")[index]
-            Hindi -> listOf("पल्स", "बाज़ार", "रडार", "नेटवर्क")[index]
-            Arabic -> listOf("نبض", "الأسواق", "الرادار", "الشبكة")[index]
+            English -> listOf("Pulse", "Markets", "Radar", "Network", "Toolkit")[index]
+            SimplifiedChinese -> listOf("脉动", "行情", "雷达", "网络", "工具")[index]
+            TraditionalChinese -> listOf("脈動", "行情", "雷達", "網路", "工具")[index]
+            Spanish -> listOf("Pulso", "Mercados", "Radar", "Red", "Herramientas")[index]
+            French -> listOf("Pouls", "Marchés", "Radar", "Réseau", "Outils")[index]
+            German -> listOf("Puls", "Märkte", "Radar", "Netzwerk", "Werkzeuge")[index]
+            Japanese -> listOf("動向", "市場", "レーダー", "ネットワーク", "ツール")[index]
+            Korean -> listOf("동향", "시장", "레이더", "네트워크", "도구")[index]
+            Portuguese -> listOf("Pulso", "Mercados", "Radar", "Rede", "Ferramentas")[index]
+            Indonesian -> listOf("Denyut", "Pasar", "Radar", "Jaringan", "Alat")[index]
+            Hindi -> listOf("पल्स", "बाज़ार", "रडार", "नेटवर्क", "टूल")[index]
+            Arabic -> listOf("نبض", "الأسواق", "الرادار", "الشبكة", "الأدوات")[index]
         }
     }
 

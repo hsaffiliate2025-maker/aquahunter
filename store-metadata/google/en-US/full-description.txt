@@ -1,0 +1,18 @@
+AquaHunter is a source-transparent seafood market research toolkit for seafood professionals.
+
+OFFICIAL, COMMERCIALLY REUSABLE DATA
+View licensed weekly Norwegian farmed-salmon export benchmarks from Statistics Norway table 03024. Fresh or chilled and frozen series preserve the official period, NOK/kg unit, export weight, source link, attribution, update time and CC BY 4.0 license.
+
+NEW RESEARCH TOOLKIT
+Choose a finite Markets Plus, Pro or Max plan for 3, 5 or 10 years of official history and monthly allowances. One-time credit packs support licensed CSV export, fresh-versus-frozen comparison, sourced market snapshots, multi-year seasonality reports, landed-cost calculations using your assumptions, and delivered price alerts.
+
+FAIR CREDIT USE
+A credit is used only after a valid result, file or matching alert is successfully delivered. Failure, cancellation, missing or insufficient data and non-matching alerts do not use a credit. Store prices and billing periods come directly from Apple or Google.
+
+12 INTERFACE LANGUAGES
+Use English, Simplified Chinese, Traditional Chinese, Spanish, French, German, Japanese, Korean, Brazilian Portuguese, Indonesian, Hindi or Arabic. Arabic supports right-to-left layout.
+
+IMPORTANT LIMITS
+The displayed values are national weekly export unit values, not city spot prices, auction quotes, executable offers or investment advice. Calculations depend on user assumptions and do not guarantee price, profit, catch, fish presence, voyage safety or lawful access. The offline Natural Earth map is not a nautical chart.
+
+Data attribution: Source: Statistics Norway, table 03024. Licensed under CC BY 4.0.

@@ -8,6 +8,7 @@ local.properties
 secrets.properties
 build/
 **/build/
+.build/
 .DS_Store
 captures/
 artifacts/screenshots/
@@ -23,6 +24,7 @@ service-account*.json
 google-services.json
 **/app/release/
 .asc/artifacts/
+.asc/reports/
 .asc/config.json
 .gpd/config.json
 *.xcarchive
