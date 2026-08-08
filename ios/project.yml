@@ -8,7 +8,7 @@ settings:
     DEVELOPMENT_TEAM: C8Y5J74PQW
     CODE_SIGN_STYLE: Automatic
     MARKETING_VERSION: 1.1.0
-    CURRENT_PROJECT_VERSION: 3
+    CURRENT_PROJECT_VERSION: 4
     SWIFT_VERSION: 5.0
 packages:
   MapLibre:
@@ -45,6 +45,7 @@ targets:
         CFBundleDevelopmentRegion: en
         CFBundleShortVersionString: $(MARKETING_VERSION)
         CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        ITSAppUsesNonExemptEncryption: false
         UILaunchScreen: {}
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait

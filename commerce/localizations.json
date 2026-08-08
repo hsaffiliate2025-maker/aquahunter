@@ -15,7 +15,9 @@
         "done": "Done",
         "later": "Later",
         "storeButton": "Store",
-        "legalDisclosure": "Subscriptions auto-renew unless cancelled in your store account. Consumable credits stay on this device and are lost if app data is cleared or the app is uninstalled."
+        "legalDisclosure": "Subscriptions auto-renew unless cancelled in your store account. Consumable credits stay on this device and are lost if app data is cleared or the app is uninstalled.",
+        "privacyPolicy": "Privacy Policy",
+        "termsOfUse": "Terms of Use (EULA)"
       },
       "thankYouTitle": "Thank you for your purchase!",
       "thankYouMessage": "{product} is ready to use.",
@@ -148,7 +150,9 @@
         "done": "完成",
         "later": "稍后",
         "storeButton": "商店",
-        "legalDisclosure": "订阅会自动续期，除非您在商店账户中取消。消耗型次数仅保存在本设备；清除 App 数据或卸载后将丢失。"
+        "legalDisclosure": "订阅会自动续期，除非您在商店账户中取消。消耗型次数仅保存在本设备；清除 App 数据或卸载后将丢失。",
+        "privacyPolicy": "隐私政策",
+        "termsOfUse": "使用条款（EULA）"
       },
       "thankYouTitle": "感谢您的购买！",
       "thankYouMessage": "{product} 已可使用。",
@@ -281,7 +285,9 @@
         "done": "完成",
         "later": "稍後",
         "storeButton": "商店",
-        "legalDisclosure": "訂閱會自動續期，除非您在商店帳戶中取消。消耗型次數只儲存在本裝置；清除 App 資料或解除安裝後將遺失。"
+        "legalDisclosure": "訂閱會自動續期，除非您在商店帳戶中取消。消耗型次數只儲存在本裝置；清除 App 資料或解除安裝後將遺失。",
+        "privacyPolicy": "隱私權政策",
+        "termsOfUse": "使用條款（EULA）"
       },
       "thankYouTitle": "感謝您的購買！",
       "thankYouMessage": "{product} 已可使用。",
@@ -414,7 +420,9 @@
         "done": "Listo",
         "later": "Más tarde",
         "storeButton": "Tienda",
-        "legalDisclosure": "Las suscripciones se renuevan salvo cancelación en la cuenta de la tienda. Los créditos consumibles permanecen en este dispositivo y se pierden al borrar los datos o desinstalar."
+        "legalDisclosure": "Las suscripciones se renuevan salvo cancelación en la cuenta de la tienda. Los créditos consumibles permanecen en este dispositivo y se pierden al borrar los datos o desinstalar.",
+        "privacyPolicy": "Política de privacidad",
+        "termsOfUse": "Términos de uso (EULA)"
       },
       "thankYouTitle": "¡Gracias por tu compra!",
       "thankYouMessage": "{product} ya está listo.",
@@ -547,7 +555,9 @@
         "done": "Terminé",
         "later": "Plus tard",
         "storeButton": "Boutique",
-        "legalDisclosure": "Les abonnements se renouvellent sauf annulation dans le compte de la boutique. Les crédits consommables restent sur cet appareil et sont perdus si les données sont effacées ou l’app désinstallée."
+        "legalDisclosure": "Les abonnements se renouvellent sauf annulation dans le compte de la boutique. Les crédits consommables restent sur cet appareil et sont perdus si les données sont effacées ou l’app désinstallée.",
+        "privacyPolicy": "Politique de confidentialité",
+        "termsOfUse": "Conditions d’utilisation (EULA)"
       },
       "thankYouTitle": "Merci pour votre achat !",
       "thankYouMessage": "{product} est prêt à être utilisé.",
@@ -680,7 +690,9 @@
         "done": "Fertig",
         "later": "Später",
         "storeButton": "Shop",
-        "legalDisclosure": "Abos verlängern sich, sofern sie nicht im Store-Konto gekündigt werden. Verbrauchsguthaben bleibt auf diesem Gerät und geht beim Löschen der App-Daten oder Deinstallieren verloren."
+        "legalDisclosure": "Abos verlängern sich, sofern sie nicht im Store-Konto gekündigt werden. Verbrauchsguthaben bleibt auf diesem Gerät und geht beim Löschen der App-Daten oder Deinstallieren verloren.",
+        "privacyPolicy": "Datenschutzrichtlinie",
+        "termsOfUse": "Nutzungsbedingungen (EULA)"
       },
       "thankYouTitle": "Vielen Dank für deinen Kauf!",
       "thankYouMessage": "{product} ist jetzt einsatzbereit.",
@@ -813,7 +825,9 @@
         "done": "完了",
         "later": "後で",
         "storeButton": "ストア",
-        "legalDisclosure": "ストアアカウントで解約しない限り自動更新されます。消費型回数はこの端末だけに保存され、App データの消去または削除で失われます。"
+        "legalDisclosure": "ストアアカウントで解約しない限り自動更新されます。消費型回数はこの端末だけに保存され、App データの消去または削除で失われます。",
+        "privacyPolicy": "プライバシーポリシー",
+        "termsOfUse": "利用規約（EULA）"
       },
       "thankYouTitle": "ご購入ありがとうございます！",
       "thankYouMessage": "{product} をご利用いただけます。",
@@ -946,7 +960,9 @@
         "done": "완료",
         "later": "나중에",
         "storeButton": "스토어",
-        "legalDisclosure": "스토어 계정에서 취소하지 않으면 구독이 자동 갱신됩니다. 소모성 크레딧은 이 기기에만 저장되며 App 데이터를 지우거나 삭제하면 사라집니다."
+        "legalDisclosure": "스토어 계정에서 취소하지 않으면 구독이 자동 갱신됩니다. 소모성 크레딧은 이 기기에만 저장되며 App 데이터를 지우거나 삭제하면 사라집니다.",
+        "privacyPolicy": "개인정보 처리방침",
+        "termsOfUse": "이용 약관(EULA)"
       },
       "thankYouTitle": "구매해 주셔서 감사합니다!",
       "thankYouMessage": "{product}을(를) 지금 사용할 수 있습니다.",
@@ -1079,7 +1095,9 @@
         "done": "Concluído",
         "later": "Mais tarde",
         "storeButton": "Loja",
-        "legalDisclosure": "As assinaturas renovam salvo cancelamento na conta da loja. Créditos consumíveis ficam neste dispositivo e são perdidos ao limpar os dados ou desinstalar o app."
+        "legalDisclosure": "As assinaturas renovam salvo cancelamento na conta da loja. Créditos consumíveis ficam neste dispositivo e são perdidos ao limpar os dados ou desinstalar o app.",
+        "privacyPolicy": "Política de Privacidade",
+        "termsOfUse": "Termos de Uso (EULA)"
       },
       "thankYouTitle": "Agradecemos sua compra!",
       "thankYouMessage": "{product} já está disponível.",
@@ -1212,7 +1230,9 @@
         "done": "Selesai",
         "later": "Nanti",
         "storeButton": "Toko",
-        "legalDisclosure": "Langganan diperpanjang kecuali dibatalkan di akun toko. Kredit habis pakai tersimpan di perangkat ini dan hilang jika data app dihapus atau app dicopot."
+        "legalDisclosure": "Langganan diperpanjang kecuali dibatalkan di akun toko. Kredit habis pakai tersimpan di perangkat ini dan hilang jika data app dihapus atau app dicopot.",
+        "privacyPolicy": "Kebijakan Privasi",
+        "termsOfUse": "Ketentuan Penggunaan (EULA)"
       },
       "thankYouTitle": "Terima kasih atas pembelian Anda!",
       "thankYouMessage": "{product} siap digunakan.",
@@ -1345,7 +1365,9 @@
         "done": "पूर्ण",
         "later": "बाद में",
         "storeButton": "स्टोर",
-        "legalDisclosure": "स्टोर खाते में रद्द न करने पर सदस्यता अपने-आप नवीनीकृत होती है। उपभोज्य क्रेडिट इसी डिवाइस पर रहते हैं और App डेटा मिटाने या App हटाने पर खो जाते हैं।"
+        "legalDisclosure": "स्टोर खाते में रद्द न करने पर सदस्यता अपने-आप नवीनीकृत होती है। उपभोज्य क्रेडिट इसी डिवाइस पर रहते हैं और App डेटा मिटाने या App हटाने पर खो जाते हैं।",
+        "privacyPolicy": "गोपनीयता नीति",
+        "termsOfUse": "उपयोग की शर्तें (EULA)"
       },
       "thankYouTitle": "आपकी खरीदारी के लिए धन्यवाद!",
       "thankYouMessage": "{product} अब उपयोग के लिए तैयार है।",
@@ -1478,7 +1500,9 @@
         "done": "تم",
         "later": "لاحقًا",
         "storeButton": "المتجر",
-        "legalDisclosure": "تتجدد الاشتراكات ما لم تُلغَ من حساب المتجر. تبقى الأرصدة الاستهلاكية على هذا الجهاز وتُفقد عند مسح بيانات التطبيق أو إلغاء تثبيته."
+        "legalDisclosure": "تتجدد الاشتراكات ما لم تُلغَ من حساب المتجر. تبقى الأرصدة الاستهلاكية على هذا الجهاز وتُفقد عند مسح بيانات التطبيق أو إلغاء تثبيته.",
+        "privacyPolicy": "سياسة الخصوصية",
+        "termsOfUse": "شروط الاستخدام (EULA)"
       },
       "thankYouTitle": "شكرًا لشرائك!",
       "thankYouMessage": "أصبح {product} جاهزًا للاستخدام.",

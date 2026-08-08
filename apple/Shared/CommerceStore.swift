@@ -2,6 +2,15 @@ import Combine
 import Foundation
 import StoreKit
 
+enum CommerceLegalLinks {
+    static let privacyPolicy = URL(
+        string: "https://hotseason.app/en/policy#aquahunter"
+    )!
+    static let termsOfUse = URL(
+        string: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
+    )!
+}
+
 enum CommerceDestination: String, Codable, CaseIterable, Identifiable {
     case history
     case export
@@ -83,6 +92,8 @@ struct CommerceLocaleText: Decodable, Equatable {
         let later: String
         let storeButton: String
         let legalDisclosure: String
+        let privacyPolicy: String
+        let termsOfUse: String
     }
 
     struct DestinationText: Decodable, Equatable {

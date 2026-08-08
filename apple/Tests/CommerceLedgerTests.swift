@@ -97,9 +97,12 @@ final class CommerceLedgerTests: XCTestCase {
     func testAllLocalizedProductsResolve() throws {
         let catalog = try loadCatalog()
         for locale in catalog.supportedLocales {
-            let toolkit = catalog.locale(for: locale).toolkit
+            let localized = catalog.locale(for: locale)
+            let toolkit = localized.toolkit
             XCTAssertEqual(toolkit.count, 52)
             XCTAssertEqual(Set(toolkit.keys), expectedToolkitKeys)
+            XCTAssertFalse(localized.store.privacyPolicy.isEmpty)
+            XCTAssertFalse(localized.store.termsOfUse.isEmpty)
             for product in catalog.products {
                 let text = try catalog.text(
                     for: product,
@@ -110,6 +113,16 @@ final class CommerceLedgerTests: XCTestCase {
                 XCTAssertFalse(text.name.contains("{quantity}"))
             }
         }
+    }
+
+    func testStoreLegalLinksAreSecureAndReviewerAccessible() {
+        XCTAssertEqual(CommerceLegalLinks.privacyPolicy.scheme, "https")
+        XCTAssertEqual(
+            CommerceLegalLinks.privacyPolicy.host,
+            "hotseason.app"
+        )
+        XCTAssertEqual(CommerceLegalLinks.termsOfUse.scheme, "https")
+        XCTAssertEqual(CommerceLegalLinks.termsOfUse.host, "www.apple.com")
     }
 
     func testEveryProductHasARealGrantAndLocalizedPostPurchaseRoute() throws {

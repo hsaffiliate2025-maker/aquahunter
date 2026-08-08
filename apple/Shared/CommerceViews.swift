@@ -763,6 +763,8 @@ struct CommerceStorefrontView: View {
                         ?? "Finite allowances only. A credit is used after a valid result or file is successfully delivered."
                 )
 
+                legalLinks
+
                 if let message = commerce.statusMessage {
                     AquaCard {
                         Text(message)
@@ -802,12 +804,6 @@ struct CommerceStorefrontView: View {
                 .buttonStyle(.bordered)
                 .tint(AquaTheme.signalBlue)
 
-                Text(
-                    locale?.store.legalDisclosure
-                        ?? "Subscriptions auto-renew unless cancelled in your store account. Consumable credits stay on this device and are lost if app data is cleared or the app is uninstalled."
-                )
-                .font(.caption2)
-                .foregroundStyle(AquaTheme.textSecondary)
             }
             .padding(18)
         }
@@ -838,6 +834,38 @@ struct CommerceStorefrontView: View {
             )
         }
         .aquaPageBackground()
+    }
+
+    private var legalLinks: some View {
+        AquaCard {
+            VStack(alignment: .leading, spacing: 12) {
+                Text(
+                    locale?.store.legalDisclosure
+                        ?? "Subscriptions auto-renew unless cancelled in your store account. Consumable credits stay on this device and are lost if app data is cleared or the app is uninstalled."
+                )
+                .font(.caption2)
+                .foregroundStyle(AquaTheme.textSecondary)
+
+                Link(destination: CommerceLegalLinks.privacyPolicy) {
+                    Label(
+                        locale?.store.privacyPolicy ?? "Privacy Policy",
+                        systemImage: "hand.raised.fill"
+                    )
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+
+                Link(destination: CommerceLegalLinks.termsOfUse) {
+                    Label(
+                        locale?.store.termsOfUse ?? "Terms of Use (EULA)",
+                        systemImage: "doc.text.fill"
+                    )
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                }
+            }
+            .font(.caption.weight(.semibold))
+            .foregroundStyle(AquaTheme.signalBlue)
+            .tint(AquaTheme.signalBlue)
+        }
     }
 
     @ViewBuilder
@@ -902,6 +930,15 @@ private struct CommerceProductCard: View {
                     )
                     .font(.subheadline.weight(.bold))
                     .foregroundStyle(AquaTheme.textPrimary)
+                    if definition.isSubscription,
+                       let billingPeriod = definition.billingPeriod,
+                       let periodText = commerce.catalog?.locale(
+                           for: languageCode
+                       ).periods[billingPeriod] {
+                        Text(periodText)
+                            .font(.caption2.weight(.semibold))
+                            .foregroundStyle(AquaTheme.textSecondary)
+                    }
                     Button {
                         Task {
                             await commerce.purchase(
