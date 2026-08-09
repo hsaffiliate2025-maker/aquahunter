@@ -55,7 +55,7 @@ fun OverviewScreen(
     LaunchedEffect(Unit) {
         marketState = try {
             AuthorizedMarketLoadState.Loaded(
-                listOf(StatisticsNorwayMarketRepository.fetchFreshSalmonSeries()),
+                StatisticsNorwayMarketRepository.fetchSalmonSeries(),
             )
         } catch (_: Exception) {
             AuthorizedMarketLoadState.Unavailable(

@@ -5,6 +5,7 @@ enum AquaSection: String, CaseIterable, Identifiable, Hashable {
     case markets = "Markets"
     case radar = "Radar"
     case network = "Network"
+    case toolkit = "Toolkit"
 
     var id: String { rawValue }
 
@@ -14,6 +15,7 @@ enum AquaSection: String, CaseIterable, Identifiable, Hashable {
         case .markets: "chart.xyaxis.line"
         case .radar: "scope"
         case .network: "point.3.connected.trianglepath.dotted"
+        case .toolkit: "shippingbox.and.arrow.backward"
         }
     }
 
@@ -21,17 +23,17 @@ enum AquaSection: String, CaseIterable, Identifiable, Hashable {
         let index = AquaSection.allCases.firstIndex(of: self) ?? 0
         let labels: [String]
         switch languageCode {
-        case "zh-Hans": labels = ["脉动", "行情", "雷达", "网络"]
-        case "zh-Hant": labels = ["脈動", "行情", "雷達", "網路"]
-        case "es": labels = ["Pulso", "Mercados", "Radar", "Red"]
-        case "fr": labels = ["Pouls", "Marchés", "Radar", "Réseau"]
-        case "de": labels = ["Puls", "Märkte", "Radar", "Netzwerk"]
-        case "ja": labels = ["動向", "市場", "レーダー", "ネットワーク"]
-        case "ko": labels = ["동향", "시장", "레이더", "네트워크"]
-        case "pt-BR": labels = ["Pulso", "Mercados", "Radar", "Rede"]
-        case "id": labels = ["Denyut", "Pasar", "Radar", "Jaringan"]
-        case "hi": labels = ["पल्स", "बाज़ार", "रडार", "नेटवर्क"]
-        case "ar": labels = ["نبض", "الأسواق", "الرادار", "الشبكة"]
+        case "zh-Hans": labels = ["脉动", "行情", "雷达", "网络", "工具"]
+        case "zh-Hant": labels = ["脈動", "行情", "雷達", "網路", "工具"]
+        case "es": labels = ["Pulso", "Mercados", "Radar", "Red", "Herramientas"]
+        case "fr": labels = ["Pouls", "Marchés", "Radar", "Réseau", "Outils"]
+        case "de": labels = ["Puls", "Märkte", "Radar", "Netzwerk", "Werkzeuge"]
+        case "ja": labels = ["動向", "市場", "レーダー", "ネットワーク", "ツール"]
+        case "ko": labels = ["동향", "시장", "레이더", "네트워크", "도구"]
+        case "pt-BR": labels = ["Pulso", "Mercados", "Radar", "Rede", "Ferramentas"]
+        case "id": labels = ["Denyut", "Pasar", "Radar", "Jaringan", "Alat"]
+        case "hi": labels = ["पल्स", "बाज़ार", "रडार", "नेटवर्क", "टूल"]
+        case "ar": labels = ["نبض", "الأسواق", "الرادار", "الشبكة", "الأدوات"]
         default: labels = AquaSection.allCases.map(\.rawValue)
         }
         return labels[index]
@@ -39,13 +41,33 @@ enum AquaSection: String, CaseIterable, Identifiable, Hashable {
 }
 
 struct AquaShellView: View {
-    @State private var selection: AquaSection = .pulse
+    @State private var selection: AquaSection
     @State private var showsSettings = false
+    @State private var toolkitDestination = CommerceDestination.snapshot
+    @StateObject private var commerce = CommerceStore()
     @AppStorage("maritimeRiskNoticeAcceptedVersion") private var acceptedRiskVersion = ""
     @AppStorage("appLanguage") private var appLanguage = AquaAppLanguage.english.rawValue
 
+    init() {
+        #if DEBUG
+        let screenshotStore = ProcessInfo.processInfo.arguments.contains(
+            "--aquahunter-screenshot-store"
+        )
+        _selection = State(initialValue: screenshotStore ? .toolkit : .pulse)
+        #else
+        _selection = State(initialValue: .pulse)
+        #endif
+    }
+
     private var requiresRiskAcceptance: Bool {
-        acceptedRiskVersion != maritimeRiskNoticeVersion
+        #if DEBUG
+        if ProcessInfo.processInfo.arguments.contains(
+            "--aquahunter-screenshot-store"
+        ) {
+            return false
+        }
+        #endif
+        return acceptedRiskVersion != maritimeRiskNoticeVersion
     }
 
     var body: some View {
@@ -53,6 +75,7 @@ struct AquaShellView: View {
             appShell
                 .disabled(requiresRiskAcceptance)
                 .accessibilityHidden(requiresRiskAcceptance)
+                .environmentObject(commerce)
 
             if requiresRiskAcceptance {
                 MaritimeRiskGateView {
@@ -72,6 +95,9 @@ struct AquaShellView: View {
             NavigationStack {
                 AquaSettingsView()
             }
+        }
+        .task {
+            await commerce.start()
         }
     }
 
@@ -147,6 +173,8 @@ struct AquaShellView: View {
         case .markets: MarketsView()
         case .radar: RadarView()
         case .network: NetworkView()
+        case .toolkit:
+            CommerceToolkitView(destination: $toolkitDestination)
         }
     }
 }

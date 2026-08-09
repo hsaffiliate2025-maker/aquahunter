@@ -5,11 +5,11 @@
 ## 应用身份
 
 - applicationId：`com.hotseason.aquahunter`
-- versionName：`0.1.0`
+- versionName / versionCode：`1.1.0 (3)`
 - minSdk：API 26
 - compile/targetSdk：API 36
-- 计划首次发布轨道：Google Play Internal testing
-- Android developer verification：必须注册同一 package name
+- 当前轨道：Google Play Production `Active`，`AquaHunter 1.1.0 (3)` 已 100% 全量发布至 177 个国家/地区；同版本继续保留在 Internal testing
+- Android developer verification：开发者身份与 package name `com.hotseason.aquahunter` 均已登记
 
 ## 当前生产功能
 
@@ -20,6 +20,9 @@
 - Aqua AI：当前发行版不提供；真实问答服务、来源引用、成本限制和隐私审查完成后再进入导航。
 - 首次使用：必须确认《海上作业与法律风险声明》。
 - Settings：背景、语言、风险声明和联系邮箱 `contact@hotseason.app`。
+- Research Toolkit：历史、UTF-8 CSV、同口径比较、市场快照、季节性、到岸成本和应用内提醒均交付真实结果。
+- Google Play Billing：6 个有限额度订阅和 18 个结果次数包；验证、幂等本机账本、成功后扣减、购买感谢语和功能入口引导均已接入。
+- 12 语言覆盖 App、购买状态、商店描述和全部 24 个商品；阿拉伯语支持 RTL。
 
 SSB 来源使用 CC BY 4.0，工程规则与完整清单见：
 
@@ -60,8 +63,8 @@ python3 tools/validate_release_content.py
 
 当前已验证的本地产物：
 
-- AAB SHA-256：`77ba47e8721878435f1e0639ab8ef0e007776f67039fe4913828e0736954e2c3`
-- APK SHA-256：`c8700d17be0ba3a7d25d2ca4c415722082736928668d505dc0ce082909bdc938`
+- AAB SHA-256：`e0e59f2e262d01dffb1e2d95ce0e2254d63335ee6034fe90b4e9fb95f6c9b8a3`
+- APK SHA-256：`757d77c4beefd28913e3b3e22e9cea297768b2f66bbf2cc41ebf82559dc67640`
 - Upload certificate SHA-256：`7bc5fe76f96a300a7c4281e957d5659bf089ac68902f2abd951255f3c5cc960e`
 
 签名包已确认包含离线地图样式和 Natural Earth GeoJSON；release DEX 中没有 Aqua AI/Ask 或开发期问答内容。每次改动 release 代码、依赖或版本号后必须重新构建并复核哈希。
@@ -114,13 +117,16 @@ gpd publish play app/build/outputs/bundle/release/app-release.aab \
 - [`docs/google-play/DATA_SAFETY.md`](docs/google-play/DATA_SAFETY.md)
 - [`docs/google-play/PRIVACY_POLICY.md`](docs/google-play/PRIVACY_POLICY.md)
 - [`../store/google-play/`](../store/google-play/)：3 张 Pixel 6 正式截图、512×512 图标和 1024×500 feature graphic
+- [`../store-metadata/google/`](../store-metadata/google/)：12 语言商店描述、更新说明与关键词化文案
+- [`../store-metadata/iap-localizations.json`](../store-metadata/iap-localizations.json)：24 × 12 商品名称、说明和平台 locale 映射
 
 Google Play 只上传 `store/google-play/` 中经过筛选的素材。被忽略的 `artifacts/screenshots/` 包含历史开发截图，其中部分带旧 demo UI，不得上传。
 
-## 发布阻断项
+## 发布状态与剩余验证
 
-- 2026-07-21：应用记录已创建（AquaHunter: Seafood Intel），AAB versionCode 1 已通过 Publisher API 发布至 internal 轨道，en-US listing 文案与图形已上传。注意 `gpd` 存在 ADC quota-project 缺陷，实际上传使用了 REST 直连（见 sdk skill）。
-- 生产轨道提审前必须在 Play Console 完成 App content 声明（隐私政策 URL、App access、广告、内容分级、目标受众、Data safety）——这些仅能在网页填写。
-- 本地 upload keystore 与签名发布构建已验证；Play App Signing 已随首次上传启用，需在 Console 核实。
-- 隐私政策文案、法定运营主体和邮寄地址已写入仓库并部署到 `https://hotseason.app/en/policy#aquahunter`；提交 Data safety 时仍需与最终 AAB 再次逐项核对。
-- 上线前必须重新核对实际 AAB 的依赖、网络行为、Data safety 和目标地区法律。
+- 2026-07-30：AAB `1.1.0 (3)` 已通过 Publisher API 提交 Internal testing；12 种 Google Play listing、18 个 active one-time products 和 6 个 active subscriptions（每个 12 语言）已同步，运行时付费工具文本也覆盖同一 12 种语言。
+- 2026-07-31：AAB versionCode `3` 已提交 Google Play Production；Console 显示轨道 `Active`、最新版本 `AquaHunter 1.1.0 (3)`、100% 全量覆盖 177 个国家/地区。
+- Google Play 的 10 项 App content 声明均已处理，Policy status 为 `No issues found`；Data safety 声明与实际 AAB 一致。
+- 16 语言现行隐私政策已随网站提交 `0d308a7ddbd35a42755670f5b7170b6b1ffb2d18` 上线，准确披露 Google Play Billing、本机购买/使用账本、消耗型余额在清除应用数据后可能丢失及订阅恢复。
+- 本地 upload keystore、签名发布构建与 AAB 哈希已验证；下次发布前仍须核对 Play App Signing 证书指纹。
+- 后续版本仍须重新核对实际 AAB 的依赖、网络行为、Data safety、目标地区法律及商业数据许可，不得沿用本次核验结论。

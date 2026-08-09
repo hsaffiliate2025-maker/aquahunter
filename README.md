@@ -34,7 +34,25 @@ AquaHunter 是面向全球海鲜产业的跨平台数据产品，聚合价格、
 
 ## 身份与发布渠道
 
-三端统一标识 `com.hotseason.aquahunter`；商店显示名为 **AquaHunter: Seafood Intel**（App Store 上 `AquaHunter` 一名已被占用）。Apple 侧为 Hot Season Enterprise, Inc.（`C8Y5J74PQW`），经 `asc`（App Store Connect API）上架 App Store / Mac App Store；Android 经 Google Play Developer API 上架 Google Play。2026-07-21：三端均已提交商店审核。签名产物、哈希、商店素材与发布阻断项见各端 README；每次修改发布代码或版本号后必须重新构建并复核哈希，不得把旧产物上传为新版本。
+三端统一标识 `com.hotseason.aquahunter`；商店显示名为 **AquaHunter: Seafood Intel**（App Store 上 `AquaHunter` 一名已被占用）。Apple 侧为 Hot Season Enterprise, Inc.（`C8Y5J74PQW`），经 `asc`（App Store Connect API）上架 App Store / Mac App Store；Android 经 Google Play Developer API 上架 Google Play。首版 `1.0.0 (1)` 已在 iOS 与 macOS 商店上线；macOS `1.1.0 (3)` 已完成审核并可分发，Android `1.1.0 (3)` 已在 Google Play Production 以 100% 全量方式发布。iOS `1.1.0 (3)` 因 Guideline 3.1.2(c) 缺少购买流程内可用的隐私政策和 EULA 链接被退回；修复后的 `1.1.0 (4)` 已上传并绑定版本。旧 iOS 审核提交 `beeb1cfa-196b-4d44-88b3-4778e4a0125e` 已通过 ASC API 取消并完成；18 个消耗型 IAP、订阅组和组内 6 个订阅已与修复版 App 组成 26 项新提交 `b223573d-85c9-4398-9e7c-e45a610ed2da`，并于 2026-08-09 进入 `WAITING_FOR_REVIEW`。16 语言现行隐私政策已通过网站提交 `0d308a7ddbd35a42755670f5b7170b6b1ffb2d18` 部署到 `hotseason.app`，准确说明 StoreKit / Google Play Billing 与本机购买账本。签名产物、哈希、商店素材与发布状态见各端 README；每次修改发布代码或版本号后必须重新构建并复核哈希，不得把旧产物上传为新版本。
+
+截至 2026-08-09 的三端商店状态：
+
+| 平台 | 版本 | 当前状态 | 权威记录 |
+|---|---|---|---|
+| iOS | `1.1.0 (4)` | `WAITING_FOR_REVIEW`；App、18 个消耗型 IAP、订阅组和 6 个订阅共 26 项已提交 | Build `7adc9e43-9a73-4278-8d37-c83672ae84b3`；submission `b223573d-85c9-4398-9e7c-e45a610ed2da` |
+| macOS | `1.1.0 (3)` | `READY_FOR_DISTRIBUTION` | App Store Connect submission `8a1d1861-fe1c-4a08-8d5a-05022860bf0e` |
+| Android | `1.1.0 (3)` | Google Play Production `Active`，100% 全量覆盖 177 个国家/地区 | Production latest release versionCode `3` |
+
+### 2026-08-08 iOS 1.1.0 (4) 审核修复记录
+
+- 修复 Guideline 3.1.2(c)：Store 顶部、所有商品之前提供真实可点击的 [AquaHunter 隐私政策](https://hotseason.app/en/policy#aquahunter) 与 [Apple 标准 EULA](https://www.apple.com/legal/internet-services/itunes/dev/stdeula/)；链接标题和法律提示覆盖 12 种界面语言。
+- 自动续期订阅卡同时显示 StoreKit 返回的实时本地化价格及明确的“月付/年付”周期，不自行拼接价格或币种。
+- iOS Build `1.1.0 (4)` 已归档、签名、严格校验并上传；ASC build 状态为 `VALID`，`usesNonExemptEncryption=false`，仅使用豁免的 HTTPS 加密。
+- Apple 共享测试共 15 项全部通过；24 商品、12 语言、商业数据许可、发行内容和数据源发布门禁均通过，ASC 校验为 18 个消耗型 IAP 与 6 个订阅零阻断。
+- 审核截图保存在本地 `artifacts/screenshots/app-review/ios-1.1.0-build-4-legal-links.png`，并已作为 App Review attachment 上传；Review Notes 已写明首次启动、Store 路径、法律链接、恢复购买与真实数据源。
+- 取消旧审核后，Apple 的父商品状态仍显示 `READY_TO_SUBMIT`，但部分底层 IAP、订阅及订阅组版本实际为 `DEVELOPER_REJECTED`；父商品状态不能作为重新提审的唯一判断依据。
+- App Store Connect 网页先成功重新挂载 11 个 IAP；其余 7 个 IAP、6 个订阅和订阅组通过官方 `reviewSubmissionItems` 版本关系重新加入同一草稿。最终 App、18 个 IAP、订阅组和 6 个订阅共 26 项全部为 `READY_FOR_REVIEW`，新 submission `b223573d-85c9-4398-9e7c-e45a610ed2da` 已提交并进入 `WAITING_FOR_REVIEW`。
 
 ## 总开发计划
 
@@ -45,7 +63,7 @@ AquaHunter 是面向全球海鲜产业的跨平台数据产品，聚合价格、
 - [x] 三端统一商业图标与深海蓝视觉语言
 - [x] Apple Universal Bundle ID 注册
 - [ ] iOS、macOS 和 Android 全部在 CI 中构建测试
-- [ ] 12 语言字符串目录、翻译完整性检查和阿拉伯语 RTL
+- [x] 12 语言字符串、翻译完整性检查和阿拉伯语 RTL 布局支持
 
 ### Phase 1 — 可用数据闭环
 
@@ -74,7 +92,11 @@ AquaHunter 是面向全球海鲜产业的跨平台数据产品，聚合价格、
 ### Phase 3 — 账号与商业化
 
 - [ ] 跨平台账号、组织、角色和设备同步
-- [ ] StoreKit 2 与 Google Play Billing 权益映射
+- [x] v1.1 已完成 24 个 SKU 的共享 Product Catalog、统一定价文件、7 个真实功能合同与 12 语言商品文案
+- [x] StoreKit 2 与 Google Play Billing 客户端权益映射、幂等设备账本、成功交付后扣减、感谢语与功能入口引导
+- [x] App Store Connect / Google Play 后台 24 个商品全部创建并同步 12 语言商品文案
+- [x] 首批 Apple 24 个商品与 iOS 版本挂载审核并提交
+- [ ] 三端真实沙盒实购、退款/撤销与恢复验收
 - [ ] Research Credits / AI Analysis Credits 服务端钱包、预留、扣费、释放与幂等状态机
 - [ ] Apple/Google/Web 支付验真、不可变交易账本、退款/撤销/恢复和跨设备余额恢复
 - [ ] AI 模型白名单、单任务预算、全局日预算、速率限制、成本监控与紧急熔断
@@ -89,21 +111,168 @@ AquaHunter 是面向全球海鲜产业的跨平台数据产品，聚合价格、
 - [x] 2026-07-21 Google Play internal 轨道发布 versionCode 1，并提交 production 审核
 - [x] 2026-07-21 iOS 与 macOS 1.0.0 (1) 上传 App Store Connect 并提交 App Review
 - [x] 首版英文 iPhone、iPad、macOS 和 Google Play 正式截图与图形素材
-- [ ] 12 语言商店元数据、完整界面本地化、隐私和 Data Safety/App Privacy
+- [x] v1.1 的 12 语言商店描述、更新说明、关键词及 24 × 12 IAP 商品名称/说明已通过本地校验并同步至 Apple/Google 后台
+- [x] 2026-07-31 iOS 与 macOS `1.1.0 (3)` 已分别提交审核；macOS 后续通过并进入 `READY_FOR_DISTRIBUTION`
+- [x] 2026-08-08 iOS `1.1.0 (4)` 完成 Guideline 3.1.2(c) 修复、15 项测试、签名归档、上传、出口合规及审核截图/说明
+- [x] 2026-08-09 将 iOS `1.1.0 (4)`、18 个 IAP、订阅组及 6 个订阅组成 26 项新 submission，并通过 ASC API 重新提交审核
+- [x] Android `1.1.0 (3)` 已进入 Internal testing，Google Play App content 全部完成且 Policy status 为 `No issues found`
+- [x] 发布 16 语言现行购买/本机账本隐私说明（网站提交 `0d308a7`）
+- [x] Android `1.1.0 (3)` 已发布到 Production，状态为 `Active`，100% 全量覆盖 177 个国家/地区
+- [ ] 12 语言完整界面人工复核、阿拉伯语 RTL 截图验收、隐私和 Data Safety/App Privacy 后台同步
 - [ ] ASC/GPD 上传前验证、分阶段发布和回滚手册
 
 ## 付费点计划
 
-模式：**Freemium 订阅 + Research Credits 消耗**。商业化必须建立在真实、获授权且标明时效的数据上。开发 fixture 不进入发行包、不设置付费墙，也不销售联系方式。所有权限与扣费在服务端执行；付费不能解锁任何绕过数据许可、保护区、禁捕期或航行安全的能力。
+模式：**Freemium 订阅 + 明确结果次数包**；AI 上线后再增加 Research Credits。商业化必须建立在真实、获授权且标明时效的数据上。开发 fixture 不进入发行包、不设置付费墙，也不销售联系方式。v1.1 的 StoreKit 2 / Google Play Billing 交易先由商店框架验证，再写入幂等设备账本；消耗型次数不承诺卸载后恢复。未来账号、跨设备余额、Web 支付或 AI 模块仍必须由后端验真并写入持久化认证账本。付费不能解锁任何绕过数据许可、保护区、禁捕期或航行安全的能力。
 
 | 层级 | 定价形态 | 首批内容 |
 |---|---|---|
-| Visitor / Free | 免费 | 最新价格基准、离线底图、有限搜索；AI 上线后含少量周期赠送 credits |
-| **Pro**（首个付费点） | 月/年订阅（`aquahunter.pro.monthly` / `aquahunter.pro.annual`） | 完整历史价格、AI 预测与高分辨率 Fish Radar、授权联系方式、导出、提醒、周期 Research Credits |
+| Visitor / Free | 免费 | 最新价格基准、离线底图、来源与许可、有限历史 |
+| **Markets Plus / Pro / Max** | 月/年自动续期订阅（6 个 SKU） | 3/5/10 年历史和明确的导出、比较、快照、季节性、到岸成本及提醒周期额度 |
+| **结果次数包** | 消耗型内购（18 个 SKU） | CSV 导出、同口径比较、市场快照、季节性、到岸成本和成功送达提醒；只在结果成功交付后扣次数 |
 | **Enterprise** | 年度销售合同 | 团队席位、高配额 API、Webhook、SLA、审计、ERP 集成 |
-| Research Credits | 消耗型内购（`aquahunter.research.20/80/240` 预留） | AI 分析按任务扣费，后端定权威价；单独购买余额不过期 |
+| Research Credits（后续） | 消耗型内购（Product ID 尚未创建） | 生产 AI 后端和持久化认证账本完成后，按有效业务结果扣费 |
 
 **上线节奏**：v1.0 免费上架无 IAP（以真实数据建立信任与下载量）→ v1.x 接入东京都日报与 NASA/NOAA 环境层后引入 Pro 订阅（历史与导出为首批付费墙）→ v2 Radar 概率与 Aqua AI 上线后引入 Research Credits，随后开放 Enterprise。
+
+### 竞品参考与 50 个付费权益 / IAP 候选
+
+竞品官方付费能力显示，用户愿意为“更深的历史、可比价格、预警、获授权的贸易/船舶数据、工作流和可交付研究结果”付费，而不是为装饰付费：SeafoodSource Premium+ 将当前价格、历史趋势、专家分析和行业报告放在会员内；Kontali Edge 将价格、贸易统计、供应需求、预测、报告和 API 分层；Expana/Mintec 将价格数据库、预测、成本模型、提醒、新闻、谈判包和 API 做成平台能力；MarineTraffic/VesselFinder 提供卫星 AIS、舰队、历史航迹、港口事件、ETA、提醒、海图和容器追踪；Fishbrain/Fishing Points 提供鱼情预测、天气/潮汐/solunar、深度图、海图、高级图层和无限点位；ImportGenius 等贸易数据产品按搜索次数、国家数据集和导出额度收费。参考仅用于产品模式研究，不代表可复制或转售这些竞品的数据。
+
+官方参考：[SeafoodSource Pricing Portal](https://www.seafoodsource.com/pricing) · [Kontali Edge Pricing](https://www.kontali.com/pricing) / [Salmon Index](https://www.kontali.com/salmon-index) · [Expana features](https://www.expanamarkets.com/product/features/) · [Mintec Alert Centre](https://www.mintecglobal.com/us/alerts) / [Data Direct API](https://www.mintecglobal.com/data-direct) · [MarineTraffic Mobile Pro](https://support.marinetraffic.com/en/articles/13456094-mobile-pro-plan-faq) · [VesselFinder plans](https://www.vesselfinder.com/get-premium) · [Fishbrain Pro](https://fishbrain.helpshift.com/hc/en/3-fishbrain---social-fishing-forecast-app/faq/230-what-is-included-in-fishbrain-pro/) · [Fishing Points Premium](https://support.fishingpoints.app/hc/en-us/articles/26798080270482-Fishing-Points-Free-vs-Premium-plan) · [ImportGenius Pricing](https://w3.importgenius.com/pricing)
+
+下面正好列出 **50 个可收费业务权益候选**。它们是服务端 entitlement / IAP benefit，不要求一次性在商店创建 50 个独立 Product ID；推荐按订阅、配额包、导出包和 Research Credits 组合成 10–15 个清晰商品分批上线，减少重复 SKU、订阅升级和退款复杂度。任何候选只有在数据商业授权、覆盖率、成本和商店审核门禁通过后才能启用。
+
+| # | 权益代码 | 可收费业务结果 | 建议计费形态 |
+|---:|---|---|---|
+| 1 | `MKT-01` | 5 年完整价格历史与 K 线 | Markets Pro 订阅 |
+| 2 | `MKT-02` | 同品种、同规格的多城市/市场比较 | Markets Pro 订阅 |
+| 3 | `MKT-03` | 规格、等级、形态和产地价格矩阵 | Markets Pro 订阅 |
+| 4 | `MKT-04` | 原币种、汇率、重量单位和标准化价并列 | Markets Pro 订阅 |
+| 5 | `MKT-05` | 市场间可比价差与采购机会观察 | Markets Pro 订阅 |
+| 6 | `MKT-06` | 自定义价格阈值提醒 | Alerts 配额/Pro |
+| 7 | `MKT-07` | 波动、跳价和数据异常提醒 | Alerts 配额/Pro |
+| 8 | `MKT-08` | 供应量、需求与同比/环比面板 | Markets Pro 订阅 |
+| 9 | `MKT-09` | 到岸成本、关税、冷链和目标毛利计算 | 计算器 Pro/报告 |
+| 10 | `MKT-10` | 每周 Market Pulse 与涨跌驱动 Wrap-Up | Markets Pro/Research Credits |
+| 11 | `TRD-01` | 买家高级搜索与保存筛选 | Trade Pro 订阅 |
+| 12 | `TRD-02` | 供应商高级搜索与保存筛选 | Trade Pro 订阅 |
+| 13 | `TRD-03` | 买家进口历史、频次、数量与来源国 | Trade Pro 订阅 |
+| 14 | `TRD-04` | 供应商出口历史、频次、数量与目的国 | Trade Pro 订阅 |
+| 15 | `TRD-05` | 按 HS Code、品种、国家和港口的贸易流 | Trade Pro 订阅 |
+| 16 | `TRD-06` | 最近活跃买家与采购意图信号 | Trade Pro/Alerts |
+| 17 | `TRD-07` | 买家/供应商主体核验报告 | 单份报告/Research Credits |
+| 18 | `TRD-08` | 出口许可、证书与有效期核验报告 | 单份报告/Research Credits |
+| 19 | `TRD-09` | 指定产品与目的国的采购/销售对象 shortlist | Research Credits |
+| 20 | `TRD-10` | RFQ 报价横评、风险项和谈判准备包 | Research Credits |
+| 21 | `OCN-01` | SST、叶绿素、洋流、浪高等 Ocean Layers Pro | Ocean Pro 订阅 |
+| 22 | `OCN-02` | 更高空间/时间分辨率 Fish Radar | Ocean Pro 订阅 |
+| 23 | `OCN-03` | 多鱼种 Radar 与鱼种切换 | Ocean Pro 订阅 |
+| 24 | `OCN-04` | 私有海域、作业区域和点位保存/同步 | Ocean Pro 订阅 |
+| 25 | `OCN-05` | 官方禁捕期、保护区和法规变更提醒 | Alerts/Ocean Pro |
+| 26 | `VES-01` | 扩展舰队监控列表与分组 | Fleet Pro 订阅 |
+| 27 | `VES-02` | 单船卫星 AIS 跟踪通行证 | 按船/月消耗或订阅 |
+| 28 | `VES-03` | 90 天历史航迹与事件回放 | Fleet Pro/单船通行证 |
+| 29 | `PRT-01` | 港口停靠、预计到港、ETA 与泊位事件 | Ports Pro 订阅 |
+| 30 | `PRT-02` | 船舶地理围栏、港口拥堵与事件提醒 | Alerts/Ports Pro |
+| 31 | `AI-01` | 单市场价格趋势解释 | 1 Research Credit |
+| 32 | `AI-02` | Fish Radar 环境因子解释 | 2 Research Credits |
+| 33 | `AI-03` | 买家研究简报 | 3 Research Credits |
+| 34 | `AI-04` | 供应商研究简报 | 3 Research Credits |
+| 35 | `AI-05` | 多市场采购研究简报 | 5 Research Credits |
+| 36 | `AI-06` | 报价/谈判准备简报 | 5 Research Credits |
+| 37 | `DAT-01` | CSV、Excel、PDF 导出配额包 | 消耗型配额/Pro |
+| 38 | `DAT-02` | REST API 调用配额包 | 月度订阅/配额包 |
+| 39 | `DAT-03` | Webhook 与自动监控事件配额包 | 月度订阅/配额包 |
+| 40 | `WRK-01` | 团队共享 watchlist、注释、审批与审计 | Team 订阅 |
+| 41 | `MKT-11` | 城市/市场价差雷达与套利观察列表 | Markets Pro |
+| 42 | `MKT-12` | 指定鱼种的采购窗口日历与季节性提醒 | Markets Pro |
+| 43 | `MKT-13` | 采购合同指数篮子与自定义 benchmark | Markets Pro/Enterprise |
+| 44 | `MKT-14` | 到岸成本模拟器：原料价、汇率、关税、运费和损耗 | Markets Pro/Research Credits |
+| 45 | `TRD-11` | 买家/供应商变更监控：新增、停更、异常活跃 | Counterparty Pro |
+| 46 | `TRD-12` | 贸易路线风险包：制裁、禁运、港口拥堵和证书风险 | Research Credits |
+| 47 | `OCN-06` | 海洋作业窗口：天气、浪高、洋流和安全阈值组合提醒 | Ocean Pro |
+| 48 | `VES-04` | 目标船队关注包：港口靠泊、航线偏离和作业密度提醒 | Fleet Pro |
+| 49 | `DAT-04` | Excel/CSV 定时导出额度包与可审计下载记录 | Export Pack |
+| 50 | `API-01` | 移动端 API 配额包：价格、来源、新鲜度和基础行情接口 | API Pack |
+
+**明确不收费**：背景色/主题、壁纸、打赏、云存储卖点、语言、无障碍、免责声明与法规安全提示、隐私设置、账号删除、购买恢复、数据来源与更新时间。核心安全或合规能力不能被付费墙挡住。
+
+**授权与可靠性门禁**：买家联系方式、贸易记录、AIS、港口、法规或海洋层必须拥有适用于商业移动产品的合同或开放许可；公开可见不等于可转售。Global Fishing Watch 公共 API 明确仅限非商业用途，不能作为上述收费权益的数据后端，除非另签商业许可。按次报告、导出或 AI 任务在无数据、数据过期、授权失效、失败、安全拒绝或幂等重放时不扣次数/credits；订阅页必须披露覆盖范围和典型新鲜度。
+
+**推荐首发顺序**：先上线 `MKT-01`–`MKT-14` 与 `DAT-01`/`DAT-04`，因为它们最贴近当前真实价格数据能力；完成获授权贸易数据后上线 `TRD-*`；完成商业 AIS/港口合同与海洋产品级许可后上线 `OCN-*`、`VES-*`、`PRT-*`；生产 AI 后端与 Research Credit 账本全部通过门禁后才上线 `AI-*`。
+
+### v1.1 实现与上架目标 — 24 个真实 SKU
+
+版本 **v1.1** 已在 iOS、macOS 与 Android 客户端实现以下 **24 个 IAP SKU** 对应的真实功能、权益账本、购买感谢语和功能入口引导；商店后台商品、沙盒实购与审核提交仍以本节末状态为准。这一批只依赖获准商业二次使用的 Statistics Norway 03024（CC BY 4.0）、确定性计算、应用内匹配提醒和 UTF-8 CSV 文件导出；不把尚未具备生产条件的 AI、AIS、买家联系方式、船舶租赁或贸易数据库包装成可购买功能。
+
+订阅 SKU 位于同一订阅组，Plus、Pro、Max 为从低到高的三个服务等级，月付与年付仅改变结算周期。所有等级均设置明确额度，不宣传“无限”。消耗型商品只在成功交付结果后扣减；无可比数据、无授权数据、生成失败、超时、重复请求或安全拒绝时不扣额度。
+
+| # | Product ID | 类型 | 用户实际获得 |
+|---:|---|---|---|
+| 1 | `aquahunter.markets.plus.monthly` | 自动续期订阅 | Plus 月付：3 年价格历史，每月 5 次快照、5 次到岸成本结果和 20 次成功送达提醒 |
+| 2 | `aquahunter.markets.plus.annual` | 自动续期订阅 | Plus 年付：与月付同权益，按年结算 |
+| 3 | `aquahunter.markets.pro.monthly` | 自动续期订阅 | Pro 月付：5 年历史；导出、比较、快照、季节性和到岸成本每月各 20 次，另含 100 次提醒 |
+| 4 | `aquahunter.markets.pro.annual` | 自动续期订阅 | Pro 年付：与月付同权益，按年结算 |
+| 5 | `aquahunter.markets.max.monthly` | 自动续期订阅 | Max 月付：10 年历史；导出、比较、快照、季节性和到岸成本每月各 100 次，另含 500 次提醒 |
+| 6 | `aquahunter.markets.max.annual` | 自动续期订阅 | Max 年付：与月付同权益，按年结算 |
+| 7 | `aquahunter.export.10` | 消耗型 | 10 次获授权行情 UTF-8 CSV 导出 |
+| 8 | `aquahunter.export.50` | 消耗型 | 50 次获授权行情 UTF-8 CSV 导出 |
+| 9 | `aquahunter.export.200` | 消耗型 | 200 次获授权行情 UTF-8 CSV 导出 |
+| 10 | `aquahunter.compare.5` | 消耗型 | 5 份同品种、同规格、同口径市场比较结果 |
+| 11 | `aquahunter.compare.20` | 消耗型 | 20 份市场比较结果 |
+| 12 | `aquahunter.compare.100` | 消耗型 | 100 份市场比较结果 |
+| 13 | `aquahunter.snapshot.5` | 消耗型 | 5 份含来源、时间、新鲜度与涨跌摘要的市场快照 |
+| 14 | `aquahunter.snapshot.20` | 消耗型 | 20 份市场快照 |
+| 15 | `aquahunter.snapshot.100` | 消耗型 | 100 份市场快照 |
+| 16 | `aquahunter.seasonality.5` | 消耗型 | 5 份基于真实历史数据的季节性报告 |
+| 17 | `aquahunter.seasonality.20` | 消耗型 | 20 份季节性报告 |
+| 18 | `aquahunter.seasonality.100` | 消耗型 | 100 份季节性报告 |
+| 19 | `aquahunter.landedcost.10` | 消耗型 | 10 次到岸成本计算：原料价、汇率、关税、运费和损耗 |
+| 20 | `aquahunter.landedcost.50` | 消耗型 | 50 次到岸成本计算 |
+| 21 | `aquahunter.landedcost.200` | 消耗型 | 200 次到岸成本计算 |
+| 22 | `aquahunter.alerts.25` | 消耗型 | 25 次成功送达的价格阈值或异常事件提醒 |
+| 23 | `aquahunter.alerts.100` | 消耗型 | 100 次成功送达的价格提醒 |
+| 24 | `aquahunter.alerts.500` | 消耗型 | 500 次成功送达的价格提醒 |
+
+当前交付状态：
+
+1. [x] 共享机器可读 `ProductCatalog`、统一 USD 基准定价、7 个功能合同及商业授权门禁。
+2. [x] StoreKit 2 / Google Play Billing 客户端、幂等设备账本、pending/失败处理、订阅恢复和成功结果后扣减。
+3. [x] 历史、UTF-8 CSV、鲜冷藏与冷冻比较、市场快照、多年季节性、到岸成本及应用内价格提醒均有实际界面与结果。
+4. [x] 购买成功后按当前语言显示感谢语，并提供“打开功能”按钮直达所购权益入口。
+5. [x] App Store / Google Play 描述、更新说明、关键词及 24 个商品名称和说明覆盖 12 种语言。
+6. [x] Apple 与 Google 后台已创建全部 24 个商品，并同步每个商品的 12 种本地化名称与说明；Apple 18 个消耗型商品、订阅组及 6 个订阅已随 iOS Build 4 重新提交，Google 商品及基础方案均已激活。
+7. [x] 跨平台闭环测试逐一覆盖 24 个商品的真实额度、7 个功能目的地、12 种语言感谢语和“打开功能”跳转；iOS Build 4 的 Apple 共享测试 15 项、Android 12 项全部通过。
+8. [x] iOS `1.1.0 (4)`、18 个消耗型商品、订阅组和组内 6 个订阅已组成 26 项审核提交；网页完成可直接挂载的 11 个 IAP，其余 `DEVELOPER_REJECTED` 版本经官方 Review Submission API 恢复并重新提审。
+9. [x] Android `1.1.0 (3)` 已在 Internal testing 可供测试；Google Play 后台 10 项 App content 均已完成，Policy status 为 `No issues found`。
+10. [x] 与 v3 完全一致的 16 语言公开隐私政策已发布并验证；Android `1.1.0 (3)` 已在 Google Play Production 以 100% 全量方式发布，轨道状态为 `Active`。
+11. [ ] 完成真实沙盒购买、退款/撤销/恢复、RTL 截图及 Apple 审核。
+
+购买页只展示已经完成、已获授权且当前地区可售的商品；未开发、数据不足或未通过审核的 SKU 保持隐藏，不在官网或商店文案中宣传。
+
+#### 24 个 SKU 的 12 语言要求
+
+SKU 的 Product ID 永久使用上表英文标识且不翻译；商品显示名、说明、购买页、权益状态、额度单位、订阅周期、确认、pending、失败、退款、恢复和到期文案必须覆盖与 Railingo 一致的 12 种语言：
+
+| 语言 | App locale | App Store Connect | Google Play |
+|---|---|---|---|
+| English (US) | `en` | `en-US` | `en-US` |
+| 简体中文 | `zh-Hans` | `zh-Hans` | `zh-CN` |
+| 繁體中文 | `zh-Hant` | `zh-Hant` | `zh-TW` |
+| Español | `es` | `es-ES` | `es-ES` |
+| Français | `fr` | `fr-FR` | `fr-FR` |
+| Deutsch | `de` | `de-DE` | `de-DE` |
+| 日本語 | `ja` | `ja` | `ja-JP` |
+| 한국어 | `ko` | `ko` | `ko-KR` |
+| Português do Brasil | `pt-BR` | `pt-BR` | `pt-BR` |
+| Bahasa Indonesia | `id` | `id` | `id-ID` |
+| हिन्दी | `hi` | `hi` | `hi-IN` |
+| العربية | `ar` | `ar-SA` | `ar` |
+
+客户端必须直接显示 StoreKit / Google Play 返回的本地化价格、币种与周期，不自行拼接或换算价格。Apple 使用 String Catalog，Android 使用对应 locale 的 `strings.xml`；阿拉伯语购买流程必须通过 RTL、数字、货币、截断和按钮顺序检查。英文源文案批准后再生成其他语言初稿，每种语言均须人工复核；任一 SKU 缺少任一目标语言、仍有占位符、发生意外英文回退或权益描述与实际实现不一致时，禁止创建可售状态或提交下一版本。
+
+**本版本明确禁止的 SKU**：云存储、跨设备云空间、主题/背景颜色、壁纸、图标皮肤、打赏或“支持开发者”。语言、无障碍、安全与法律声明、隐私、账号删除、购买恢复、来源与数据更新时间也必须永久免费。
 
 ### Future paid AI module — Research Credits
 

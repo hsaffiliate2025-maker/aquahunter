@@ -11,10 +11,10 @@
 	<key>provisioningProfiles</key>
 	<dict>
 		<key>com.hotseason.aquahunter</key>
-		<string>AquaHunter iOS App Store 2026</string>
+		<string>AquaHunter iOS App Store 2026 Build 4</string>
 	</dict>
 	<key>signingCertificate</key>
-	<string>iPhone Distribution</string>
+	<string>316E4DF4B25675DA4037A60B61E9F18FE8E6C96B</string>
 	<key>signingStyle</key>
 	<string>manual</string>
 	<key>stripSwiftSymbols</key>

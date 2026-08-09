@@ -8,16 +8,21 @@ import kotlinx.coroutines.withContext
 import org.json.JSONObject
 
 object StatisticsNorwayMarketRepository {
-    private const val ENDPOINT =
-        "https://data.ssb.no/api/pxwebapi/v2/tables/03024/data" +
-            "?lang=en" +
-            "&valueCodes%5BVareGrupper2%5D=01" +
-            "&valueCodes%5BContentsCode%5D=*" +
-            "&valueCodes%5BTid%5D=top%2852%29" +
-            "&outputFormat=json-stat2"
+    private const val ENDPOINT_BASE =
+        "https://data.ssb.no/api/pxwebapi/v2/tables/03024/data"
 
-    suspend fun fetchFreshSalmonSeries(): AuthorizedMarketSeries = withContext(Dispatchers.IO) {
-        val connection = (URL(ENDPOINT).openConnection() as HttpURLConnection).apply {
+    suspend fun fetchSalmonSeries(historyWeeks: Int = 52): List<AuthorizedMarketSeries> =
+        withContext(Dispatchers.IO) {
+        require(historyWeeks in 1..1_386) {
+            "Requested history is outside the official dataset."
+        }
+        val endpoint = ENDPOINT_BASE +
+            "?lang=en" +
+            "&valueCodes%5BVareGrupper2%5D=*" +
+            "&valueCodes%5BContentsCode%5D=*" +
+            "&valueCodes%5BTid%5D=top%28$historyWeeks%29" +
+            "&outputFormat=json-stat2"
+        val connection = (URL(endpoint).openConnection() as HttpURLConnection).apply {
             requestMethod = "GET"
             connectTimeout = 20_000
             readTimeout = 20_000
@@ -37,18 +42,19 @@ object StatisticsNorwayMarketRepository {
         }
     }
 
-    internal fun parseSeries(payload: JSONObject): AuthorizedMarketSeries {
+    internal fun parseSeries(payload: JSONObject): List<AuthorizedMarketSeries> {
         val ids = payload.getJSONArray("id").toStringList()
         val sizes = payload.getJSONArray("size").toIntList()
         if (ids != listOf("VareGrupper2", "ContentsCode", "Tid") ||
             sizes.size != 3 ||
-            sizes[0] != 1 ||
+            sizes[0] != 2 ||
             sizes[1] != 2
         ) {
             throw MarketDataException("Official dataset structure changed and requires review.")
         }
 
         val dimensions = payload.getJSONObject("dimension")
+        val commodityCodes = orderedCodes(dimensions.getJSONObject("VareGrupper2"))
         val timeCodes = orderedCodes(dimensions.getJSONObject("Tid"))
         val contentIndex = categoryIndex(dimensions.getJSONObject("ContentsCode"))
         val priceIndex = contentIndex["Kilopris"]
@@ -59,48 +65,69 @@ object StatisticsNorwayMarketRepository {
         if (timeCodes.size != timeCount) {
             throw MarketDataException("Official time dimension is inconsistent.")
         }
+        if (commodityCodes != listOf("01", "02")) {
+            throw MarketDataException("Official commodity dimension is inconsistent.")
+        }
 
         val values = payload.getJSONArray("value")
-        val points = buildList {
-            timeCodes.forEachIndexed { timeIndex, periodCode ->
-                val priceOffset = priceIndex * timeCount + timeIndex
-                val weightOffset = weightIndex * timeCount + timeIndex
-                val price = values.nullableDouble(priceOffset)
-                if (price != null && price.isFinite() && price > 0) {
-                    add(
-                        MarketDataPoint(
-                            periodCode = periodCode,
-                            pricePerKg = price,
-                            volumeTonnes = values.nullableDouble(weightOffset),
-                        ),
-                    )
+        val contentCount = sizes[1]
+        return commodityCodes.mapIndexed { commodityIndex, commodityCode ->
+            val points = buildList {
+                timeCodes.forEachIndexed { timeIndex, periodCode ->
+                    val commodityOffset = commodityIndex * contentCount * timeCount
+                    val priceOffset = commodityOffset + priceIndex * timeCount + timeIndex
+                    val weightOffset = commodityOffset + weightIndex * timeCount + timeIndex
+                    val price = values.nullableDouble(priceOffset)
+                    if (price != null && price.isFinite() && price > 0) {
+                        add(
+                            MarketDataPoint(
+                                periodCode = periodCode,
+                                pricePerKg = price,
+                                volumeTonnes = values.nullableDouble(weightOffset),
+                            ),
+                        )
+                    }
                 }
             }
-        }
-        if (points.isEmpty()) {
-            throw MarketDataException("The official dataset contains no publishable values.")
-        }
+            if (points.isEmpty()) {
+                throw MarketDataException("The official dataset contains no publishable values.")
+            }
 
-        return AuthorizedMarketSeries(
-            id = "ssb-03024-fresh-salmon",
-            species = "Atlantic Salmon",
-            scientificName = "Salmo salar",
-            geography = "Norway",
-            countryCode = "NO",
-            benchmark = "Norway farmed salmon export benchmark",
-            commodityForm = "Fresh or chilled, farmed",
-            currencyCode = "NOK",
-            unit = "kg",
-            sourceId = "ssb-statbank-03024",
-            sourceUrl = "https://www.ssb.no/en/statbank1/table/03024",
-            licenseName = "CC BY 4.0",
-            licenseUrl = "https://creativecommons.org/licenses/by/4.0/",
-            attribution = "Source: Statistics Norway, table 03024",
-            providerUpdatedAt = payload.optString("updated").takeIf { it.isNotBlank() },
-            retrievedAt = Instant.now().toString(),
-            latency = "Weekly official statistic",
-            points = points,
-        )
+            val isFresh = commodityCode == "01"
+            AuthorizedMarketSeries(
+                id = if (isFresh) {
+                    "ssb-03024-fresh-salmon"
+                } else {
+                    "ssb-03024-frozen-salmon"
+                },
+                species = "Atlantic Salmon",
+                scientificName = "Salmo salar",
+                geography = "Norway",
+                countryCode = "NO",
+                benchmark = if (isFresh) {
+                    "Norway fresh/chilled farmed salmon export benchmark"
+                } else {
+                    "Norway frozen farmed salmon export benchmark"
+                },
+                commodityCode = commodityCode,
+                commodityForm = if (isFresh) {
+                    "Fresh or chilled, farmed"
+                } else {
+                    "Frozen, farmed"
+                },
+                currencyCode = "NOK",
+                unit = "kg",
+                sourceId = "ssb-statbank-03024",
+                sourceUrl = "https://www.ssb.no/en/statbank1/table/03024",
+                licenseName = "CC BY 4.0",
+                licenseUrl = "https://creativecommons.org/licenses/by/4.0/",
+                attribution = "Source: Statistics Norway, table 03024, commodity $commodityCode",
+                providerUpdatedAt = payload.optString("updated").takeIf { it.isNotBlank() },
+                retrievedAt = Instant.now().toString(),
+                latency = "Weekly official statistic",
+                points = points,
+            )
+        }
     }
 
     private fun orderedCodes(dimension: JSONObject): List<String> {
@@ -142,4 +169,3 @@ private fun org.json.JSONArray.nullableDouble(index: Int): Double? {
     if (index !in 0 until length() || isNull(index)) return null
     return getDouble(index)
 }
-

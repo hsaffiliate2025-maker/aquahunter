@@ -1,0 +1,2191 @@
+{
+  "schemaVersion": 1,
+  "catalogVersion": "2026-07-30",
+  "releaseVersion": "1.1.0",
+  "products": [
+    {
+      "productId": "aquahunter.markets.plus.monthly",
+      "storeType": "autoRenewableSubscription",
+      "destination": "history",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "Markets Plus — شهري",
+          "description": "سجل الأسعار · AquaHunter",
+          "googleDescription": "سجل مرخص 3 سنوات و5 لقطات و5 نتائج لتكلفة الوصول و20 تنبيهًا مسلّمًا شهريًا."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "Markets Plus — Monatlich",
+          "description": "Preisverlauf · AquaHunter",
+          "googleDescription": "3 Jahre Verlauf, monatlich 5 Snapshots, 5 Einstandskosten-Ergebnisse und 20 zugestellte Alarme."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "Markets Plus — Monthly",
+          "description": "Price History · AquaHunter",
+          "googleDescription": "3 years of licensed history plus 5 snapshots, 5 landed-cost results and 20 delivered alerts per month."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "Markets Plus — Mensual",
+          "description": "Historial de precios · AquaHunter",
+          "googleDescription": "3 años de historial, 5 resúmenes, 5 cálculos de coste puesto y 20 alertas entregadas al mes."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "Markets Plus — Mensuel",
+          "description": "Historique des prix · AquaHunter",
+          "googleDescription": "3 ans d’historique, 5 instantanés, 5 coûts rendus et 20 alertes livrées par mois."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "Markets Plus — मासिक",
+          "description": "मूल्य इतिहास · AquaHunter",
+          "googleDescription": "3 वर्ष का लाइसेंसशुदा इतिहास, हर माह 5 स्नैपशॉट, 5 लैंडेड-कॉस्ट परिणाम और 20 पहुँचे अलर्ट।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "Markets Plus — Bulanan",
+          "description": "Riwayat Harga · AquaHunter",
+          "googleDescription": "Riwayat berlisensi 3 tahun, 5 snapshot, 5 hasil biaya sampai, dan 20 peringatan terkirim per bulan."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "Markets Plus — 月額",
+          "description": "価格履歴 · AquaHunter",
+          "googleDescription": "許諾済み履歴 3 年分、月 5 回のスナップショット、5 回の着地原価、20 回の配信済みアラート。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "Markets Plus — 월간",
+          "description": "허가 기록 3년, 월 스냅샷 5회, 도착 원가 5회, 전달된 알림 20회.",
+          "googleDescription": "허가 기록 3년, 월 스냅샷 5회, 도착 원가 5회, 전달된 알림 20회."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "Markets Plus — Mensal",
+          "description": "Histórico de preços · AquaHunter",
+          "googleDescription": "3 anos de histórico, 5 resumos, 5 custos postos e 20 alertas entregues por mês."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "行情 Plus — 按月",
+          "description": "3 年授权历史，以及每月 5 次快照、5 次到岸成本结果和 20 次成功送达提醒。",
+          "googleDescription": "3 年授权历史，以及每月 5 次快照、5 次到岸成本结果和 20 次成功送达提醒。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "行情 Plus — 按月",
+          "description": "3 年授權歷史，以及每月 5 次快照、5 次到岸成本結果及 20 次成功送達提醒。",
+          "googleDescription": "3 年授權歷史，以及每月 5 次快照、5 次到岸成本結果及 20 次成功送達提醒。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.markets.plus.annual",
+      "storeType": "autoRenewableSubscription",
+      "destination": "history",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "Markets Plus — سنوي",
+          "description": "سجل الأسعار · AquaHunter",
+          "googleDescription": "سجل مرخص 3 سنوات و5 لقطات و5 نتائج لتكلفة الوصول و20 تنبيهًا مسلّمًا شهريًا."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "Markets Plus — Jährlich",
+          "description": "Preisverlauf · AquaHunter",
+          "googleDescription": "3 Jahre Verlauf, monatlich 5 Snapshots, 5 Einstandskosten-Ergebnisse und 20 zugestellte Alarme."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "Markets Plus — Annual",
+          "description": "Price History · AquaHunter",
+          "googleDescription": "3 years of licensed history plus 5 snapshots, 5 landed-cost results and 20 delivered alerts per month."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "Markets Plus — Anual",
+          "description": "Historial de precios · AquaHunter",
+          "googleDescription": "3 años de historial, 5 resúmenes, 5 cálculos de coste puesto y 20 alertas entregadas al mes."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "Markets Plus — Annuel",
+          "description": "Historique des prix · AquaHunter",
+          "googleDescription": "3 ans d’historique, 5 instantanés, 5 coûts rendus et 20 alertes livrées par mois."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "Markets Plus — वार्षिक",
+          "description": "मूल्य इतिहास · AquaHunter",
+          "googleDescription": "3 वर्ष का लाइसेंसशुदा इतिहास, हर माह 5 स्नैपशॉट, 5 लैंडेड-कॉस्ट परिणाम और 20 पहुँचे अलर्ट।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "Markets Plus — Tahunan",
+          "description": "Riwayat Harga · AquaHunter",
+          "googleDescription": "Riwayat berlisensi 3 tahun, 5 snapshot, 5 hasil biaya sampai, dan 20 peringatan terkirim per bulan."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "Markets Plus — 年額",
+          "description": "価格履歴 · AquaHunter",
+          "googleDescription": "許諾済み履歴 3 年分、月 5 回のスナップショット、5 回の着地原価、20 回の配信済みアラート。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "Markets Plus — 연간",
+          "description": "허가 기록 3년, 월 스냅샷 5회, 도착 원가 5회, 전달된 알림 20회.",
+          "googleDescription": "허가 기록 3년, 월 스냅샷 5회, 도착 원가 5회, 전달된 알림 20회."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "Markets Plus — Anual",
+          "description": "Histórico de preços · AquaHunter",
+          "googleDescription": "3 anos de histórico, 5 resumos, 5 custos postos e 20 alertas entregues por mês."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "行情 Plus — 按年",
+          "description": "3 年授权历史，以及每月 5 次快照、5 次到岸成本结果和 20 次成功送达提醒。",
+          "googleDescription": "3 年授权历史，以及每月 5 次快照、5 次到岸成本结果和 20 次成功送达提醒。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "行情 Plus — 按年",
+          "description": "3 年授權歷史，以及每月 5 次快照、5 次到岸成本結果及 20 次成功送達提醒。",
+          "googleDescription": "3 年授權歷史，以及每月 5 次快照、5 次到岸成本結果及 20 次成功送達提醒。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.markets.pro.monthly",
+      "storeType": "autoRenewableSubscription",
+      "destination": "compare",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "Markets Pro — شهري",
+          "description": "مقارنة الأسواق · AquaHunter",
+          "googleDescription": "سجل 5 سنوات و20 استخدامًا شهريًا لكل تحليل وتصدير و100 تنبيه مسلّم."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "Markets Pro — Monatlich",
+          "description": "Marktvergleich · AquaHunter",
+          "googleDescription": "5 Jahre Verlauf, monatlich je 20 Exporte und Analysen sowie 100 zugestellte Alarme."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "Markets Pro — Monthly",
+          "description": "Market Comparison · AquaHunter",
+          "googleDescription": "5 years of history plus 20 monthly exports, comparisons, snapshots, seasonality and landed-cost results, and 100 alerts."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "Markets Pro — Mensual",
+          "description": "Comparación de mercados · AquaHunter",
+          "googleDescription": "5 años de historial, 20 usos mensuales de cada análisis y exportación, y 100 alertas entregadas."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "Markets Pro — Mensuel",
+          "description": "Comparaison des marchés · AquaHunter",
+          "googleDescription": "5 ans d’historique, 20 usages mensuels de chaque analyse et export, et 100 alertes livrées."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "Markets Pro — मासिक",
+          "description": "बाज़ार तुलना · AquaHunter",
+          "googleDescription": "5 वर्ष का इतिहास, हर विश्लेषण व निर्यात के 20 मासिक उपयोग और 100 पहुँचे अलर्ट।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "Markets Pro — Bulanan",
+          "description": "Perbandingan Pasar · AquaHunter",
+          "googleDescription": "Riwayat 5 tahun, 20 penggunaan bulanan tiap analisis dan ekspor, serta 100 peringatan terkirim."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "Markets Pro — 月額",
+          "description": "履歴 5 年分、各分析と出力を月 20 回、配信済みアラートを月 100 回利用できます。",
+          "googleDescription": "履歴 5 年分、各分析と出力を月 20 回、配信済みアラートを月 100 回利用できます。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "Markets Pro — 월간",
+          "description": "기록 5년, 각 분석과 내보내기 월 20회, 전달된 알림 월 100회.",
+          "googleDescription": "기록 5년, 각 분석과 내보내기 월 20회, 전달된 알림 월 100회."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "Markets Pro — Mensal",
+          "description": "Comparação de mercados · AquaHunter",
+          "googleDescription": "5 anos de histórico, 20 usos mensais de cada análise e exportação, e 100 alertas entregues."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "行情 Pro — 按月",
+          "description": "市场比较 · AquaHunter",
+          "googleDescription": "5 年历史，以及每月各 20 次导出、比较、快照、季节性和到岸成本结果，另含 100 次提醒。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "行情 Pro — 按月",
+          "description": "市場比較 · AquaHunter",
+          "googleDescription": "5 年歷史，以及每月各 20 次匯出、比較、快照、季節性及到岸成本結果，另含 100 次提醒。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.markets.pro.annual",
+      "storeType": "autoRenewableSubscription",
+      "destination": "compare",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "Markets Pro — سنوي",
+          "description": "مقارنة الأسواق · AquaHunter",
+          "googleDescription": "سجل 5 سنوات و20 استخدامًا شهريًا لكل تحليل وتصدير و100 تنبيه مسلّم."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "Markets Pro — Jährlich",
+          "description": "Marktvergleich · AquaHunter",
+          "googleDescription": "5 Jahre Verlauf, monatlich je 20 Exporte und Analysen sowie 100 zugestellte Alarme."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "Markets Pro — Annual",
+          "description": "Market Comparison · AquaHunter",
+          "googleDescription": "5 years of history plus 20 monthly exports, comparisons, snapshots, seasonality and landed-cost results, and 100 alerts."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "Markets Pro — Anual",
+          "description": "Comparación de mercados · AquaHunter",
+          "googleDescription": "5 años de historial, 20 usos mensuales de cada análisis y exportación, y 100 alertas entregadas."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "Markets Pro — Annuel",
+          "description": "Comparaison des marchés · AquaHunter",
+          "googleDescription": "5 ans d’historique, 20 usages mensuels de chaque analyse et export, et 100 alertes livrées."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "Markets Pro — वार्षिक",
+          "description": "बाज़ार तुलना · AquaHunter",
+          "googleDescription": "5 वर्ष का इतिहास, हर विश्लेषण व निर्यात के 20 मासिक उपयोग और 100 पहुँचे अलर्ट।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "Markets Pro — Tahunan",
+          "description": "Perbandingan Pasar · AquaHunter",
+          "googleDescription": "Riwayat 5 tahun, 20 penggunaan bulanan tiap analisis dan ekspor, serta 100 peringatan terkirim."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "Markets Pro — 年額",
+          "description": "履歴 5 年分、各分析と出力を月 20 回、配信済みアラートを月 100 回利用できます。",
+          "googleDescription": "履歴 5 年分、各分析と出力を月 20 回、配信済みアラートを月 100 回利用できます。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "Markets Pro — 연간",
+          "description": "기록 5년, 각 분석과 내보내기 월 20회, 전달된 알림 월 100회.",
+          "googleDescription": "기록 5년, 각 분석과 내보내기 월 20회, 전달된 알림 월 100회."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "Markets Pro — Anual",
+          "description": "Comparação de mercados · AquaHunter",
+          "googleDescription": "5 anos de histórico, 20 usos mensais de cada análise e exportação, e 100 alertas entregues."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "行情 Pro — 按年",
+          "description": "市场比较 · AquaHunter",
+          "googleDescription": "5 年历史，以及每月各 20 次导出、比较、快照、季节性和到岸成本结果，另含 100 次提醒。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "行情 Pro — 按年",
+          "description": "市場比較 · AquaHunter",
+          "googleDescription": "5 年歷史，以及每月各 20 次匯出、比較、快照、季節性及到岸成本結果，另含 100 次提醒。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.markets.max.monthly",
+      "storeType": "autoRenewableSubscription",
+      "destination": "seasonality",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "Markets Max — شهري",
+          "description": "الموسمية · AquaHunter",
+          "googleDescription": "سجل 10 سنوات و100 استخدام شهري لكل تحليل وتصدير و500 تنبيه مسلّم."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "Markets Max — Monatlich",
+          "description": "Saisonalität · AquaHunter",
+          "googleDescription": "10 Jahre Verlauf, monatlich je 100 Exporte und Analysen sowie 500 zugestellte Alarme."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "Markets Max — Monthly",
+          "description": "Seasonality · AquaHunter",
+          "googleDescription": "10 years of history plus 100 monthly exports, comparisons, snapshots, seasonality and landed-cost results, and 500 alerts."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "Markets Max — Mensual",
+          "description": "Estacionalidad · AquaHunter",
+          "googleDescription": "10 años de historial, 100 usos mensuales de cada análisis y exportación, y 500 alertas entregadas."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "Markets Max — Mensuel",
+          "description": "Saisonnalité · AquaHunter",
+          "googleDescription": "10 ans d’historique, 100 usages mensuels de chaque analyse et export, et 500 alertes livrées."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "Markets Max — मासिक",
+          "description": "मौसमी विश्लेषण · AquaHunter",
+          "googleDescription": "10 वर्ष का इतिहास, हर विश्लेषण व निर्यात के 100 मासिक उपयोग और 500 पहुँचे अलर्ट।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "Markets Max — Bulanan",
+          "description": "Musiman · AquaHunter",
+          "googleDescription": "Riwayat 10 tahun, 100 penggunaan bulanan tiap analisis dan ekspor, serta 500 peringatan terkirim."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "Markets Max — 月額",
+          "description": "季節性 · AquaHunter",
+          "googleDescription": "履歴 10 年分、各分析と出力を月 100 回、配信済みアラートを月 500 回利用できます。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "Markets Max — 월간",
+          "description": "기록 10년, 각 분석과 내보내기 월 100회, 전달된 알림 월 500회.",
+          "googleDescription": "기록 10년, 각 분석과 내보내기 월 100회, 전달된 알림 월 500회."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "Markets Max — Mensal",
+          "description": "Sazonalidade · AquaHunter",
+          "googleDescription": "10 anos de histórico, 100 usos mensais de cada análise e exportação, e 500 alertas entregues."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "行情 Max — 按月",
+          "description": "季节性分析 · AquaHunter",
+          "googleDescription": "10 年历史，以及每月各 100 次导出、比较、快照、季节性和到岸成本结果，另含 500 次提醒。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "行情 Max — 按月",
+          "description": "季節性分析 · AquaHunter",
+          "googleDescription": "10 年歷史，以及每月各 100 次匯出、比較、快照、季節性及到岸成本結果，另含 500 次提醒。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.markets.max.annual",
+      "storeType": "autoRenewableSubscription",
+      "destination": "seasonality",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "Markets Max — سنوي",
+          "description": "الموسمية · AquaHunter",
+          "googleDescription": "سجل 10 سنوات و100 استخدام شهري لكل تحليل وتصدير و500 تنبيه مسلّم."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "Markets Max — Jährlich",
+          "description": "Saisonalität · AquaHunter",
+          "googleDescription": "10 Jahre Verlauf, monatlich je 100 Exporte und Analysen sowie 500 zugestellte Alarme."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "Markets Max — Annual",
+          "description": "Seasonality · AquaHunter",
+          "googleDescription": "10 years of history plus 100 monthly exports, comparisons, snapshots, seasonality and landed-cost results, and 500 alerts."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "Markets Max — Anual",
+          "description": "Estacionalidad · AquaHunter",
+          "googleDescription": "10 años de historial, 100 usos mensuales de cada análisis y exportación, y 500 alertas entregadas."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "Markets Max — Annuel",
+          "description": "Saisonnalité · AquaHunter",
+          "googleDescription": "10 ans d’historique, 100 usages mensuels de chaque analyse et export, et 500 alertes livrées."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "Markets Max — वार्षिक",
+          "description": "मौसमी विश्लेषण · AquaHunter",
+          "googleDescription": "10 वर्ष का इतिहास, हर विश्लेषण व निर्यात के 100 मासिक उपयोग और 500 पहुँचे अलर्ट।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "Markets Max — Tahunan",
+          "description": "Musiman · AquaHunter",
+          "googleDescription": "Riwayat 10 tahun, 100 penggunaan bulanan tiap analisis dan ekspor, serta 500 peringatan terkirim."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "Markets Max — 年額",
+          "description": "季節性 · AquaHunter",
+          "googleDescription": "履歴 10 年分、各分析と出力を月 100 回、配信済みアラートを月 500 回利用できます。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "Markets Max — 연간",
+          "description": "기록 10년, 각 분석과 내보내기 월 100회, 전달된 알림 월 500회.",
+          "googleDescription": "기록 10년, 각 분석과 내보내기 월 100회, 전달된 알림 월 500회."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "Markets Max — Anual",
+          "description": "Sazonalidade · AquaHunter",
+          "googleDescription": "10 anos de histórico, 100 usos mensais de cada análise e exportação, e 500 alertas entregues."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "行情 Max — 按年",
+          "description": "季节性分析 · AquaHunter",
+          "googleDescription": "10 年历史，以及每月各 100 次导出、比较、快照、季节性和到岸成本结果，另含 500 次提醒。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "行情 Max — 按年",
+          "description": "季節性分析 · AquaHunter",
+          "googleDescription": "10 年歷史，以及每月各 100 次匯出、比較、快照、季節性及到岸成本結果，另含 500 次提醒。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.export.10",
+      "storeType": "consumable",
+      "destination": "export",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "10 عمليات تصدير",
+          "description": "مركز التصدير · AquaHunter",
+          "googleDescription": "أنشئ 10 ملفات CSV بترميز UTF-8 من مشاهدات سوق مرخصة."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "10 Exporte",
+          "description": "Export-Center · AquaHunter",
+          "googleDescription": "Erstelle 10 UTF-8-CSV-Dateien aus lizenzierten Marktbeobachtungen."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "10 Exports",
+          "description": "Export Center · AquaHunter",
+          "googleDescription": "Create 10 UTF-8 CSV files from licensed market observations."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "10 exportaciones",
+          "description": "Centro de exportación · AquaHunter",
+          "googleDescription": "Crea 10 archivos CSV UTF-8 con observaciones de mercado autorizadas."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "10 exportations",
+          "description": "Centre d’exportation · AquaHunter",
+          "googleDescription": "Créez 10 fichiers CSV UTF-8 à partir d’observations de marché sous licence."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "10 निर्यात",
+          "description": "निर्यात केंद्र · AquaHunter",
+          "googleDescription": "लाइसेंसशुदा बाज़ार अवलोकनों से 10 UTF-8 CSV फ़ाइलें बनाएँ।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "10 Ekspor",
+          "description": "Pusat Ekspor · AquaHunter",
+          "googleDescription": "Buat 10 file CSV UTF-8 dari pengamatan pasar berlisensi."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "エクスポート 10 回",
+          "description": "ライセンス済み市場データから UTF-8 CSV を 10 回作成します。",
+          "googleDescription": "ライセンス済み市場データから UTF-8 CSV を 10 回作成します。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "내보내기 10회",
+          "description": "라이선스 시장 관측에서 UTF-8 CSV 파일을 10회 생성합니다.",
+          "googleDescription": "라이선스 시장 관측에서 UTF-8 CSV 파일을 10회 생성합니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "10 exportações",
+          "description": "Central de exportação · AquaHunter",
+          "googleDescription": "Crie 10 arquivos CSV UTF-8 com observações de mercado licenciadas."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "10 次导出",
+          "description": "从获授权市场观测生成 10 个 UTF-8 CSV 文件。",
+          "googleDescription": "从获授权市场观测生成 10 个 UTF-8 CSV 文件。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "10 次匯出",
+          "description": "從授權市場觀測產生 10 個 UTF-8 CSV 檔案。",
+          "googleDescription": "從授權市場觀測產生 10 個 UTF-8 CSV 檔案。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.export.50",
+      "storeType": "consumable",
+      "destination": "export",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "50 عمليات تصدير",
+          "description": "مركز التصدير · AquaHunter",
+          "googleDescription": "أنشئ 50 ملفات CSV بترميز UTF-8 من مشاهدات سوق مرخصة."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "50 Exporte",
+          "description": "Export-Center · AquaHunter",
+          "googleDescription": "Erstelle 50 UTF-8-CSV-Dateien aus lizenzierten Marktbeobachtungen."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "50 Exports",
+          "description": "Export Center · AquaHunter",
+          "googleDescription": "Create 50 UTF-8 CSV files from licensed market observations."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "50 exportaciones",
+          "description": "Centro de exportación · AquaHunter",
+          "googleDescription": "Crea 50 archivos CSV UTF-8 con observaciones de mercado autorizadas."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "50 exportations",
+          "description": "Centre d’exportation · AquaHunter",
+          "googleDescription": "Créez 50 fichiers CSV UTF-8 à partir d’observations de marché sous licence."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "50 निर्यात",
+          "description": "निर्यात केंद्र · AquaHunter",
+          "googleDescription": "लाइसेंसशुदा बाज़ार अवलोकनों से 50 UTF-8 CSV फ़ाइलें बनाएँ।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "50 Ekspor",
+          "description": "Pusat Ekspor · AquaHunter",
+          "googleDescription": "Buat 50 file CSV UTF-8 dari pengamatan pasar berlisensi."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "エクスポート 50 回",
+          "description": "ライセンス済み市場データから UTF-8 CSV を 50 回作成します。",
+          "googleDescription": "ライセンス済み市場データから UTF-8 CSV を 50 回作成します。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "내보내기 50회",
+          "description": "라이선스 시장 관측에서 UTF-8 CSV 파일을 50회 생성합니다.",
+          "googleDescription": "라이선스 시장 관측에서 UTF-8 CSV 파일을 50회 생성합니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "50 exportações",
+          "description": "Central de exportação · AquaHunter",
+          "googleDescription": "Crie 50 arquivos CSV UTF-8 com observações de mercado licenciadas."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "50 次导出",
+          "description": "从获授权市场观测生成 50 个 UTF-8 CSV 文件。",
+          "googleDescription": "从获授权市场观测生成 50 个 UTF-8 CSV 文件。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "50 次匯出",
+          "description": "從授權市場觀測產生 50 個 UTF-8 CSV 檔案。",
+          "googleDescription": "從授權市場觀測產生 50 個 UTF-8 CSV 檔案。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.export.200",
+      "storeType": "consumable",
+      "destination": "export",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "200 عمليات تصدير",
+          "description": "مركز التصدير · AquaHunter",
+          "googleDescription": "أنشئ 200 ملفات CSV بترميز UTF-8 من مشاهدات سوق مرخصة."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "200 Exporte",
+          "description": "Export-Center · AquaHunter",
+          "googleDescription": "Erstelle 200 UTF-8-CSV-Dateien aus lizenzierten Marktbeobachtungen."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "200 Exports",
+          "description": "Export Center · AquaHunter",
+          "googleDescription": "Create 200 UTF-8 CSV files from licensed market observations."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "200 exportaciones",
+          "description": "Centro de exportación · AquaHunter",
+          "googleDescription": "Crea 200 archivos CSV UTF-8 con observaciones de mercado autorizadas."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "200 exportations",
+          "description": "Centre d’exportation · AquaHunter",
+          "googleDescription": "Créez 200 fichiers CSV UTF-8 à partir d’observations de marché sous licence."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "200 निर्यात",
+          "description": "निर्यात केंद्र · AquaHunter",
+          "googleDescription": "लाइसेंसशुदा बाज़ार अवलोकनों से 200 UTF-8 CSV फ़ाइलें बनाएँ।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "200 Ekspor",
+          "description": "Pusat Ekspor · AquaHunter",
+          "googleDescription": "Buat 200 file CSV UTF-8 dari pengamatan pasar berlisensi."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "エクスポート 200 回",
+          "description": "ライセンス済み市場データから UTF-8 CSV を 200 回作成します。",
+          "googleDescription": "ライセンス済み市場データから UTF-8 CSV を 200 回作成します。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "내보내기 200회",
+          "description": "라이선스 시장 관측에서 UTF-8 CSV 파일을 200회 생성합니다.",
+          "googleDescription": "라이선스 시장 관측에서 UTF-8 CSV 파일을 200회 생성합니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "200 exportações",
+          "description": "Central de exportação · AquaHunter",
+          "googleDescription": "Crie 200 arquivos CSV UTF-8 com observações de mercado licenciadas."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "200 次导出",
+          "description": "从获授权市场观测生成 200 个 UTF-8 CSV 文件。",
+          "googleDescription": "从获授权市场观测生成 200 个 UTF-8 CSV 文件。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "200 次匯出",
+          "description": "從授權市場觀測產生 200 個 UTF-8 CSV 檔案。",
+          "googleDescription": "從授權市場觀測產生 200 個 UTF-8 CSV 檔案。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.compare.5",
+      "storeType": "consumable",
+      "destination": "compare",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "5 مقارنات",
+          "description": "مقارنة الأسواق · AquaHunter",
+          "googleDescription": "أنشئ 5 نتائج قابلة للمقارنة للسلمون الطازج/المبرد والمجمد."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "5 Vergleiche",
+          "description": "Marktvergleich · AquaHunter",
+          "googleDescription": "Erstelle 5 vergleichbare Ergebnisse für frischen/gekühlten und gefrorenen Lachs."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "5 Comparisons",
+          "description": "Market Comparison · AquaHunter",
+          "googleDescription": "Create 5 comparable fresh/chilled versus frozen salmon market results."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "5 comparaciones",
+          "description": "Comparación de mercados · AquaHunter",
+          "googleDescription": "Crea 5 resultados comparables de salmón fresco/refrigerado frente a congelado."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "5 comparaisons",
+          "description": "Comparaison des marchés · AquaHunter",
+          "googleDescription": "Créez 5 comparaisons entre saumon frais/réfrigéré et congelé."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "5 तुलनाएँ",
+          "description": "बाज़ार तुलना · AquaHunter",
+          "googleDescription": "ताज़े/ठंडे और जमे हुए सैल्मन के 5 तुलनीय परिणाम बनाएँ।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "5 Perbandingan",
+          "description": "Perbandingan Pasar · AquaHunter",
+          "googleDescription": "Buat 5 hasil perbandingan salmon segar/dingin dan beku."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "市場比較 5 回",
+          "description": "生鮮・冷蔵と冷凍サーモンの比較結果を 5 回作成します。",
+          "googleDescription": "生鮮・冷蔵と冷凍サーモンの比較結果を 5 回作成します。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "시장 비교 5회",
+          "description": "신선/냉장 연어와 냉동 연어의 비교 결과를 5회 생성합니다.",
+          "googleDescription": "신선/냉장 연어와 냉동 연어의 비교 결과를 5회 생성합니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "5 comparações",
+          "description": "Comparação de mercados · AquaHunter",
+          "googleDescription": "Crie 5 resultados comparáveis de salmão fresco/resfriado e congelado."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "5 次市场比较",
+          "description": "生成 5 份鲜/冷藏与冷冻三文鱼的可比市场结果。",
+          "googleDescription": "生成 5 份鲜/冷藏与冷冻三文鱼的可比市场结果。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "5 次市場比較",
+          "description": "產生 5 份鮮／冷藏與冷凍鮭魚的可比較市場結果。",
+          "googleDescription": "產生 5 份鮮／冷藏與冷凍鮭魚的可比較市場結果。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.compare.20",
+      "storeType": "consumable",
+      "destination": "compare",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "20 مقارنات",
+          "description": "مقارنة الأسواق · AquaHunter",
+          "googleDescription": "أنشئ 20 نتائج قابلة للمقارنة للسلمون الطازج/المبرد والمجمد."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "20 Vergleiche",
+          "description": "Marktvergleich · AquaHunter",
+          "googleDescription": "Erstelle 20 vergleichbare Ergebnisse für frischen/gekühlten und gefrorenen Lachs."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "20 Comparisons",
+          "description": "Market Comparison · AquaHunter",
+          "googleDescription": "Create 20 comparable fresh/chilled versus frozen salmon market results."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "20 comparaciones",
+          "description": "Comparación de mercados · AquaHunter",
+          "googleDescription": "Crea 20 resultados comparables de salmón fresco/refrigerado frente a congelado."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "20 comparaisons",
+          "description": "Comparaison des marchés · AquaHunter",
+          "googleDescription": "Créez 20 comparaisons entre saumon frais/réfrigéré et congelé."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "20 तुलनाएँ",
+          "description": "बाज़ार तुलना · AquaHunter",
+          "googleDescription": "ताज़े/ठंडे और जमे हुए सैल्मन के 20 तुलनीय परिणाम बनाएँ।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "20 Perbandingan",
+          "description": "Perbandingan Pasar · AquaHunter",
+          "googleDescription": "Buat 20 hasil perbandingan salmon segar/dingin dan beku."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "市場比較 20 回",
+          "description": "生鮮・冷蔵と冷凍サーモンの比較結果を 20 回作成します。",
+          "googleDescription": "生鮮・冷蔵と冷凍サーモンの比較結果を 20 回作成します。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "시장 비교 20회",
+          "description": "신선/냉장 연어와 냉동 연어의 비교 결과를 20회 생성합니다.",
+          "googleDescription": "신선/냉장 연어와 냉동 연어의 비교 결과를 20회 생성합니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "20 comparações",
+          "description": "Comparação de mercados · AquaHunter",
+          "googleDescription": "Crie 20 resultados comparáveis de salmão fresco/resfriado e congelado."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "20 次市场比较",
+          "description": "生成 20 份鲜/冷藏与冷冻三文鱼的可比市场结果。",
+          "googleDescription": "生成 20 份鲜/冷藏与冷冻三文鱼的可比市场结果。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "20 次市場比較",
+          "description": "產生 20 份鮮／冷藏與冷凍鮭魚的可比較市場結果。",
+          "googleDescription": "產生 20 份鮮／冷藏與冷凍鮭魚的可比較市場結果。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.compare.100",
+      "storeType": "consumable",
+      "destination": "compare",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "100 مقارنات",
+          "description": "مقارنة الأسواق · AquaHunter",
+          "googleDescription": "أنشئ 100 نتائج قابلة للمقارنة للسلمون الطازج/المبرد والمجمد."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "100 Vergleiche",
+          "description": "Marktvergleich · AquaHunter",
+          "googleDescription": "Erstelle 100 vergleichbare Ergebnisse für frischen/gekühlten und gefrorenen Lachs."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "100 Comparisons",
+          "description": "Market Comparison · AquaHunter",
+          "googleDescription": "Create 100 comparable fresh/chilled versus frozen salmon market results."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "100 comparaciones",
+          "description": "Comparación de mercados · AquaHunter",
+          "googleDescription": "Crea 100 resultados comparables de salmón fresco/refrigerado frente a congelado."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "100 comparaisons",
+          "description": "Comparaison des marchés · AquaHunter",
+          "googleDescription": "Créez 100 comparaisons entre saumon frais/réfrigéré et congelé."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "100 तुलनाएँ",
+          "description": "बाज़ार तुलना · AquaHunter",
+          "googleDescription": "ताज़े/ठंडे और जमे हुए सैल्मन के 100 तुलनीय परिणाम बनाएँ।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "100 Perbandingan",
+          "description": "Perbandingan Pasar · AquaHunter",
+          "googleDescription": "Buat 100 hasil perbandingan salmon segar/dingin dan beku."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "市場比較 100 回",
+          "description": "生鮮・冷蔵と冷凍サーモンの比較結果を 100 回作成します。",
+          "googleDescription": "生鮮・冷蔵と冷凍サーモンの比較結果を 100 回作成します。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "시장 비교 100회",
+          "description": "신선/냉장 연어와 냉동 연어의 비교 결과를 100회 생성합니다.",
+          "googleDescription": "신선/냉장 연어와 냉동 연어의 비교 결과를 100회 생성합니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "100 comparações",
+          "description": "Comparação de mercados · AquaHunter",
+          "googleDescription": "Crie 100 resultados comparáveis de salmão fresco/resfriado e congelado."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "100 次市场比较",
+          "description": "生成 100 份鲜/冷藏与冷冻三文鱼的可比市场结果。",
+          "googleDescription": "生成 100 份鲜/冷藏与冷冻三文鱼的可比市场结果。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "100 次市場比較",
+          "description": "產生 100 份鮮／冷藏與冷凍鮭魚的可比較市場結果。",
+          "googleDescription": "產生 100 份鮮／冷藏與冷凍鮭魚的可比較市場結果。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.snapshot.5",
+      "storeType": "consumable",
+      "destination": "snapshot",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "5 ملخصات للسوق",
+          "description": "ملخص السوق · AquaHunter",
+          "googleDescription": "أنشئ 5 ملخصات تتضمن المصدر والسعر والفترة والتغير والنطاق."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "5 Marktübersichten",
+          "description": "Marktübersicht · AquaHunter",
+          "googleDescription": "Erstelle 5 Übersichten mit Quelle, Preis, Zeitraum, Änderung und Spanne."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "5 Market Snapshots",
+          "description": "Market Snapshot · AquaHunter",
+          "googleDescription": "Create 5 sourced market snapshots with price, period, change and range."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "5 resúmenes de mercado",
+          "description": "Resumen del mercado · AquaHunter",
+          "googleDescription": "Crea 5 resúmenes con fuente, precio, período, variación y rango."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "5 instantanés",
+          "description": "Instantané du marché · AquaHunter",
+          "googleDescription": "Créez 5 instantanés avec source, prix, période, variation et plage."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "5 बाज़ार स्नैपशॉट",
+          "description": "बाज़ार स्नैपशॉट · AquaHunter",
+          "googleDescription": "स्रोत, मूल्य, अवधि, बदलाव और दायरे वाले 5 स्नैपशॉट बनाएँ।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "5 Ringkasan Pasar",
+          "description": "Ringkasan Pasar · AquaHunter",
+          "googleDescription": "Buat 5 ringkasan dengan sumber, harga, periode, perubahan, dan rentang."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "市場スナップショット 5 回",
+          "description": "出典、価格、期間、変動、範囲を含むスナップショットを 5 回作成します。",
+          "googleDescription": "出典、価格、期間、変動、範囲を含むスナップショットを 5 回作成します。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "시장 스냅샷 5회",
+          "description": "출처, 가격, 기간, 변동 및 범위를 포함한 스냅샷을 5회 생성합니다.",
+          "googleDescription": "출처, 가격, 기간, 변동 및 범위를 포함한 스냅샷을 5회 생성합니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "5 resumos de mercado",
+          "description": "Resumo do mercado · AquaHunter",
+          "googleDescription": "Crie 5 resumos com fonte, preço, período, variação e faixa."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "5 份市场快照",
+          "description": "生成 5 份带来源、价格、周期、涨跌和区间的市场快照。",
+          "googleDescription": "生成 5 份带来源、价格、周期、涨跌和区间的市场快照。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "5 份市場快照",
+          "description": "產生 5 份含來源、價格、週期、漲跌及區間的市場快照。",
+          "googleDescription": "產生 5 份含來源、價格、週期、漲跌及區間的市場快照。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.snapshot.20",
+      "storeType": "consumable",
+      "destination": "snapshot",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "20 ملخصات للسوق",
+          "description": "ملخص السوق · AquaHunter",
+          "googleDescription": "أنشئ 20 ملخصات تتضمن المصدر والسعر والفترة والتغير والنطاق."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "20 Marktübersichten",
+          "description": "Marktübersicht · AquaHunter",
+          "googleDescription": "Erstelle 20 Übersichten mit Quelle, Preis, Zeitraum, Änderung und Spanne."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "20 Market Snapshots",
+          "description": "Market Snapshot · AquaHunter",
+          "googleDescription": "Create 20 sourced market snapshots with price, period, change and range."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "20 resúmenes de mercado",
+          "description": "Resumen del mercado · AquaHunter",
+          "googleDescription": "Crea 20 resúmenes con fuente, precio, período, variación y rango."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "20 instantanés",
+          "description": "Instantané du marché · AquaHunter",
+          "googleDescription": "Créez 20 instantanés avec source, prix, période, variation et plage."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "20 बाज़ार स्नैपशॉट",
+          "description": "बाज़ार स्नैपशॉट · AquaHunter",
+          "googleDescription": "स्रोत, मूल्य, अवधि, बदलाव और दायरे वाले 20 स्नैपशॉट बनाएँ।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "20 Ringkasan Pasar",
+          "description": "Ringkasan Pasar · AquaHunter",
+          "googleDescription": "Buat 20 ringkasan dengan sumber, harga, periode, perubahan, dan rentang."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "市場スナップショット 20 回",
+          "description": "出典、価格、期間、変動、範囲を含むスナップショットを 20 回作成します。",
+          "googleDescription": "出典、価格、期間、変動、範囲を含むスナップショットを 20 回作成します。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "시장 스냅샷 20회",
+          "description": "출처, 가격, 기간, 변동 및 범위를 포함한 스냅샷을 20회 생성합니다.",
+          "googleDescription": "출처, 가격, 기간, 변동 및 범위를 포함한 스냅샷을 20회 생성합니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "20 resumos de mercado",
+          "description": "Resumo do mercado · AquaHunter",
+          "googleDescription": "Crie 20 resumos com fonte, preço, período, variação e faixa."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "20 份市场快照",
+          "description": "生成 20 份带来源、价格、周期、涨跌和区间的市场快照。",
+          "googleDescription": "生成 20 份带来源、价格、周期、涨跌和区间的市场快照。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "20 份市場快照",
+          "description": "產生 20 份含來源、價格、週期、漲跌及區間的市場快照。",
+          "googleDescription": "產生 20 份含來源、價格、週期、漲跌及區間的市場快照。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.snapshot.100",
+      "storeType": "consumable",
+      "destination": "snapshot",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "100 ملخصات للسوق",
+          "description": "ملخص السوق · AquaHunter",
+          "googleDescription": "أنشئ 100 ملخصات تتضمن المصدر والسعر والفترة والتغير والنطاق."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "100 Marktübersichten",
+          "description": "Marktübersicht · AquaHunter",
+          "googleDescription": "Erstelle 100 Übersichten mit Quelle, Preis, Zeitraum, Änderung und Spanne."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "100 Market Snapshots",
+          "description": "Market Snapshot · AquaHunter",
+          "googleDescription": "Create 100 sourced market snapshots with price, period, change and range."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "100 resúmenes de mercado",
+          "description": "Resumen del mercado · AquaHunter",
+          "googleDescription": "Crea 100 resúmenes con fuente, precio, período, variación y rango."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "100 instantanés",
+          "description": "Instantané du marché · AquaHunter",
+          "googleDescription": "Créez 100 instantanés avec source, prix, période, variation et plage."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "100 बाज़ार स्नैपशॉट",
+          "description": "बाज़ार स्नैपशॉट · AquaHunter",
+          "googleDescription": "स्रोत, मूल्य, अवधि, बदलाव और दायरे वाले 100 स्नैपशॉट बनाएँ।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "100 Ringkasan Pasar",
+          "description": "Ringkasan Pasar · AquaHunter",
+          "googleDescription": "Buat 100 ringkasan dengan sumber, harga, periode, perubahan, dan rentang."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "市場スナップショット 100 回",
+          "description": "出典、価格、期間、変動、範囲を含むスナップショットを 100 回作成します。",
+          "googleDescription": "出典、価格、期間、変動、範囲を含むスナップショットを 100 回作成します。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "시장 스냅샷 100회",
+          "description": "출처, 가격, 기간, 변동 및 범위를 포함한 스냅샷을 100회 생성합니다.",
+          "googleDescription": "출처, 가격, 기간, 변동 및 범위를 포함한 스냅샷을 100회 생성합니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "100 resumos de mercado",
+          "description": "Resumo do mercado · AquaHunter",
+          "googleDescription": "Crie 100 resumos com fonte, preço, período, variação e faixa."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "100 份市场快照",
+          "description": "生成 100 份带来源、价格、周期、涨跌和区间的市场快照。",
+          "googleDescription": "生成 100 份带来源、价格、周期、涨跌和区间的市场快照。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "100 份市場快照",
+          "description": "產生 100 份含來源、價格、週期、漲跌及區間的市場快照。",
+          "googleDescription": "產生 100 份含來源、價格、週期、漲跌及區間的市場快照。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.seasonality.5",
+      "storeType": "consumable",
+      "destination": "seasonality",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "5 تقارير موسمية",
+          "description": "الموسمية · AquaHunter",
+          "googleDescription": "أنشئ 5 تقارير من 3 سنوات على الأقل من المشاهدات الأسبوعية المرخصة."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "5 Saisonberichte",
+          "description": "Saisonalität · AquaHunter",
+          "googleDescription": "Erstelle 5 Berichte aus mindestens 3 Jahren lizenzierter Wochendaten."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "5 Seasonality Reports",
+          "description": "Seasonality · AquaHunter",
+          "googleDescription": "Create 5 reports from at least three years of licensed weekly observations."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "5 informes estacionales",
+          "description": "Estacionalidad · AquaHunter",
+          "googleDescription": "Crea 5 informes con al menos 3 años de observaciones semanales autorizadas."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "5 rapports saisonniers",
+          "description": "Saisonnalité · AquaHunter",
+          "googleDescription": "Créez 5 rapports issus d’au moins 3 ans d’observations hebdomadaires sous licence."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "5 मौसमी रिपोर्ट",
+          "description": "मौसमी विश्लेषण · AquaHunter",
+          "googleDescription": "कम से कम 3 वर्षों के लाइसेंसशुदा साप्ताहिक डेटा से 5 रिपोर्ट बनाएँ।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "5 Laporan Musiman",
+          "description": "Musiman · AquaHunter",
+          "googleDescription": "Buat 5 laporan dari sedikitnya 3 tahun pengamatan mingguan berlisensi."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "季節性レポート 5 回",
+          "description": "3 年以上のライセンス済み週次データから 5 回作成します。",
+          "googleDescription": "3 年以上のライセンス済み週次データから 5 回作成します。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "계절성 보고서 5회",
+          "description": "3년 이상의 라이선스 주간 관측으로 보고서를 5회 생성합니다.",
+          "googleDescription": "3년 이상의 라이선스 주간 관측으로 보고서를 5회 생성합니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "5 relatórios sazonais",
+          "description": "Sazonalidade · AquaHunter",
+          "googleDescription": "Crie 5 relatórios com pelo menos 3 anos de observações semanais licenciadas."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "5 份季节性报告",
+          "description": "依据至少 3 年获授权周度观测生成 5 份报告。",
+          "googleDescription": "依据至少 3 年获授权周度观测生成 5 份报告。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "5 份季節性報告",
+          "description": "根據至少 3 年授權週度觀測產生 5 份報告。",
+          "googleDescription": "根據至少 3 年授權週度觀測產生 5 份報告。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.seasonality.20",
+      "storeType": "consumable",
+      "destination": "seasonality",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "20 تقارير موسمية",
+          "description": "الموسمية · AquaHunter",
+          "googleDescription": "أنشئ 20 تقارير من 3 سنوات على الأقل من المشاهدات الأسبوعية المرخصة."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "20 Saisonberichte",
+          "description": "Saisonalität · AquaHunter",
+          "googleDescription": "Erstelle 20 Berichte aus mindestens 3 Jahren lizenzierter Wochendaten."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "20 Seasonality Reports",
+          "description": "Seasonality · AquaHunter",
+          "googleDescription": "Create 20 reports from at least three years of licensed weekly observations."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "20 informes estacionales",
+          "description": "Estacionalidad · AquaHunter",
+          "googleDescription": "Crea 20 informes con al menos 3 años de observaciones semanales autorizadas."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "20 rapports saisonniers",
+          "description": "Saisonnalité · AquaHunter",
+          "googleDescription": "Créez 20 rapports issus d’au moins 3 ans d’observations hebdomadaires sous licence."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "20 मौसमी रिपोर्ट",
+          "description": "मौसमी विश्लेषण · AquaHunter",
+          "googleDescription": "कम से कम 3 वर्षों के लाइसेंसशुदा साप्ताहिक डेटा से 20 रिपोर्ट बनाएँ।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "20 Laporan Musiman",
+          "description": "Musiman · AquaHunter",
+          "googleDescription": "Buat 20 laporan dari sedikitnya 3 tahun pengamatan mingguan berlisensi."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "季節性レポート 20 回",
+          "description": "3 年以上のライセンス済み週次データから 20 回作成します。",
+          "googleDescription": "3 年以上のライセンス済み週次データから 20 回作成します。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "계절성 보고서 20회",
+          "description": "3년 이상의 라이선스 주간 관측으로 보고서를 20회 생성합니다.",
+          "googleDescription": "3년 이상의 라이선스 주간 관측으로 보고서를 20회 생성합니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "20 relatórios sazonais",
+          "description": "Sazonalidade · AquaHunter",
+          "googleDescription": "Crie 20 relatórios com pelo menos 3 anos de observações semanais licenciadas."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "20 份季节性报告",
+          "description": "依据至少 3 年获授权周度观测生成 20 份报告。",
+          "googleDescription": "依据至少 3 年获授权周度观测生成 20 份报告。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "20 份季節性報告",
+          "description": "根據至少 3 年授權週度觀測產生 20 份報告。",
+          "googleDescription": "根據至少 3 年授權週度觀測產生 20 份報告。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.seasonality.100",
+      "storeType": "consumable",
+      "destination": "seasonality",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "100 تقارير موسمية",
+          "description": "الموسمية · AquaHunter",
+          "googleDescription": "أنشئ 100 تقارير من 3 سنوات على الأقل من المشاهدات الأسبوعية المرخصة."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "100 Saisonberichte",
+          "description": "Saisonalität · AquaHunter",
+          "googleDescription": "Erstelle 100 Berichte aus mindestens 3 Jahren lizenzierter Wochendaten."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "100 Seasonality Reports",
+          "description": "Seasonality · AquaHunter",
+          "googleDescription": "Create 100 reports from at least three years of licensed weekly observations."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "100 informes estacionales",
+          "description": "Estacionalidad · AquaHunter",
+          "googleDescription": "Crea 100 informes con al menos 3 años de observaciones semanales autorizadas."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "100 rapports saisonniers",
+          "description": "Saisonnalité · AquaHunter",
+          "googleDescription": "Créez 100 rapports issus d’au moins 3 ans d’observations hebdomadaires sous licence."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "100 मौसमी रिपोर्ट",
+          "description": "मौसमी विश्लेषण · AquaHunter",
+          "googleDescription": "कम से कम 3 वर्षों के लाइसेंसशुदा साप्ताहिक डेटा से 100 रिपोर्ट बनाएँ।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "100 Laporan Musiman",
+          "description": "Musiman · AquaHunter",
+          "googleDescription": "Buat 100 laporan dari sedikitnya 3 tahun pengamatan mingguan berlisensi."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "季節性レポート 100 回",
+          "description": "3 年以上のライセンス済み週次データから 100 回作成します。",
+          "googleDescription": "3 年以上のライセンス済み週次データから 100 回作成します。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "계절성 보고서 100회",
+          "description": "3년 이상의 라이선스 주간 관측으로 보고서를 100회 생성합니다.",
+          "googleDescription": "3년 이상의 라이선스 주간 관측으로 보고서를 100회 생성합니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "100 relatórios sazonais",
+          "description": "Sazonalidade · AquaHunter",
+          "googleDescription": "Crie 100 relatórios com pelo menos 3 anos de observações semanais licenciadas."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "100 份季节性报告",
+          "description": "依据至少 3 年获授权周度观测生成 100 份报告。",
+          "googleDescription": "依据至少 3 年获授权周度观测生成 100 份报告。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "100 份季節性報告",
+          "description": "根據至少 3 年授權週度觀測產生 100 份報告。",
+          "googleDescription": "根據至少 3 年授權週度觀測產生 100 份報告。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.landedcost.10",
+      "storeType": "consumable",
+      "destination": "landedCost",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "10 حسابات للتكلفة",
+          "description": "التكلفة عند الوصول · AquaHunter",
+          "googleDescription": "احسب تكلفة الوصول 10 مرة باستخدام سعر المصدر والشحن والرسوم والفقد."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "10 Kostenberechnungen",
+          "description": "Einstandskosten · AquaHunter",
+          "googleDescription": "Berechne 10 Mal Einstandskosten mit Quellpreis, Fracht, Zoll und Verlust."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "10 Landed-Cost Calculations",
+          "description": "Landed Cost · AquaHunter",
+          "googleDescription": "Calculate landed cost 10 times using source price and your freight, tariff and loss assumptions."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "10 cálculos de coste",
+          "description": "Coste puesto en destino · AquaHunter",
+          "googleDescription": "Calcula 10 veces el coste puesto en destino con precio, flete, arancel y merma."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "10 calculs de coût rendu",
+          "description": "Coût rendu · AquaHunter",
+          "googleDescription": "Calculez 10 fois le coût rendu avec prix source, fret, droits et pertes."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "10 लैंडेड लागत गणनाएँ",
+          "description": "लैंडेड लागत · AquaHunter",
+          "googleDescription": "स्रोत मूल्य, मालभाड़ा, शुल्क और हानि से 10 बार लैंडेड लागत निकालें।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "10 Perhitungan Biaya Tiba",
+          "description": "Biaya Tiba · AquaHunter",
+          "googleDescription": "Hitung biaya tiba 10 kali dengan harga sumber, angkutan, tarif, dan susut."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "着地原価計算 10 回",
+          "description": "原価、運賃、関税、ロスを使って着地原価を 10 回計算します。",
+          "googleDescription": "原価、運賃、関税、ロスを使って着地原価を 10 回計算します。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "도착 원가 계산 10회",
+          "description": "원천 가격, 운임, 관세 및 손실을 사용해 10회 계산합니다.",
+          "googleDescription": "원천 가격, 운임, 관세 및 손실을 사용해 10회 계산합니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "10 cálculos de custo posto",
+          "description": "Custo posto · AquaHunter",
+          "googleDescription": "Calcule 10 vezes o custo posto com preço, frete, tarifa e perda."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "10 次到岸成本计算",
+          "description": "根据来源价格及您输入的运费、关税和损耗完成 10 次计算。",
+          "googleDescription": "根据来源价格及您输入的运费、关税和损耗完成 10 次计算。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "10 次到岸成本計算",
+          "description": "依來源價格及您輸入的運費、關稅和損耗完成 10 次計算。",
+          "googleDescription": "依來源價格及您輸入的運費、關稅和損耗完成 10 次計算。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.landedcost.50",
+      "storeType": "consumable",
+      "destination": "landedCost",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "50 حسابات للتكلفة",
+          "description": "التكلفة عند الوصول · AquaHunter",
+          "googleDescription": "احسب تكلفة الوصول 50 مرة باستخدام سعر المصدر والشحن والرسوم والفقد."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "50 Kostenberechnungen",
+          "description": "Einstandskosten · AquaHunter",
+          "googleDescription": "Berechne 50 Mal Einstandskosten mit Quellpreis, Fracht, Zoll und Verlust."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "50 Landed-Cost Calculations",
+          "description": "Landed Cost · AquaHunter",
+          "googleDescription": "Calculate landed cost 50 times using source price and your freight, tariff and loss assumptions."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "50 cálculos de coste",
+          "description": "Coste puesto en destino · AquaHunter",
+          "googleDescription": "Calcula 50 veces el coste puesto en destino con precio, flete, arancel y merma."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "50 calculs de coût rendu",
+          "description": "Coût rendu · AquaHunter",
+          "googleDescription": "Calculez 50 fois le coût rendu avec prix source, fret, droits et pertes."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "50 लैंडेड लागत गणनाएँ",
+          "description": "लैंडेड लागत · AquaHunter",
+          "googleDescription": "स्रोत मूल्य, मालभाड़ा, शुल्क और हानि से 50 बार लैंडेड लागत निकालें।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "50 Perhitungan Biaya Tiba",
+          "description": "Biaya Tiba · AquaHunter",
+          "googleDescription": "Hitung biaya tiba 50 kali dengan harga sumber, angkutan, tarif, dan susut."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "着地原価計算 50 回",
+          "description": "原価、運賃、関税、ロスを使って着地原価を 50 回計算します。",
+          "googleDescription": "原価、運賃、関税、ロスを使って着地原価を 50 回計算します。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "도착 원가 계산 50회",
+          "description": "원천 가격, 운임, 관세 및 손실을 사용해 50회 계산합니다.",
+          "googleDescription": "원천 가격, 운임, 관세 및 손실을 사용해 50회 계산합니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "50 cálculos de custo posto",
+          "description": "Custo posto · AquaHunter",
+          "googleDescription": "Calcule 50 vezes o custo posto com preço, frete, tarifa e perda."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "50 次到岸成本计算",
+          "description": "根据来源价格及您输入的运费、关税和损耗完成 50 次计算。",
+          "googleDescription": "根据来源价格及您输入的运费、关税和损耗完成 50 次计算。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "50 次到岸成本計算",
+          "description": "依來源價格及您輸入的運費、關稅和損耗完成 50 次計算。",
+          "googleDescription": "依來源價格及您輸入的運費、關稅和損耗完成 50 次計算。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.landedcost.200",
+      "storeType": "consumable",
+      "destination": "landedCost",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "200 حسابات للتكلفة",
+          "description": "التكلفة عند الوصول · AquaHunter",
+          "googleDescription": "احسب تكلفة الوصول 200 مرة باستخدام سعر المصدر والشحن والرسوم والفقد."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "200 Kostenberechnungen",
+          "description": "Einstandskosten · AquaHunter",
+          "googleDescription": "Berechne 200 Mal Einstandskosten mit Quellpreis, Fracht, Zoll und Verlust."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "200 Landed-Cost Calculations",
+          "description": "Landed Cost · AquaHunter",
+          "googleDescription": "Calculate landed cost 200 times using source price and your freight, tariff and loss assumptions."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "200 cálculos de coste",
+          "description": "Coste puesto en destino · AquaHunter",
+          "googleDescription": "Calcula 200 veces el coste puesto en destino con precio, flete, arancel y merma."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "200 calculs de coût rendu",
+          "description": "Coût rendu · AquaHunter",
+          "googleDescription": "Calculez 200 fois le coût rendu avec prix source, fret, droits et pertes."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "200 लैंडेड लागत गणनाएँ",
+          "description": "लैंडेड लागत · AquaHunter",
+          "googleDescription": "स्रोत मूल्य, मालभाड़ा, शुल्क और हानि से 200 बार लैंडेड लागत निकालें।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "200 Perhitungan Biaya Tiba",
+          "description": "Biaya Tiba · AquaHunter",
+          "googleDescription": "Hitung biaya tiba 200 kali dengan harga sumber, angkutan, tarif, dan susut."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "着地原価計算 200 回",
+          "description": "原価、運賃、関税、ロスを使って着地原価を 200 回計算します。",
+          "googleDescription": "原価、運賃、関税、ロスを使って着地原価を 200 回計算します。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "도착 원가 계산 200회",
+          "description": "원천 가격, 운임, 관세 및 손실을 사용해 200회 계산합니다.",
+          "googleDescription": "원천 가격, 운임, 관세 및 손실을 사용해 200회 계산합니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "200 cálculos de custo posto",
+          "description": "Custo posto · AquaHunter",
+          "googleDescription": "Calcule 200 vezes o custo posto com preço, frete, tarifa e perda."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "200 次到岸成本计算",
+          "description": "根据来源价格及您输入的运费、关税和损耗完成 200 次计算。",
+          "googleDescription": "根据来源价格及您输入的运费、关税和损耗完成 200 次计算。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "200 次到岸成本計算",
+          "description": "依來源價格及您輸入的運費、關稅和損耗完成 200 次計算。",
+          "googleDescription": "依來源價格及您輸入的運費、關稅和損耗完成 200 次計算。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.alerts.25",
+      "storeType": "consumable",
+      "destination": "alerts",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "25 تنبيهات أسعار",
+          "description": "تنبيهات الأسعار · AquaHunter",
+          "googleDescription": "استلم 25 تنبيهات حدية أو تغيرات أسعار تم تسليمها بنجاح."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "25 Preisalarme",
+          "description": "Preisalarme · AquaHunter",
+          "googleDescription": "Erhalte 25 erfolgreich zugestellte Schwellen- oder Änderungsalarme."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "25 Price Alerts",
+          "description": "Price Alerts · AquaHunter",
+          "googleDescription": "Receive 25 successfully delivered threshold or price-change alerts."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "25 alertas de precio",
+          "description": "Alertas de precios · AquaHunter",
+          "googleDescription": "Recibe 25 alertas de umbral o variación entregadas correctamente."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "25 alertes de prix",
+          "description": "Alertes de prix · AquaHunter",
+          "googleDescription": "Recevez 25 alertes de seuil ou de variation livrées avec succès."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "25 मूल्य अलर्ट",
+          "description": "मूल्य अलर्ट · AquaHunter",
+          "googleDescription": "25 सफलतापूर्वक भेजे गए सीमा या मूल्य-बदलाव अलर्ट पाएँ।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "25 Peringatan Harga",
+          "description": "Peringatan Harga · AquaHunter",
+          "googleDescription": "Terima 25 peringatan ambang atau perubahan harga yang berhasil dikirim."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "価格アラート 25 回",
+          "description": "しきい値または価格変動アラートを 25 回受け取れます。",
+          "googleDescription": "しきい値または価格変動アラートを 25 回受け取れます。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "가격 알림 25회",
+          "description": "임계값 또는 가격 변동 알림을 25회 성공적으로 받습니다.",
+          "googleDescription": "임계값 또는 가격 변동 알림을 25회 성공적으로 받습니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "25 alertas de preço",
+          "description": "Alertas de preço · AquaHunter",
+          "googleDescription": "Receba 25 alertas de limite ou variação entregues com sucesso."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "25 次价格提醒",
+          "description": "接收 25 次成功送达的阈值或价格变动提醒。",
+          "googleDescription": "接收 25 次成功送达的阈值或价格变动提醒。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "25 次價格提醒",
+          "description": "接收 25 次成功送達的門檻或價格變動提醒。",
+          "googleDescription": "接收 25 次成功送達的門檻或價格變動提醒。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.alerts.100",
+      "storeType": "consumable",
+      "destination": "alerts",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "100 تنبيهات أسعار",
+          "description": "تنبيهات الأسعار · AquaHunter",
+          "googleDescription": "استلم 100 تنبيهات حدية أو تغيرات أسعار تم تسليمها بنجاح."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "100 Preisalarme",
+          "description": "Preisalarme · AquaHunter",
+          "googleDescription": "Erhalte 100 erfolgreich zugestellte Schwellen- oder Änderungsalarme."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "100 Price Alerts",
+          "description": "Price Alerts · AquaHunter",
+          "googleDescription": "Receive 100 successfully delivered threshold or price-change alerts."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "100 alertas de precio",
+          "description": "Alertas de precios · AquaHunter",
+          "googleDescription": "Recibe 100 alertas de umbral o variación entregadas correctamente."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "100 alertes de prix",
+          "description": "Alertes de prix · AquaHunter",
+          "googleDescription": "Recevez 100 alertes de seuil ou de variation livrées avec succès."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "100 मूल्य अलर्ट",
+          "description": "मूल्य अलर्ट · AquaHunter",
+          "googleDescription": "100 सफलतापूर्वक भेजे गए सीमा या मूल्य-बदलाव अलर्ट पाएँ।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "100 Peringatan Harga",
+          "description": "Peringatan Harga · AquaHunter",
+          "googleDescription": "Terima 100 peringatan ambang atau perubahan harga yang berhasil dikirim."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "価格アラート 100 回",
+          "description": "しきい値または価格変動アラートを 100 回受け取れます。",
+          "googleDescription": "しきい値または価格変動アラートを 100 回受け取れます。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "가격 알림 100회",
+          "description": "임계값 또는 가격 변동 알림을 100회 성공적으로 받습니다.",
+          "googleDescription": "임계값 또는 가격 변동 알림을 100회 성공적으로 받습니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "100 alertas de preço",
+          "description": "Alertas de preço · AquaHunter",
+          "googleDescription": "Receba 100 alertas de limite ou variação entregues com sucesso."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "100 次价格提醒",
+          "description": "接收 100 次成功送达的阈值或价格变动提醒。",
+          "googleDescription": "接收 100 次成功送达的阈值或价格变动提醒。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "100 次價格提醒",
+          "description": "接收 100 次成功送達的門檻或價格變動提醒。",
+          "googleDescription": "接收 100 次成功送達的門檻或價格變動提醒。"
+        }
+      }
+    },
+    {
+      "productId": "aquahunter.alerts.500",
+      "storeType": "consumable",
+      "destination": "alerts",
+      "localizations": {
+        "ar": {
+          "appleLocale": "ar-SA",
+          "googleLocale": "ar",
+          "displayName": "500 تنبيهات أسعار",
+          "description": "تنبيهات الأسعار · AquaHunter",
+          "googleDescription": "استلم 500 تنبيهات حدية أو تغيرات أسعار تم تسليمها بنجاح."
+        },
+        "de": {
+          "appleLocale": "de-DE",
+          "googleLocale": "de-DE",
+          "displayName": "500 Preisalarme",
+          "description": "Preisalarme · AquaHunter",
+          "googleDescription": "Erhalte 500 erfolgreich zugestellte Schwellen- oder Änderungsalarme."
+        },
+        "en": {
+          "appleLocale": "en-US",
+          "googleLocale": "en-US",
+          "displayName": "500 Price Alerts",
+          "description": "Price Alerts · AquaHunter",
+          "googleDescription": "Receive 500 successfully delivered threshold or price-change alerts."
+        },
+        "es": {
+          "appleLocale": "es-ES",
+          "googleLocale": "es-ES",
+          "displayName": "500 alertas de precio",
+          "description": "Alertas de precios · AquaHunter",
+          "googleDescription": "Recibe 500 alertas de umbral o variación entregadas correctamente."
+        },
+        "fr": {
+          "appleLocale": "fr-FR",
+          "googleLocale": "fr-FR",
+          "displayName": "500 alertes de prix",
+          "description": "Alertes de prix · AquaHunter",
+          "googleDescription": "Recevez 500 alertes de seuil ou de variation livrées avec succès."
+        },
+        "hi": {
+          "appleLocale": "hi",
+          "googleLocale": "hi-IN",
+          "displayName": "500 मूल्य अलर्ट",
+          "description": "मूल्य अलर्ट · AquaHunter",
+          "googleDescription": "500 सफलतापूर्वक भेजे गए सीमा या मूल्य-बदलाव अलर्ट पाएँ।"
+        },
+        "id": {
+          "appleLocale": "id",
+          "googleLocale": "id",
+          "displayName": "500 Peringatan Harga",
+          "description": "Peringatan Harga · AquaHunter",
+          "googleDescription": "Terima 500 peringatan ambang atau perubahan harga yang berhasil dikirim."
+        },
+        "ja": {
+          "appleLocale": "ja",
+          "googleLocale": "ja-JP",
+          "displayName": "価格アラート 500 回",
+          "description": "しきい値または価格変動アラートを 500 回受け取れます。",
+          "googleDescription": "しきい値または価格変動アラートを 500 回受け取れます。"
+        },
+        "ko": {
+          "appleLocale": "ko",
+          "googleLocale": "ko-KR",
+          "displayName": "가격 알림 500회",
+          "description": "임계값 또는 가격 변동 알림을 500회 성공적으로 받습니다.",
+          "googleDescription": "임계값 또는 가격 변동 알림을 500회 성공적으로 받습니다."
+        },
+        "pt-BR": {
+          "appleLocale": "pt-BR",
+          "googleLocale": "pt-BR",
+          "displayName": "500 alertas de preço",
+          "description": "Alertas de preço · AquaHunter",
+          "googleDescription": "Receba 500 alertas de limite ou variação entregues com sucesso."
+        },
+        "zh-Hans": {
+          "appleLocale": "zh-Hans",
+          "googleLocale": "zh-CN",
+          "displayName": "500 次价格提醒",
+          "description": "接收 500 次成功送达的阈值或价格变动提醒。",
+          "googleDescription": "接收 500 次成功送达的阈值或价格变动提醒。"
+        },
+        "zh-Hant": {
+          "appleLocale": "zh-Hant",
+          "googleLocale": "zh-TW",
+          "displayName": "500 次價格提醒",
+          "description": "接收 500 次成功送達的門檻或價格變動提醒。",
+          "googleDescription": "接收 500 次成功送達的門檻或價格變動提醒。"
+        }
+      }
+    }
+  ]
+}

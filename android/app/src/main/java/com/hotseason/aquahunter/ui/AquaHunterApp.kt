@@ -1,5 +1,6 @@
 package com.hotseason.aquahunter.ui
 
+import android.app.Activity
 import androidx.compose.animation.Crossfade
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -23,7 +24,12 @@ import androidx.compose.material3.NavigationBarItem
 import androidx.compose.material3.NavigationBarItemDefaults
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
+import androidx.compose.material3.AlertDialog
+import androidx.compose.material3.Button
+import androidx.compose.material3.TextButton
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.DisposableEffect
+import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -40,6 +46,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import com.hotseason.aquahunter.ui.components.BrandMark
 import com.hotseason.aquahunter.ui.components.NavGlyph
+import com.hotseason.aquahunter.commerce.AndroidCommerceStore
+import com.hotseason.aquahunter.commerce.CommerceDestination
 import com.hotseason.aquahunter.ui.legal.MARITIME_RISK_NOTICE_VERSION
 import com.hotseason.aquahunter.ui.legal.MaritimeRiskGate
 import com.hotseason.aquahunter.ui.screens.MarketsScreen
@@ -49,6 +57,7 @@ import com.hotseason.aquahunter.ui.screens.RadarScreen
 import com.hotseason.aquahunter.ui.screens.AppBackgroundStyle
 import com.hotseason.aquahunter.ui.screens.AquaAppLanguage
 import com.hotseason.aquahunter.ui.screens.SettingsScreen
+import com.hotseason.aquahunter.ui.screens.CommerceToolkitScreen
 import com.hotseason.aquahunter.ui.theme.AquaMint
 import com.hotseason.aquahunter.ui.theme.DeepOcean
 import com.hotseason.aquahunter.ui.theme.Divider
@@ -62,6 +71,7 @@ enum class AppScreen(val label: String) {
     Markets("Markets"),
     Radar("Radar"),
     Network("Network"),
+    Toolkit("Toolkit"),
 }
 
 @Composable
@@ -93,6 +103,19 @@ fun AquaHunterApp() {
         }
         return
     }
+
+    val activity = context as Activity
+    val commerceStore = remember(activity) {
+        AndroidCommerceStore(activity)
+    }
+    DisposableEffect(commerceStore) {
+        commerceStore.start()
+        onDispose { commerceStore.close() }
+    }
+    var commerceDestination by remember {
+        mutableStateOf(CommerceDestination.Snapshot)
+    }
+    val thankYou by commerceStore.thankYou.collectAsState()
 
     CompositionLocalProvider(
         LocalLayoutDirection provides if (language == AquaAppLanguage.Arabic) LayoutDirection.Rtl else LayoutDirection.Ltr,
@@ -169,10 +192,44 @@ fun AquaHunterApp() {
                     AppScreen.Markets -> MarketsScreen()
                     AppScreen.Radar -> RadarScreen()
                     AppScreen.Network -> NetworkScreen()
+                    AppScreen.Toolkit -> CommerceToolkitScreen(
+                        store = commerceStore,
+                        language = language,
+                        destination = commerceDestination,
+                        onDestinationChange = {
+                            commerceDestination = it
+                        },
+                    )
                 }
             }
         }
     }
+
+        thankYou?.let { purchase ->
+            AlertDialog(
+                onDismissRequest = { commerceStore.clearThankYou() },
+                title = { Text(purchase.title) },
+                text = { Text(purchase.message) },
+                confirmButton = {
+                    Button(
+                        onClick = {
+                            commerceDestination = purchase.destination
+                            selectedScreen = AppScreen.Toolkit
+                            commerceStore.clearThankYou()
+                        },
+                    ) {
+                        Text(purchase.actionTitle)
+                    }
+                },
+                dismissButton = {
+                    TextButton(
+                        onClick = { commerceStore.clearThankYou() },
+                    ) {
+                        Text("Later")
+                    }
+                },
+            )
+        }
     }
 }
 

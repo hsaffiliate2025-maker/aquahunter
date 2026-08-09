@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		01D0B73D0872E6C854620C44 /* aquahunter-offline-style.json in Resources */ = {isa = PBXBuildFile; fileRef = 7269986B4600D66641DE21D5 /* aquahunter-offline-style.json */; };
 		0352435A386A59C4E7467CBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24033CA4B43EB1E756EDC3C1 /* Assets.xcassets */; };
+		0A1CC555F0E6127FEAC8DF30 /* CommerceStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB06CA890A68D383656B1F0 /* CommerceStore.swift */; };
+		0B9A3A1A86AE07BB6E122564 /* CommerceAnalyticsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BCBAA51A75AC1379D3854B /* CommerceAnalyticsTests.swift */; };
 		16C8183AB63F1BC4F42BFF76 /* AquaTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B344FB9BEDECD741CEC4ED51 /* AquaTheme.swift */; };
 		26E344944982881555B07811 /* ProductionMarketData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B39554F6120D862677EA8D /* ProductionMarketData.swift */; };
 		2EDF445BD284A716E85467BC /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6C00559B8E869FAC17BDA0D /* Models.swift */; };
@@ -16,7 +18,13 @@
 		3C07ED75E9ABE786F4292A53 /* LicensedWorldMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A39EE1FED1982DCB9531D3 /* LicensedWorldMap.swift */; };
 		436D72C8CFA139099B046BBF /* ProductionMarketSeriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 700D9CFEA00A6607C25B8CC4 /* ProductionMarketSeriesTests.swift */; };
 		701B4D9EA084F0BE54558FC4 /* AquaSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D688E2366A9228754DD0C93 /* AquaSettingsView.swift */; };
+		72E375DCDB3161BA2226099D /* CommerceAnalytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5EE4F5DCD047B5111C0365 /* CommerceAnalytics.swift */; };
+		8809ECAC26BE76E0316FBD3F /* CommerceLedgerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F63D7FC192E0266805388A /* CommerceLedgerTests.swift */; };
+		89BDF352D3B7D1913F3F7286 /* localizations.json in Resources */ = {isa = PBXBuildFile; fileRef = 31D69C1091A911B20479CDF6 /* localizations.json */; };
+		A3ABE9E90778A4356B447996 /* store-pricing.json in Resources */ = {isa = PBXBuildFile; fileRef = AB05CC951B4E64CC3FE4FF4A /* store-pricing.json */; };
+		A45108C3F9964FD26E61B75D /* product-catalog.json in Resources */ = {isa = PBXBuildFile; fileRef = CCE6FC755E1893BCDF9E235B /* product-catalog.json */; };
 		AA9D62CE6568D5001D4846BA /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = CF0A18F993BF9E568FCF3326 /* README.md */; };
+		C42B6C922CF326DBD9529582 /* CommerceViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5726BFC14C36277DC9793A /* CommerceViews.swift */; };
 		E5E8495C4CDB244C50DC393B /* Screens.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5CB0C72A10567E8AF3B1E3 /* Screens.swift */; };
 		EA0015E85D3E8EEE0FF3B1EB /* ne_110m_land.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 5BBACCF7B3ABFBAC7298C766 /* ne_110m_land.geojson */; };
 		F285C497332D61FC72BB5BCE /* MapLibre in Frameworks */ = {isa = PBXBuildFile; productRef = 92A0BCB29F17CBDCA0A91A24 /* MapLibre */; };
@@ -36,17 +44,25 @@
 /* Begin PBXFileReference section */
 		0556B103E99F6BD0B671660A /* AquaHunterIOSTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = AquaHunterIOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1175CF896DA8EDCE5B227C2B /* AquaShellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaShellView.swift; sourceTree = "<group>"; };
+		1F5EE4F5DCD047B5111C0365 /* CommerceAnalytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommerceAnalytics.swift; sourceTree = "<group>"; };
 		24033CA4B43EB1E756EDC3C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		31D69C1091A911B20479CDF6 /* localizations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = localizations.json; sourceTree = "<group>"; };
 		45B39554F6120D862677EA8D /* ProductionMarketData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionMarketData.swift; sourceTree = "<group>"; };
 		5BBACCF7B3ABFBAC7298C766 /* ne_110m_land.geojson */ = {isa = PBXFileReference; path = ne_110m_land.geojson; sourceTree = "<group>"; };
+		5FB06CA890A68D383656B1F0 /* CommerceStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommerceStore.swift; sourceTree = "<group>"; };
+		6B5726BFC14C36277DC9793A /* CommerceViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommerceViews.swift; sourceTree = "<group>"; };
 		6D688E2366A9228754DD0C93 /* AquaSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaSettingsView.swift; sourceTree = "<group>"; };
 		700D9CFEA00A6607C25B8CC4 /* ProductionMarketSeriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionMarketSeriesTests.swift; sourceTree = "<group>"; };
 		7269986B4600D66641DE21D5 /* aquahunter-offline-style.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "aquahunter-offline-style.json"; sourceTree = "<group>"; };
 		7B5CB0C72A10567E8AF3B1E3 /* Screens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screens.swift; sourceTree = "<group>"; };
 		8F93923922243CF654C52092 /* AquaHunterIOS.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = AquaHunterIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92F63D7FC192E0266805388A /* CommerceLedgerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommerceLedgerTests.swift; sourceTree = "<group>"; };
+		AB05CC951B4E64CC3FE4FF4A /* store-pricing.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "store-pricing.json"; sourceTree = "<group>"; };
 		AC0F3B2793EE1EDAC67648C7 /* AquaHunterIOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaHunterIOSApp.swift; sourceTree = "<group>"; };
+		B0BCBAA51A75AC1379D3854B /* CommerceAnalyticsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommerceAnalyticsTests.swift; sourceTree = "<group>"; };
 		B344FB9BEDECD741CEC4ED51 /* AquaTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AquaTheme.swift; sourceTree = "<group>"; };
 		B6C00559B8E869FAC17BDA0D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		CCE6FC755E1893BCDF9E235B /* product-catalog.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "product-catalog.json"; sourceTree = "<group>"; };
 		CF0A18F993BF9E568FCF3326 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D1A39EE1FED1982DCB9531D3 /* LicensedWorldMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LicensedWorldMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,9 +87,21 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		3B0AB2F81F0695B451BB45D0 /* commerce */ = {
+			isa = PBXGroup;
+			children = (
+				31D69C1091A911B20479CDF6 /* localizations.json */,
+				CCE6FC755E1893BCDF9E235B /* product-catalog.json */,
+				AB05CC951B4E64CC3FE4FF4A /* store-pricing.json */,
+			);
+			name = commerce;
+			path = ../commerce;
+			sourceTree = "<group>";
+		};
 		53F9846F6BC9E517591DA561 = {
 			isa = PBXGroup;
 			children = (
+				3B0AB2F81F0695B451BB45D0 /* commerce */,
 				A68916821DEE35CC8593D22E /* map-assets */,
 				5921D83DD2A5AF7B152C34A9 /* Resources */,
 				B290D804A0397A601CCB953F /* Shared */,
@@ -125,6 +153,9 @@
 				6D688E2366A9228754DD0C93 /* AquaSettingsView.swift */,
 				1175CF896DA8EDCE5B227C2B /* AquaShellView.swift */,
 				B344FB9BEDECD741CEC4ED51 /* AquaTheme.swift */,
+				1F5EE4F5DCD047B5111C0365 /* CommerceAnalytics.swift */,
+				5FB06CA890A68D383656B1F0 /* CommerceStore.swift */,
+				6B5726BFC14C36277DC9793A /* CommerceViews.swift */,
 				D1A39EE1FED1982DCB9531D3 /* LicensedWorldMap.swift */,
 				B6C00559B8E869FAC17BDA0D /* Models.swift */,
 				45B39554F6120D862677EA8D /* ProductionMarketData.swift */,
@@ -137,6 +168,8 @@
 		B7AB3401F03AEED468D8395A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				B0BCBAA51A75AC1379D3854B /* CommerceAnalyticsTests.swift */,
+				92F63D7FC192E0266805388A /* CommerceLedgerTests.swift */,
 				700D9CFEA00A6607C25B8CC4 /* ProductionMarketSeriesTests.swift */,
 			);
 			name = Tests;
@@ -235,7 +268,10 @@
 				0352435A386A59C4E7467CBF /* Assets.xcassets in Resources */,
 				AA9D62CE6568D5001D4846BA /* README.md in Resources */,
 				01D0B73D0872E6C854620C44 /* aquahunter-offline-style.json in Resources */,
+				89BDF352D3B7D1913F3F7286 /* localizations.json in Resources */,
 				EA0015E85D3E8EEE0FF3B1EB /* ne_110m_land.geojson in Resources */,
+				A45108C3F9964FD26E61B75D /* product-catalog.json in Resources */,
+				A3ABE9E90778A4356B447996 /* store-pricing.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +295,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"$CONFIGURATION\" = \"Release\" ]; then\n  python3 \"$SRCROOT/../tools/validate_data_sources.py\" --release\n  python3 \"$SRCROOT/../tools/validate_release_content.py\"\nfi\n";
+			shellScript = "if [ \"$CONFIGURATION\" = \"Release\" ]; then\n  python3 \"$SRCROOT/../tools/validate_data_sources.py\" --release\n  python3 \"$SRCROOT/../tools/validate_commerce_catalog.py\"\n  python3 \"$SRCROOT/../tools/validate_release_content.py\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -268,6 +304,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B9A3A1A86AE07BB6E122564 /* CommerceAnalyticsTests.swift in Sources */,
+				8809ECAC26BE76E0316FBD3F /* CommerceLedgerTests.swift in Sources */,
 				436D72C8CFA139099B046BBF /* ProductionMarketSeriesTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +318,9 @@
 				701B4D9EA084F0BE54558FC4 /* AquaSettingsView.swift in Sources */,
 				FF13EC169918687738CCAE29 /* AquaShellView.swift in Sources */,
 				16C8183AB63F1BC4F42BFF76 /* AquaTheme.swift in Sources */,
+				72E375DCDB3161BA2226099D /* CommerceAnalytics.swift in Sources */,
+				0A1CC555F0E6127FEAC8DF30 /* CommerceStore.swift in Sources */,
+				C42B6C922CF326DBD9529582 /* CommerceViews.swift in Sources */,
 				3C07ED75E9ABE786F4292A53 /* LicensedWorldMap.swift in Sources */,
 				2EDF445BD284A716E85467BC /* Models.swift in Sources */,
 				26E344944982881555B07811 /* ProductionMarketData.swift in Sources */,
@@ -384,7 +425,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C8Y5J74PQW;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -398,7 +439,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -444,7 +485,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_TEAM = C8Y5J74PQW;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -464,7 +505,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.1.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;

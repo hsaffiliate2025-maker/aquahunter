@@ -66,7 +66,7 @@ fun MarketsScreen() {
         state = AuthorizedMarketLoadState.Loading
         state = try {
             AuthorizedMarketLoadState.Loaded(
-                listOf(StatisticsNorwayMarketRepository.fetchFreshSalmonSeries()),
+                StatisticsNorwayMarketRepository.fetchSalmonSeries(),
             )
         } catch (_: Exception) {
             AuthorizedMarketLoadState.Unavailable(
@@ -568,4 +568,3 @@ private fun DataInterpretationNote() {
         )
     }
 }
-

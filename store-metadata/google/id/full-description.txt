@@ -1,0 +1,18 @@
+AquaHunter adalah perangkat riset pasar hasil laut dengan sumber transparan untuk para profesional.
+
+DATA RESMI YANG BOLEH DIGUNAKAN SECARA KOMERSIAL
+Lihat tolok ukur ekspor mingguan salmon budidaya Norwegia dari tabel 03024 Statistics Norway. Seri segar/dingin dan beku mempertahankan periode resmi, NOK/kg, bobot ekspor, tautan sumber, atribusi, waktu pembaruan, dan lisensi CC BY 4.0.
+
+PERANGKAT RISET BARU
+Markets Plus, Pro, dan Max memiliki batas jelas, riwayat resmi 3, 5, atau 10 tahun, serta kuota bulanan. Paket sekali beli mendukung ekspor CSV berlisensi, perbandingan segar dan beku, snapshot pasar bersumber, laporan musiman multi-tahun, perhitungan biaya sampai berdasarkan asumsi Anda, serta peringatan harga yang benar-benar terkirim.
+
+PEMAKAIAN KREDIT YANG ADIL
+Kredit hanya dipakai setelah hasil, file, atau peringatan cocok berhasil dikirim. Kegagalan, pembatalan, data kosong atau tidak cukup, dan peringatan yang tidak cocok tidak memakai kredit. Harga dan periode tagihan diberikan langsung oleh Apple atau Google.
+
+12 BAHASA
+Inggris, Tionghoa Sederhana dan Tradisional, Spanyol, Prancis, Jerman, Jepang, Korea, Portugis Brasil, Indonesia, Hindi, dan Arab dengan tata letak kanan-ke-kiri.
+
+BATAS PENTING
+Nilai yang tampil adalah nilai unit ekspor nasional mingguan, bukan harga spot kota, lelang, penawaran yang dapat dieksekusi, atau nasihat investasi. Perhitungan bergantung pada asumsi pengguna dan tidak menjamin harga, laba, tangkapan, keberadaan ikan, keselamatan, atau akses legal. Peta Natural Earth bukan peta laut.
+
+Sumber: Statistics Norway, tabel 03024. CC BY 4.0.

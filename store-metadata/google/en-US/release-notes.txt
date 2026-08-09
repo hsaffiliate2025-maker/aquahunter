@@ -1,0 +1,6 @@
+• Added the Research Toolkit with seven clearly labeled destinations.
+• Added 3-, 5- and 10-year licensed market-history plans.
+• Added finite packs for CSV export, comparison, snapshots, seasonality, landed cost and delivered price alerts.
+• Credits are used only after a valid result or file is delivered.
+• Added localized purchase, restore, thank-you and feature-direction flows in 12 languages.
+• Added fresh/chilled and frozen Norway farmed-salmon series from Statistics Norway table 03024.

@@ -1,0 +1,18 @@
+AquaHunter é um kit de pesquisa de mercado de pescados com fontes transparentes, feito para profissionais.
+
+DADOS OFICIAIS COM REUTILIZAÇÃO COMERCIAL
+Consulte referências semanais de exportação de salmão norueguês de cultivo da tabela 03024 da Statistics Norway. As séries fresco/refrigerado e congelado preservam período oficial, NOK/kg, peso exportado, link, atribuição, atualização e licença CC BY 4.0.
+
+NOVO KIT DE PESQUISA
+Markets Plus, Pro e Max oferecem limites definidos, 3, 5 ou 10 anos de histórico oficial e cotas mensais. Pacotes avulsos permitem exportar CSV, comparar fresco e congelado, criar retratos de mercado com fonte, analisar sazonalidade, calcular custo posto com suas premissas e receber alertas de preço efetivamente entregues.
+
+CONSUMO JUSTO
+Um crédito só é consumido após a entrega bem-sucedida de um resultado, arquivo ou alerta correspondente. Falha, cancelamento, dados ausentes ou insuficientes e alerta sem correspondência não consomem crédito. Apple ou Google fornece preço e período locais.
+
+12 IDIOMAS
+Inglês, chinês simplificado e tradicional, espanhol, francês, alemão, japonês, coreano, português do Brasil, indonésio, hindi e árabe com layout da direita para a esquerda.
+
+LIMITES IMPORTANTES
+Os valores são valores unitários nacionais semanais de exportação, não preços spot urbanos, leilões, ofertas executáveis ou aconselhamento. Cálculos dependem das suas premissas e não garantem preço, lucro, captura, presença de peixes, segurança ou acesso legal. O mapa Natural Earth não é carta náutica.
+
+Fonte: Statistics Norway, tabela 03024. CC BY 4.0.

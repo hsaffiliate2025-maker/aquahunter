@@ -1,0 +1,18 @@
+AquaHunter est une boîte à outils d’étude du marché des produits de la mer, conçue autour de sources transparentes.
+
+DONNÉES OFFICIELLES RÉUTILISABLES À DES FINS COMMERCIALES
+Consultez les références hebdomadaires d’exportation du saumon d’élevage norvégien de la table 03024 de Statistics Norway. Les séries frais/réfrigéré et congelé conservent période officielle, NOK/kg, poids exporté, lien, attribution, mise à jour et licence CC BY 4.0.
+
+NOUVELLE BOÎTE À OUTILS
+Markets Plus, Pro et Max offrent des limites définies, 3, 5 ou 10 ans d’historique officiel et des quotas mensuels. Des packs à achat unique permettent l’export CSV, la comparaison frais/congelé, les instantanés sourcés, l’analyse saisonnière, le calcul du coût rendu selon vos hypothèses et les alertes de prix effectivement livrées.
+
+DÉCOMPTE ÉQUITABLE
+Un crédit n’est consommé qu’après livraison réussie d’un résultat, fichier ou événement correspondant. Échec, annulation, données absentes ou insuffisantes et alerte non déclenchée ne consomment rien. Apple ou Google fournit prix et période locaux.
+
+12 LANGUES
+Anglais, chinois simplifié et traditionnel, espagnol, français, allemand, japonais, coréen, portugais brésilien, indonésien, hindi et arabe avec interface de droite à gauche.
+
+LIMITES IMPORTANTES
+Les valeurs sont des valeurs unitaires nationales hebdomadaires d’exportation, non des prix spot urbains, enchères, offres exécutables ou conseils. Les calculs dépendent de vos hypothèses et ne garantissent ni prix, bénéfice, capture, présence de poissons, sécurité ni accès légal. La carte Natural Earth n’est pas une carte marine.
+
+Source : Statistics Norway, table 03024. Licence CC BY 4.0.

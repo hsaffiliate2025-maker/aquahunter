@@ -1,0 +1,18 @@
+AquaHunter ist ein quellentransparentes Marktforschungswerkzeug für die Seafood-Branche.
+
+OFFIZIELLE, KOMMERZIELL NUTZBARE DATEN
+Verfolge wöchentliche norwegische Export-Benchmarks für Zuchtlachs aus Tabelle 03024 von Statistics Norway. Reihen für frisch/gekühlt und tiefgekühlt behalten offiziellen Zeitraum, NOK/kg, Exportgewicht, Quellenlink, Namensnennung, Aktualisierung und CC-BY-4.0-Lizenz bei.
+
+NEUES RESEARCH-TOOLKIT
+Markets Plus, Pro und Max bieten feste Grenzen, 3, 5 oder 10 Jahre offiziellen Verlauf und monatliche Kontingente. Einmalige Pakete liefern CSV-Exporte, Frisch-gegen-Tiefkühl-Vergleiche, belegte Marktübersichten, Mehrjahres-Saisonalität, Einstandskosten mit eigenen Annahmen und tatsächlich zugestellte Preisalarme.
+
+FAIRER VERBRAUCH
+Ein Guthaben wird erst nach erfolgreicher Lieferung eines gültigen Ergebnisses, einer Datei oder eines passenden Alarms verbraucht. Fehler, Abbruch, fehlende oder unzureichende Daten und nicht ausgelöste Alarme kosten nichts. Preis und Abrechnungszeitraum kommen direkt von Apple oder Google.
+
+12 SPRACHEN
+Englisch, vereinfachtes und traditionelles Chinesisch, Spanisch, Französisch, Deutsch, Japanisch, Koreanisch, brasilianisches Portugiesisch, Indonesisch, Hindi und Arabisch mit Rechts-nach-links-Layout.
+
+WICHTIGE GRENZEN
+Die Werte sind nationale wöchentliche Exportstückwerte, keine Stadt-Spotpreise, Auktionen, ausführbaren Angebote oder Beratung. Berechnungen hängen von Annahmen ab und garantieren weder Preis, Gewinn, Fang, Fischvorkommen, Sicherheit noch legalen Zugang. Natural Earth ist keine Seekarte.
+
+Quelle: Statistics Norway, Tabelle 03024. CC BY 4.0.

@@ -539,6 +539,41 @@ fun NavGlyph(screen: AppScreen, selected: Boolean, glyphSize: Dp = 22.dp) {
                 drawLine(color, nodes[2], nodes[0], stroke.width)
                 nodes.forEach { drawCircle(DeepOcean, 4.dp.toPx(), it); drawCircle(color, 4.dp.toPx(), it, style = stroke) }
             }
+            AppScreen.Toolkit -> {
+                drawRect(
+                    color,
+                    topLeft = Offset(size.width * 0.16f, size.height * 0.28f),
+                    size = Size(size.width * 0.68f, size.height * 0.54f),
+                    style = stroke,
+                )
+                drawLine(
+                    color,
+                    Offset(size.width * 0.16f, size.height * 0.43f),
+                    Offset(size.width * 0.84f, size.height * 0.43f),
+                    stroke.width,
+                )
+                drawLine(
+                    AquaMint,
+                    Offset(size.width * 0.50f, size.height * 0.08f),
+                    Offset(size.width * 0.50f, size.height * 0.60f),
+                    stroke.width,
+                    StrokeCap.Round,
+                )
+                drawLine(
+                    AquaMint,
+                    Offset(size.width * 0.50f, size.height * 0.08f),
+                    Offset(size.width * 0.38f, size.height * 0.22f),
+                    stroke.width,
+                    StrokeCap.Round,
+                )
+                drawLine(
+                    AquaMint,
+                    Offset(size.width * 0.50f, size.height * 0.08f),
+                    Offset(size.width * 0.62f, size.height * 0.22f),
+                    stroke.width,
+                    StrokeCap.Round,
+                )
+            }
         }
     }
 }
