@@ -8,10 +8,11 @@
 - Bundle ID：`com.hotseason.aquahunter`
 - Apple Team：Hot Season Enterprise, Inc. (`C8Y5J74PQW`)
 - 最低系统：iOS/iPadOS 17
-- 版本：`1.1.0 (3)`
-- 发布顺序：TestFlight → App Store
+- App Store Connect 当前构建：`1.1.0 (5)`
+- 当前状态：Build 5 已附加到 iOS 1.1.0 并重新提审，整体为 `WAITING_FOR_REVIEW`
+- TestFlight 门禁：本轮仅上传 App Store 审核构建，未通过 `asc publish testflight`、未向任何测试组发布
 
-Apple Universal App ID 已注册，资源 ID 为 `SQV9L48FRA`。App Store Connect 应用记录为 `AquaHunter: Seafood Intel`（App ID `6792849577`，SKU `AQUAHUNTER-IOS-001`）。首版 `1.0.0 (1)` 已上线；`1.1.0 (3)` 构建 ID `d41e84ef-bb83-4c90-855a-0720037df099` 已处理为 `VALID` 并绑定 iOS 版本。
+Apple Universal App ID 已注册，资源 ID 为 `SQV9L48FRA`。App Store Connect 应用记录为 `AquaHunter: Seafood Intel`（App ID `6792849577`，SKU `AQUAHUNTER-IOS-001`）。首版 `1.0.0 (1)` 已上线；当前后台构建为 `1.1.0 (5)`，构建 ID `80486b1a-0f78-4b6b-8c93-59e87dc1c467`。审核提交 `b223573d-85c9-4398-9e7c-e45a610ed2da` 已在保留原 25 个付费审核条目的前提下更新为 Build 5 并重新提审；App Store Connect 页面与 `asc submit status` 均确认为 `WAITING_FOR_REVIEW`。
 
 ## 当前生产功能
 
@@ -92,7 +93,7 @@ asc xcode export \
 - Distribution certificate 资源 ID：`38T5M89JA4`
 - Distribution certificate SHA-1：`4E02BF84E8F1AEE62F0F887813081170EC915ADF`
 
-导出 IPA 后上传 TestFlight：
+导出 IPA 后向 TestFlight 测试组发布的历史流程如下。**Build 5 未执行以下命令；未经用户另行明确授权，不得向 TestFlight 测试组发布。**
 
 ```bash
 asc publish testflight \
@@ -104,15 +105,18 @@ asc publish testflight \
   --wait
 ```
 
-当前已验证的本地产物：
+当前已验证并上传的 App Store 审核产物：
 
-- 路径：`.asc/artifacts/AquaHunterIOS-v1.1.0.ipa`
-- 版本：`1.1.0 (3)`
-- SHA-256：`8ab8e71fbb1aaa974c5024475717971a2408a210eb5aec456b7317f1dd5dfdfe`
-- 签名：`iPhone Distribution: Hot Season Enterprise, Inc. (C8Y5J74PQW)`
-- Embedded profile：`AquaHunter iOS App Store 2026 v1.1 Local Key`
+- 路径：`.asc/artifacts/AquaHunterIOS-1.1.0-5.ipa`
+- 归档：`.asc/artifacts/AquaHunterIOS-1.1.0-5.xcarchive`
+- 版本：`1.1.0 (5)`
+- App Store Connect Build ID：`80486b1a-0f78-4b6b-8c93-59e87dc1c467`
+- SHA-256：`1f652c42f02162abd411f9372edd050843068700192e2ab37282427286ec6be8`
+- 签名：`Apple Distribution: Hot Season Enterprise, Inc. (C8Y5J74PQW)`
+- Embedded profile：`AquaHunter iOS App Store 2026 Build 4`
+- 加密合规：`ITSAppUsesNonExemptEncryption = false`
 
-该 IPA 已确认包含离线地图、Research Toolkit、StoreKit 2 商品目录和 12 语言资源；发布二进制中没有 Aqua AI/Ask 或开发期问答内容。
+该 IPA 已确认包含离线地图、Research Toolkit、StoreKit 2 商品目录、12 语言资源与购买页常驻法律链接修复；发布二进制中没有 Aqua AI/Ask 或开发期问答内容。产物仅上传到 App Store Connect 并用于 App Review，未加入任何 TestFlight 测试组。
 
 ## App Store 截图与元数据
 
@@ -144,13 +148,15 @@ asc metadata validate --dir metadata
 - SKU：`AQUAHUNTER-IOS-001`
 - 用户访问：Full Access
 
-## 发布阻断项
+## 当前审核状态与剩余门禁
 
-- 2026-07-31：`1.1.0 (3)` 已处理为 `VALID` 并绑定版本；12 语言描述、更新说明、关键词、运行时付费工具文本和 24 × 12 IAP 文案已同步。
-- 2026-07-30：build 3 已在 App Store Connect 申报仅使用豁免的系统 HTTPS/TLS（`usesNonExemptEncryption = false`）；重新执行 `asc validate` 后为 0 errors、0 blocking。
-- App Review 备注已写明首次风险声明、Toolkit 商店入口、24 个商品、购买后多语言感谢与“打开功能”跳转、恢复购买和成功交付后才扣次数的规则。
-- Apple 后台 18 个消耗型商品和 6 个订阅均为 `WAITING_FOR_REVIEW`，审核截图已换为显示真实 StoreKit 价格与购买按钮的 1206×2622 当前界面。
-- 2026-07-31：iOS 审核提交 `beeb1cfa-196b-4d44-88b3-4778e4a0125e` 已包含 iOS `1.1.0 (3)`、18 个消耗型商品、`AquaHunter Markets` 订阅组和组内 6 个订阅。App Store Connect 将其显示为 26 个审核条目，实际对应 24 个付费 SKU；提交状态为 `WAITING_FOR_REVIEW`。
+- 2026-08-10：审核提交 `b223573d-85c9-4398-9e7c-e45a610ed2da` 已从 `UNRESOLVED_ISSUES` 更新为 iOS `1.1.0 (5)` 并重新提审；页面与 API 均显示整体状态 `WAITING_FOR_REVIEW`。
+- 本次提交共 26 个审核条目：1 个 App 版本、18 个消耗型 IAP、1 个订阅组和组内 6 个订阅。原 25 个付费条目全部保留，未删除、重建或拆离。
+- 2026-08-10 本地修复：商店长列表底部增加常驻 Privacy Policy、Terms of Use (EULA) 与 Restore purchases 控件，滚动到任意商品位置仍可访问；12 种语言的订阅披露补充扣费、自动续订、提前至少 24 小时取消、管理方式和本机消耗型余额说明。
+- 验证通过：付费目录 24 个商品、商业数据源及发布内容校验通过；专用模拟器完成 15 项 Apple 测试且 0 失败。32 秒录屏已人工检查并附加到 App Review Information，确认 `$159.99` 年费及三个持久合规控件。
+- 修复经验已记录在 `~/.claude/skills/sdk/references/app-store-subscription-review.md`；本地录屏为 `artifacts/screenshots/app-review/ios-1.1.0-build-5-legal-links.mp4`，该证据不提交 Git。
+- 已给 Apple 发送审核回复，确认 Markets Max Annual 的 USD 159.99 是有意设定的年价，并说明年订阅内容。Build 5 未向任何 TestFlight 测试组发布。
+- 历史记录：2026-07-31 的首个 26 项提交 `beeb1cfa-196b-4d44-88b3-4778e4a0125e` 使用 `1.1.0 (3)`；当前 submission 已经过 Build 4 修复并最终更新到 Build 5。
 - 审核期间仍需完成沙盒购买、恢复、退款/撤销与 RTL 验证；若发现权益或本地化缺陷，应先撤回修正，不得让空权益商品通过审核。
 - 风险声明必须由目标司法辖区的合格律师审查。
 - 城市价格、Radar 概率、Network 业务记录在相应合规数据源到位前保持不可用；离线基础地图保持可用。

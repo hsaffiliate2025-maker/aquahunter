@@ -34,13 +34,13 @@ AquaHunter 是面向全球海鲜产业的跨平台数据产品，聚合价格、
 
 ## 身份与发布渠道
 
-三端统一标识 `com.hotseason.aquahunter`；商店显示名为 **AquaHunter: Seafood Intel**（App Store 上 `AquaHunter` 一名已被占用）。Apple 侧为 Hot Season Enterprise, Inc.（`C8Y5J74PQW`），经 `asc`（App Store Connect API）上架 App Store / Mac App Store；Android 经 Google Play Developer API 上架 Google Play。首版 `1.0.0 (1)` 已在 iOS 与 macOS 商店上线；macOS `1.1.0 (3)` 已完成审核并可分发，Android `1.1.0 (3)` 已在 Google Play Production 以 100% 全量方式发布。iOS `1.1.0 (3)` 因 Guideline 3.1.2(c) 缺少购买流程内可用的隐私政策和 EULA 链接被退回；修复后的 `1.1.0 (4)` 已上传并绑定版本。旧 iOS 审核提交 `beeb1cfa-196b-4d44-88b3-4778e4a0125e` 已通过 ASC API 取消并完成；18 个消耗型 IAP、订阅组和组内 6 个订阅已与修复版 App 组成 26 项新提交 `b223573d-85c9-4398-9e7c-e45a610ed2da`，并于 2026-08-09 进入 `WAITING_FOR_REVIEW`。16 语言现行隐私政策已通过网站提交 `0d308a7ddbd35a42755670f5b7170b6b1ffb2d18` 部署到 `hotseason.app`，准确说明 StoreKit / Google Play Billing 与本机购买账本。签名产物、哈希、商店素材与发布状态见各端 README；每次修改发布代码或版本号后必须重新构建并复核哈希，不得把旧产物上传为新版本。
+三端统一标识 `com.hotseason.aquahunter`；商店显示名为 **AquaHunter: Seafood Intel**（App Store 上 `AquaHunter` 一名已被占用）。Apple 侧为 Hot Season Enterprise, Inc.（`C8Y5J74PQW`），经 `asc`（App Store Connect API）管理 App Store / Mac App Store；Android 经 Google Play Developer API 管理 Google Play。首版 `1.0.0 (1)` 已在 iOS 与 macOS 商店上线；macOS `1.1.0 (3)` 已完成审核并可分发，Android `1.1.0 (3)` 已在 Google Play Production 以 100% 全量方式发布。iOS `1.1.0 (4)` 及原提交中的 25 个付费审核项曾因 Guideline 3.0 与 3.1.2 进入 `UNRESOLVED_ISSUES`；购买页第二轮修复已通过测试并生成 `1.1.0 (5)`。Build 5 已上传 App Store Connect 作为审核构建，但未向任何 TestFlight 测试组发布。2026-08-10 已在保留原 25 个付费项目的前提下重新提交同一 submission `b223573d-85c9-4398-9e7c-e45a610ed2da`，App Store Connect 与 ASC API 均确认整体状态为 `WAITING_FOR_REVIEW`。16 语言现行隐私政策已通过网站提交 `0d308a7ddbd35a42755670f5b7170b6b1ffb2d18` 部署到 `hotseason.app`，准确说明 StoreKit / Google Play Billing 与本机购买账本。签名产物、哈希、商店素材与发布状态见各端 README；每次修改发布代码或版本号后必须重新构建并复核哈希，不得把旧产物上传为新版本。
 
-截至 2026-08-09 的三端商店状态：
+截至 2026-08-10 的三端商店状态：
 
 | 平台 | 版本 | 当前状态 | 权威记录 |
 |---|---|---|---|
-| iOS | `1.1.0 (4)` | `WAITING_FOR_REVIEW`；App、18 个消耗型 IAP、订阅组和 6 个订阅共 26 项已提交 | Build `7adc9e43-9a73-4278-8d37-c83672ae84b3`；submission `b223573d-85c9-4398-9e7c-e45a610ed2da` |
+| iOS | `1.1.0 (5)` | `WAITING_FOR_REVIEW`；App 与 25 个付费项目已重新提审；未向 TestFlight 测试组发布 | Build `80486b1a-0f78-4b6b-8c93-59e87dc1c467`；submission `b223573d-85c9-4398-9e7c-e45a610ed2da` |
 | macOS | `1.1.0 (3)` | `READY_FOR_DISTRIBUTION` | App Store Connect submission `8a1d1861-fe1c-4a08-8d5a-05022860bf0e` |
 | Android | `1.1.0 (3)` | Google Play Production `Active`，100% 全量覆盖 177 个国家/地区 | Production latest release versionCode `3` |
 
@@ -53,6 +53,17 @@ AquaHunter 是面向全球海鲜产业的跨平台数据产品，聚合价格、
 - 审核截图保存在本地 `artifacts/screenshots/app-review/ios-1.1.0-build-4-legal-links.png`，并已作为 App Review attachment 上传；Review Notes 已写明首次启动、Store 路径、法律链接、恢复购买与真实数据源。
 - 取消旧审核后，Apple 的父商品状态仍显示 `READY_TO_SUBMIT`，但部分底层 IAP、订阅及订阅组版本实际为 `DEVELOPER_REJECTED`；父商品状态不能作为重新提审的唯一判断依据。
 - App Store Connect 网页先成功重新挂载 11 个 IAP；其余 7 个 IAP、6 个订阅和订阅组通过官方 `reviewSubmissionItems` 版本关系重新加入同一草稿。最终 App、18 个 IAP、订阅组和 6 个订阅共 26 项全部为 `READY_FOR_REVIEW`，新 submission `b223573d-85c9-4398-9e7c-e45a610ed2da` 已提交并进入 `WAITING_FOR_REVIEW`。
+
+### 2026-08-10 iOS Guideline 3.0 / 3.1.2 二次拒审、Build 5 修复与重新提审
+
+- Submission `b223573d-85c9-4398-9e7c-e45a610ed2da` 曾为 `UNRESOLVED_ISSUES`；App 版本 `1.1.0 (4)` 被拒后，其余 18 个消耗型 IAP、订阅组与 6 个订阅共 25 项均保留在原 submission，未删除、未复制、未重建。
+- 根据 Apple 附件截图作出的根因判断：审核员把 Store 滚到商品列表中段后，顶部法律卡与列表底部的恢复购买都离开屏幕，因此当前购买位置看不到 Privacy、EULA 和 Restore。该判断来自截图与界面结构对照，不冒充 Apple 未提供的额外文字说明。
+- 本地代码已改为底部持久安全区栏：无论滚到哪个商品，`Privacy Policy`、`Terms of Use (EULA)` 和 `Restore purchases` 都保持可见、可点击，并有稳定的无障碍标识。完整续订披露继续位于商品列表顶部。
+- 12 种语言的续订披露已补齐 Apple Account 扣款、当前周期结束至少 24 小时前取消、App Store 账户设置管理/取消及本机消耗型额度丢失说明。
+- iOS 共享测试 15/15 通过，24 商品、12 语言、商业数据授权和发行内容校验通过；专用 `AquaHunter IAP Review` 模拟器完成视觉与无障碍验收。32 秒 Build 5 录屏已人工检查：开头显示 Markets Max Annual `$159.99`，多个滚动位置始终可见 Privacy Policy、Terms of Use (EULA) 与 Restore Purchases，无黑屏或遮挡。本地文件为 `artifacts/screenshots/app-review/ios-1.1.0-build-5-legal-links.mp4`（该目录按仓库策略不提交）。
+- 可复用处理经验已记录到权威 `skills/sdk`：`~/.claude/skills/sdk/references/app-store-subscription-review.md`。
+- 用户明确授权后生成并上传 `1.1.0 (5)` 作为 App Store 审核构建；未通过 `asc publish testflight`、未加入任何 TestFlight 测试组。Review Notes 已确认 `$159.99` 为有意设定的年费，并说明年订阅内容。
+- 录屏已附加到 App Review Information，给 Apple 的回复已成功发送。Build 5 与原 25 个付费项目共 26 项于 2026-08-10 重新提审；App Store Connect 页面与 `asc submit status` 均确认整体状态为 `WAITING_FOR_REVIEW`。
 
 ## 总开发计划
 
@@ -115,6 +126,8 @@ AquaHunter 是面向全球海鲜产业的跨平台数据产品，聚合价格、
 - [x] 2026-07-31 iOS 与 macOS `1.1.0 (3)` 已分别提交审核；macOS 后续通过并进入 `READY_FOR_DISTRIBUTION`
 - [x] 2026-08-08 iOS `1.1.0 (4)` 完成 Guideline 3.1.2(c) 修复、15 项测试、签名归档、上传、出口合规及审核截图/说明
 - [x] 2026-08-09 将 iOS `1.1.0 (4)`、18 个 IAP、订阅组及 6 个订阅组成 26 项新 submission，并通过 ASC API 重新提交审核
+- [x] 2026-08-10 记录 iOS Guideline 3.0 / 3.1.2 二次拒审，完成购买页持久法律栏、12 语言续订披露、15 项本地测试与列表中段视觉验收
+- [x] 2026-08-10 经用户授权生成 iOS `1.1.0 (5)`，不向 TestFlight 测试组发布；在保留原 25 个付费项目的前提下完成录屏、回复并重新提审
 - [x] Android `1.1.0 (3)` 已进入 Internal testing，Google Play App content 全部完成且 Policy status 为 `No issues found`
 - [x] 发布 16 语言现行购买/本机账本隐私说明（网站提交 `0d308a7`）
 - [x] Android `1.1.0 (3)` 已发布到 Production，状态为 `Active`，100% 全量覆盖 177 个国家/地区
@@ -242,12 +255,13 @@ AquaHunter 是面向全球海鲜产业的跨平台数据产品，聚合价格、
 3. [x] 历史、UTF-8 CSV、鲜冷藏与冷冻比较、市场快照、多年季节性、到岸成本及应用内价格提醒均有实际界面与结果。
 4. [x] 购买成功后按当前语言显示感谢语，并提供“打开功能”按钮直达所购权益入口。
 5. [x] App Store / Google Play 描述、更新说明、关键词及 24 个商品名称和说明覆盖 12 种语言。
-6. [x] Apple 与 Google 后台已创建全部 24 个商品，并同步每个商品的 12 种本地化名称与说明；Apple 18 个消耗型商品、订阅组及 6 个订阅已随 iOS Build 4 重新提交，Google 商品及基础方案均已激活。
-7. [x] 跨平台闭环测试逐一覆盖 24 个商品的真实额度、7 个功能目的地、12 种语言感谢语和“打开功能”跳转；iOS Build 4 的 Apple 共享测试 15 项、Android 12 项全部通过。
-8. [x] iOS `1.1.0 (4)`、18 个消耗型商品、订阅组和组内 6 个订阅已组成 26 项审核提交；网页完成可直接挂载的 11 个 IAP，其余 `DEVELOPER_REJECTED` 版本经官方 Review Submission API 恢复并重新提审。
+6. [x] Apple 与 Google 后台已创建全部 24 个商品，并同步每个商品的 12 种本地化名称与说明；Apple 18 个消耗型商品、订阅组及 6 个订阅已随 iOS Build 5 重新提交，Google 商品及基础方案均已激活。
+7. [x] 跨平台闭环测试逐一覆盖 24 个商品的真实额度、7 个功能目的地、12 种语言感谢语和“打开功能”跳转；iOS Build 5 的 Apple 共享测试 15 项、Android 12 项全部通过。
+8. [x] iOS `1.1.0 (5)`、18 个消耗型商品、订阅组和组内 6 个订阅已组成 26 项审核提交；修复录屏与回复已提供给 Apple，整体状态为 `WAITING_FOR_REVIEW`。
 9. [x] Android `1.1.0 (3)` 已在 Internal testing 可供测试；Google Play 后台 10 项 App content 均已完成，Policy status 为 `No issues found`。
 10. [x] 与 v3 完全一致的 16 语言公开隐私政策已发布并验证；Android `1.1.0 (3)` 已在 Google Play Production 以 100% 全量方式发布，轨道状态为 `Active`。
-11. [ ] 完成真实沙盒购买、退款/撤销/恢复、RTL 截图及 Apple 审核。
+11. [x] iOS 二次拒审后的购买页修复已完成：滚动中段持续显示 Privacy、EULA、Restore，12 语言披露与 15 项测试通过；Build 5 已附录屏重新提审，未向 TestFlight 测试组发布。
+12. [ ] 完成真实沙盒购买、退款/撤销/恢复、RTL 截图及 Apple 审核。
 
 购买页只展示已经完成、已获授权且当前地区可售的商品；未开发、数据不足或未通过审核的 SKU 保持隐藏，不在官网或商店文案中宣传。
 

@@ -791,19 +791,6 @@ struct CommerceStorefrontView: View {
                     }
                 }
 
-                Button {
-                    Task { await commerce.restore(languageCode: languageCode) }
-                } label: {
-                    Label(
-                        locale?.restore ?? "Restore purchases",
-                        systemImage: "arrow.clockwise"
-                    )
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 10)
-                }
-                .buttonStyle(.bordered)
-                .tint(AquaTheme.signalBlue)
-
             }
             .padding(18)
         }
@@ -815,6 +802,9 @@ struct CommerceStorefrontView: View {
                     dismiss()
                 }
             }
+        }
+        .safeAreaInset(edge: .bottom, spacing: 0) {
+            persistentLegalFooter
         }
         .alert(item: $commerce.thankYou) { thankYou in
             Alert(
@@ -841,7 +831,7 @@ struct CommerceStorefrontView: View {
             VStack(alignment: .leading, spacing: 12) {
                 Text(
                     locale?.store.legalDisclosure
-                        ?? "Subscriptions auto-renew unless cancelled in your store account. Consumable credits stay on this device and are lost if app data is cleared or the app is uninstalled."
+                        ?? "Payment is charged to your Apple Account at confirmation. Subscriptions auto-renew unless cancelled at least 24 hours before the current period ends; manage or cancel them in App Store account settings. Consumable credits stay on this device and are lost if app data is cleared or the app is uninstalled."
                 )
                 .font(.caption2)
                 .foregroundStyle(AquaTheme.textSecondary)
@@ -866,6 +856,93 @@ struct CommerceStorefrontView: View {
             .foregroundStyle(AquaTheme.signalBlue)
             .tint(AquaTheme.signalBlue)
         }
+    }
+
+    private var persistentLegalFooter: some View {
+        VStack(spacing: 10) {
+            ViewThatFits(in: .horizontal) {
+                HStack(spacing: 10) {
+                    persistentLegalLink(
+                        title: locale?.store.privacyPolicy
+                            ?? "Privacy Policy",
+                        systemImage: "hand.raised.fill",
+                        destination: CommerceLegalLinks.privacyPolicy,
+                        accessibilityIdentifier:
+                            "aqua.store.privacyPolicy"
+                    )
+                    persistentLegalLink(
+                        title: locale?.store.termsOfUse
+                            ?? "Terms of Use (EULA)",
+                        systemImage: "doc.text.fill",
+                        destination: CommerceLegalLinks.termsOfUse,
+                        accessibilityIdentifier:
+                            "aqua.store.termsOfUse"
+                    )
+                }
+
+                VStack(alignment: .leading, spacing: 8) {
+                    persistentLegalLink(
+                        title: locale?.store.privacyPolicy
+                            ?? "Privacy Policy",
+                        systemImage: "hand.raised.fill",
+                        destination: CommerceLegalLinks.privacyPolicy,
+                        accessibilityIdentifier:
+                            "aqua.store.privacyPolicy"
+                    )
+                    persistentLegalLink(
+                        title: locale?.store.termsOfUse
+                            ?? "Terms of Use (EULA)",
+                        systemImage: "doc.text.fill",
+                        destination: CommerceLegalLinks.termsOfUse,
+                        accessibilityIdentifier:
+                            "aqua.store.termsOfUse"
+                    )
+                }
+            }
+
+            Button {
+                Task {
+                    await commerce.restore(languageCode: languageCode)
+                }
+            } label: {
+                Label(
+                    locale?.restore ?? "Restore purchases",
+                    systemImage: "arrow.clockwise"
+                )
+                .frame(maxWidth: .infinity)
+                .padding(.vertical, 8)
+            }
+            .buttonStyle(.borderedProminent)
+            .tint(AquaTheme.signalBlue)
+            .accessibilityIdentifier("aqua.store.restorePurchases")
+        }
+        .padding(.horizontal, 18)
+        .padding(.vertical, 10)
+        .background(.ultraThinMaterial)
+        .overlay(alignment: .top) {
+            Divider()
+        }
+        .accessibilityElement(children: .contain)
+        .accessibilityIdentifier("aqua.store.persistentLegalFooter")
+    }
+
+    private func persistentLegalLink(
+        title: String,
+        systemImage: String,
+        destination: URL,
+        accessibilityIdentifier: String
+    ) -> some View {
+        Link(destination: destination) {
+            Label(title, systemImage: systemImage)
+                .font(.caption.weight(.semibold))
+                .lineLimit(1)
+                .minimumScaleFactor(0.8)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .foregroundStyle(AquaTheme.signalBlue)
+        .accessibilityIdentifier(accessibilityIdentifier)
     }
 
     @ViewBuilder

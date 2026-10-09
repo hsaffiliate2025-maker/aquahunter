@@ -103,6 +103,14 @@ final class CommerceLedgerTests: XCTestCase {
             XCTAssertEqual(Set(toolkit.keys), expectedToolkitKeys)
             XCTAssertFalse(localized.store.privacyPolicy.isEmpty)
             XCTAssertFalse(localized.store.termsOfUse.isEmpty)
+            XCTAssertTrue(
+                localized.store.legalDisclosure.contains("24"),
+                "The renewal cutoff is missing for \(locale)"
+            )
+            XCTAssertGreaterThan(
+                localized.store.legalDisclosure.count,
+                80
+            )
             for product in catalog.products {
                 let text = try catalog.text(
                     for: product,

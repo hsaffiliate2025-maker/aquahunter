@@ -15,7 +15,7 @@
         "done": "Done",
         "later": "Later",
         "storeButton": "Store",
-        "legalDisclosure": "Subscriptions auto-renew unless cancelled in your store account. Consumable credits stay on this device and are lost if app data is cleared or the app is uninstalled.",
+        "legalDisclosure": "Payment is charged to your Apple Account at confirmation. Subscriptions auto-renew unless cancelled at least 24 hours before the current period ends; manage or cancel them in App Store account settings. Consumable credits stay on this device and are lost if app data is cleared or the app is uninstalled.",
         "privacyPolicy": "Privacy Policy",
         "termsOfUse": "Terms of Use (EULA)"
       },
@@ -150,7 +150,7 @@
         "done": "完成",
         "later": "稍后",
         "storeButton": "商店",
-        "legalDisclosure": "订阅会自动续期，除非您在商店账户中取消。消耗型次数仅保存在本设备；清除 App 数据或卸载后将丢失。",
+        "legalDisclosure": "确认购买时将从您的 Apple 账户扣款。订阅会自动续期；如需取消，请至少在当前订阅期结束前 24 小时在 App Store 账户设置中操作。消耗型次数仅保存在本设备，清除 App 数据或卸载后将丢失。",
         "privacyPolicy": "隐私政策",
         "termsOfUse": "使用条款（EULA）"
       },
@@ -285,7 +285,7 @@
         "done": "完成",
         "later": "稍後",
         "storeButton": "商店",
-        "legalDisclosure": "訂閱會自動續期，除非您在商店帳戶中取消。消耗型次數只儲存在本裝置；清除 App 資料或解除安裝後將遺失。",
+        "legalDisclosure": "確認購買時將從您的 Apple 帳號扣款。訂閱會自動續期；如要取消，請至少在目前訂閱期結束前 24 小時於 App Store 帳號設定中操作。消耗型次數只儲存在本裝置，清除 App 資料或解除安裝後將遺失。",
         "privacyPolicy": "隱私權政策",
         "termsOfUse": "使用條款（EULA）"
       },
@@ -420,7 +420,7 @@
         "done": "Listo",
         "later": "Más tarde",
         "storeButton": "Tienda",
-        "legalDisclosure": "Las suscripciones se renuevan salvo cancelación en la cuenta de la tienda. Los créditos consumibles permanecen en este dispositivo y se pierden al borrar los datos o desinstalar.",
+        "legalDisclosure": "El pago se carga a tu cuenta de Apple al confirmar. La suscripción se renueva automáticamente salvo que la canceles al menos 24 horas antes de que termine el periodo actual; adminístrala o cancélala en los ajustes de la cuenta de App Store. Los créditos consumibles permanecen en este dispositivo y se pierden al borrar los datos o desinstalar la app.",
         "privacyPolicy": "Política de privacidad",
         "termsOfUse": "Términos de uso (EULA)"
       },
@@ -555,7 +555,7 @@
         "done": "Terminé",
         "later": "Plus tard",
         "storeButton": "Boutique",
-        "legalDisclosure": "Les abonnements se renouvellent sauf annulation dans le compte de la boutique. Les crédits consommables restent sur cet appareil et sont perdus si les données sont effacées ou l’app désinstallée.",
+        "legalDisclosure": "Le paiement est débité de votre compte Apple à la confirmation. L’abonnement se renouvelle automatiquement sauf annulation au moins 24 heures avant la fin de la période en cours ; gérez-le ou annulez-le dans les réglages du compte App Store. Les crédits consommables restent sur cet appareil et sont perdus si les données sont effacées ou l’app désinstallée.",
         "privacyPolicy": "Politique de confidentialité",
         "termsOfUse": "Conditions d’utilisation (EULA)"
       },
@@ -690,7 +690,7 @@
         "done": "Fertig",
         "later": "Später",
         "storeButton": "Shop",
-        "legalDisclosure": "Abos verlängern sich, sofern sie nicht im Store-Konto gekündigt werden. Verbrauchsguthaben bleibt auf diesem Gerät und geht beim Löschen der App-Daten oder Deinstallieren verloren.",
+        "legalDisclosure": "Die Zahlung wird bei Bestätigung deinem Apple Account belastet. Das Abo verlängert sich automatisch, sofern es nicht mindestens 24 Stunden vor Ende des aktuellen Zeitraums gekündigt wird; verwalte oder kündige es in den App-Store-Accounteinstellungen. Verbrauchsguthaben bleibt auf diesem Gerät und geht beim Löschen der App-Daten oder Deinstallieren verloren.",
         "privacyPolicy": "Datenschutzrichtlinie",
         "termsOfUse": "Nutzungsbedingungen (EULA)"
       },
@@ -825,7 +825,7 @@
         "done": "完了",
         "later": "後で",
         "storeButton": "ストア",
-        "legalDisclosure": "ストアアカウントで解約しない限り自動更新されます。消費型回数はこの端末だけに保存され、App データの消去または削除で失われます。",
+        "legalDisclosure": "購入の確定時にApple Accountに請求されます。現在の期間が終了する24時間以上前に解約しない限り、サブスクリプションは自動更新されます。App Storeのアカウント設定で管理または解約できます。消費型回数はこの端末にのみ保存され、Appデータの消去またはAppの削除で失われます。",
         "privacyPolicy": "プライバシーポリシー",
         "termsOfUse": "利用規約（EULA）"
       },
@@ -960,7 +960,7 @@
         "done": "완료",
         "later": "나중에",
         "storeButton": "스토어",
-        "legalDisclosure": "스토어 계정에서 취소하지 않으면 구독이 자동 갱신됩니다. 소모성 크레딧은 이 기기에만 저장되며 App 데이터를 지우거나 삭제하면 사라집니다.",
+        "legalDisclosure": "구매 확인 시 Apple Account로 요금이 청구됩니다. 현재 기간이 끝나기 최소 24시간 전에 취소하지 않으면 구독이 자동 갱신됩니다. App Store 계정 설정에서 관리하거나 취소할 수 있습니다. 소모성 크레딧은 이 기기에만 저장되며 App 데이터를 지우거나 App을 삭제하면 사라집니다.",
         "privacyPolicy": "개인정보 처리방침",
         "termsOfUse": "이용 약관(EULA)"
       },
@@ -1095,7 +1095,7 @@
         "done": "Concluído",
         "later": "Mais tarde",
         "storeButton": "Loja",
-        "legalDisclosure": "As assinaturas renovam salvo cancelamento na conta da loja. Créditos consumíveis ficam neste dispositivo e são perdidos ao limpar os dados ou desinstalar o app.",
+        "legalDisclosure": "O pagamento é cobrado da sua Conta Apple na confirmação. A assinatura é renovada automaticamente, salvo cancelamento pelo menos 24 horas antes do fim do período atual; gerencie ou cancele nos ajustes da conta da App Store. Créditos consumíveis ficam neste dispositivo e são perdidos ao limpar os dados ou desinstalar o app.",
         "privacyPolicy": "Política de Privacidade",
         "termsOfUse": "Termos de Uso (EULA)"
       },
@@ -1230,7 +1230,7 @@
         "done": "Selesai",
         "later": "Nanti",
         "storeButton": "Toko",
-        "legalDisclosure": "Langganan diperpanjang kecuali dibatalkan di akun toko. Kredit habis pakai tersimpan di perangkat ini dan hilang jika data app dihapus atau app dicopot.",
+        "legalDisclosure": "Pembayaran dibebankan ke Akun Apple saat dikonfirmasi. Langganan diperpanjang otomatis kecuali dibatalkan setidaknya 24 jam sebelum periode berjalan berakhir; kelola atau batalkan di pengaturan akun App Store. Kredit habis pakai tersimpan di perangkat ini dan hilang jika data app dihapus atau app dicopot.",
         "privacyPolicy": "Kebijakan Privasi",
         "termsOfUse": "Ketentuan Penggunaan (EULA)"
       },
@@ -1365,7 +1365,7 @@
         "done": "पूर्ण",
         "later": "बाद में",
         "storeButton": "स्टोर",
-        "legalDisclosure": "स्टोर खाते में रद्द न करने पर सदस्यता अपने-आप नवीनीकृत होती है। उपभोज्य क्रेडिट इसी डिवाइस पर रहते हैं और App डेटा मिटाने या App हटाने पर खो जाते हैं।",
+        "legalDisclosure": "पुष्टि होने पर भुगतान आपके Apple Account से लिया जाता है। मौजूदा अवधि समाप्त होने से कम से कम 24 घंटे पहले रद्द न करने पर सदस्यता अपने-आप नवीनीकृत होगी; App Store खाते की सेटिंग में इसे प्रबंधित या रद्द करें। उपभोज्य क्रेडिट इसी डिवाइस पर रहते हैं और App डेटा मिटाने या App हटाने पर खो जाते हैं।",
         "privacyPolicy": "गोपनीयता नीति",
         "termsOfUse": "उपयोग की शर्तें (EULA)"
       },
@@ -1500,7 +1500,7 @@
         "done": "تم",
         "later": "لاحقًا",
         "storeButton": "المتجر",
-        "legalDisclosure": "تتجدد الاشتراكات ما لم تُلغَ من حساب المتجر. تبقى الأرصدة الاستهلاكية على هذا الجهاز وتُفقد عند مسح بيانات التطبيق أو إلغاء تثبيته.",
+        "legalDisclosure": "تُخصم الدفعة من حساب Apple عند التأكيد. يتجدد الاشتراك تلقائيًا ما لم تُلغِه قبل 24 ساعة على الأقل من نهاية الفترة الحالية؛ يمكنك إدارته أو إلغاؤه من إعدادات حساب App Store. تبقى الأرصدة الاستهلاكية على هذا الجهاز وتُفقد عند مسح بيانات التطبيق أو إلغاء تثبيته.",
         "privacyPolicy": "سياسة الخصوصية",
         "termsOfUse": "شروط الاستخدام (EULA)"
       },
